@@ -30,6 +30,8 @@ RUN apt-get update && \
         ros-$ROS_DISTRO-desktop \
         ros-$ROS_DISTRO-navigation2 \
         ros-$ROS_DISTRO-nav2-bringup \
+        ros-$ROS_DISTRO-gazebo-ros-pkgs\
+        ros-$ROS_DISTRO-xacro \
         ros-$ROS_DISTRO-rmw-cyclonedds-cpp && \
     rm -rf /var/lib/apt/lists/*
     
