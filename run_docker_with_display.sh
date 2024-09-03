@@ -10,7 +10,7 @@ if [[ "$(docker images -q $IMAGE_NAME 2> /dev/null)" == "" ]]; then
 fi
 
 # Allow access to the X11 server for local Docker containers
-echo "Allowing access to X11 server..."
+echo "Allowing Docker container access to X11 server..."
 xhost +local:docker
 
 # Run the Docker container with display access
