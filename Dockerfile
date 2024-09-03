@@ -31,6 +31,9 @@ RUN apt-get update && \
         ros-$ROS_DISTRO-nav2-bringup \
         ros-$ROS_DISTRO-rmw-cyclonedds-cpp && \
     rm -rf /var/lib/apt/lists/*
+    
+# Create the runtime directory
+RUN mkdir -p /tmp/runtime-root && chmod 0700 /tmp/runtime-root
 
 # Install colcon and its extensions via pip
 RUN pip3 install -U \
