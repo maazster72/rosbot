@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Set the image name (replace with your actual Docker image name)
+# Set the image name
 IMAGE_NAME="rosbot-image"
 
 # Check if the Docker image exists
@@ -14,7 +14,7 @@ echo "Allowing access to X11 server..."
 xhost +local:docker
 
 # Run the Docker container with display access
-echo "Starting Docker container..."
+echo "Starting $IMAGE_NAME Docker container..."
 docker run -it \
     --rm \
     --env DISPLAY=$DISPLAY \

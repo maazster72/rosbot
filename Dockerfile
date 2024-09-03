@@ -21,6 +21,7 @@ RUN apt-get update && \
         x11-apps \
         libgl1-mesa-dri \
         libgl1-mesa-glx \
+        mesa-utils \
         gedit && \
     wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | apt-key add - && \
     echo "deb [arch=arm64] http://packages.ros.org/ros2/ubuntu focal main" | tee /etc/apt/sources.list.d/ros2.list && \
