@@ -48,11 +48,20 @@ RUN echo "source /opt/ros/galactic/setup.bash" >> ~/.bashrc
 WORKDIR /workspace
 RUN mkdir -p src
 
-# Clone the repository
-RUN git clone https://github.com/maazster72/rosbot.git src/
+# Clone the repository to a temporary location
+RUN git clone https://github.com/maazster72/rosbot.git /tmp/rosbot
 
-# Build all the packages in the workspace
-RUN /bin/bash -c "source /opt/ros/galactic/setup.bash && colcon build"
+# Copy only the contents of the 'src' directory from the cloned repository
+RUN cp -r /tmp/rosbot/src/* /workspace/src/
+
+# Optionally, clean up the temporary directory
+RUN rm -rf /tmp/rosbot
+
+# Install dependencies (if needed)
+# RUN apt-get update && rosdep install --from-paths src --ignore-src -r -y
+
+# Build the workspace
+RUN source /opt/ros/galactic/setup.sh && colcon build
 
 # Source the workspace's setup.bash
 RUN echo "source /workspace/install/setup.bash" >> ~/.bashrc
