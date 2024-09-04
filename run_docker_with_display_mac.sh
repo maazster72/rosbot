@@ -15,7 +15,7 @@ xhost +local:docker
 
 # Run the Docker container with display access
 echo "Starting $IMAGE_NAME Docker container..."
-docker run -it \
+docker run -it --network=host \
     --rm \
     --env DISPLAY=$DISPLAY \
     --env XAUTHORITY=$HOME/.Xauthority \
