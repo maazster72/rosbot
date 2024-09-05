@@ -1,4 +1,0 @@
-[0.106s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/pcl_conversions': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/pcl_conversions -- -j4 -l4
-[0.383s] [ 33%] Built target gtest_main
-[0.491s] [ 66%] Built target gtest
-[0.766s] [100%] Built target pcl_conversions-test

@@ -1,1 +1,0 @@
-/home/wheeltec/wheeltec_ros2/build/ackermann_msgs/ament_cmake_core/ackermann_msgsConfig.cmake

@@ -32,6 +32,7 @@ RUN apt-get update && \
         ros-$ROS_DISTRO-nav2-bringup \
         ros-$ROS_DISTRO-gazebo-ros-pkgs\
         ros-$ROS_DISTRO-xacro \
+        ros-$ROS_DISTRO-joint-state-publisher \
         ros-$ROS_DISTRO-rmw-cyclonedds-cpp && \
     rm -rf /var/lib/apt/lists/*
     

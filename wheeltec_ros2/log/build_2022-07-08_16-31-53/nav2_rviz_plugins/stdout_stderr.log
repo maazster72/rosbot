@@ -1,6 +1,0 @@
-[ 14%] [34m[1mAutomatic MOC for target nav2_rviz_plugins[0m
-[ 14%] Built target nav2_rviz_plugins_autogen
-[ 28%] [32mBuilding CXX object CMakeFiles/nav2_rviz_plugins.dir/src/goal_tool.cpp.o[0m
-[ 42%] [32mBuilding CXX object CMakeFiles/nav2_rviz_plugins.dir/src/nav2_panel.cpp.o[0m
-[ 57%] [32m[1mLinking CXX shared library libnav2_rviz_plugins.so[0m
-[100%] Built target nav2_rviz_plugins

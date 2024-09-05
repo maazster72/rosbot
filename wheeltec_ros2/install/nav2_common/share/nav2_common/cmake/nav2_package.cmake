@@ -1,1 +1,0 @@
-/home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_common/cmake/nav2_package.cmake

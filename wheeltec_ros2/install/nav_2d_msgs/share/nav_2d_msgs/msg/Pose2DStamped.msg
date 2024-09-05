@@ -1,1 +1,0 @@
-/home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_dwb_controller/nav_2d_msgs/msg/Pose2DStamped.msg

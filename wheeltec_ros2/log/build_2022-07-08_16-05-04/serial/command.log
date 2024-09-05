@@ -1,6 +1,0 @@
-Invoking command in '/home/wheeltec/wheeltec_ros2/build/serial': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/depend/serial_ros2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/serial
-Invoked command in '/home/wheeltec/wheeltec_ros2/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/depend/serial_ros2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/serial
-Invoking command in '/home/wheeltec/wheeltec_ros2/build/serial': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/serial -- -j4 -l4
-Invoked command in '/home/wheeltec/wheeltec_ros2/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/serial -- -j4 -l4
-Invoking command in '/home/wheeltec/wheeltec_ros2/build/serial': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/serial
-Invoked command in '/home/wheeltec/wheeltec_ros2/build/serial' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/serial

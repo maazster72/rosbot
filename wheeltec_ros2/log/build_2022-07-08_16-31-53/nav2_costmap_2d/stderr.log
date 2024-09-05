@@ -1,5 +1,0 @@
-make[2]: *** [CMakeFiles/layers.dir/build.make:89: CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o] Interrupt
-make[2]: *** [CMakeFiles/filters.dir/build.make:76: CMakeFiles/filters.dir/plugins/costmap_filters/speed_filter.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:238: CMakeFiles/layers.dir/all] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:265: CMakeFiles/filters.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

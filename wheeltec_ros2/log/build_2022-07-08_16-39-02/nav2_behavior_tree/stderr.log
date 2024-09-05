@@ -1,3 +1,0 @@
-make[2]: *** [test/plugins/action/CMakeFiles/test_action_compute_path_through_poses_action.dir/build.make:63: test/plugins/action/CMakeFiles/test_action_compute_path_through_poses_action.dir/test_compute_path_through_poses_action.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:2076: test/plugins/action/CMakeFiles/test_action_compute_path_through_poses_action.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

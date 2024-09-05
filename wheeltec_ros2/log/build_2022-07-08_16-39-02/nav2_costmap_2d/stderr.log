@@ -1,4 +1,0 @@
-make[2]: *** Deleting file 'test/integration/obstacle_tests_exec'
-make[2]: *** [test/integration/CMakeFiles/obstacle_tests_exec.dir/build.make:358: test/integration/obstacle_tests_exec] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:748: test/integration/CMakeFiles/obstacle_tests_exec.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

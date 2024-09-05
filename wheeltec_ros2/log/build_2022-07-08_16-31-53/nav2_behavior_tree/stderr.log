@@ -1,3 +1,0 @@
-make[2]: *** [test/plugins/condition/CMakeFiles/test_condition_is_stuck.dir/build.make:63: test/plugins/condition/CMakeFiles/test_condition_is_stuck.dir/test_is_stuck.cpp.o] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:1497: test/plugins/condition/CMakeFiles/test_condition_is_stuck.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt
