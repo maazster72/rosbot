@@ -1,0 +1,33 @@
+[0.056s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/web_video_server': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/web_video_server -- -j4 -l4
+[0.556s] [100%] Built target web_video_server
+[0.619s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/web_video_server -- -j4 -l4
+[0.852s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/web_video_server': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/web_video_server
+[0.896s] -- Install configuration: ""
+[0.900s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/lib/web_video_server/web_video_server
+[0.905s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server
+[0.914s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/libav_streamer.h
+[0.925s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/h264_streamer.h
+[0.926s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/image_streamer.h
+[0.928s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/vp8_streamer.h
+[0.932s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/multipart_stream.h
+[0.936s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/web_video_server.h
+[0.941s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/ros_compressed_streamer.h
+[0.942s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/jpeg_streamers.h
+[0.942s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/png_streamers.h
+[0.944s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/include/web_video_server/vp9_streamer.h
+[0.945s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/ament_index/resource_index/package_run_dependencies/web_video_server
+[0.949s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/ament_index/resource_index/parent_prefix_path/web_video_server
+[0.950s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.sh
+[0.950s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/environment/ament_prefix_path.dsv
+[0.952s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/environment/path.sh
+[0.953s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/environment/path.dsv
+[0.953s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/local_setup.bash
+[0.955s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/local_setup.sh
+[0.956s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/local_setup.zsh
+[0.956s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/local_setup.dsv
+[0.957s] -- Installing: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/package.dsv
+[0.958s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/ament_index/resource_index/packages/web_video_server
+[0.959s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig.cmake
+[0.960s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/cmake/web_video_serverConfig-version.cmake
+[0.961s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/web_video_server/share/web_video_server/package.xml
+[0.981s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/web_video_server' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/web_video_server

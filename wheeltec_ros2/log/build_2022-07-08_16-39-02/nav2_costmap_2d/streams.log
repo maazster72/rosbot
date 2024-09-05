@@ -1,0 +1,62 @@
+[0.178s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_costmap_2d': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_map_server:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_costmap_2d -- -j4 -l4
+[0.703s] [ 21%] Built target nav2_costmap_2d_core
+[0.817s] [ 25%] Built target gtest_main
+[1.003s] [ 26%] [32mBuilding CXX object CMakeFiles/filters.dir/plugins/costmap_filters/speed_filter.cpp.o[0m
+[70.916s] [ 28%] [32m[1mLinking CXX shared library libfilters.so[0m
+[73.549s] [ 29%] Built target filters
+[73.606s] [35m[1mScanning dependencies of target nav2_costmap_2d_client[0m
+[73.930s] [ 31%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d_client.dir/src/footprint_subscriber.cpp.o[0m
+[121.981s] [ 32%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d_client.dir/src/costmap_subscriber.cpp.o[0m
+[168.398s] [ 34%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d_client.dir/src/costmap_topic_collision_checker.cpp.o[0m
+[184.069s] [ 35%] [32m[1mLinking CXX shared library libnav2_costmap_2d_client.so[0m
+[185.996s] [ 35%] Built target nav2_costmap_2d_client
+[186.062s] [35m[1mScanning dependencies of target nav2_costmap_2d_markers[0m
+[186.335s] [ 37%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d_markers.dir/src/costmap_2d_markers.cpp.o[0m
+[234.416s] [ 39%] [32m[1mLinking CXX executable nav2_costmap_2d_markers[0m
+[235.416s] [ 39%] Built target nav2_costmap_2d_markers
+[235.476s] [35m[1mScanning dependencies of target nav2_costmap_2d_cloud[0m
+[235.743s] [ 40%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d_cloud.dir/src/costmap_2d_cloud.cpp.o[0m
+[285.472s] [ 42%] [32m[1mLinking CXX executable nav2_costmap_2d_cloud[0m
+[286.462s] [ 42%] Built target nav2_costmap_2d_cloud
+[286.732s] [ 43%] [32mBuilding CXX object CMakeFiles/layers.dir/plugins/obstacle_layer.cpp.o[0m
+[377.166s] [ 45%] [32mBuilding CXX object CMakeFiles/layers.dir/plugins/voxel_layer.cpp.o[0m
+[420.159s] [ 46%] [32mBuilding CXX object CMakeFiles/layers.dir/plugins/range_sensor_layer.cpp.o[0m
+[472.038s] [ 48%] [32mBuilding CXX object CMakeFiles/layers.dir/src/observation_buffer.cpp.o[0m
+[498.117s] [ 50%] [32m[1mLinking CXX shared library liblayers.so[0m
+[501.124s] [ 53%] Built target layers
+[501.742s] [ 56%] Built target gtest
+[501.806s] [35m[1mScanning dependencies of target nav2_costmap_2d[0m
+[502.371s] [ 57%] [32mBuilding CXX object CMakeFiles/nav2_costmap_2d.dir/src/costmap_2d_node.cpp.o[0m
+[522.075s] [ 59%] [32m[1mLinking CXX executable nav2_costmap_2d[0m
+[523.404s] [ 59%] Built target nav2_costmap_2d
+[523.460s] [35m[1mScanning dependencies of target keepout_filter_test[0m
+[523.703s] [ 60%] [32mBuilding CXX object test/unit/CMakeFiles/keepout_filter_test.dir/keepout_filter_test.cpp.o[0m
+[565.075s] [ 62%] [32m[1mLinking CXX executable keepout_filter_test[0m
+[566.657s] [ 62%] Built target keepout_filter_test
+[566.764s] [35m[1mScanning dependencies of target speed_filter_test[0m
+[567.214s] [ 64%] [32mBuilding CXX object test/unit/CMakeFiles/speed_filter_test.dir/speed_filter_test.cpp.o[0m
+[637.272s] [ 65%] [32m[1mLinking CXX executable speed_filter_test[0m
+[638.963s] [ 65%] Built target speed_filter_test
+[639.018s] [35m[1mScanning dependencies of target collision_footprint_test[0m
+[639.346s] [ 67%] [32mBuilding CXX object test/unit/CMakeFiles/collision_footprint_test.dir/footprint_collision_checker_test.cpp.o[0m
+[656.340s] [35m[1mScanning dependencies of target declare_parameter_test[0m
+[656.721s] [ 68%] [32mBuilding CXX object test/unit/CMakeFiles/declare_parameter_test.dir/declare_parameter_test.cpp.o[0m
+[657.685s] [35m[1mScanning dependencies of target costmap_convesion_test[0m
+[658.251s] [35m[1mScanning dependencies of target array_parser_test[0m
+[658.333s] [ 70%] [32mBuilding CXX object test/unit/CMakeFiles/costmap_convesion_test.dir/costmap_conversion_test.cpp.o[0m
+[658.522s] [ 71%] [32mBuilding CXX object test/unit/CMakeFiles/array_parser_test.dir/array_parser_test.cpp.o[0m
+[669.334s] [ 73%] [32m[1mLinking CXX executable collision_footprint_test[0m
+[673.174s] [ 73%] Built target collision_footprint_test
+[690.726s] [ 75%] [32m[1mLinking CXX executable array_parser_test[0m
+[704.592s] [ 75%] Built target array_parser_test
+[717.131s] [ 76%] [32m[1mLinking CXX executable costmap_convesion_test[0m
+[720.795s] [ 76%] Built target costmap_convesion_test
+[724.855s] [ 78%] [32m[1mLinking CXX executable declare_parameter_test[0m
+[727.742s] [ 78%] Built target declare_parameter_test
+[727.893s] [35m[1mScanning dependencies of target obstacle_tests_exec[0m
+[729.653s] [ 79%] [32mBuilding CXX object test/integration/CMakeFiles/obstacle_tests_exec.dir/obstacle_tests.cpp.o[0m
+[772.370s] [ 81%] [32m[1mLinking CXX executable obstacle_tests_exec[0m
+[774.315s] make[2]: *** Deleting file 'test/integration/obstacle_tests_exec'
+[774.316s] make[2]: *** [test/integration/CMakeFiles/obstacle_tests_exec.dir/build.make:358: test/integration/obstacle_tests_exec] Interrupt
+[774.316s] make[1]: *** [CMakeFiles/Makefile2:748: test/integration/CMakeFiles/obstacle_tests_exec.dir/all] Interrupt
+[774.319s] make: *** [Makefile:141: all] Interrupt

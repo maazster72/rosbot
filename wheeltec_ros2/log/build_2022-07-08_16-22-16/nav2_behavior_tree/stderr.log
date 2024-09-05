@@ -1,0 +1,13 @@
+make[2]: *** wait: No child processes.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** [CMakeFiles/nav2_distance_traveled_condition_bt_node.dir/build.make:63: CMakeFiles/nav2_distance_traveled_condition_bt_node.dir/plugins/condition/distance_traveled_condition.cpp.o] Interrupt
+make[2]: *** wait: No child processes.  Stop.
+make[2]: *** Waiting for unfinished jobs....
+make[2]: *** wait: No child processes.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:915: CMakeFiles/nav2_time_expired_condition_bt_node.dir/all] Error 2
+make[1]: *** [CMakeFiles/Makefile2:942: CMakeFiles/nav2_distance_traveled_condition_bt_node.dir/all] Interrupt
+make[2]: *** wait: No child processes.  Stop.
+make[1]: *** [CMakeFiles/Makefile2:725: CMakeFiles/nav2_follow_path_action_bt_node.dir/all] Error 2
+make[2]: *** [CMakeFiles/nav2_goal_updater_node_bt_node.dir/build.make:263: CMakeFiles/nav2_goal_updater_node_bt_node.dir/depend] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:698: CMakeFiles/nav2_goal_updater_node_bt_node.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

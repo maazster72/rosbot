@@ -1,0 +1,65 @@
+[0.249s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_util': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_util -- -j4 -l4
+[0.645s] [  5%] Built target gtest
+[0.660s] [ 10%] Built target gtest_main
+[0.732s] [ 35%] Built target nav2_util_core
+[0.743s] [ 40%] Built target dump_params
+[0.785s] [ 45%] Built target test_execution_timer
+[0.943s] [ 50%] Built target test_service_client
+[0.985s] [ 55%] Built target test_string_utils
+[1.004s] [ 60%] Built target test_lifecycle_node
+[1.013s] [ 65%] Built target lifecycle_bringup
+[1.115s] [ 70%] Built target test_lifecycle_utils
+[1.153s] [ 75%] Built target test_lifecycle_cli_node
+[1.174s] [ 80%] Built target test_node_utils
+[1.189s] [ 85%] Built target test_actions
+[1.270s] [ 90%] Built target test_geometry_utils
+[1.309s] [ 95%] Built target test_odometry_utils
+[1.340s] [100%] Built target test_robot_utils
+[1.381s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_util' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_util -- -j4 -l4
+[1.503s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_util': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav2_util
+[1.541s] -- Install configuration: "Release"
+[1.541s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include/
+[1.543s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util
+[1.544s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/clear_entirely_costmap_service_client.hpp
+[1.545s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/node_thread.hpp
+[1.545s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/string_utils.hpp
+[1.546s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/costmap.hpp
+[1.546s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/service_client.hpp
+[1.547s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/geometry_utils.hpp
+[1.548s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/node_utils.hpp
+[1.548s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/simple_action_server.hpp
+[1.549s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/lifecycle_service_client.hpp
+[1.549s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/lifecycle_utils.hpp
+[1.550s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/odometry_utils.hpp
+[1.556s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/robot_utils.hpp
+[1.556s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/lifecycle_node.hpp
+[1.557s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/line_iterator.hpp
+[1.557s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/occ_grid_values.hpp
+[1.558s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/include//nav2_util/execution_timer.hpp
+[1.558s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/environment/library_path.sh
+[1.560s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/environment/library_path.dsv
+[1.562s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/ament_index/resource_index/package_run_dependencies/nav2_util
+[1.563s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/ament_index/resource_index/parent_prefix_path/nav2_util
+[1.565s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/environment/ament_prefix_path.sh
+[1.566s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/environment/ament_prefix_path.dsv
+[1.572s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/environment/path.sh
+[1.574s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/environment/path.dsv
+[1.575s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/local_setup.bash
+[1.576s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/local_setup.sh
+[1.577s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/local_setup.zsh
+[1.578s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/local_setup.dsv
+[1.579s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/package.dsv
+[1.581s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/ament_index/resource_index/packages/nav2_util
+[1.581s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.582s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake/ament_cmake_export_libraries-extras.cmake
+[1.583s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.585s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake/nav2_utilConfig.cmake
+[1.585s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake/nav2_utilConfig-version.cmake
+[1.586s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/package.xml
+[1.589s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/lib/libnav2_util_core.so
+[1.595s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/nav2_util/lib/libnav2_util_core.so" to ""
+[1.595s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/lib/nav2_util/lifecycle_bringup
+[1.597s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/nav2_util/lib/nav2_util/lifecycle_bringup" to ""
+[1.598s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_util/lib/nav2_util/dump_params
+[1.606s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/nav2_util/lib/nav2_util/dump_params" to ""
+[1.615s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_util' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav2_util

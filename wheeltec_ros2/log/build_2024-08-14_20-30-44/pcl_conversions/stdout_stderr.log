@@ -1,0 +1,6 @@
+[ 33%] Built target gtest_main
+[ 66%] Built target gtest
+[35m[1mScanning dependencies of target pcl_conversions-test[0m
+[ 83%] [32mBuilding CXX object CMakeFiles/pcl_conversions-test.dir/test/test_pcl_conversions.cpp.o[0m
+[100%] [32m[1mLinking CXX executable pcl_conversions-test[0m
+[100%] Built target pcl_conversions-test

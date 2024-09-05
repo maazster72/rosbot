@@ -1,0 +1,105 @@
+[0.090s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_rviz_plugins': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_rviz_plugins -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins
+[0.312s] -- The C compiler identification is GNU 9.4.0
+[0.511s] -- The CXX compiler identification is GNU 9.4.0
+[0.528s] -- Check for working C compiler: /usr/bin/cc
+[0.783s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.787s] -- Detecting C compiler ABI info
+[1.059s] -- Detecting C compiler ABI info - done
+[1.106s] -- Detecting C compile features
+[1.109s] -- Detecting C compile features - done
+[1.119s] -- Check for working CXX compiler: /usr/bin/c++
+[1.409s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.412s] -- Detecting CXX compiler ABI info
+[1.702s] -- Detecting CXX compiler ABI info - done
+[1.751s] -- Detecting CXX compile features
+[1.754s] -- Detecting CXX compile features - done
+[1.771s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.897s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.898s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.338s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[2.521s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.566s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[2.950s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.065s] -- Found FastRTPS: /opt/ros/galactic/include  
+[3.448s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.836s] -- Found nav2_util: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake)
+[5.822s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[5.840s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[5.935s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[5.939s] -- Looking for pthread.h
+[6.204s] -- Looking for pthread.h - found
+[6.205s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.486s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.488s] -- Looking for pthread_create in pthreads
+[6.706s] -- Looking for pthread_create in pthreads - not found
+[6.707s] -- Looking for pthread_create in pthread
+[7.075s] -- Looking for pthread_create in pthread - found
+[7.079s] -- Found Threads: TRUE  
+[9.151s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[9.168s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[10.008s] -- Found nav2_lifecycle_manager: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/cmake)
+[11.380s] -- Found pluginlib: 5.0.0 (/opt/ros/galactic/share/pluginlib/cmake)
+[11.606s] -- Found rviz_common: 8.5.1 (/opt/ros/galactic/share/rviz_common/cmake)
+[11.658s] -- Setting OGRE_DIR to: '/opt/ros/galactic/share/rviz_ogre_vendor/cmake/../../../opt/rviz_ogre_vendor/lib/OGRE/cmake'
+[11.671s] -- Found OGRE
+[11.672s] --   static     : OFF
+[11.673s] --   components : HLMS;MeshLodGenerator;Overlay;Paging;Property;RTShaderSystem;Terrain;Volume
+[11.674s] --   plugins    : Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[11.675s] --   media      : /opt/ros/galactic/opt/rviz_ogre_vendor/share/OGRE/Media
+[11.676s] -- OGRE_LIBRARIES: OgreHLMS;OgreMeshLodGenerator;OgreOverlay;OgrePaging;OgreProperty;OgreRTShaderSystem;OgreTerrain;OgreVolume;OgreMain
+[11.677s] -- OGRE_LIBRARY_DIRS: /opt/ros/galactic/opt/rviz_ogre_vendor/lib
+[11.678s] -- OGRE_PLUGINS: Plugin_BSPSceneManager;Plugin_OctreeSceneManager;Plugin_PCZSceneManager;Plugin_ParticleFX;RenderSystem_GL;RenderSystem_GL3Plus;Codec_STBI
+[11.679s] -- OGRE_PLUGIN_DIR: /opt/ros/galactic/opt/rviz_ogre_vendor/lib/OGRE
+[11.681s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_RELEASE: /opt/ros/galactic/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[11.682s] -- rviz_ogre_vendor::OgreOverlay for IMPORTED_LOCATION_DEBUG: /opt/ros/galactic/opt/rviz_ogre_vendor/lib/libOgreOverlay.so
+[11.685s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_RELEASE: /opt/ros/galactic/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[11.686s] -- rviz_ogre_vendor::OgreMain for IMPORTED_LOCATION_DEBUG: /opt/ros/galactic/opt/rviz_ogre_vendor/lib/libOgreMain.so
+[11.772s] -- Found ZLIB: /usr/lib/aarch64-linux-gnu/libz.so (found version "1.2.11") 
+[11.799s] -- Found OpenGL: /usr/lib/aarch64-linux-gnu/libOpenGL.so   
+[12.261s] -- Found X11: /usr/include   
+[12.264s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so
+[12.562s] -- Looking for XOpenDisplay in /usr/lib/aarch64-linux-gnu/libX11.so;/usr/lib/aarch64-linux-gnu/libXext.so - found
+[12.564s] -- Looking for gethostbyname
+[12.824s] -- Looking for gethostbyname - found
+[12.826s] -- Looking for connect
+[13.101s] -- Looking for connect - found
+[13.102s] -- Looking for remove
+[13.365s] -- Looking for remove - found
+[13.367s] -- Looking for shmat
+[13.631s] -- Looking for shmat - found
+[13.633s] -- Looking for IceConnectionNumber in ICE
+[13.907s] -- Looking for IceConnectionNumber in ICE - found
+[13.920s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_RELEASE: _render_system_gl_static_library_abs-NOTFOUND
+[13.920s] -- rviz_ogre_vendor::RenderSystem_GL for IMPORTED_LOCATION_DEBUG: _render_system_gl_static_library_abs-NOTFOUND
+[13.959s] -- library: libassimp.so.5
+[14.353s] -- library: /usr/lib/aarch64-linux-gnu/libcurl.so
+[15.032s] -- Found rviz_default_plugins: 8.5.1 (/opt/ros/galactic/share/rviz_default_plugins/cmake)
+[20.545s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[20.978s] -- Added test 'copyright' to check source files copyright and LICENSE
+[20.989s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[20.991s] -- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_rviz_plugins/include
+[20.992s] -- Configured cppcheck exclude dirs and/or files: 
+[21.000s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[21.001s] -- Configured cpplint exclude dirs and/or files: 
+[21.007s] -- Added test 'lint_cmake' to check CMake code style
+[21.015s] -- Added test 'uncrustify' to check C / C++ code style
+[21.016s] -- Configured uncrustify additional arguments: 
+[21.020s] -- Added test 'xmllint' to check XML markup files
+[21.053s] -- Configuring done
+[21.358s] -- Generating done
+[21.369s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/nav2_rviz_plugins
+[21.431s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_rviz_plugins' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_rviz_plugins -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins
+[21.435s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_rviz_plugins': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_rviz_plugins -- -j4 -l4
+[21.611s] [35m[1mScanning dependencies of target nav2_rviz_plugins_autogen[0m
+[21.653s] [ 14%] [34m[1mAutomatic MOC for target nav2_rviz_plugins[0m
+[26.040s] [ 14%] Built target nav2_rviz_plugins_autogen
+[26.126s] [35m[1mScanning dependencies of target nav2_rviz_plugins[0m
+[27.064s] [ 28%] [32mBuilding CXX object CMakeFiles/nav2_rviz_plugins.dir/nav2_rviz_plugins_autogen/mocs_compilation.cpp.o[0m
+[83.940s] [ 42%] [32mBuilding CXX object CMakeFiles/nav2_rviz_plugins.dir/src/particle_cloud_display/flat_weighted_arrows_array.cpp.o[0m
+[105.546s] [ 57%] [32mBuilding CXX object CMakeFiles/nav2_rviz_plugins.dir/src/particle_cloud_display/particle_cloud_display.cpp.o[0m
+[152.890s] [ 71%] [32mBuilding CXX object CMakeFiles/nav2_rviz_plugins.dir/src/nav2_panel.cpp.o[0m
+[248.400s] [01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+[248.419s] compilation terminated.
+[248.419s] make[2]: *** [CMakeFiles/nav2_rviz_plugins.dir/build.make:89: CMakeFiles/nav2_rviz_plugins.dir/src/nav2_panel.cpp.o] Error 1
+[248.419s] make[1]: *** [CMakeFiles/Makefile2:106: CMakeFiles/nav2_rviz_plugins.dir/all] Error 2
+[248.420s] make: *** [Makefile:141: all] Error 2

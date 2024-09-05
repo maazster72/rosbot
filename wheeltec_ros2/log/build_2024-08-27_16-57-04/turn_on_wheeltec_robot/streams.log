@@ -1,0 +1,130 @@
+[0.163s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot -- -j4 -l4
+[0.605s] [  2%] Built target turn_on_wheeltec_robot__cpp
+[0.710s] [  8%] Built target parameter_node
+[0.718s] [ 16%] Built target turn_on_wheeltec_robot__rosidl_generator_c
+[0.772s] [ 25%] Built target wheeltec_robot_node
+[0.779s] [ 33%] Built target turn_on_wheeltec_robot__rosidl_typesupport_introspection_cpp
+[0.892s] [ 41%] Built target turn_on_wheeltec_robot__rosidl_typesupport_cpp
+[1.014s] [ 50%] Built target turn_on_wheeltec_robot__rosidl_typesupport_c
+[1.025s] [ 58%] Built target turn_on_wheeltec_robot__rosidl_typesupport_fastrtps_cpp
+[1.048s] [ 66%] Built target turn_on_wheeltec_robot__rosidl_typesupport_introspection_c
+[1.244s] [ 75%] Built target turn_on_wheeltec_robot__rosidl_typesupport_fastrtps_c
+[1.389s] [ 75%] Built target turn_on_wheeltec_robot
+[1.519s] [ 77%] Built target turn_on_wheeltec_robot__py
+[1.642s] [ 83%] Built target turn_on_wheeltec_robot__python
+[1.789s] [ 88%] Built target turn_on_wheeltec_robot__rosidl_typesupport_fastrtps_c__pyext
+[1.793s] [ 94%] Built target turn_on_wheeltec_robot__rosidl_typesupport_introspection_c__pyext
+[1.808s] [100%] Built target turn_on_wheeltec_robot__rosidl_typesupport_c__pyext
+[2.066s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot -- -j4 -l4
+[3.616s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot
+[3.655s] -- Install configuration: ""
+[3.662s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/ament_index/resource_index/rosidl_interfaces/turn_on_wheeltec_robot
+[3.676s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot
+[3.677s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg
+[3.678s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail
+[3.678s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__functions.c
+[3.684s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__functions.h
+[3.704s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__struct.h
+[3.705s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__type_support.h
+[3.705s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/position.h
+[3.705s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/rosidl_generator_c__visibility_control.h
+[3.706s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/library_path.sh
+[3.706s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/library_path.dsv
+[3.706s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__rosidl_generator_c.so
+[3.707s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot
+[3.707s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg
+[3.708s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail
+[3.708s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__rosidl_typesupport_fastrtps_c.h
+[3.709s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.709s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__rosidl_typesupport_fastrtps_c.so
+[3.712s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot
+[3.713s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg
+[3.713s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.714s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail
+[3.715s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__rosidl_typesupport_fastrtps_cpp.hpp
+[3.715s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/dds_fastrtps
+[3.716s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__rosidl_typesupport_fastrtps_cpp.so
+[3.716s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot
+[3.717s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg
+[3.717s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail
+[3.718s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__type_support.c
+[3.718s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__rosidl_typesupport_introspection_c.h
+[3.718s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.719s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__rosidl_typesupport_introspection_c.so
+[3.719s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__rosidl_typesupport_c.so
+[3.725s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot
+[3.726s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg
+[3.726s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/position.hpp
+[3.727s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail
+[3.733s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__traits.hpp
+[3.734s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__builder.hpp
+[3.734s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__struct.hpp
+[3.735s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot
+[3.735s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg
+[3.736s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail
+[3.736s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__type_support.cpp
+[3.737s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/include/turn_on_wheeltec_robot/msg/detail/position__rosidl_typesupport_introspection_cpp.hpp
+[3.737s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__rosidl_typesupport_introspection_cpp.so
+[3.738s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__rosidl_typesupport_cpp.so
+[3.738s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/pythonpath.sh
+[3.739s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/pythonpath.dsv
+[3.739s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/__init__.py
+[3.869s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/msg
+[3.872s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/msg/__init__.py
+[3.875s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/msg/_position.py
+[3.875s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/msg/_position_s.c
+[3.876s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/turn_on_wheeltec_robot_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[3.880s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/turn_on_wheeltec_robot_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[3.884s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages/turn_on_wheeltec_robot/turn_on_wheeltec_robot_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[3.888s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/libturn_on_wheeltec_robot__python.so
+[3.891s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/msg/Position.idl
+[3.891s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/msg/Position.msg
+[3.892s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/turn_on_wheeltec_robot/cmd_vel_to_ackermann_drive.py
+[3.895s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/turn_on_wheeltec_robot/wheeltec_robot_node
+[3.901s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/turn_on_wheeltec_robot/parameter_node
+[3.902s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch
+[3.903s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/wheeltec_camera.launch.py
+[3.903s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/turn_on_wheeltec_robot.launch.py
+[3.904s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/__pycache__
+[3.904s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/__pycache__/testtwo.launch.cpython-38.pyc
+[3.905s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/robotandlidar.launch.py
+[3.905s] -- Installing: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/base_serial.launch.py
+[3.906s] -- Installing: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/wheeltec_lidar.launch.py
+[3.906s] -- Installing: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/launch/robot_mode_description.launch.py
+[3.907s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/config
+[3.908s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/config/velocity_smoother_params.yaml
+[3.909s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/config/ekf.yaml
+[3.909s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/ament_index/resource_index/package_run_dependencies/turn_on_wheeltec_robot
+[3.912s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/ament_index/resource_index/parent_prefix_path/turn_on_wheeltec_robot
+[3.916s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/ament_prefix_path.sh
+[3.917s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/ament_prefix_path.dsv
+[3.918s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/path.sh
+[3.919s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/environment/path.dsv
+[3.922s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/local_setup.bash
+[3.924s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/local_setup.sh
+[3.936s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/local_setup.zsh
+[3.937s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/local_setup.dsv
+[3.937s] -- Installing: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/package.dsv
+[3.938s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/ament_index/resource_index/packages/turn_on_wheeltec_robot
+[3.938s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_generator_cExport.cmake
+[3.939s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_generator_cExport-noconfig.cmake
+[3.940s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_introspection_cExport.cmake
+[3.940s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.941s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_cExport.cmake
+[3.950s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_cExport-noconfig.cmake
+[3.951s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_generator_cppExport.cmake
+[3.951s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_introspection_cppExport.cmake
+[3.952s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.952s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_cppExport.cmake
+[3.953s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robot__rosidl_typesupport_cppExport-noconfig.cmake
+[3.953s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/rosidl_cmake-extras.cmake
+[3.953s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.954s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/ament_cmake_export_libraries-extras.cmake
+[3.954s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/ament_cmake_export_targets-extras.cmake
+[3.955s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.955s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.955s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.956s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robotConfig.cmake
+[3.956s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/cmake/turn_on_wheeltec_robotConfig-version.cmake
+[3.957s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/share/turn_on_wheeltec_robot/package.xml
+[3.958s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/turn_on_wheeltec_robot

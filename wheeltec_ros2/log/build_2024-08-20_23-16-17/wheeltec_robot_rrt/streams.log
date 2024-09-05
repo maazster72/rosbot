@@ -1,0 +1,74 @@
+[0.088s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt -- -j4 -l4
+[0.430s] [ 12%] Built target utils
+[0.436s] [ 12%] Built target robot_pose_publisher
+[0.552s] [ 18%] Built target mean_shift
+[0.708s] [ 25%] Built target robot
+[0.823s] [ 31%] Built target find_coloured_box
+[0.885s] [ 37%] Built target approach_coloured_box
+[1.051s] [ 43%] Built target find_robot_action_server
+[1.083s] [ 50%] Built target pick_robot_action_server
+[1.185s] [ 56%] Built target wait_for_fin
+[1.279s] [ 68%] Built target pick_coloured_box
+[1.279s] [ 68%] Built target mtrand
+[1.489s] [ 75%] Built target robot_picker
+[1.558s] [ 81%] Built target filter
+[1.612s] [ 87%] Built target assigner
+[1.690s] [ 93%] Built target local_rrt
+[1.731s] [100%] Built target global_rrt
+[1.807s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt -- -j4 -l4
+[2.185s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt
+[2.242s] -- Install configuration: ""
+[2.243s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libfind_coloured_box.so
+[2.244s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libapproach_coloured_box.so
+[2.246s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libpick_coloured_box.so
+[2.248s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/robot_picker
+[2.249s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/find_robot_action_server
+[2.251s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/pick_robot_action_server
+[2.253s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/wait_for_fin
+[2.256s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/local_rrt
+[2.256s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/global_rrt
+[2.257s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/filter
+[2.259s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/assigner
+[2.261s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/robot_pose_publisher
+[2.262s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch
+[2.262s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration
+[2.263s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/wheeltec_rrt_slam.launch.py
+[2.263s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/action_servers.launch.py
+[2.264s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/rrt_exploration.launch.py
+[2.265s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/visual_slam_start.py
+[2.265s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/rrt_assigner.launch.py
+[2.265s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation
+[2.266s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_localization_launch.py
+[2.266s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_bringup_launch.py
+[2.267s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_navigation_launch.py
+[2.267s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_slam_launch.py
+[2.267s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config
+[2.268s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/ekf.yaml
+[2.268s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/rtabmap.yaml
+[2.268s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/exploration_params.yaml
+[2.269s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/nav2_params.yaml
+[2.271s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees
+[2.282s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees/rrt_navigate_w_replanning_time.xml
+[2.282s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees/navigate_w_replanning_time.xml
+[2.283s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees/robot_picker_behaviour_tree.xml
+[2.283s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libutils.so
+[2.283s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libmtrand.so
+[2.284s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libmean_shift.so
+[2.284s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/librobot.so
+[2.285s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/boundary_publisher.py
+[2.285s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/ament_index/resource_index/package_run_dependencies/wheeltec_robot_rrt
+[2.285s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/ament_index/resource_index/parent_prefix_path/wheeltec_robot_rrt
+[2.286s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/ament_prefix_path.sh
+[2.286s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/ament_prefix_path.dsv
+[2.297s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/path.sh
+[2.298s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/path.dsv
+[2.298s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.bash
+[2.298s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.sh
+[2.299s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.zsh
+[2.299s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.dsv
+[2.299s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/package.dsv
+[2.300s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/ament_index/resource_index/packages/wheeltec_robot_rrt
+[2.300s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/cmake/wheeltec_robot_rrtConfig.cmake
+[2.300s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/cmake/wheeltec_robot_rrtConfig-version.cmake
+[2.301s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/package.xml
+[2.302s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt

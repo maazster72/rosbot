@@ -1,0 +1,27 @@
+[0.170s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/pcl_conversions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/pcl_conversions -- -j4 -l4
+[0.509s] [ 33%] Built target gtest
+[0.589s] [ 66%] Built target gtest_main
+[1.122s] [100%] Built target pcl_conversions-test
+[1.230s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/pcl_conversions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/pcl_conversions -- -j4 -l4
+[1.508s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/pcl_conversions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/pcl_conversions
+[1.572s] -- Install configuration: ""
+[1.574s] -- Execute custom install script
+[1.577s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/include/pcl_conversions//pcl_conversions.h
+[1.579s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/ament_index/resource_index/package_run_dependencies/pcl_conversions
+[1.581s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/ament_index/resource_index/parent_prefix_path/pcl_conversions
+[1.583s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/environment/ament_prefix_path.sh
+[1.585s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/environment/ament_prefix_path.dsv
+[1.588s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/environment/path.sh
+[1.590s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/environment/path.dsv
+[1.592s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/local_setup.bash
+[1.594s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/local_setup.sh
+[1.595s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/local_setup.zsh
+[1.597s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/local_setup.dsv
+[1.599s] -- Symlinking: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/package.dsv
+[1.658s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/ament_index/resource_index/packages/pcl_conversions
+[1.659s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.661s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.662s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/cmake/pcl_conversionsConfig.cmake
+[1.663s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/cmake/pcl_conversionsConfig-version.cmake
+[1.664s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/package.xml
+[1.673s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/pcl_conversions' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/pcl_conversions

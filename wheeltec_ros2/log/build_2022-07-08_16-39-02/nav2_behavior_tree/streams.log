@@ -1,0 +1,120 @@
+[0.318s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_behavior_tree': CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_behavior_tree -- -j4 -l4
+[0.642s] [  1%] Built target nav2_goal_checker_selector_bt_node
+[0.782s] [  2%] Built target nav2_single_trigger_bt_node
+[0.945s] [  3%] Built target nav2_transform_available_condition_bt_node
+[1.071s] [  5%] Built target nav2_pipeline_sequence_bt_node
+[1.227s] [  6%] Built target nav2_wait_action_bt_node
+[1.391s] [  7%] Built target nav2_spin_action_bt_node
+[1.542s] [  8%] Built target nav2_compute_path_through_poses_action_bt_node
+[1.698s] [ 10%] Built target nav2_compute_path_to_pose_action_bt_node
+[1.816s] [ 11%] Built target nav2_goal_updated_condition_bt_node
+[1.970s] [ 12%] Built target nav2_is_stuck_condition_bt_node
+[2.135s] [ 13%] Built target nav2_behavior_tree
+[2.292s] [ 15%] Built target nav2_goal_updater_node_bt_node
+[2.460s] [ 17%] Built target nav2_follow_path_action_bt_node
+[2.615s] [ 19%] Built target nav2_goal_reached_condition_bt_node
+[2.737s] [ 21%] Built target nav2_round_robin_node_bt_node
+[2.907s] [ 23%] Built target nav2_navigate_through_poses_action_bt_node
+[3.055s] [ 24%] Built target nav2_remove_passed_goals_action_bt_node
+[3.167s] [ 25%] Built target nav2_initial_pose_received_condition_bt_node
+[3.319s] [ 27%] Built target nav2_time_expired_condition_bt_node
+[3.466s] [ 28%] Built target nav2_distance_traveled_condition_bt_node
+[3.603s] [ 30%] Built target nav2_is_battery_low_condition_bt_node
+[3.741s] [ 32%] Built target nav2_reinitialize_global_localization_service_bt_node
+[3.848s] [ 34%] Built target nav2_rate_controller_bt_node
+[3.986s] [ 36%] Built target nav2_distance_controller_bt_node
+[4.121s] [ 38%] Built target nav2_clear_costmap_service_bt_node
+[4.261s] [ 40%] Built target nav2_speed_controller_bt_node
+[4.399s] [ 42%] Built target nav2_truncate_path_action_bt_node
+[4.541s] [ 43%] Built target nav2_navigate_to_pose_action_bt_node
+[4.681s] [ 45%] Built target nav2_back_up_action_bt_node
+[4.787s] [ 46%] Built target nav2_recovery_node_bt_node
+[4.886s] [ 47%] Built target gtest
+[4.991s] [ 48%] Built target gtest_main
+[5.128s] [ 49%] Built target nav2_planner_selector_bt_node
+[5.295s] [ 51%] Built target test_condition_distance_traveled
+[5.613s] [ 53%] Built target test_condition_time_expired
+[5.770s] [ 55%] Built target test_condition_goal_updated
+[5.915s] [ 56%] Built target test_condition_initial_pose_received
+[5.976s] [35m[1mScanning dependencies of target test_condition_is_battery_low[0m
+[6.230s] [ 57%] [32mBuilding CXX object test/plugins/condition/CMakeFiles/test_condition_is_battery_low.dir/test_is_battery_low.cpp.o[0m
+[44.853s] [ 58%] [32m[1mLinking CXX executable test_condition_is_battery_low[0m
+[46.095s] [ 58%] Built target test_condition_is_battery_low
+[46.152s] [35m[1mScanning dependencies of target test_condition_transform_available[0m
+[46.444s] [ 58%] [32mBuilding CXX object test/plugins/condition/CMakeFiles/test_condition_transform_available.dir/test_transform_available.cpp.o[0m
+[85.495s] [ 59%] [32m[1mLinking CXX executable test_condition_transform_available[0m
+[86.832s] [ 59%] Built target test_condition_transform_available
+[87.044s] [ 59%] [32mBuilding CXX object test/plugins/condition/CMakeFiles/test_condition_is_stuck.dir/test_is_stuck.cpp.o[0m
+[131.552s] [ 60%] [32m[1mLinking CXX executable test_condition_is_stuck[0m
+[132.935s] [ 60%] Built target test_condition_is_stuck
+[133.002s] [35m[1mScanning dependencies of target test_condition_goal_reached[0m
+[133.291s] [ 60%] [32mBuilding CXX object test/plugins/condition/CMakeFiles/test_condition_goal_reached.dir/test_goal_reached.cpp.o[0m
+[174.283s] [ 61%] [32m[1mLinking CXX executable test_condition_goal_reached[0m
+[175.795s] [ 61%] Built target test_condition_goal_reached
+[175.854s] [35m[1mScanning dependencies of target test_single_trigger_node[0m
+[176.171s] [ 61%] [32mBuilding CXX object test/plugins/decorator/CMakeFiles/test_single_trigger_node.dir/test_single_trigger_node.cpp.o[0m
+[216.144s] [ 62%] [32m[1mLinking CXX executable test_single_trigger_node[0m
+[217.483s] [ 62%] Built target test_single_trigger_node
+[217.543s] [35m[1mScanning dependencies of target test_goal_updater_node[0m
+[217.833s] [ 63%] [32mBuilding CXX object test/plugins/decorator/CMakeFiles/test_goal_updater_node.dir/test_goal_updater_node.cpp.o[0m
+[257.166s] [ 64%] [32m[1mLinking CXX executable test_goal_updater_node[0m
+[258.342s] [ 64%] Built target test_goal_updater_node
+[258.401s] [35m[1mScanning dependencies of target test_decorator_rate_controller[0m
+[258.664s] [ 64%] [32mBuilding CXX object test/plugins/decorator/CMakeFiles/test_decorator_rate_controller.dir/test_rate_controller.cpp.o[0m
+[298.104s] [ 65%] [32m[1mLinking CXX executable test_decorator_rate_controller[0m
+[299.460s] [ 65%] Built target test_decorator_rate_controller
+[299.518s] [35m[1mScanning dependencies of target test_decorator_speed_controller[0m
+[299.817s] [ 66%] [32mBuilding CXX object test/plugins/decorator/CMakeFiles/test_decorator_speed_controller.dir/test_speed_controller.cpp.o[0m
+[346.545s] [ 67%] [32m[1mLinking CXX executable test_decorator_speed_controller[0m
+[348.207s] [ 67%] Built target test_decorator_speed_controller
+[348.264s] [35m[1mScanning dependencies of target test_decorator_distance_controller[0m
+[348.837s] [ 68%] [32mBuilding CXX object test/plugins/decorator/CMakeFiles/test_decorator_distance_controller.dir/test_distance_controller.cpp.o[0m
+[388.612s] [ 69%] [32m[1mLinking CXX executable test_decorator_distance_controller[0m
+[390.686s] [ 69%] Built target test_decorator_distance_controller
+[390.747s] [35m[1mScanning dependencies of target test_control_round_robin_node[0m
+[391.108s] [ 70%] [32mBuilding CXX object test/plugins/control/CMakeFiles/test_control_round_robin_node.dir/test_round_robin_node.cpp.o[0m
+[432.046s] [ 71%] [32m[1mLinking CXX executable test_control_round_robin_node[0m
+[433.343s] [ 71%] Built target test_control_round_robin_node
+[433.395s] [35m[1mScanning dependencies of target test_control_pipeline_sequence[0m
+[433.656s] [ 72%] [32mBuilding CXX object test/plugins/control/CMakeFiles/test_control_pipeline_sequence.dir/test_pipeline_sequence.cpp.o[0m
+[476.869s] [ 73%] [32m[1mLinking CXX executable test_control_pipeline_sequence[0m
+[478.272s] [ 73%] Built target test_control_pipeline_sequence
+[478.330s] [35m[1mScanning dependencies of target test_control_recovery_node[0m
+[478.604s] [ 73%] [32mBuilding CXX object test/plugins/control/CMakeFiles/test_control_recovery_node.dir/test_recovery_node.cpp.o[0m
+[519.738s] [ 74%] [32m[1mLinking CXX executable test_control_recovery_node[0m
+[521.150s] [ 74%] Built target test_control_recovery_node
+[521.213s] [35m[1mScanning dependencies of target test_goal_checker_selector_node[0m
+[521.649s] [ 74%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_goal_checker_selector_node.dir/test_goal_checker_selector_node.cpp.o[0m
+[557.272s] [ 75%] [32m[1mLinking CXX executable test_goal_checker_selector_node[0m
+[558.534s] [ 75%] Built target test_goal_checker_selector_node
+[558.601s] [35m[1mScanning dependencies of target test_planner_selector_node[0m
+[558.835s] [ 75%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_planner_selector_node.dir/test_planner_selector_node.cpp.o[0m
+[597.451s] [ 76%] [32m[1mLinking CXX executable test_planner_selector_node[0m
+[598.914s] [ 76%] Built target test_planner_selector_node
+[598.981s] [35m[1mScanning dependencies of target test_action_spin_action[0m
+[599.302s] [ 77%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_action_spin_action.dir/test_spin_action.cpp.o[0m
+[639.557s] [ 78%] [32m[1mLinking CXX executable test_action_spin_action[0m
+[641.088s] [ 78%] Built target test_action_spin_action
+[641.140s] [35m[1mScanning dependencies of target test_bt_action_node[0m
+[641.413s] [ 79%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_bt_action_node.dir/test_bt_action_node.cpp.o[0m
+[662.522s] [35m[1mScanning dependencies of target test_action_back_up_action[0m
+[662.975s] [ 80%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_action_back_up_action.dir/test_back_up_action.cpp.o[0m
+[663.126s] [ 81%] Built target test_bt_conversions
+[663.480s] [ 82%] Built target nav2_controller_selector_bt_node
+[663.626s] [35m[1mScanning dependencies of target test_action_wait_action[0m
+[663.662s] [35m[1mScanning dependencies of target test_action_clear_costmap_service[0m
+[664.221s] [ 82%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_action_wait_action.dir/test_wait_action.cpp.o[0m
+[664.309s] [ 82%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_action_clear_costmap_service.dir/test_clear_costmap_service.cpp.o[0m
+[739.409s] [ 83%] [32m[1mLinking CXX executable test_bt_action_node[0m
+[741.738s] [ 83%] Built target test_bt_action_node
+[751.974s] [ 84%] [32m[1mLinking CXX executable test_action_clear_costmap_service[0m
+[753.850s] [ 84%] Built target test_action_clear_costmap_service
+[755.085s] [ 85%] [32m[1mLinking CXX executable test_action_wait_action[0m
+[755.743s] [ 86%] [32m[1mLinking CXX executable test_action_back_up_action[0m
+[756.269s] [ 86%] Built target test_action_wait_action
+[756.913s] [ 86%] Built target test_action_back_up_action
+[756.967s] [35m[1mScanning dependencies of target test_action_compute_path_through_poses_action[0m
+[757.344s] [ 87%] [32mBuilding CXX object test/plugins/action/CMakeFiles/test_action_compute_path_through_poses_action.dir/test_compute_path_through_poses_action.cpp.o[0m
+[779.991s] make[2]: *** [test/plugins/action/CMakeFiles/test_action_compute_path_through_poses_action.dir/build.make:63: test/plugins/action/CMakeFiles/test_action_compute_path_through_poses_action.dir/test_compute_path_through_poses_action.cpp.o] Interrupt
+[779.993s] make[1]: *** [CMakeFiles/Makefile2:2076: test/plugins/action/CMakeFiles/test_action_compute_path_through_poses_action.dir/all] Interrupt
+[779.997s] make: *** [Makefile:141: all] Interrupt

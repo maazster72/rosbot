@@ -1,0 +1,236 @@
+[ 65%] Built target ar_track_alvar
+[ 69%] Built target kinect_filtering
+[ 73%] Built target createMarker
+[ 76%] [32mBuilding CXX object CMakeFiles/individualMarkersNoKinect.dir/nodes/IndividualMarkersNoKinect.cpp.o[0m
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:40[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkersNoKinect::getCapCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:333:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  333 |             rvizMarker_.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                         [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:40[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[ 78%] [32m[1mLinking CXX executable individualMarkersNoKinect[0m
+[ 78%] Built target individualMarkersNoKinect
+[35m[1mScanning dependencies of target individualMarkers[0m
+[35m[1mScanning dependencies of target trainMarkerBundle[0m
+[ 82%] Built target medianFilter
+[35m[1mScanning dependencies of target findMarkerBundles[0m
+[ 86%] Built target findMarkerBundlesNoKinect
+[ 89%] [32mBuilding CXX object CMakeFiles/individualMarkers.dir/nodes/IndividualMarkers.cpp.o[0m
+[ 91%] [32mBuilding CXX object CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o[0m
+[ 93%] [32mBuilding CXX object CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o[0m
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkers::draw3dPoints(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, std::string, int, int, double)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:238:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  238 |       rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                  [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkers::drawArrow(geometry_msgs::msg::Point, tf2::Matrix3x3, std::string, int, int)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:268:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  268 |           rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                      [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkers::getPointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:599:55:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  599 |           rvizMarker_.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                       [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundles::draw3dPoints(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, std::string, int, int, double)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:293:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  293 |       rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                  [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundles::drawArrow(geometry_msgs::msg::Point, tf2::Matrix3x3, std::string, int, int)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:323:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  323 |         rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                    [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundles::makeMarkerMsgs(int, int, alvar::Pose&, sensor_msgs::msg::Image, geometry_msgs::msg::TransformStamped&, visualization_msgs::msg::Marker*, ar_track_alvar_msgs::msg::AlvarMarker*, int)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:718:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  718 |     rvizMarker->lifetime = rclcpp::Duration (0.1[01;35m[K)[m[K;
+      |                                                 [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:[m[K In member function ‘[01m[Kvoid TrainMarkerBundle::makeMarkerMsgs(int, int, alvar::Pose&, sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr, geometry_msgs::msg::TransformStamped&, visualization_msgs::msg::Marker*, ar_track_alvar_msgs::msg::AlvarMarker*)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:410:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  410 |    rvizMarker->lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+make[2]: *** [CMakeFiles/trainMarkerBundle.dir/build.make:63: CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:367: CMakeFiles/trainMarkerBundle.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 97%] [32m[1mLinking CXX executable findMarkerBundles[0m
+[ 97%] [32m[1mLinking CXX executable individualMarkers[0m
+[ 97%] Built target individualMarkers
+[ 97%] Built target findMarkerBundles
+make: *** [Makefile:141: all] Error 2

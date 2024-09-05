@@ -1,0 +1,25 @@
+[0.085s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_joy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_joy -- -j4 -l4
+[0.478s] [100%] Built target wheeltec_joy
+[2.133s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_joy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_joy -- -j4 -l4
+[2.311s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_joy': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_joy
+[2.379s] -- Install configuration: ""
+[2.384s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/lib/wheeltec_joy/wheeltec_joy
+[2.386s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/launch
+[2.389s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/launch/wheeltec_joy.launch.py
+[2.389s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/launch/only_joy.launch.py
+[2.390s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/ament_index/resource_index/package_run_dependencies/wheeltec_joy
+[2.391s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/ament_index/resource_index/parent_prefix_path/wheeltec_joy
+[2.392s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/environment/ament_prefix_path.sh
+[2.393s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/environment/ament_prefix_path.dsv
+[2.393s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/environment/path.sh
+[2.394s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/environment/path.dsv
+[2.394s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/local_setup.bash
+[2.394s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/local_setup.sh
+[2.395s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/local_setup.zsh
+[2.396s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/local_setup.dsv
+[2.396s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/package.dsv
+[2.396s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/ament_index/resource_index/packages/wheeltec_joy
+[2.397s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/cmake/wheeltec_joyConfig.cmake
+[2.397s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/cmake/wheeltec_joyConfig-version.cmake
+[2.397s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_joy/share/wheeltec_joy/package.xml
+[2.405s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_joy' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_joy

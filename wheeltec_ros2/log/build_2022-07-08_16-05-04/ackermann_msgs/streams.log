@@ -1,0 +1,242 @@
+[0.113s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/depend/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/ackermann_msgs
+[0.718s] -- The C compiler identification is GNU 9.4.0
+[1.160s] -- The CXX compiler identification is GNU 9.4.0
+[1.192s] -- Check for working C compiler: /usr/bin/cc
+[1.474s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.478s] -- Detecting C compiler ABI info
+[1.756s] -- Detecting C compiler ABI info - done
+[1.820s] -- Detecting C compile features
+[1.827s] -- Detecting C compile features - done
+[1.844s] -- Check for working CXX compiler: /usr/bin/c++
+[2.184s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.188s] -- Detecting CXX compiler ABI info
+[2.494s] -- Detecting CXX compiler ABI info - done
+[2.546s] -- Detecting CXX compile features
+[2.548s] -- Detecting CXX compile features - done
+[2.562s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.677s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.678s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.057s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[3.079s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.129s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.647s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.796s] -- Found FastRTPS: /opt/ros/galactic/include  
+[4.156s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.296s] -- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)
+[4.520s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[5.286s] -- Found ament_cmake_cppcheck: 0.10.7 (/opt/ros/galactic/share/ament_cmake_cppcheck/cmake)
+[5.331s] -- Found ament_cmake_cpplint: 0.10.7 (/opt/ros/galactic/share/ament_cmake_cpplint/cmake)
+[5.333s] -- Found ament_cmake_uncrustify: 0.10.7 (/opt/ros/galactic/share/ament_cmake_uncrustify/cmake)
+[5.339s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[6.213s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.517s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[6.639s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[6.651s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[6.775s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[6.776s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[6.777s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[6.778s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[6.869s] -- Found PythonExtra: .so  
+[8.321s] -- Found ament_cmake_flake8: 0.10.7 (/opt/ros/galactic/share/ament_cmake_flake8/cmake)
+[8.338s] -- Found ament_cmake_pep257: 0.10.7 (/opt/ros/galactic/share/ament_cmake_pep257/cmake)
+[8.396s] -- Configuring done
+[8.599s] -- Generating done
+[8.610s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/ackermann_msgs
+[8.650s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/depend/ackermann_msgs-ros2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/ackermann_msgs
+[8.652s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ackermann_msgs -- -j4 -l4
+[8.827s] [35m[1mScanning dependencies of target ackermann_msgs__cpp[0m
+[8.847s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[8.868s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[11.376s] [  5%] Built target ackermann_msgs__cpp
+[11.487s] [  7%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[11.501s] [ 10%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[11.583s] [ 12%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[11.590s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_generator_c[0m
+[11.799s] [ 15%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive__functions.c.o[0m
+[12.295s] [ 17%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.c.o[0m
+[12.667s] [ 20%] [32m[1mLinking C shared library libackermann_msgs__rosidl_generator_c.so[0m
+[13.067s] [ 20%] Built target ackermann_msgs__rosidl_generator_c
+[13.227s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[14.513s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_cpp[0m
+[14.734s] [ 25%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o[0m
+[15.844s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_introspection_cpp[0m
+[15.980s] [ 28%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive__type_support.cpp.o[0m
+[16.185s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[16.408s] [ 30%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive__type_support.cpp.o[0m
+[17.667s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_introspection_c[0m
+[17.786s] [ 33%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive__type_support.c.o[0m
+[18.052s] [ 35%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.c.o[0m
+[18.375s] [ 38%] [32m[1mLinking C shared library libackermann_msgs__rosidl_typesupport_introspection_c.so[0m
+[18.557s] [ 41%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o[0m
+[18.853s] [ 41%] Built target ackermann_msgs__rosidl_typesupport_introspection_c
+[19.020s] [ 43%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[19.043s] [ 46%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.cpp.o[0m
+[21.263s] [ 48%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive_stamped__type_support.cpp.o[0m
+[21.866s] [ 51%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_cpp.so[0m
+[22.313s] [ 53%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[22.380s] [ 53%] Built target ackermann_msgs__rosidl_typesupport_cpp
+[22.924s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_c[0m
+[22.964s] [ 53%] Built target ackermann_msgs__rosidl_typesupport_introspection_cpp
+[23.100s] [ 56%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o[0m
+[23.101s] [ 58%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o[0m
+[23.403s] [ 61%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_c.so[0m
+[23.827s] [ 61%] Built target ackermann_msgs__rosidl_typesupport_c
+[25.342s] [ 64%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[26.305s] [ 64%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_cpp
+[26.442s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[29.939s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_fastrtps_c[0m
+[30.103s] [ 69%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive__type_support_c.cpp.o[0m
+[30.147s] [ 71%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support_c.cpp.o[0m
+[33.884s] [ 74%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[34.658s] [ 74%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c
+[34.775s] [35m[1mScanning dependencies of target ackermann_msgs[0m
+[34.891s] [ 74%] Built target ackermann_msgs
+[34.982s] [35m[1mScanning dependencies of target ackermann_msgs__py[0m
+[35.083s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[40.539s] [ 76%] Built target ackermann_msgs__py
+[40.596s] [35m[1mScanning dependencies of target ackermann_msgs__python[0m
+[40.840s] [ 79%] [32mBuilding C object CMakeFiles/ackermann_msgs__python.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_s.c.o[0m
+[41.344s] [ 82%] [32mBuilding C object CMakeFiles/ackermann_msgs__python.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_stamped_s.c.o[0m
+[41.880s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/libackermann_msgs__python.so[0m
+[42.162s] [ 84%] Built target ackermann_msgs__python
+[42.199s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_c__pyext[0m
+[42.293s] [ 87%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[42.789s] [ 89%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[43.162s] [ 89%] Built target ackermann_msgs__rosidl_typesupport_c__pyext
+[43.211s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[43.409s] [ 92%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[44.130s] [ 94%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[44.472s] [ 94%] Built target ackermann_msgs__rosidl_typesupport_introspection_c__pyext
+[44.571s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[44.827s] [ 97%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[45.356s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[45.843s] [100%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext
+[45.947s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ackermann_msgs -- -j4 -l4
+[47.089s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ackermann_msgs
+[47.167s] -- Install configuration: ""
+[47.168s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ament_index/resource_index/rosidl_interfaces/ackermann_msgs
+[47.169s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs
+[47.170s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg
+[47.170s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/ackermann_drive.h
+[47.171s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/ackermann_drive_stamped.h
+[47.171s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail
+[47.172s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__functions.h
+[47.172s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__type_support.h
+[47.173s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__struct.h
+[47.174s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__functions.c
+[47.175s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__struct.h
+[47.182s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.h
+[47.186s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.h
+[47.187s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.c
+[47.189s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/rosidl_generator_c__visibility_control.h
+[47.190s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/library_path.sh
+[47.192s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/library_path.dsv
+[47.195s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_c.so
+[47.197s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_generator_c.so" to ""
+[47.198s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs
+[47.199s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg
+[47.201s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[47.203s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail
+[47.204s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_fastrtps_c.h
+[47.205s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_fastrtps_c.h
+[47.206s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_c.so
+[47.210s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_c.so" to ""
+[47.211s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs
+[47.211s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg
+[47.212s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail
+[47.213s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/dds_fastrtps
+[47.214s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_fastrtps_cpp.hpp
+[47.215s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_fastrtps_cpp.hpp
+[47.216s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[47.219s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so
+[47.221s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""
+[47.222s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs
+[47.223s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg
+[47.224s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[47.226s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail
+[47.227s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_introspection_c.h
+[47.229s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.c
+[47.234s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_introspection_c.h
+[47.235s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__type_support.c
+[47.237s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_c.so
+[47.240s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_c.so" to ""
+[47.242s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_c.so
+[47.248s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_c.so" to ""
+[47.249s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs
+[47.249s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg
+[47.250s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/ackermann_drive.hpp
+[47.250s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail
+[47.251s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__builder.hpp
+[47.251s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__struct.hpp
+[47.252s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__builder.hpp
+[47.252s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__traits.hpp
+[47.252s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__struct.hpp
+[47.253s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__traits.hpp
+[47.255s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/ackermann_drive_stamped.hpp
+[47.255s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs
+[47.256s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg
+[47.256s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail
+[47.257s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__type_support.cpp
+[47.262s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__rosidl_typesupport_introspection_cpp.hpp
+[47.263s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.cpp
+[47.263s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/include/ackermann_msgs/msg/detail/ackermann_drive__rosidl_typesupport_introspection_cpp.hpp
+[47.264s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_cpp.so
+[47.265s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_introspection_cpp.so" to ""
+[47.265s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_cpp.so
+[47.275s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__rosidl_typesupport_cpp.so" to ""
+[47.276s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/pythonpath.sh
+[47.276s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/pythonpath.dsv
+[47.276s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/__init__.py
+[47.468s] Compiling '/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/__init__.py'...
+[47.519s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/msg
+[47.520s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/msg/__init__.py
+[47.521s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/msg/_ackermann_drive_stamped.py
+[47.522s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/msg/_ackermann_drive.py
+[47.523s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/msg/_ackermann_drive_stamped_s.c
+[47.523s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/msg/_ackermann_drive_s.c
+[47.525s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[47.527s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+[47.529s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[47.532s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+[47.533s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[47.548s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+[47.549s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__python.so
+[47.552s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/libackermann_msgs__python.so" to ""
+[47.553s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDrive.idl
+[47.554s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDriveStamped.idl
+[47.555s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDrive.msg
+[47.557s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/msg/AckermannDriveStamped.msg
+[47.559s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ament_index/resource_index/package_run_dependencies/ackermann_msgs
+[47.560s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ament_index/resource_index/parent_prefix_path/ackermann_msgs
+[47.562s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/ament_prefix_path.sh
+[47.563s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/ament_prefix_path.dsv
+[47.565s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/path.sh
+[47.566s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/environment/path.dsv
+[47.567s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/local_setup.bash
+[47.580s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/local_setup.sh
+[47.582s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/local_setup.zsh
+[47.583s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/local_setup.dsv
+[47.585s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/package.dsv
+[47.586s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ament_index/resource_index/packages/ackermann_msgs
+[47.588s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_generator_cExport.cmake
+[47.590s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_generator_cExport-noconfig.cmake
+[47.591s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cExport.cmake
+[47.593s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[47.594s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cExport.cmake
+[47.596s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[47.597s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_generator_cppExport.cmake
+[47.599s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[47.612s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[47.613s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cppExport.cmake
+[47.614s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[47.614s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake-extras.cmake
+[47.615s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[47.615s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[47.616s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[47.617s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[47.617s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[47.618s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[47.619s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgsConfig.cmake
+[47.619s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/cmake/ackermann_msgsConfig-version.cmake
+[47.620s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ackermann_msgs/share/ackermann_msgs/package.xml
+[47.645s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ackermann_msgs

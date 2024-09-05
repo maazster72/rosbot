@@ -1,0 +1,224 @@
+[0.134s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/pcl_ros': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar-ros2-devel/perception_pcl-foxy-devel/perception_pcl-foxy-devel/pcl_ros -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/pcl_ros
+[0.651s] -- The C compiler identification is GNU 9.4.0
+[1.099s] -- The CXX compiler identification is GNU 9.4.0
+[1.134s] -- Check for working C compiler: /usr/bin/cc
+[1.788s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.793s] -- Detecting C compiler ABI info
+[2.613s] -- Detecting C compiler ABI info - done
+[2.697s] -- Detecting C compile features
+[2.707s] -- Detecting C compile features - done
+[2.722s] -- Check for working CXX compiler: /usr/bin/c++
+[3.464s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[3.470s] -- Detecting CXX compiler ABI info
+[4.637s] -- Detecting CXX compiler ABI info - done
+[4.705s] -- Detecting CXX compile features
+[4.706s] -- Detecting CXX compile features - done
+[4.884s] -- Checking for module 'eigen3'
+[5.048s] --   Found eigen3, version 3.3.7
+[5.512s] -- Found Eigen: /usr/include/eigen3 (Required is at least version "3.1") 
+[5.513s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[6.176s] -- Checking for module 'flann'
+[6.395s] --   Found flann, version 1.9.1
+[6.784s] -- Found FLANN: /usr/lib/aarch64-linux-gnu/libflann_cpp.so  
+[7.945s] -- The imported target "vtkParseOGLExt" references the file
+[7.945s]    "/usr/bin/vtkParseOGLExt-7.1"
+[7.946s] but this file does not exist.  Possible reasons include:
+[7.946s] * The file was deleted, renamed, or moved to another location.
+[7.947s] * An install or uninstall procedure did not complete successfully.
+[7.947s] * The installation package was faulty and contained
+[7.948s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[7.948s] but not all the files it references.
+[7.948s] 
+[7.950s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[7.951s]    "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[7.952s] but this file does not exist.  Possible reasons include:
+[7.952s] * The file was deleted, renamed, or moved to another location.
+[7.953s] * An install or uninstall procedure did not complete successfully.
+[7.953s] * The installation package was faulty and contained
+[7.953s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[7.954s] but not all the files it references.
+[7.954s] 
+[7.955s] -- The imported target "vtk" references the file
+[7.956s]    "/usr/bin/vtk"
+[7.958s] but this file does not exist.  Possible reasons include:
+[7.959s] * The file was deleted, renamed, or moved to another location.
+[7.959s] * An install or uninstall procedure did not complete successfully.
+[7.959s] * The installation package was faulty and contained
+[7.960s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[7.960s] but not all the files it references.
+[7.961s] 
+[7.966s] -- The imported target "pvtk" references the file
+[7.967s]    "/usr/bin/pvtk"
+[7.967s] but this file does not exist.  Possible reasons include:
+[7.968s] * The file was deleted, renamed, or moved to another location.
+[7.968s] * An install or uninstall procedure did not complete successfully.
+[7.969s] * The installation package was faulty and contained
+[7.969s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[7.969s] but not all the files it references.
+[7.970s] 
+[11.700s] -- Checking for module 'libusb-1.0'
+[11.845s] --   Found libusb-1.0, version 1.0.23
+[12.167s] -- Found USB_10: /usr/lib/aarch64-linux-gnu/libusb-1.0.so  
+[12.682s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[13.231s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[13.483s] -- Found libusb-1.0: /usr/include  
+[13.631s] -- Found Qhull: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so  
+[13.632s] -- QHULL found (include: /usr/include, lib: optimized;/usr/lib/aarch64-linux-gnu/libqhull.so;debug;/usr/lib/aarch64-linux-gnu/libqhull.so)
+[13.634s] -- Found PCL_COMMON: /usr/lib/aarch64-linux-gnu/libpcl_common.so  
+[13.635s] -- Could NOT find PCL_CORE (missing: PCL_CORE_LIBRARY PCL_CORE_INCLUDE_DIR) 
+[13.637s] -- Found PCL_KDTREE: /usr/lib/aarch64-linux-gnu/libpcl_kdtree.so  
+[13.639s] -- Found PCL_OCTREE: /usr/lib/aarch64-linux-gnu/libpcl_octree.so  
+[13.642s] -- Found PCL_SEARCH: /usr/lib/aarch64-linux-gnu/libpcl_search.so  
+[13.643s] -- Found PCL_2D: /usr/include/pcl-1.10  
+[13.643s] -- Found PCL_FEATURES: /usr/lib/aarch64-linux-gnu/libpcl_features.so  
+[13.659s] -- Found PCL_SAMPLE_CONSENSUS: /usr/lib/aarch64-linux-gnu/libpcl_sample_consensus.so  
+[13.660s] -- Found PCL_FILTERS: /usr/lib/aarch64-linux-gnu/libpcl_filters.so  
+[13.668s] -- Found PCL_IO: /usr/lib/aarch64-linux-gnu/libpcl_io.so  
+[13.672s] -- Found PCL_GEOMETRY: /usr/include/pcl-1.10  
+[13.680s] -- Found PCL_ML: /usr/lib/aarch64-linux-gnu/libpcl_ml.so  
+[13.691s] -- Found PCL_SEGMENTATION: /usr/lib/aarch64-linux-gnu/libpcl_segmentation.so  
+[13.700s] -- Found PCL_SURFACE: /usr/lib/aarch64-linux-gnu/libpcl_surface.so  
+[13.723s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[14.179s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[14.181s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[14.677s] -- Found pcl_conversions: 2.2.1 (/home/wheeltec/wheeltec_ros2/install/pcl_conversions/share/pcl_conversions/cmake)
+[14.960s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[15.000s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[15.492s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[15.690s] -- Found FastRTPS: /opt/ros/galactic/include  
+[16.070s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[16.376s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[16.393s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[16.538s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[16.542s] -- Looking for pthread.h
+[17.131s] -- Looking for pthread.h - found
+[17.133s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[17.798s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[17.799s] -- Looking for pthread_create in pthreads
+[18.090s] -- Looking for pthread_create in pthreads - not found
+[18.092s] -- Looking for pthread_create in pthread
+[18.627s] -- Looking for pthread_create in pthread - found
+[18.632s] -- Found Threads: TRUE  
+[21.012s] -- Found tf2: 0.17.3 (/opt/ros/galactic/share/tf2/cmake)
+[21.132s] -- Found tf2_geometry_msgs: 0.17.3 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[21.224s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[21.231s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[24.056s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[25.196s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[25.216s] -- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar-ros2-devel/perception_pcl-foxy-devel/perception_pcl-foxy-devel/pcl_ros/include
+[25.216s] -- Configured cppcheck exclude dirs and/or files: 
+[25.312s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[25.313s] -- Configured cpplint exclude dirs and/or files: 
+[25.319s] -- Added test 'flake8' to check Python code syntax and style conventions
+[25.339s] -- Added test 'lint_cmake' to check CMake code style
+[25.361s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[25.407s] -- Added test 'uncrustify' to check C / C++ code style
+[25.409s] -- Configured uncrustify additional arguments: 
+[25.417s] -- Added test 'xmllint' to check XML markup files
+[25.449s] -- Configuring done
+[27.161s] -- Generating done
+[27.171s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/pcl_ros
+[27.284s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/pcl_ros' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar-ros2-devel/perception_pcl-foxy-devel/perception_pcl-foxy-devel/pcl_ros -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/pcl_ros
+[27.288s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/pcl_ros': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/pcl_ros -- -j4 -l4
+[27.616s] [35m[1mScanning dependencies of target pcl_ros_tf[0m
+[28.216s] [ 50%] [32mBuilding CXX object CMakeFiles/pcl_ros_tf.dir/src/transforms.cpp.o[0m
+[91.951s] [100%] [32m[1mLinking CXX shared library libpcl_ros_tf.so[0m
+[95.207s] [100%] Built target pcl_ros_tf
+[95.252s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/pcl_ros' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/pcl_ros -- -j4 -l4
+[95.353s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/pcl_ros': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/pcl_ros
+[95.393s] -- Install configuration: ""
+[95.394s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include
+[95.395s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros
+[95.396s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/point_cloud.hpp
+[95.399s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/transforms.hpp
+[95.401s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/publisher.hpp
+[95.403s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/io
+[95.405s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/io/concatenate_fields.hpp
+[95.407s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/io/concatenate_data.hpp
+[95.409s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/io/pcd_io.hpp
+[95.411s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/io/bag_io.hpp
+[95.413s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters
+[95.414s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/filter.hpp
+[95.416s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/passthrough.hpp
+[95.417s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/crop_box.hpp
+[95.419s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/project_inliers.hpp
+[95.421s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/statistical_outlier_removal.hpp
+[95.422s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/radius_outlier_removal.hpp
+[95.424s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/extract_indices.hpp
+[95.425s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/filters/voxel_grid.hpp
+[95.427s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/segmentation
+[95.428s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/segmentation/extract_clusters.hpp
+[95.430s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/segmentation/extract_polygonal_prism_data.hpp
+[95.432s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/segmentation/sac_segmentation.hpp
+[95.434s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/segmentation/segment_differences.hpp
+[95.436s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/impl
+[95.437s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/impl/transforms.hpp
+[95.439s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/pcl_nodelet.hpp
+[95.441s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/surface
+[95.442s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/surface/convex_hull.hpp
+[95.443s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/surface/moving_least_squares.hpp
+[95.445s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features
+[95.446s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/normal_3d_tbb.hpp
+[95.448s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/feature.hpp
+[95.450s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/pfh.hpp
+[95.452s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/normal_3d.hpp
+[95.454s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/fpfh.hpp
+[95.456s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/normal_3d_omp.hpp
+[95.457s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/principal_curvatures.hpp
+[95.460s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/fpfh_omp.hpp
+[95.462s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/shot_omp.hpp
+[95.464s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/boundary.hpp
+[95.465s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/vfh.hpp
+[95.468s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/moment_invariants.hpp
+[95.472s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/include/pcl_ros/features/shot.hpp
+[95.479s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/lib/libpcl_ros_tf.so
+[95.487s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib/libpcl_ros_tf.so" to ""
+[95.491s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/plugins
+[95.493s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/plugins/nodelet
+[95.494s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_io.xml
+[95.498s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_surface.xml
+[95.499s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_segmentation.xml
+[95.501s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_features.xml
+[95.503s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/plugins/nodelet/libpcl_ros_filters.xml
+[95.505s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples
+[95.506s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/data
+[95.507s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/data/.gitignore
+[95.509s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros
+[95.510s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io
+[95.511s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/io/sample_concatenate_data.launch
+[95.513s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters
+[95.514s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config
+[95.515s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/statistical_outlier_removal.rviz
+[95.517s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/config/voxel_grid.rviz
+[95.520s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_voxel_grid.launch
+[95.521s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/filters/sample_statistical_outlier_removal.launch
+[95.523s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation
+[95.524s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/segmentation/sample_extract_clusters.launch
+[95.526s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface
+[95.527s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/surface/sample_convex_hull.launch
+[95.529s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features
+[95.530s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/samples/pcl_ros/features/sample_normal_3d.launch
+[95.532s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/environment/library_path.sh
+[95.534s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/environment/library_path.dsv
+[95.537s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/ament_index/resource_index/package_run_dependencies/pcl_ros
+[95.539s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/ament_index/resource_index/parent_prefix_path/pcl_ros
+[95.541s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.sh
+[95.543s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/environment/ament_prefix_path.dsv
+[95.545s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/environment/path.sh
+[95.546s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/environment/path.dsv
+[95.548s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/local_setup.bash
+[95.550s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/local_setup.sh
+[95.552s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/local_setup.zsh
+[95.554s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/local_setup.dsv
+[95.556s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/package.dsv
+[95.559s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/ament_index/resource_index/packages/pcl_ros
+[95.561s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport.cmake
+[95.563s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/export_pcl_rosExport-noconfig.cmake
+[95.565s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_include_directories-extras.cmake
+[95.567s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_libraries-extras.cmake
+[95.569s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_dependencies-extras.cmake
+[95.571s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/ament_cmake_export_targets-extras.cmake
+[95.573s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig.cmake
+[95.575s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/cmake/pcl_rosConfig-version.cmake
+[95.577s] -- Installing: /home/wheeltec/wheeltec_ros2/install/pcl_ros/share/pcl_ros/package.xml
+[95.615s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/pcl_ros' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/pcl_ros

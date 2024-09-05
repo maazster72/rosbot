@@ -1,0 +1,42 @@
+[ 33%] Built target usb_cam
+[ 66%] Built target usb_cam_node_exe
+[100%] Built target usb_cam_node
+-- Install configuration: ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/lib/usb_cam/usb_cam_node_exe
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/usb_cam/lib/usb_cam/usb_cam_node_exe" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/lib/usb_cam/show_image.py
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/include
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/include/usb_cam
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/include/usb_cam/usb_cam_node.hpp
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/include/usb_cam/usb_cam.hpp
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/include/usb_cam/usb_cam_utils.hpp
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/environment/library_path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/environment/library_path.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/lib/libusb_cam.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/usb_cam/lib/libusb_cam.so" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/lib/libusb_cam_node.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/usb_cam/lib/libusb_cam_node.so" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/launch
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/launch/usb_cam_launch.py
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/config
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/config/camera_info.yaml
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/config/params.yaml
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/ament_index/resource_index/package_run_dependencies/usb_cam
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/ament_index/resource_index/parent_prefix_path/usb_cam
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/environment/ament_prefix_path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/environment/ament_prefix_path.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/environment/path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/environment/path.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/local_setup.bash
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/local_setup.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/local_setup.zsh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/local_setup.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/package.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/ament_index/resource_index/packages/usb_cam
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/ament_index/resource_index/rclcpp_components/usb_cam
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/cmake/ament_cmake_export_libraries-extras.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/cmake/usb_camConfig.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/cmake/usb_camConfig-version.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/usb_cam/share/usb_cam/package.xml

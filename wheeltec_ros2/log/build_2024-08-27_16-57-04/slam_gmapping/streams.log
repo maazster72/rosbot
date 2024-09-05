@@ -1,0 +1,24 @@
+[0.102s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/slam_gmapping': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/slam_gmapping -- -j4 -l4
+[0.415s] [100%] Built target slam_gmapping
+[0.469s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/slam_gmapping' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/slam_gmapping -- -j4 -l4
+[0.596s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/slam_gmapping': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/slam_gmapping
+[0.640s] -- Install configuration: ""
+[0.644s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/lib/slam_gmapping/slam_gmapping
+[0.645s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/launch
+[0.646s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/launch/slam_gmapping.launch.py
+[0.648s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/ament_index/resource_index/package_run_dependencies/slam_gmapping
+[0.648s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/ament_index/resource_index/parent_prefix_path/slam_gmapping
+[0.649s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.sh
+[0.650s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/environment/ament_prefix_path.dsv
+[0.650s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/environment/path.sh
+[0.651s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/environment/path.dsv
+[0.651s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.bash
+[0.652s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.sh
+[0.652s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.zsh
+[0.653s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/local_setup.dsv
+[0.653s] -- Installing: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/package.dsv
+[0.654s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/ament_index/resource_index/packages/slam_gmapping
+[0.654s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig.cmake
+[0.655s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/cmake/slam_gmappingConfig-version.cmake
+[0.655s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/slam_gmapping/share/slam_gmapping/package.xml
+[2.121s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/slam_gmapping' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:${LD_LIBRARY_PATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/slam_gmapping

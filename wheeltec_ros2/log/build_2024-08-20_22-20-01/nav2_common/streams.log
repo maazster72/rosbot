@@ -1,0 +1,44 @@
+[0.237s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_common -- -j4 -l4
+[0.913s] Built target ament_cmake_python_symlink_nav2_common
+[3.084s] running egg_info
+[3.172s] writing nav2_common.egg-info/PKG-INFO
+[3.173s] writing dependency_links to nav2_common.egg-info/dependency_links.txt
+[3.173s] writing top-level names to nav2_common.egg-info/top_level.txt
+[3.411s] reading manifest file 'nav2_common.egg-info/SOURCES.txt'
+[3.415s] writing manifest file 'nav2_common.egg-info/SOURCES.txt'
+[3.630s] Built target ament_cmake_python_build_nav2_common_egg
+[3.733s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_common -- -j4 -l4
+[3.889s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_common': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav2_common
+[3.946s] -- Install configuration: ""
+[3.950s] -- Execute custom install script
+[3.953s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/pythonpath.sh
+[3.956s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/pythonpath.dsv
+[3.959s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/PKG-INFO
+[3.964s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/SOURCES.txt
+[3.965s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/dependency_links.txt
+[3.966s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/top_level.txt
+[3.971s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/__init__.py
+[3.973s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/__init__.py
+[3.974s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/has_node_params.py
+[3.975s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/replace_string.py
+[3.976s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/rewritten_yaml.py
+[3.980s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/ament_index/resource_index/package_run_dependencies/nav2_common
+[3.982s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/ament_index/resource_index/parent_prefix_path/nav2_common
+[3.983s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/ament_prefix_path.sh
+[3.985s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/ament_prefix_path.dsv
+[3.987s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/path.sh
+[3.988s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/path.dsv
+[3.988s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.bash
+[3.991s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.sh
+[3.999s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.zsh
+[3.999s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.dsv
+[4.000s] -- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/package.dsv
+[4.080s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/ament_index/resource_index/packages/nav2_common
+[4.082s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_common-extras.cmake
+[4.082s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig.cmake
+[4.083s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig-version.cmake
+[4.083s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/package.xml
+[4.087s] -- Up-to-date symlink: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_package.cmake
+[4.302s] Listing '/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common'...
+[4.303s] Listing '/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch'...
+[4.335s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_common' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav2_common

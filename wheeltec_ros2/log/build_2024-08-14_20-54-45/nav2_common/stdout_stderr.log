@@ -1,0 +1,40 @@
+Built target ament_cmake_python_symlink_nav2_common
+running egg_info
+writing nav2_common.egg-info/PKG-INFO
+writing dependency_links to nav2_common.egg-info/dependency_links.txt
+writing top-level names to nav2_common.egg-info/top_level.txt
+reading manifest file 'nav2_common.egg-info/SOURCES.txt'
+writing manifest file 'nav2_common.egg-info/SOURCES.txt'
+Built target ament_cmake_python_build_nav2_common_egg
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/pythonpath.sh
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/pythonpath.dsv
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/PKG-INFO
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/SOURCES.txt
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/dependency_links.txt
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages//nav2_common.egg-info/top_level.txt
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/__init__.py
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/__init__.py
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/has_node_params.py
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/replace_string.py
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch/rewritten_yaml.py
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/ament_index/resource_index/package_run_dependencies/nav2_common
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/ament_index/resource_index/parent_prefix_path/nav2_common
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/ament_prefix_path.sh
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/ament_prefix_path.dsv
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/path.sh
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/environment/path.dsv
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.bash
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.sh
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.zsh
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/local_setup.dsv
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/package.dsv
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/ament_index/resource_index/packages/nav2_common
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_common-extras.cmake
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig.cmake
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_commonConfig-version.cmake
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/package.xml
+-- Symlinking: /home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake/nav2_package.cmake
+Listing '/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common'...
+Listing '/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages/nav2_common/launch'...

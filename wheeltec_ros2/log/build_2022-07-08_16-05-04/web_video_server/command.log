@@ -1,0 +1,2 @@
+Invoking command in '/home/wheeltec/wheeltec_ros2/build/web_video_server': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_web_video -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/web_video_server
+Invoked command in '/home/wheeltec/wheeltec_ros2/build/web_video_server' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_web_video -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/web_video_server

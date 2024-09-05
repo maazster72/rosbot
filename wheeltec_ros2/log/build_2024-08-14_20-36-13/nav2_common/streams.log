@@ -1,0 +1,6 @@
+[0.110s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_common': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_common -- -j4 -l4
+[0.302s] failed to create symbolic link '/home/wheeltec/wheeltec_ros2/build/nav2_common/ament_cmake_python/nav2_common/nav2_common' because existing path cannot be removed: Is a directory
+[0.305s] make[2]: *** [CMakeFiles/ament_cmake_python_symlink_nav2_common.dir/build.make:57: CMakeFiles/ament_cmake_python_symlink_nav2_common] Error 1
+[0.305s] make[1]: *** [CMakeFiles/Makefile2:133: CMakeFiles/ament_cmake_python_symlink_nav2_common.dir/all] Error 2
+[0.306s] make: *** [Makefile:118: all] Error 2
+[0.317s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_common' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_common -- -j4 -l4

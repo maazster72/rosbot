@@ -1,0 +1,776 @@
+[0.000000] (-) TimerEvent: {}
+[0.000394] (-) JobUnselected: {'identifier': 'ackermann_msgs'}
+[0.000815] (-) JobUnselected: {'identifier': 'ar_track_alvar'}
+[0.000953] (-) JobUnselected: {'identifier': 'ar_track_alvar_msgs'}
+[0.003880] (-) JobUnselected: {'identifier': 'astra_camera'}
+[0.004171] (-) JobUnselected: {'identifier': 'astra_camera_msgs'}
+[0.004286] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.006945] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.007238] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.007336] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.007883] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.007984] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.008065] (-) JobUnselected: {'identifier': 'ldlidar_stl_ros2'}
+[0.012985] (-) JobUnselected: {'identifier': 'lidar_ros2'}
+[0.013228] (-) JobUnselected: {'identifier': 'lslidar_driver'}
+[0.013416] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.013598] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.013729] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.013850] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.013980] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.014117] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.014255] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.014406] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.014584] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.014799] (-) JobUnselected: {'identifier': 'nav2_gazebo_spawner'}
+[0.014955] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.015080] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.015199] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.015314] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.015435] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.015558] (-) JobUnselected: {'identifier': 'nav2_recoveries'}
+[0.015682] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.015800] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.015885] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.016013] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.016116] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.016226] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.016324] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.016419] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.016657] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.016777] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.016864] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.016972] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.017070] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.017290] (-) JobUnselected: {'identifier': 'openslam_gmapping'}
+[0.017399] (-) JobUnselected: {'identifier': 'pcl_conversions'}
+[0.017522] (-) JobUnselected: {'identifier': 'pcl_ros'}
+[0.017616] (-) JobUnselected: {'identifier': 'perception_pcl'}
+[0.017698] (-) JobUnselected: {'identifier': 'rplidar_ros2'}
+[0.017777] (-) JobUnselected: {'identifier': 'serial'}
+[0.017881] (-) JobUnselected: {'identifier': 'simple_follower_ros2'}
+[0.017984] (-) JobUnselected: {'identifier': 'slam_gmapping'}
+[0.018080] (-) JobUnselected: {'identifier': 'tf2_tools'}
+[0.018175] (-) JobUnselected: {'identifier': 'turn_on_wheeltec_robot'}
+[0.018366] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.018471] (-) JobUnselected: {'identifier': 'web_video_server'}
+[0.018551] (-) JobUnselected: {'identifier': 'wheeltec_cartographer'}
+[0.018633] (-) JobUnselected: {'identifier': 'wheeltec_joy'}
+[0.018715] (-) JobUnselected: {'identifier': 'wheeltec_nav2'}
+[0.018836] (-) JobUnselected: {'identifier': 'wheeltec_robot_keyboard'}
+[0.019104] (-) JobUnselected: {'identifier': 'wheeltec_robot_msg'}
+[0.019212] (-) JobUnselected: {'identifier': 'wheeltec_robot_rrt'}
+[0.019329] (-) JobUnselected: {'identifier': 'wheeltec_robot_rtab'}
+[0.019420] (-) JobUnselected: {'identifier': 'wheeltec_robot_urdf'}
+[0.019499] (-) JobUnselected: {'identifier': 'wheeltec_rrt_msg'}
+[0.019632] (-) JobUnselected: {'identifier': 'wheeltec_slam_toolbox'}
+[0.019832] (lslidar_msgs) JobQueued: {'identifier': 'lslidar_msgs', 'dependencies': OrderedDict()}
+[0.019953] (lslidar_msgs) JobStarted: {'identifier': 'lslidar_msgs'}
+[0.095473] (-) TimerEvent: {}
+[0.097922] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'cmake'}
+[0.098560] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lslidar_msgs', '-DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/lslidar_msgs'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs', 'env': OrderedDict([('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7763'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib:/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav2_controller/lib:/home/wheeltec/wheeltec_ros2/install/dwb_plugins/lib:/home/wheeltec/wheeltec_ros2/install/dwb_critics/lib:/home/wheeltec/wheeltec_ros2/install/dwb_core/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower/lib:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries/lib:/home/wheeltec/wheeltec_ros2/install/nav2_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator/lib:/home/wheeltec/wheeltec_ros2/install/costmap_queue/lib:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins/lib:/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/home/wheeltec/wheeltec_ros2/src/ros2_astra_camera-main/ros2_astra_camera/lib/openni2_redist/x64'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7141'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0420719038212'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:39591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/home/wheeltec/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7799,unix/wheeltec:/tmp/.ICE-unix/7799'), ('INVOCATION_ID', 'b14f56017b7d4a9e8e90e031dc0eb30a'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23dddae4_5d34_4725_836a_3ec2012da57f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.162'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_system_tests:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_system_tests:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic')]), 'shell': False}
+[0.195661] (-) TimerEvent: {}
+[0.296501] (-) TimerEvent: {}
+[0.397267] (-) TimerEvent: {}
+[0.498078] (-) TimerEvent: {}
+[0.555923] (lslidar_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.598273] (-) TimerEvent: {}
+[0.698977] (-) TimerEvent: {}
+[0.786616] (lslidar_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.799087] (-) TimerEvent: {}
+[0.817773] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.899276] (-) TimerEvent: {}
+[0.999913] (-) TimerEvent: {}
+[1.100616] (-) TimerEvent: {}
+[1.128481] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.132472] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.200818] (-) TimerEvent: {}
+[1.301501] (-) TimerEvent: {}
+[1.402096] (-) TimerEvent: {}
+[1.440636] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.479256] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.480710] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.489777] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[1.502272] (-) TimerEvent: {}
+[1.602914] (-) TimerEvent: {}
+[1.703516] (-) TimerEvent: {}
+[1.804128] (-) TimerEvent: {}
+[1.822653] (lslidar_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[1.825919] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[1.904344] (-) TimerEvent: {}
+[2.004986] (-) TimerEvent: {}
+[2.105622] (-) TimerEvent: {}
+[2.161671] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.202325] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.204178] (lslidar_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.205711] (-) TimerEvent: {}
+[2.248410] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[2.305915] (-) TimerEvent: {}
+[2.406537] (-) TimerEvent: {}
+[2.427870] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[2.428640] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.506723] (-) TimerEvent: {}
+[2.607371] (-) TimerEvent: {}
+[2.707959] (-) TimerEvent: {}
+[2.808520] (-) TimerEvent: {}
+[2.909131] (-) TimerEvent: {}
+[3.009743] (-) TimerEvent: {}
+[3.110365] (-) TimerEvent: {}
+[3.193373] (lslidar_msgs) StdoutLine: {'line': b'-- Found std_msgs: 2.2.4 (/opt/ros/galactic/share/std_msgs/cmake)\n'}
+[3.210533] (-) TimerEvent: {}
+[3.311148] (-) TimerEvent: {}
+[3.411710] (-) TimerEvent: {}
+[3.512325] (-) TimerEvent: {}
+[3.569796] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.612504] (-) TimerEvent: {}
+[3.689752] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[3.712685] (-) TimerEvent: {}
+[3.813274] (-) TimerEvent: {}
+[3.913880] (-) TimerEvent: {}
+[4.015134] (-) TimerEvent: {}
+[4.115760] (-) TimerEvent: {}
+[4.216375] (-) TimerEvent: {}
+[4.317141] (-) TimerEvent: {}
+[4.365329] (lslidar_msgs) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[4.417336] (-) TimerEvent: {}
+[4.515264] (lslidar_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[4.517506] (-) TimerEvent: {}
+[4.618050] (-) TimerEvent: {}
+[4.718675] (-) TimerEvent: {}
+[4.819317] (-) TimerEvent: {}
+[4.919962] (-) TimerEvent: {}
+[5.020583] (-) TimerEvent: {}
+[5.077455] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[5.120771] (-) TimerEvent: {}
+[5.221367] (-) TimerEvent: {}
+[5.321989] (-) TimerEvent: {}
+[5.355615] (lslidar_msgs) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[5.422178] (-) TimerEvent: {}
+[5.522819] (-) TimerEvent: {}
+[5.623423] (-) TimerEvent: {}
+[5.724021] (-) TimerEvent: {}
+[5.824630] (-) TimerEvent: {}
+[5.867684] (lslidar_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[5.924802] (-) TimerEvent: {}
+[6.015287] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[6.024957] (-) TimerEvent: {}
+[6.125591] (-) TimerEvent: {}
+[6.226227] (-) TimerEvent: {}
+[6.326907] (-) TimerEvent: {}
+[6.427544] (-) TimerEvent: {}
+[6.528108] (-) TimerEvent: {}
+[6.628678] (-) TimerEvent: {}
+[6.716895] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[6.728898] (-) TimerEvent: {}
+[6.829510] (-) TimerEvent: {}
+[6.930087] (-) TimerEvent: {}
+[7.030643] (-) TimerEvent: {}
+[7.131530] (-) TimerEvent: {}
+[7.232242] (-) TimerEvent: {}
+[7.280815] (lslidar_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)\n'}
+[7.332322] (-) TimerEvent: {}
+[7.432971] (-) TimerEvent: {}
+[7.533537] (-) TimerEvent: {}
+[7.634102] (-) TimerEvent: {}
+[7.734685] (-) TimerEvent: {}
+[7.835315] (-) TimerEvent: {}
+[7.935920] (-) TimerEvent: {}
+[8.036483] (-) TimerEvent: {}
+[8.137090] (-) TimerEvent: {}
+[8.237685] (-) TimerEvent: {}
+[8.338289] (-) TimerEvent: {}
+[8.344366] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[8.438435] (-) TimerEvent: {}
+[8.539040] (-) TimerEvent: {}
+[8.639652] (-) TimerEvent: {}
+[8.675005] (lslidar_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[8.739834] (-) TimerEvent: {}
+[8.816787] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[8.840008] (-) TimerEvent: {}
+[8.853564] (lslidar_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[8.940211] (-) TimerEvent: {}
+[8.997390] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[8.998249] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[8.998637] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[8.999079] (lslidar_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[9.040390] (-) TimerEvent: {}
+[9.101863] (lslidar_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[9.140524] (-) TimerEvent: {}
+[9.241139] (-) TimerEvent: {}
+[9.341711] (-) TimerEvent: {}
+[9.442329] (-) TimerEvent: {}
+[9.543002] (-) TimerEvent: {}
+[9.643573] (-) TimerEvent: {}
+[9.744120] (-) TimerEvent: {}
+[9.844702] (-) TimerEvent: {}
+[9.945243] (-) TimerEvent: {}
+[10.045824] (-) TimerEvent: {}
+[10.146403] (-) TimerEvent: {}
+[10.247040] (-) TimerEvent: {}
+[10.347719] (-) TimerEvent: {}
+[10.448356] (-) TimerEvent: {}
+[10.541285] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[10.548530] (-) TimerEvent: {}
+[10.552814] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[10.561433] (lslidar_msgs) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[10.599897] (lslidar_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[10.648721] (-) TimerEvent: {}
+[10.749364] (-) TimerEvent: {}
+[10.790643] (lslidar_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[10.801164] (lslidar_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/lslidar_msgs\n'}
+[10.833309] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[10.835906] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'build'}
+[10.843093] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs', '--', '-j4', '-l4'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs', 'env': OrderedDict([('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7763'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib:/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav2_controller/lib:/home/wheeltec/wheeltec_ros2/install/dwb_plugins/lib:/home/wheeltec/wheeltec_ros2/install/dwb_critics/lib:/home/wheeltec/wheeltec_ros2/install/dwb_core/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower/lib:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries/lib:/home/wheeltec/wheeltec_ros2/install/nav2_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator/lib:/home/wheeltec/wheeltec_ros2/install/costmap_queue/lib:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins/lib:/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/home/wheeltec/wheeltec_ros2/src/ros2_astra_camera-main/ros2_astra_camera/lib/openni2_redist/x64'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7141'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0420719038212'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:39591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/home/wheeltec/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7799,unix/wheeltec:/tmp/.ICE-unix/7799'), ('INVOCATION_ID', 'b14f56017b7d4a9e8e90e031dc0eb30a'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23dddae4_5d34_4725_836a_3ec2012da57f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.162'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_system_tests:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_system_tests:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic')]), 'shell': False}
+[10.849486] (-) TimerEvent: {}
+[10.950184] (-) TimerEvent: {}
+[11.050830] (-) TimerEvent: {}
+[11.068467] (lslidar_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[11.069266] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__cpp\x1b[0m\n'}
+[11.131499] (lslidar_msgs) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[11.151000] (-) TimerEvent: {}
+[11.251681] (-) TimerEvent: {}
+[11.352349] (-) TimerEvent: {}
+[11.453008] (-) TimerEvent: {}
+[11.553649] (-) TimerEvent: {}
+[11.654302] (-) TimerEvent: {}
+[11.754939] (-) TimerEvent: {}
+[11.855524] (-) TimerEvent: {}
+[11.956082] (-) TimerEvent: {}
+[12.056652] (-) TimerEvent: {}
+[12.157260] (-) TimerEvent: {}
+[12.257831] (-) TimerEvent: {}
+[12.358391] (-) TimerEvent: {}
+[12.459429] (-) TimerEvent: {}
+[12.559978] (-) TimerEvent: {}
+[12.660600] (-) TimerEvent: {}
+[12.761229] (-) TimerEvent: {}
+[12.861841] (-) TimerEvent: {}
+[12.962447] (-) TimerEvent: {}
+[13.063591] (-) TimerEvent: {}
+[13.164189] (-) TimerEvent: {}
+[13.264832] (-) TimerEvent: {}
+[13.365662] (-) TimerEvent: {}
+[13.466354] (-) TimerEvent: {}
+[13.507878] (lslidar_msgs) StdoutLine: {'line': b'[  3%] Built target lslidar_msgs__cpp\n'}
+[13.566529] (-) TimerEvent: {}
+[13.653360] (lslidar_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[13.666715] (-) TimerEvent: {}
+[13.758455] (lslidar_msgs) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[13.762983] (lslidar_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[13.766951] (-) TimerEvent: {}
+[13.773251] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_generator_c\x1b[0m\n'}
+[13.850275] (lslidar_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_difop__functions.c.o\x1b[0m\n'}
+[13.867108] (-) TimerEvent: {}
+[13.967746] (-) TimerEvent: {}
+[14.055144] (lslidar_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_packet__functions.c.o\x1b[0m\n'}
+[14.067910] (-) TimerEvent: {}
+[14.168765] (-) TimerEvent: {}
+[14.257334] (lslidar_msgs) StdoutLine: {'line': b'[ 12%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_point__functions.c.o\x1b[0m\n'}
+[14.268912] (-) TimerEvent: {}
+[14.369705] (-) TimerEvent: {}
+[14.459686] (lslidar_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_scan__functions.c.o\x1b[0m\n'}
+[14.469869] (-) TimerEvent: {}
+[14.570698] (-) TimerEvent: {}
+[14.665967] (lslidar_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_generator_c.dir/rosidl_generator_c/lslidar_msgs/msg/detail/lslidar_sweep__functions.c.o\x1b[0m\n'}
+[14.670919] (-) TimerEvent: {}
+[14.771720] (-) TimerEvent: {}
+[14.872572] (-) TimerEvent: {}
+[14.874189] (lslidar_msgs) StdoutLine: {'line': b'[ 17%] \x1b[32m\x1b[1mLinking C shared library liblslidar_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[14.972739] (-) TimerEvent: {}
+[15.069336] (lslidar_msgs) StdoutLine: {'line': b'[ 17%] Built target lslidar_msgs__rosidl_generator_c\n'}
+[15.073093] (-) TimerEvent: {}
+[15.136392] (lslidar_msgs) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[15.173252] (-) TimerEvent: {}
+[15.274077] (-) TimerEvent: {}
+[15.374888] (-) TimerEvent: {}
+[15.475699] (-) TimerEvent: {}
+[15.576561] (-) TimerEvent: {}
+[15.677224] (-) TimerEvent: {}
+[15.768926] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_cpp\x1b[0m\n'}
+[15.777367] (-) TimerEvent: {}
+[15.847828] (lslidar_msgs) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[15.877554] (-) TimerEvent: {}
+[15.978437] (-) TimerEvent: {}
+[16.079316] (-) TimerEvent: {}
+[16.101518] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[16.179477] (-) TimerEvent: {}
+[16.182475] (lslidar_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[16.246889] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[16.279654] (-) TimerEvent: {}
+[16.356271] (lslidar_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[16.379817] (-) TimerEvent: {}
+[16.480520] (-) TimerEvent: {}
+[16.581182] (-) TimerEvent: {}
+[16.681848] (-) TimerEvent: {}
+[16.782708] (-) TimerEvent: {}
+[16.883658] (-) TimerEvent: {}
+[16.984572] (-) TimerEvent: {}
+[17.065038] (lslidar_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[17.084752] (-) TimerEvent: {}
+[17.119750] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_c\x1b[0m\n'}
+[17.184940] (-) TimerEvent: {}
+[17.196863] (lslidar_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_difop__type_support.cpp.o\x1b[0m\n'}
+[17.285134] (-) TimerEvent: {}
+[17.346662] (lslidar_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[17.385314] (-) TimerEvent: {}
+[17.426943] (lslidar_msgs) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[17.485496] (-) TimerEvent: {}
+[17.500154] (lslidar_msgs) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[17.585693] (-) TimerEvent: {}
+[17.653571] (lslidar_msgs) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[17.685867] (-) TimerEvent: {}
+[17.786579] (-) TimerEvent: {}
+[17.808777] (lslidar_msgs) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[17.887012] (-) TimerEvent: {}
+[17.969953] (lslidar_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[17.987178] (-) TimerEvent: {}
+[18.088126] (-) TimerEvent: {}
+[18.146491] (lslidar_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_packet__type_support.cpp.o\x1b[0m\n'}
+[18.172710] (lslidar_msgs) StdoutLine: {'line': b'[ 38%] Built target lslidar_msgs__rosidl_typesupport_c\n'}
+[18.188306] (-) TimerEvent: {}
+[18.246834] (lslidar_msgs) StdoutLine: {'line': b'[ 39%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[18.288474] (-) TimerEvent: {}
+[18.326279] (lslidar_msgs) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[18.388644] (-) TimerEvent: {}
+[18.489349] (-) TimerEvent: {}
+[18.590089] (-) TimerEvent: {}
+[18.691026] (-) TimerEvent: {}
+[18.723156] (lslidar_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[18.791199] (-) TimerEvent: {}
+[18.891828] (-) TimerEvent: {}
+[18.992486] (-) TimerEvent: {}
+[19.093587] (-) TimerEvent: {}
+[19.194214] (-) TimerEvent: {}
+[19.294888] (-) TimerEvent: {}
+[19.395759] (-) TimerEvent: {}
+[19.496711] (-) TimerEvent: {}
+[19.565615] (lslidar_msgs) StdoutLine: {'line': b'[ 44%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[19.596995] (-) TimerEvent: {}
+[19.697725] (-) TimerEvent: {}
+[19.798387] (-) TimerEvent: {}
+[19.899402] (-) TimerEvent: {}
+[19.909614] (lslidar_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_point__type_support.cpp.o\x1b[0m\n'}
+[19.972064] (lslidar_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[19.999560] (-) TimerEvent: {}
+[20.100312] (-) TimerEvent: {}
+[20.200932] (-) TimerEvent: {}
+[20.301800] (-) TimerEvent: {}
+[20.402679] (-) TimerEvent: {}
+[20.503607] (-) TimerEvent: {}
+[20.604491] (-) TimerEvent: {}
+[20.705385] (-) TimerEvent: {}
+[20.806256] (-) TimerEvent: {}
+[20.822550] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[20.906556] (-) TimerEvent: {}
+[20.937093] (lslidar_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_difop__type_support.c.o\x1b[0m\n'}
+[20.969085] (lslidar_msgs) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lslidar_msgs/msg/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[21.006614] (-) TimerEvent: {}
+[21.107877] (-) TimerEvent: {}
+[21.119717] (lslidar_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_packet__type_support.c.o\x1b[0m\n'}
+[21.208043] (-) TimerEvent: {}
+[21.302702] (lslidar_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_point__type_support.c.o\x1b[0m\n'}
+[21.308334] (-) TimerEvent: {}
+[21.409272] (-) TimerEvent: {}
+[21.430362] (lslidar_msgs) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[21.480138] (lslidar_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_scan__type_support.c.o\x1b[0m\n'}
+[21.509443] (-) TimerEvent: {}
+[21.610141] (-) TimerEvent: {}
+[21.668510] (lslidar_msgs) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c.o\x1b[0m\n'}
+[21.710321] (-) TimerEvent: {}
+[21.718863] (lslidar_msgs) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_scan__type_support.cpp.o\x1b[0m\n'}
+[21.810490] (-) TimerEvent: {}
+[21.855539] (lslidar_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library liblslidar_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[21.910660] (-) TimerEvent: {}
+[22.011708] (-) TimerEvent: {}
+[22.048321] (lslidar_msgs) StdoutLine: {'line': b'[ 61%] Built target lslidar_msgs__rosidl_typesupport_introspection_c\n'}
+[22.111884] (-) TimerEvent: {}
+[22.145553] (lslidar_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lslidar_msgs/msg/detail/dds_fastrtps/lslidar_sweep__type_support.cpp.o\x1b[0m\n'}
+[22.212051] (-) TimerEvent: {}
+[22.292188] (lslidar_msgs) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[22.312232] (-) TimerEvent: {}
+[22.413124] (-) TimerEvent: {}
+[22.500284] (lslidar_msgs) StdoutLine: {'line': b'[ 65%] Built target lslidar_msgs__rosidl_typesupport_cpp\n'}
+[22.513290] (-) TimerEvent: {}
+[22.614288] (-) TimerEvent: {}
+[22.715152] (-) TimerEvent: {}
+[22.816039] (-) TimerEvent: {}
+[22.916214] (lslidar_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[22.916997] (-) TimerEvent: {}
+[23.017865] (-) TimerEvent: {}
+[23.118983] (-) TimerEvent: {}
+[23.219766] (-) TimerEvent: {}
+[23.230359] (lslidar_msgs) StdoutLine: {'line': b'[ 66%] Built target lslidar_msgs__rosidl_typesupport_introspection_cpp\n'}
+[23.319928] (-) TimerEvent: {}
+[23.420749] (-) TimerEvent: {}
+[23.521529] (-) TimerEvent: {}
+[23.622149] (-) TimerEvent: {}
+[23.722747] (-) TimerEvent: {}
+[23.823395] (-) TimerEvent: {}
+[23.906273] (lslidar_msgs) StdoutLine: {'line': b'[ 68%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[23.923558] (-) TimerEvent: {}
+[24.024135] (-) TimerEvent: {}
+[24.124783] (-) TimerEvent: {}
+[24.225376] (-) TimerEvent: {}
+[24.250523] (lslidar_msgs) StdoutLine: {'line': b'[ 68%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[24.310637] (lslidar_msgs) StdoutLine: {'line': b'[ 69%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[24.325520] (-) TimerEvent: {}
+[24.426081] (-) TimerEvent: {}
+[24.526615] (-) TimerEvent: {}
+[24.627294] (-) TimerEvent: {}
+[24.727837] (-) TimerEvent: {}
+[24.828437] (-) TimerEvent: {}
+[24.928968] (-) TimerEvent: {}
+[25.029498] (-) TimerEvent: {}
+[25.130105] (-) TimerEvent: {}
+[25.230681] (-) TimerEvent: {}
+[25.331372] (-) TimerEvent: {}
+[25.431904] (-) TimerEvent: {}
+[25.532464] (-) TimerEvent: {}
+[25.633009] (-) TimerEvent: {}
+[25.733574] (-) TimerEvent: {}
+[25.834166] (-) TimerEvent: {}
+[25.934695] (-) TimerEvent: {}
+[26.035541] (-) TimerEvent: {}
+[26.136099] (-) TimerEvent: {}
+[26.236949] (-) TimerEvent: {}
+[26.296258] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[26.337100] (-) TimerEvent: {}
+[26.388154] (lslidar_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_difop__type_support_c.cpp.o\x1b[0m\n'}
+[26.389041] (lslidar_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_point__type_support_c.cpp.o\x1b[0m\n'}
+[26.390499] (lslidar_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_scan__type_support_c.cpp.o\x1b[0m\n'}
+[26.400489] (lslidar_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_packet__type_support_c.cpp.o\x1b[0m\n'}
+[26.437264] (-) TimerEvent: {}
+[26.537887] (-) TimerEvent: {}
+[26.638783] (-) TimerEvent: {}
+[26.739654] (-) TimerEvent: {}
+[26.840542] (-) TimerEvent: {}
+[26.941446] (-) TimerEvent: {}
+[27.042372] (-) TimerEvent: {}
+[27.143302] (-) TimerEvent: {}
+[27.250891] (-) TimerEvent: {}
+[27.351712] (-) TimerEvent: {}
+[27.452636] (-) TimerEvent: {}
+[27.553690] (-) TimerEvent: {}
+[27.654596] (-) TimerEvent: {}
+[27.755526] (-) TimerEvent: {}
+[27.856373] (-) TimerEvent: {}
+[27.903098] (lslidar_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding CXX object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lslidar_msgs/msg/detail/lslidar_sweep__type_support_c.cpp.o\x1b[0m\n'}
+[27.956551] (-) TimerEvent: {}
+[28.057165] (-) TimerEvent: {}
+[28.157743] (-) TimerEvent: {}
+[28.258374] (-) TimerEvent: {}
+[28.359055] (-) TimerEvent: {}
+[28.459724] (-) TimerEvent: {}
+[28.560352] (-) TimerEvent: {}
+[28.660995] (-) TimerEvent: {}
+[28.761603] (-) TimerEvent: {}
+[28.862242] (-) TimerEvent: {}
+[28.962884] (-) TimerEvent: {}
+[29.063494] (-) TimerEvent: {}
+[29.164070] (-) TimerEvent: {}
+[29.193154] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] \x1b[32m\x1b[1mLinking CXX shared library liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[29.264232] (-) TimerEvent: {}
+[29.364858] (-) TimerEvent: {}
+[29.465541] (-) TimerEvent: {}
+[29.536221] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c\n'}
+[29.565692] (-) TimerEvent: {}
+[29.596617] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs\x1b[0m\n'}
+[29.657056] (lslidar_msgs) StdoutLine: {'line': b'[ 79%] Built target lslidar_msgs\n'}
+[29.665891] (-) TimerEvent: {}
+[29.719493] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__py\x1b[0m\n'}
+[29.766047] (-) TimerEvent: {}
+[29.780933] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[29.866182] (-) TimerEvent: {}
+[29.966734] (-) TimerEvent: {}
+[30.067409] (-) TimerEvent: {}
+[30.168023] (-) TimerEvent: {}
+[30.268650] (-) TimerEvent: {}
+[30.369257] (-) TimerEvent: {}
+[30.469877] (-) TimerEvent: {}
+[30.570458] (-) TimerEvent: {}
+[30.671045] (-) TimerEvent: {}
+[30.771577] (-) TimerEvent: {}
+[30.872177] (-) TimerEvent: {}
+[30.974416] (-) TimerEvent: {}
+[31.075025] (-) TimerEvent: {}
+[31.175584] (-) TimerEvent: {}
+[31.276243] (-) TimerEvent: {}
+[31.376784] (-) TimerEvent: {}
+[31.477376] (-) TimerEvent: {}
+[31.577999] (-) TimerEvent: {}
+[31.678577] (-) TimerEvent: {}
+[31.779177] (-) TimerEvent: {}
+[31.879726] (-) TimerEvent: {}
+[31.980282] (-) TimerEvent: {}
+[32.080809] (-) TimerEvent: {}
+[32.181371] (-) TimerEvent: {}
+[32.281953] (-) TimerEvent: {}
+[32.382501] (-) TimerEvent: {}
+[32.483077] (-) TimerEvent: {}
+[32.583644] (-) TimerEvent: {}
+[32.684233] (-) TimerEvent: {}
+[32.784784] (-) TimerEvent: {}
+[32.885376] (-) TimerEvent: {}
+[32.985936] (-) TimerEvent: {}
+[33.086475] (-) TimerEvent: {}
+[33.187094] (-) TimerEvent: {}
+[33.287631] (-) TimerEvent: {}
+[33.388209] (-) TimerEvent: {}
+[33.488734] (-) TimerEvent: {}
+[33.589366] (-) TimerEvent: {}
+[33.689990] (-) TimerEvent: {}
+[33.790889] (-) TimerEvent: {}
+[33.861397] (lslidar_msgs) StdoutLine: {'line': b'[ 80%] Built target lslidar_msgs__py\n'}
+[33.891035] (-) TimerEvent: {}
+[33.919035] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__python\x1b[0m\n'}
+[33.991184] (-) TimerEvent: {}
+[34.074660] (lslidar_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__python.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_difop_s.c.o\x1b[0m\n'}
+[34.075740] (lslidar_msgs) StdoutLine: {'line': b'[ 84%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__python.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_packet_s.c.o\x1b[0m\n'}
+[34.076781] (lslidar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__python.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_scan_s.c.o\x1b[0m\n'}
+[34.077446] (lslidar_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__python.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_point_s.c.o\x1b[0m\n'}
+[34.091344] (-) TimerEvent: {}
+[34.192007] (-) TimerEvent: {}
+[34.292867] (-) TimerEvent: {}
+[34.393754] (-) TimerEvent: {}
+[34.485889] (lslidar_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__python.dir/rosidl_generator_py/lslidar_msgs/msg/_lslidar_sweep_s.c.o\x1b[0m\n'}
+[34.493942] (-) TimerEvent: {}
+[34.594518] (-) TimerEvent: {}
+[34.695183] (-) TimerEvent: {}
+[34.795817] (-) TimerEvent: {}
+[34.853923] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/liblslidar_msgs__python.so\x1b[0m\n'}
+[34.895974] (-) TimerEvent: {}
+[34.996569] (-) TimerEvent: {}
+[35.054641] (lslidar_msgs) StdoutLine: {'line': b'[ 90%] Built target lslidar_msgs__python\n'}
+[35.096737] (-) TimerEvent: {}
+[35.113809] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[35.114349] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[35.114888] (lslidar_msgs) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[35.196896] (-) TimerEvent: {}
+[35.202860] (lslidar_msgs) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[35.225940] (lslidar_msgs) StdoutLine: {'line': b'[ 93%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[35.230928] (lslidar_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/lslidar_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lslidar_msgs/_lslidar_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[35.297056] (-) TimerEvent: {}
+[35.397904] (-) TimerEvent: {}
+[35.498546] (-) TimerEvent: {}
+[35.597407] (lslidar_msgs) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[35.598660] (-) TimerEvent: {}
+[35.619400] (lslidar_msgs) StdoutLine: {'line': b'[ 98%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[35.637346] (lslidar_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[35.698972] (-) TimerEvent: {}
+[35.797907] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_c__pyext\n'}
+[35.799085] (-) TimerEvent: {}
+[35.822278] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[35.899253] (-) TimerEvent: {}
+[35.922365] (lslidar_msgs) StdoutLine: {'line': b'[100%] Built target lslidar_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[35.982971] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[35.999465] (-) TimerEvent: {}
+[36.100117] (-) TimerEvent: {}
+[36.200683] (-) TimerEvent: {}
+[36.301569] (-) TimerEvent: {}
+[36.402563] (-) TimerEvent: {}
+[36.503182] (-) TimerEvent: {}
+[36.603800] (-) TimerEvent: {}
+[36.704381] (-) TimerEvent: {}
+[36.804887] (-) TimerEvent: {}
+[36.849777] (lslidar_msgs) JobProgress: {'identifier': 'lslidar_msgs', 'progress': 'install'}
+[36.898880] (lslidar_msgs) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs', 'env': OrderedDict([('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7763'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib:/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav2_controller/lib:/home/wheeltec/wheeltec_ros2/install/dwb_plugins/lib:/home/wheeltec/wheeltec_ros2/install/dwb_critics/lib:/home/wheeltec/wheeltec_ros2/install/dwb_core/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower/lib:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries/lib:/home/wheeltec/wheeltec_ros2/install/nav2_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator/lib:/home/wheeltec/wheeltec_ros2/install/costmap_queue/lib:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins/lib:/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/home/wheeltec/wheeltec_ros2/src/ros2_astra_camera-main/ros2_astra_camera/lib/openni2_redist/x64'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7141'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0420719038212'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:39591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/home/wheeltec/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7799,unix/wheeltec:/tmp/.ICE-unix/7799'), ('INVOCATION_ID', 'b14f56017b7d4a9e8e90e031dc0eb30a'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/23dddae4_5d34_4725_836a_3ec2012da57f'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.162'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_system_tests:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/lslidar_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_system_tests:/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic')]), 'shell': False}
+[36.905888] (-) TimerEvent: {}
+[36.949722] (lslidar_msgs) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[36.950408] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/ament_index/resource_index/rosidl_interfaces/lslidar_msgs\n'}
+[36.951111] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs\n'}
+[36.951698] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg\n'}
+[36.952098] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_scan.h\n'}
+[36.952556] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail\n'}
+[36.952858] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__functions.h\n'}
+[36.953218] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__functions.c\n'}
+[36.953559] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__type_support.h\n'}
+[36.953976] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__type_support.h\n'}
+[36.954415] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__functions.c\n'}
+[36.954947] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__functions.c\n'}
+[36.955509] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__functions.c\n'}
+[36.955931] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__struct.h\n'}
+[36.956312] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__type_support.h\n'}
+[36.956663] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__functions.c\n'}
+[36.957153] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__functions.h\n'}
+[36.957562] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__functions.h\n'}
+[36.957947] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__struct.h\n'}
+[36.958352] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__type_support.h\n'}
+[36.958744] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__struct.h\n'}
+[36.959217] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__functions.h\n'}
+[36.959673] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__type_support.h\n'}
+[36.960039] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__struct.h\n'}
+[36.960405] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__functions.h\n'}
+[36.960867] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__struct.h\n'}
+[36.961314] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_difop.h\n'}
+[36.961729] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_point.h\n'}
+[36.962173] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[36.962631] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_sweep.h\n'}
+[36.963092] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_packet.h\n'}
+[36.963958] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.sh\n'}
+[36.964398] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/library_path.dsv\n'}
+[36.965152] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so\n'}
+[36.966412] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_generator_c.so" to ""\n'}
+[36.966861] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs\n'}
+[36.967295] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg\n'}
+[36.967587] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail\n'}
+[36.967905] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_c.h\n'}
+[36.968204] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_c.h\n'}
+[36.968561] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_c.h\n'}
+[36.968894] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_c.h\n'}
+[36.969226] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_c.h\n'}
+[36.969561] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[36.970152] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[36.971640] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[36.972079] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs\n'}
+[36.972450] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg\n'}
+[36.972742] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail\n'}
+[36.973059] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[36.973386] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[36.973707] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[36.974030] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/dds_fastrtps\n'}
+[36.974319] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[36.974628] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[36.975022] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[36.975617] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[36.977084] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[36.977494] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs\n'}
+[36.977856] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg\n'}
+[36.978143] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail\n'}
+[36.978470] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__type_support.c\n'}
+[36.978829] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_c.h\n'}
+[36.979197] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_c.h\n'}
+[36.979511] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__type_support.c\n'}
+[36.979841] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_c.h\n'}
+[36.980167] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__type_support.c\n'}
+[36.980522] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_c.h\n'}
+[36.980924] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_c.h\n'}
+[36.981350] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__type_support.c\n'}
+[36.981776] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__type_support.c\n'}
+[36.982217] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[36.983042] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so\n'}
+[36.984253] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_c.so" to ""\n'}
+[36.984613] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so\n'}
+[36.985660] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_c.so" to ""\n'}
+[36.986010] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs\n'}
+[36.986399] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg\n'}
+[36.986689] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail\n'}
+[36.987262] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__builder.hpp\n'}
+[36.987604] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__traits.hpp\n'}
+[36.987933] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__builder.hpp\n'}
+[36.988252] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__traits.hpp\n'}
+[36.988540] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__struct.hpp\n'}
+[36.988854] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__traits.hpp\n'}
+[36.989169] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__traits.hpp\n'}
+[36.989479] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__builder.hpp\n'}
+[36.989839] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__struct.hpp\n'}
+[36.990188] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__struct.hpp\n'}
+[36.990611] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__builder.hpp\n'}
+[36.991053] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__struct.hpp\n'}
+[36.991480] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__builder.hpp\n'}
+[36.991883] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__traits.hpp\n'}
+[36.992287] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__struct.hpp\n'}
+[36.992724] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_scan.hpp\n'}
+[36.993100] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_sweep.hpp\n'}
+[36.993465] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_packet.hpp\n'}
+[36.993838] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_difop.hpp\n'}
+[36.994213] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/lslidar_point.hpp\n'}
+[36.994744] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs\n'}
+[36.995211] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg\n'}
+[36.995576] (lslidar_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail\n'}
+[36.995926] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__type_support.cpp\n'}
+[36.996243] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__type_support.cpp\n'}
+[36.996520] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__rosidl_typesupport_introspection_cpp.hpp\n'}
+[36.996853] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__rosidl_typesupport_introspection_cpp.hpp\n'}
+[36.997181] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_difop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[36.997561] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_sweep__type_support.cpp\n'}
+[36.998009] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_packet__rosidl_typesupport_introspection_cpp.hpp\n'}
+[36.998442] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__type_support.cpp\n'}
+[36.998948] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_point__rosidl_typesupport_introspection_cpp.hpp\n'}
+[36.999428] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/include/lslidar_msgs/msg/detail/lslidar_scan__type_support.cpp\n'}
+[37.000142] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[37.001771] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[37.002203] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so\n'}
+[37.003489] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__rosidl_typesupport_cpp.so" to ""\n'}
+[37.003995] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.sh\n'}
+[37.004431] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/pythonpath.dsv\n'}
+[37.005074] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/__init__.py\n'}
+[37.005975] (-) TimerEvent: {}
+[37.106544] (-) TimerEvent: {}
+[37.153657] (lslidar_msgs) StdoutLine: {'line': b"Compiling '/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/__init__.py'...\n"}
+[37.172497] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg\n'}
+[37.173141] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_sweep.py\n'}
+[37.173604] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_scan_s.c\n'}
+[37.173995] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_packet.py\n'}
+[37.174381] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_difop.py\n'}
+[37.174805] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_point.py\n'}
+[37.175269] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_sweep_s.c\n'}
+[37.175686] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_scan.py\n'}
+[37.176052] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/__init__.py\n'}
+[37.176418] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_difop_s.c\n'}
+[37.176756] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_packet_s.c\n'}
+[37.177236] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/msg/_lslidar_point_s.c\n'}
+[37.178106] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[37.179831] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[37.180546] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[37.182211] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[37.183191] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[37.184280] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages/lslidar_msgs/lslidar_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[37.184701] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__python.so\n'}
+[37.185940] (lslidar_msgs) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/liblslidar_msgs__python.so" to ""\n'}
+[37.186348] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.idl\n'}
+[37.186915] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.idl\n'}
+[37.187518] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.idl\n'}
+[37.188011] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.idl\n'}
+[37.188464] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.idl\n'}
+[37.188967] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarDifop.msg\n'}
+[37.189469] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPacket.msg\n'}
+[37.189965] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarPoint.msg\n'}
+[37.190444] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarScan.msg\n'}
+[37.191065] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/msg/LslidarSweep.msg\n'}
+[37.191684] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/ament_index/resource_index/package_run_dependencies/lslidar_msgs\n'}
+[37.192405] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/ament_index/resource_index/parent_prefix_path/lslidar_msgs\n'}
+[37.192953] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.sh\n'}
+[37.193484] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/ament_prefix_path.dsv\n'}
+[37.193983] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/path.sh\n'}
+[37.194484] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/environment/path.dsv\n'}
+[37.195014] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/local_setup.bash\n'}
+[37.195536] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/local_setup.sh\n'}
+[37.196091] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/local_setup.zsh\n'}
+[37.196601] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/local_setup.dsv\n'}
+[37.197089] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/package.dsv\n'}
+[37.197747] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/ament_index/resource_index/packages/lslidar_msgs\n'}
+[37.198533] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_generator_cExport.cmake\n'}
+[37.199229] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_generator_cExport-noconfig.cmake\n'}
+[37.199958] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[37.200563] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[37.201267] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport.cmake\n'}
+[37.201844] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[37.202530] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_generator_cppExport.cmake\n'}
+[37.203276] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[37.203881] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[37.204617] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[37.205212] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgs__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[37.205778] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[37.206280] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[37.206568] (-) TimerEvent: {}
+[37.207066] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[37.207594] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[37.208053] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[37.208611] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[37.209150] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[37.209724] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig.cmake\n'}
+[37.210160] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/cmake/lslidar_msgsConfig-version.cmake\n'}
+[37.210643] (lslidar_msgs) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lslidar_msgs/share/lslidar_msgs/package.xml\n'}
+[37.216778] (lslidar_msgs) CommandEnded: {'returncode': 0}
+[37.310211] (-) TimerEvent: {}
+[37.410956] (-) TimerEvent: {}
+[37.511640] (-) TimerEvent: {}
+[37.612160] (-) TimerEvent: {}
+[37.712713] (-) TimerEvent: {}
+[37.813275] (-) TimerEvent: {}
+[37.914817] (-) TimerEvent: {}
+[38.015505] (-) TimerEvent: {}
+[38.116062] (-) TimerEvent: {}
+[38.217731] (-) TimerEvent: {}
+[38.299824] (lslidar_msgs) JobEnded: {'identifier': 'lslidar_msgs', 'rc': 0}
+[38.301820] (-) EventReactorShutdown: {}

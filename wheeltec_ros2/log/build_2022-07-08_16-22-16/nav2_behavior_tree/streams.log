@@ -1,0 +1,160 @@
+[0.079s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_behavior_tree': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_behavior_tree -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree
+[0.447s] -- The CXX compiler identification is GNU 9.4.0
+[0.472s] -- Check for working CXX compiler: /usr/bin/c++
+[0.772s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[0.773s] -- Detecting CXX compiler ABI info
+[1.123s] -- Detecting CXX compiler ABI info - done
+[1.172s] -- Detecting CXX compile features
+[1.173s] -- Detecting CXX compile features - done
+[1.188s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.302s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.303s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.745s] -- Found nav2_common: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake)
+[1.750s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.008s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.049s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[2.460s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.572s] -- Found FastRTPS: /opt/ros/galactic/include  
+[2.937s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.233s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[3.250s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[3.332s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.338s] -- Looking for C++ include pthread.h
+[3.647s] -- Looking for C++ include pthread.h - found
+[3.648s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.164s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.165s] -- Looking for pthread_create in pthreads
+[4.612s] -- Looking for pthread_create in pthreads - not found
+[4.613s] -- Looking for pthread_create in pthread
+[5.180s] -- Looking for pthread_create in pthread - found
+[5.184s] -- Found Threads: TRUE  
+[5.861s] -- Found rclcpp_action: 9.2.1 (/opt/ros/galactic/share/rclcpp_action/cmake)
+[6.223s] -- Found rclcpp_lifecycle: 9.2.1 (/opt/ros/galactic/share/rclcpp_lifecycle/cmake)
+[6.389s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[6.528s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[7.580s] -- Found nav2_msgs: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_msgs/share/nav2_msgs/cmake)
+[9.057s] -- Found behaviortree_cpp_v3: 3.6.0 (/opt/ros/galactic/share/behaviortree_cpp_v3/cmake)
+[9.073s] -- Found tf2_ros: 0.17.3 (/opt/ros/galactic/share/tf2_ros/cmake)
+[10.177s] -- Found tf2_geometry_msgs: 0.17.3 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[10.223s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[10.242s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[10.352s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[10.395s] -- Found nav2_util: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake)
+[11.120s] -- Setting build type to Release as none was specified.
+[59.916s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[60.641s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[60.843s] -- The C compiler identification is GNU 9.4.0
+[60.858s] -- Check for working C compiler: /usr/bin/cc
+[61.173s] -- Check for working C compiler: /usr/bin/cc -- works
+[61.177s] -- Detecting C compiler ABI info
+[64.414s] -- Detecting C compiler ABI info - done
+[64.476s] -- Detecting C compile features
+[64.478s] -- Detecting C compile features - done
+[64.486s] -- Check if compiler accepts -pthread
+[64.974s] -- Check if compiler accepts -pthread - yes
+[100.685s] -- Added test 'copyright' to check source files copyright and LICENSE
+[100.729s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[100.745s] -- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_behavior_tree/include
+[100.746s] -- Configured cppcheck exclude dirs and/or files: 
+[100.781s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[100.782s] -- Configured cpplint exclude dirs and/or files: 
+[100.797s] -- Added test 'lint_cmake' to check CMake code style
+[100.836s] -- Added test 'uncrustify' to check C / C++ code style
+[100.837s] -- Configured uncrustify additional arguments: 
+[100.845s] -- Added test 'xmllint' to check XML markup files
+[100.881s] -- Configuring done
+[108.198s] -- Generating done
+[108.244s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/nav2_behavior_tree
+[108.364s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_behavior_tree' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_behavior_tree -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree
+[108.369s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_behavior_tree': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_behavior_tree -- -j4 -l4
+[108.568s] [35m[1mScanning dependencies of target nav2_goal_checker_selector_bt_node[0m
+[108.787s] [  1%] [32mBuilding CXX object CMakeFiles/nav2_goal_checker_selector_bt_node.dir/plugins/action/goal_checker_selector_node.cpp.o[0m
+[156.591s] [  1%] [32m[1mLinking CXX shared library libnav2_goal_checker_selector_bt_node.so[0m
+[157.503s] [  1%] Built target nav2_goal_checker_selector_bt_node
+[157.541s] [35m[1mScanning dependencies of target nav2_single_trigger_bt_node[0m
+[157.605s] [  2%] [32mBuilding CXX object CMakeFiles/nav2_single_trigger_bt_node.dir/plugins/decorator/single_trigger_node.cpp.o[0m
+[164.265s] [  2%] [32m[1mLinking CXX shared library libnav2_single_trigger_bt_node.so[0m
+[164.740s] [  2%] Built target nav2_single_trigger_bt_node
+[164.778s] [35m[1mScanning dependencies of target nav2_transform_available_condition_bt_node[0m
+[165.035s] [  3%] [32mBuilding CXX object CMakeFiles/nav2_transform_available_condition_bt_node.dir/plugins/condition/transform_available_condition.cpp.o[0m
+[185.284s] [  3%] [32m[1mLinking CXX shared library libnav2_transform_available_condition_bt_node.so[0m
+[186.291s] [  3%] Built target nav2_transform_available_condition_bt_node
+[186.387s] [35m[1mScanning dependencies of target nav2_pipeline_sequence_bt_node[0m
+[186.459s] [  4%] [32mBuilding CXX object CMakeFiles/nav2_pipeline_sequence_bt_node.dir/plugins/control/pipeline_sequence.cpp.o[0m
+[193.471s] [  5%] [32m[1mLinking CXX shared library libnav2_pipeline_sequence_bt_node.so[0m
+[193.959s] [  5%] Built target nav2_pipeline_sequence_bt_node
+[193.998s] [35m[1mScanning dependencies of target nav2_wait_action_bt_node[0m
+[194.289s] [  6%] [32mBuilding CXX object CMakeFiles/nav2_wait_action_bt_node.dir/plugins/action/wait_action.cpp.o[0m
+[224.430s] [  6%] [32m[1mLinking CXX shared library libnav2_wait_action_bt_node.so[0m
+[225.789s] [  6%] Built target nav2_wait_action_bt_node
+[225.860s] [35m[1mScanning dependencies of target nav2_spin_action_bt_node[0m
+[226.372s] [  7%] [32mBuilding CXX object CMakeFiles/nav2_spin_action_bt_node.dir/plugins/action/spin_action.cpp.o[0m
+[257.874s] [  7%] [32m[1mLinking CXX shared library libnav2_spin_action_bt_node.so[0m
+[258.869s] [  7%] Built target nav2_spin_action_bt_node
+[258.914s] [35m[1mScanning dependencies of target nav2_compute_path_through_poses_action_bt_node[0m
+[259.167s] [  8%] [32mBuilding CXX object CMakeFiles/nav2_compute_path_through_poses_action_bt_node.dir/plugins/action/compute_path_through_poses_action.cpp.o[0m
+[291.816s] [  8%] [32m[1mLinking CXX shared library libnav2_compute_path_through_poses_action_bt_node.so[0m
+[292.745s] [  8%] Built target nav2_compute_path_through_poses_action_bt_node
+[292.788s] [35m[1mScanning dependencies of target nav2_compute_path_to_pose_action_bt_node[0m
+[293.015s] [  9%] [32mBuilding CXX object CMakeFiles/nav2_compute_path_to_pose_action_bt_node.dir/plugins/action/compute_path_to_pose_action.cpp.o[0m
+[325.330s] [ 10%] [32m[1mLinking CXX shared library libnav2_compute_path_to_pose_action_bt_node.so[0m
+[326.268s] [ 10%] Built target nav2_compute_path_to_pose_action_bt_node
+[326.314s] [35m[1mScanning dependencies of target nav2_goal_updated_condition_bt_node[0m
+[326.399s] [ 11%] [32mBuilding CXX object CMakeFiles/nav2_goal_updated_condition_bt_node.dir/plugins/condition/goal_updated_condition.cpp.o[0m
+[337.841s] [ 11%] [32m[1mLinking CXX shared library libnav2_goal_updated_condition_bt_node.so[0m
+[338.383s] [ 11%] Built target nav2_goal_updated_condition_bt_node
+[338.440s] [35m[1mScanning dependencies of target nav2_is_stuck_condition_bt_node[0m
+[338.642s] [ 12%] [32mBuilding CXX object CMakeFiles/nav2_is_stuck_condition_bt_node.dir/plugins/condition/is_stuck_condition.cpp.o[0m
+[362.756s] [35m[1mScanning dependencies of target nav2_behavior_tree[0m
+[363.036s] [35m[1mScanning dependencies of target nav2_planner_selector_bt_node[0m
+[363.049s] [ 13%] [32mBuilding CXX object CMakeFiles/nav2_behavior_tree.dir/src/behavior_tree_engine.cpp.o[0m
+[363.440s] [ 14%] [32mBuilding CXX object CMakeFiles/nav2_planner_selector_bt_node.dir/plugins/action/planner_selector_node.cpp.o[0m
+[364.440s] [35m[1mScanning dependencies of target nav2_controller_selector_bt_node[0m
+[364.847s] [ 15%] [32mBuilding CXX object CMakeFiles/nav2_controller_selector_bt_node.dir/plugins/action/controller_selector_node.cpp.o[0m
+[416.024s] [ 15%] [32m[1mLinking CXX shared library libnav2_behavior_tree.so[0m
+[417.711s] [ 15%] Built target nav2_behavior_tree
+[427.221s] [ 15%] [32m[1mLinking CXX shared library libnav2_is_stuck_condition_bt_node.so[0m
+[429.199s] [ 15%] Built target nav2_is_stuck_condition_bt_node
+[453.465s] [ 15%] [32m[1mLinking CXX shared library libnav2_planner_selector_bt_node.so[0m
+[454.353s] [ 15%] [32m[1mLinking CXX shared library libnav2_controller_selector_bt_node.so[0m
+[454.398s] [ 15%] Built target nav2_planner_selector_bt_node
+[455.250s] [ 15%] Built target nav2_controller_selector_bt_node
+[455.292s] [35m[1mScanning dependencies of target nav2_goal_reached_condition_bt_node[0m
+[455.573s] [ 16%] [32mBuilding CXX object CMakeFiles/nav2_goal_reached_condition_bt_node.dir/plugins/condition/goal_reached_condition.cpp.o[0m
+[476.802s] [ 17%] [32m[1mLinking CXX shared library libnav2_goal_reached_condition_bt_node.so[0m
+[477.579s] [ 17%] Built target nav2_goal_reached_condition_bt_node
+[477.618s] [35m[1mScanning dependencies of target nav2_round_robin_node_bt_node[0m
+[477.675s] [ 18%] [32mBuilding CXX object CMakeFiles/nav2_round_robin_node_bt_node.dir/plugins/control/round_robin_node.cpp.o[0m
+[483.547s] [ 19%] [32m[1mLinking CXX shared library libnav2_round_robin_node_bt_node.so[0m
+[483.978s] [ 19%] Built target nav2_round_robin_node_bt_node
+[484.016s] [35m[1mScanning dependencies of target nav2_navigate_through_poses_action_bt_node[0m
+[484.240s] [ 20%] [32mBuilding CXX object CMakeFiles/nav2_navigate_through_poses_action_bt_node.dir/plugins/action/navigate_through_poses_action.cpp.o[0m
+[510.750s] [ 21%] [32m[1mLinking CXX shared library libnav2_navigate_through_poses_action_bt_node.so[0m
+[511.564s] [ 21%] Built target nav2_navigate_through_poses_action_bt_node
+[511.602s] [35m[1mScanning dependencies of target nav2_remove_passed_goals_action_bt_node[0m
+[511.811s] [ 22%] [32mBuilding CXX object CMakeFiles/nav2_remove_passed_goals_action_bt_node.dir/plugins/action/remove_passed_goals_action.cpp.o[0m
+[532.000s] [ 22%] [32m[1mLinking CXX shared library libnav2_remove_passed_goals_action_bt_node.so[0m
+[532.759s] [ 22%] Built target nav2_remove_passed_goals_action_bt_node
+[532.797s] [35m[1mScanning dependencies of target nav2_initial_pose_received_condition_bt_node[0m
+[532.853s] [ 23%] [32mBuilding CXX object CMakeFiles/nav2_initial_pose_received_condition_bt_node.dir/plugins/condition/initial_pose_received_condition.cpp.o[0m
+[539.554s] [ 23%] [32m[1mLinking CXX shared library libnav2_initial_pose_received_condition_bt_node.so[0m
+[540.004s] [ 23%] Built target nav2_initial_pose_received_condition_bt_node
+[540.042s] [35m[1mScanning dependencies of target nav2_time_expired_condition_bt_node[0m
+[540.206s] [ 24%] [32mBuilding CXX object CMakeFiles/nav2_time_expired_condition_bt_node.dir/plugins/condition/time_expired_condition.cpp.o[0m
+[547.198s] [35m[1mScanning dependencies of target nav2_distance_traveled_condition_bt_node[0m
+[547.394s] [ 25%] [32mBuilding CXX object CMakeFiles/nav2_distance_traveled_condition_bt_node.dir/plugins/condition/distance_traveled_condition.cpp.o[0m
+[549.411s] [35m[1mScanning dependencies of target nav2_follow_path_action_bt_node[0m
+[550.129s] [35m[1mScanning dependencies of target nav2_goal_updater_node_bt_node[0m
+[550.150s] make[2]: *** wait: No child processes.  Stop.
+[550.155s] make[2]: *** Waiting for unfinished jobs....
+[550.156s] make[2]: *** [CMakeFiles/nav2_distance_traveled_condition_bt_node.dir/build.make:63: CMakeFiles/nav2_distance_traveled_condition_bt_node.dir/plugins/condition/distance_traveled_condition.cpp.o] Interrupt
+[550.156s] make[2]: *** wait: No child processes.  Stop.
+[550.157s] make[2]: *** Waiting for unfinished jobs....
+[550.157s] make[2]: *** wait: No child processes.  Stop.
+[550.157s] make[1]: *** [CMakeFiles/Makefile2:915: CMakeFiles/nav2_time_expired_condition_bt_node.dir/all] Error 2
+[550.158s] make[1]: *** [CMakeFiles/Makefile2:942: CMakeFiles/nav2_distance_traveled_condition_bt_node.dir/all] Interrupt
+[550.158s] make[2]: *** wait: No child processes.  Stop.
+[550.159s] make[1]: *** [CMakeFiles/Makefile2:725: CMakeFiles/nav2_follow_path_action_bt_node.dir/all] Error 2
+[550.268s] make[2]: *** [CMakeFiles/nav2_goal_updater_node_bt_node.dir/build.make:263: CMakeFiles/nav2_goal_updater_node_bt_node.dir/depend] Interrupt
+[550.268s] make[1]: *** [CMakeFiles/Makefile2:698: CMakeFiles/nav2_goal_updater_node_bt_node.dir/all] Interrupt
+[550.270s] make: *** [Makefile:141: all] Interrupt

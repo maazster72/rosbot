@@ -1,0 +1,56 @@
+[0.265s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/pcl_conversions': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar-ros2-devel/perception_pcl-foxy-devel/perception_pcl-foxy-devel/pcl_conversions -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/pcl_conversions
+[0.393s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.523s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.910s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.994s] -- Found message_filters: 3.2.6 (/opt/ros/galactic/share/message_filters/cmake)
+[1.252s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.267s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.946s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.198s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.227s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.355s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.189s] -- Eigen found (include: /usr/include/eigen3, version: 3.3.7)
+[3.272s] -- OpenNI found (include: /usr/include/ni, lib: /usr/lib/libOpenNI.so)
+[3.298s] -- OpenNI2 found (include: /usr/include/openni2, lib: /usr/lib/libOpenNI2.so)
+[3.542s] -- The imported target "vtkParseOGLExt" references the file
+[3.543s]    "/usr/bin/vtkParseOGLExt-7.1"
+[3.543s] but this file does not exist.  Possible reasons include:
+[3.543s] * The file was deleted, renamed, or moved to another location.
+[3.543s] * An install or uninstall procedure did not complete successfully.
+[3.544s] * The installation package was faulty and contained
+[3.544s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.544s] but not all the files it references.
+[3.545s] 
+[3.546s] -- The imported target "vtkRenderingPythonTkWidgets" references the file
+[3.547s]    "/usr/lib/aarch64-linux-gnu/libvtkRenderingPythonTkWidgets.so"
+[3.547s] but this file does not exist.  Possible reasons include:
+[3.547s] * The file was deleted, renamed, or moved to another location.
+[3.548s] * An install or uninstall procedure did not complete successfully.
+[3.548s] * The installation package was faulty and contained
+[3.548s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.549s] but not all the files it references.
+[3.549s] 
+[3.550s] -- The imported target "vtk" references the file
+[3.550s]    "/usr/bin/vtk"
+[3.550s] but this file does not exist.  Possible reasons include:
+[3.551s] * The file was deleted, renamed, or moved to another location.
+[3.551s] * An install or uninstall procedure did not complete successfully.
+[3.551s] * The installation package was faulty and contained
+[3.552s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.552s] but not all the files it references.
+[3.552s] 
+[3.552s] -- The imported target "pvtk" references the file
+[3.553s]    "/usr/bin/pvtk"
+[3.553s] but this file does not exist.  Possible reasons include:
+[3.553s] * The file was deleted, renamed, or moved to another location.
+[3.554s] * An install or uninstall procedure did not complete successfully.
+[3.554s] * The installation package was faulty and contained
+[3.554s]    "/usr/lib/cmake/vtk-7.1/VTKTargets.cmake"
+[3.555s] but not all the files it references.
+[3.555s] 
+[3.655s] -- Found pcl_msgs: 1.0.0 (/opt/ros/galactic/share/pcl_msgs/cmake)
+[4.671s] -- Found ament_cmake_gtest: 1.1.6 (/opt/ros/galactic/share/ament_cmake_gtest/cmake)
+[4.674s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[5.034s] -- Configuring done
+[5.261s] -- Generating done
+[5.269s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/pcl_conversions

@@ -1,0 +1,24 @@
+[0.209s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/lsn10': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/lsn10 -- -j4 -l4
+[0.555s] [100%] Built target lsn10
+[0.733s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/lsn10' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/lsn10 -- -j4 -l4
+[3.001s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/lsn10': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/lsn10
+[3.055s] -- Install configuration: ""
+[3.057s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/lib/lsn10/lsn10
+[3.058s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/launch
+[3.058s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/launch/ls_n10.launch.py
+[3.060s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/ament_index/resource_index/package_run_dependencies/lsn10
+[3.060s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/ament_index/resource_index/parent_prefix_path/lsn10
+[3.061s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/ament_prefix_path.sh
+[3.061s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/ament_prefix_path.dsv
+[3.063s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/path.sh
+[3.063s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/path.dsv
+[3.063s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.bash
+[3.064s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.sh
+[3.065s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.zsh
+[3.065s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.dsv
+[3.080s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/package.dsv
+[3.081s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/ament_index/resource_index/packages/lsn10
+[3.082s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/cmake/lsn10Config.cmake
+[3.082s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/cmake/lsn10Config-version.cmake
+[3.083s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/package.xml
+[3.178s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/lsn10' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/lsn10

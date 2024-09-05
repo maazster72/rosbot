@@ -1,0 +1,21 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/nav2_dwb_controller
+-- Install configuration: ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/ament_index/resource_index/package_run_dependencies/nav2_dwb_controller
+-- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/ament_index/resource_index/parent_prefix_path/nav2_dwb_controller
+-- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/environment/ament_prefix_path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/environment/ament_prefix_path.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/environment/path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/environment/path.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/local_setup.bash
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/local_setup.sh
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/local_setup.zsh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/local_setup.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/package.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/ament_index/resource_index/packages/nav2_dwb_controller
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/cmake/nav2_dwb_controllerConfig.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/cmake/nav2_dwb_controllerConfig-version.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller/share/nav2_dwb_controller/package.xml

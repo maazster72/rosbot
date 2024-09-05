@@ -1,0 +1,89 @@
+[1.590s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_system_tests': CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_bringup:/home/wheeltec/wheeltec_ros2/install/navigation2:/home/wheeltec/wheeltec_ros2/install/nav2_dwb_controller:/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller:/home/wheeltec/wheeltec_ros2/install/dwb_plugins:/home/wheeltec/wheeltec_ros2/install/dwb_critics:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries:/home/wheeltec/wheeltec_ros2/install/nav2_planner:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner:/home/wheeltec/wheeltec_ros2/install/nav2_controller:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator:/home/wheeltec/wheeltec_ros2/install/dwb_core:/home/wheeltec/wheeltec_ros2/install/nav2_core:/home/wheeltec/wheeltec_ros2/install/costmap_queue:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/nav2_map_server:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rtab:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_nav2:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/slam_gmapping:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar:/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/lslidar_driver:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav2_system_tests:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/astra_camera:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_rotation_shim_controller/lib:/home/wheeltec/wheeltec_ros2/install/dwb_plugins/lib:/home/wheeltec/wheeltec_ros2/install/dwb_critics/lib:/home/wheeltec/wheeltec_ros2/install/nav2_waypoint_follower/lib:/home/wheeltec/wheeltec_ros2/install/nav2_theta_star_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_smac_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_regulated_pure_pursuit_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_recoveries/lib:/home/wheeltec/wheeltec_ros2/install/nav2_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/lib:/home/wheeltec/wheeltec_ros2/install/nav2_controller/lib:/home/wheeltec/wheeltec_ros2/install/nav2_bt_navigator/lib:/home/wheeltec/wheeltec_ros2/install/dwb_core/lib:/home/wheeltec/wheeltec_ros2/install/nav2_rviz_plugins/lib:/home/wheeltec/wheeltec_ros2/install/nav2_costmap_2d/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/ros2_astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib:/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/costmap_queue/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera/lib:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/lib/aarch64-linux-gnu/gazebo-11/plugins:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/home/wheeltec/wheeltec_ros2/src/ros2_astra_camera-main/ros2_astra_camera/lib/openni2_redist/x64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lslidar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_camera_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_system_tests -- -j4 -l4
+[2.040s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.335s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.059s] -- Found nav2_common: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake)
+[3.068s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[3.541s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.582s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[5.031s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.557s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[5.611s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[5.812s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[7.199s] -- Found nav2_util: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake)
+[12.357s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[13.912s] -- Found nav2_map_server: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/cmake)
+[17.829s] -- Found nav2_behavior_tree: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_behavior_tree/share/nav2_behavior_tree/cmake)
+[19.959s] -- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+[20.497s] -- Found gazebo_ros_pkgs: 3.5.2 (/opt/ros/galactic/share/gazebo_ros_pkgs/cmake)
+[20.507s] -- Found nav2_amcl: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_amcl/share/nav2_amcl/cmake)
+[22.458s] -- Found nav2_lifecycle_manager: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/share/nav2_lifecycle_manager/cmake)
+[24.637s] -- Found rclpy: 1.9.3 (/opt/ros/galactic/share/rclpy/cmake)
+[24.641s] -- Found nav2_navfn_planner: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_navfn_planner/share/nav2_navfn_planner/cmake)
+[41.174s] -- Found nav2_planner: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_planner/share/nav2_planner/cmake)
+[242.047s] -- Found navigation2: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/navigation2/share/navigation2/cmake)
+[242.113s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[243.878s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[328.478s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[547.056s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[690.530s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[762.019s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[833.451s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[905.661s] -- Added test 'copyright' to check source files copyright and LICENSE
+[905.710s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[905.710s] -- Configured cppcheck include dirs: 
+[905.710s] -- Configured cppcheck exclude dirs and/or files: 
+[905.745s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[905.746s] -- Configured cpplint exclude dirs and/or files: 
+[905.755s] -- Added test 'flake8' to check Python code syntax and style conventions
+[905.766s] -- Added test 'lint_cmake' to check CMake code style
+[905.772s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[905.804s] -- Added test 'uncrustify' to check C / C++ code style
+[905.805s] -- Configured uncrustify additional arguments: 
+[905.811s] -- Added test 'xmllint' to check XML markup files
+[905.998s] -- Configuring done
+[910.714s] -- Generating done
+[910.730s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/nav2_system_tests
+[910.986s] [  7%] Built target gtest
+[910.998s] [ 14%] Built target gtest_main
+[911.051s] [35m[1mScanning dependencies of target test_updown[0m
+[911.104s] [35m[1mScanning dependencies of target test_behavior_tree_node[0m
+[911.153s] [35m[1mScanning dependencies of target test_planner_plugins[0m
+[911.153s] [35m[1mScanning dependencies of target test_planner_random_node[0m
+[911.560s] [ 17%] [32mBuilding CXX object src/updown/CMakeFiles/test_updown.dir/test_updown.cpp.o[0m
+[911.625s] [ 21%] [32mBuilding CXX object src/planning/CMakeFiles/test_planner_plugins.dir/test_planner_plugins.cpp.o[0m
+[911.653s] [ 25%] [32mBuilding CXX object src/planning/CMakeFiles/test_planner_random_node.dir/test_planner_random_node.cpp.o[0m
+[911.672s] [ 28%] [32mBuilding CXX object src/behavior_tree/CMakeFiles/test_behavior_tree_node.dir/test_behavior_tree_node.cpp.o[0m
+[924.967s] [ 32%] [32m[1mLinking CXX executable test_updown[0m
+[926.358s] [ 32%] Built target test_updown
+[926.467s] [ 35%] [32mBuilding CXX object src/behavior_tree/CMakeFiles/test_behavior_tree_node.dir/server_handler.cpp.o[0m
+[939.494s] [ 39%] [32mBuilding CXX object src/planning/CMakeFiles/test_planner_random_node.dir/planner_tester.cpp.o[0m
+[976.203s] [ 42%] [32m[1mLinking CXX executable test_planner_plugins[0m
+[979.030s] [ 42%] Built target test_planner_plugins
+[979.339s] [35m[1mScanning dependencies of target test_planner_costmaps_node[0m
+[980.093s] [ 46%] [32mBuilding CXX object src/planning/CMakeFiles/test_planner_costmaps_node.dir/test_planner_costmaps_node.cpp.o[0m
+[986.172s] [ 50%] [32mBuilding CXX object src/planning/CMakeFiles/test_planner_costmaps_node.dir/planner_tester.cpp.o[0m
+[991.176s] [ 53%] [32m[1mLinking CXX executable test_planner_random_node[0m
+[999.721s] [ 53%] Built target test_planner_random_node
+[999.831s] [35m[1mScanning dependencies of target test_localization_node[0m
+[1000.219s] [ 57%] [32mBuilding CXX object src/localization/CMakeFiles/test_localization_node.dir/test_localization_node.cpp.o[0m
+[1003.940s] [ 60%] [32m[1mLinking CXX executable test_behavior_tree_node[0m
+[1005.999s] [ 60%] Built target test_behavior_tree_node
+[1006.102s] [35m[1mScanning dependencies of target test_spin_recovery_node[0m
+[1006.493s] [ 64%] [32mBuilding CXX object src/recoveries/spin/CMakeFiles/test_spin_recovery_node.dir/test_spin_recovery_node.cpp.o[0m
+[1009.648s] [35m[1mScanning dependencies of target test_wait_recovery_node[0m
+[1010.017s] [ 67%] [32mBuilding CXX object src/recoveries/wait/CMakeFiles/test_wait_recovery_node.dir/test_wait_recovery_node.cpp.o[0m
+[1031.163s] [ 71%] [32mBuilding CXX object src/recoveries/spin/CMakeFiles/test_spin_recovery_node.dir/spin_recovery_tester.cpp.o[0m
+[1033.969s] [ 75%] [32mBuilding CXX object src/recoveries/wait/CMakeFiles/test_wait_recovery_node.dir/wait_recovery_tester.cpp.o[0m
+[1037.921s] [ 78%] [32m[1mLinking CXX executable test_planner_costmaps_node[0m
+[1046.327s] [ 78%] Built target test_planner_costmaps_node
+[1046.431s] [35m[1mScanning dependencies of target test_backup_recovery_node[0m
+[1046.804s] [ 82%] [32mBuilding CXX object src/recoveries/backup/CMakeFiles/test_backup_recovery_node.dir/test_backup_recovery_node.cpp.o[0m
+[1057.668s] [ 85%] [32m[1mLinking CXX executable test_localization_node[0m
+[1059.103s] [ 85%] Built target test_localization_node
+[1059.170s] [ 89%] [32mBuilding CXX object src/recoveries/backup/CMakeFiles/test_backup_recovery_node.dir/backup_recovery_tester.cpp.o[0m
+[1100.261s] [ 92%] [32m[1mLinking CXX executable test_wait_recovery_node[0m
+[1101.773s] [ 92%] Built target test_wait_recovery_node
+[1105.587s] [ 96%] [32m[1mLinking CXX executable test_spin_recovery_node[0m
+[1107.171s] [ 96%] Built target test_spin_recovery_node
+[1119.495s] [100%] [32m[1mLinking CXX executable test_backup_recovery_node[0m
+[1120.929s] [100%] Built target test_backup_recovery_node

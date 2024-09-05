@@ -1,0 +1,133 @@
+[0.074s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_map_server': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_map_server -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav2_map_server
+[0.292s] -- The C compiler identification is GNU 9.4.0
+[0.485s] -- The CXX compiler identification is GNU 9.4.0
+[0.501s] -- Check for working C compiler: /usr/bin/cc
+[0.754s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.757s] -- Detecting C compiler ABI info
+[1.004s] -- Detecting C compiler ABI info - done
+[1.046s] -- Detecting C compile features
+[1.049s] -- Detecting C compile features - done
+[1.059s] -- Check for working CXX compiler: /usr/bin/c++
+[1.331s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.335s] -- Detecting CXX compiler ABI info
+[1.732s] -- Detecting CXX compiler ABI info - done
+[1.777s] -- Detecting CXX compile features
+[1.780s] -- Detecting CXX compile features - done
+[1.815s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.943s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.943s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.514s] -- Found nav2_common: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_common/share/nav2_common/cmake)
+[2.525s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.790s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.834s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.418s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.570s] -- Found FastRTPS: /opt/ros/galactic/include  
+[3.931s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.216s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[4.231s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[4.313s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[4.316s] -- Looking for pthread.h
+[4.756s] -- Looking for pthread.h - found
+[4.757s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[5.315s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[5.316s] -- Looking for pthread_create in pthreads
+[5.848s] -- Looking for pthread_create in pthreads - not found
+[5.850s] -- Looking for pthread_create in pthread
+[6.239s] -- Looking for pthread_create in pthread - found
+[6.242s] -- Found Threads: TRUE  
+[6.842s] -- Found rclcpp_lifecycle: 9.2.1 (/opt/ros/galactic/share/rclcpp_lifecycle/cmake)
+[6.982s] -- Found nav_msgs: 2.2.4 (/opt/ros/galactic/share/nav_msgs/cmake)
+[7.457s] -- Found nav2_msgs: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_msgs/share/nav2_msgs/cmake)
+[8.529s] -- Found yaml_cpp_vendor: 7.1.1 (/opt/ros/galactic/share/yaml_cpp_vendor/cmake)
+[8.557s] -- Found tf2: 0.17.3 (/opt/ros/galactic/share/tf2/cmake)
+[8.600s] -- Found nav2_util: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_util/share/nav2_util/cmake)
+[9.939s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[9.956s] -- Found Eigen3: TRUE (found version "3.3.7") 
+[10.640s] -- Found GRAPHICSMAGICKCPP: /usr/include/GraphicsMagick  
+[10.641s] -- Setting build type to Release as none was specified.
+[19.211s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[20.185s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[20.210s] -- Check if compiler accepts -pthread
+[21.146s] -- Check if compiler accepts -pthread - yes
+[21.218s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[21.279s] -- Found gtest sources under '/opt/ros/galactic/src/gtest_vendor': C++ tests using 'Google Test' will be built
+[22.475s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[22.477s] -- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_map_server/include
+[22.478s] -- Configured cppcheck exclude dirs and/or files: 
+[22.478s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[22.479s] -- Configured cpplint exclude dirs and/or files: 
+[22.479s] -- Added test 'flake8' to check Python code syntax and style conventions
+[22.489s] -- Added test 'lint_cmake' to check CMake code style
+[22.497s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[22.527s] -- Added test 'uncrustify' to check C / C++ code style
+[22.528s] -- Configured uncrustify additional arguments: 
+[22.537s] -- Added test 'xmllint' to check XML markup files
+[22.760s] -- Configuring done
+[26.036s] -- Generating done
+[26.074s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/nav2_map_server
+[26.202s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_map_server -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav2_map_server
+[26.207s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_map_server': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_map_server -- -j4 -l4
+[26.712s] [35m[1mScanning dependencies of target map_io[0m
+[27.261s] [  2%] [32mBuilding CXX object CMakeFiles/map_io.dir/src/map_mode.cpp.o[0m
+[29.317s] [  5%] [32mBuilding CXX object CMakeFiles/map_io.dir/src/map_io.cpp.o[0m
+[62.066s] [  8%] [32m[1mLinking CXX shared library libmap_io.so[0m
+[63.244s] [  8%] Built target map_io
+[63.316s] [35m[1mScanning dependencies of target gtest_main[0m
+[63.402s] [ 11%] [32mBuilding CXX object gtest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o[0m
+[69.809s] [ 13%] [32m[1mLinking CXX static library libgtest_main.a[0m
+[70.056s] [ 13%] Built target gtest_main
+[70.095s] [35m[1mScanning dependencies of target test_map_saver_publisher[0m
+[70.301s] [ 16%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_publisher.dir/test_map_saver_publisher.cpp.o[0m
+[94.279s] [ 19%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_publisher.dir/__/test_constants.cpp.o[0m
+[94.845s] [ 22%] [32m[1mLinking CXX executable test_map_saver_publisher[0m
+[95.738s] [ 22%] Built target test_map_saver_publisher
+[95.779s] [35m[1mScanning dependencies of target map_server_core[0m
+[96.069s] [ 25%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/map_server/map_server.cpp.o[0m
+[127.591s] [ 27%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/costmap_filter_info/costmap_filter_info_server.cpp.o[0m
+[151.640s] [ 30%] [32mBuilding CXX object CMakeFiles/map_server_core.dir/src/map_saver/map_saver.cpp.o[0m
+[199.337s] [ 33%] [32m[1mLinking CXX shared library libmap_server_core.so[0m
+[200.729s] [ 33%] Built target map_server_core
+[200.800s] [35m[1mScanning dependencies of target gtest[0m
+[200.910s] [ 36%] [32mBuilding CXX object gtest/CMakeFiles/gtest.dir/src/gtest-all.cc.o[0m
+[242.138s] [ 38%] [32m[1mLinking CXX static library libgtest.a[0m
+[242.358s] [ 38%] Built target gtest
+[242.404s] [35m[1mScanning dependencies of target map_saver_server[0m
+[242.683s] [ 41%] [32mBuilding CXX object CMakeFiles/map_saver_server.dir/src/map_saver/main_server.cpp.o[0m
+[255.174s] [ 44%] [32m[1mLinking CXX executable map_saver_server[0m
+[256.735s] [ 44%] Built target map_saver_server
+[256.780s] [35m[1mScanning dependencies of target costmap_filter_info_server[0m
+[256.989s] [ 47%] [32mBuilding CXX object CMakeFiles/costmap_filter_info_server.dir/src/costmap_filter_info/main.cpp.o[0m
+[268.868s] [ 50%] [32m[1mLinking CXX executable costmap_filter_info_server[0m
+[270.168s] [ 50%] Built target costmap_filter_info_server
+[270.214s] [35m[1mScanning dependencies of target test_costmap_filter_info_server[0m
+[270.491s] [ 52%] [32mBuilding CXX object test/unit/CMakeFiles/test_costmap_filter_info_server.dir/test_costmap_filter_info_server.cpp.o[0m
+[321.551s] [ 55%] [32m[1mLinking CXX executable test_costmap_filter_info_server[0m
+[322.924s] [ 55%] Built target test_costmap_filter_info_server
+[322.967s] [35m[1mScanning dependencies of target test_map_io[0m
+[323.185s] [ 58%] [32mBuilding CXX object test/unit/CMakeFiles/test_map_io.dir/test_map_io.cpp.o[0m
+[351.193s] [ 61%] [32mBuilding CXX object test/unit/CMakeFiles/test_map_io.dir/__/test_constants.cpp.o[0m
+[351.713s] [ 63%] [32m[1mLinking CXX executable test_map_io[0m
+[352.736s] [ 63%] Built target test_map_io
+[352.776s] [35m[1mScanning dependencies of target test_map_saver_node[0m
+[352.985s] [ 66%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_node.dir/test_map_saver_node.cpp.o[0m
+[359.983s] [35m[1mScanning dependencies of target test_map_server_node[0m
+[360.215s] [ 69%] [32mBuilding CXX object test/component/CMakeFiles/test_map_server_node.dir/test_map_server_node.cpp.o[0m
+[361.254s] [35m[1mScanning dependencies of target map_saver_cli[0m
+[361.659s] [ 72%] [32mBuilding CXX object CMakeFiles/map_saver_cli.dir/src/map_saver/main_cli.cpp.o[0m
+[362.634s] [35m[1mScanning dependencies of target map_server[0m
+[363.114s] [ 75%] [32mBuilding CXX object CMakeFiles/map_server.dir/src/map_server/main.cpp.o[0m
+[411.561s] [ 77%] [32m[1mLinking CXX executable map_server[0m
+[412.190s] [ 80%] [32m[1mLinking CXX executable map_saver_cli[0m
+[414.899s] [ 80%] Built target map_server
+[414.970s] [ 80%] Built target map_saver_cli
+[425.352s] [ 83%] [32mBuilding CXX object test/component/CMakeFiles/test_map_saver_node.dir/__/test_constants.cpp.o[0m
+[426.538s] [ 86%] [32m[1mLinking CXX executable test_map_saver_node[0m
+[428.241s] [ 86%] Built target test_map_saver_node
+[433.319s] [ 88%] [32mBuilding CXX object test/component/CMakeFiles/test_map_server_node.dir/__/test_constants.cpp.o[0m
+[433.840s] [ 91%] [32m[1mLinking CXX executable test_map_server_node[0m
+[434.881s] [ 91%] Built target test_map_server_node
+[434.931s] [35m[1mScanning dependencies of target test_map_saver_cli[0m
+[435.742s] [ 94%] [32mBuilding CXX object test/map_saver_cli/CMakeFiles/test_map_saver_cli.dir/test_map_saver_cli.cpp.o[0m
+[468.321s] [ 97%] [32mBuilding CXX object test/map_saver_cli/CMakeFiles/test_map_saver_cli.dir/__/test_constants.cpp.o[0m
+[468.847s] [100%] [32m[1mLinking CXX executable test_map_saver_cli[0m
+[469.489s] [100%] Built target test_map_saver_cli

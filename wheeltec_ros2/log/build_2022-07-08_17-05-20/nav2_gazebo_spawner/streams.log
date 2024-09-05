@@ -1,0 +1,27 @@
+[6.981s] Invoking command in '/home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_bringup/nav2_gazebo_spawner': PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/nav2_gazebo_spawner build --build-base /home/wheeltec/wheeltec_ros2/build/nav2_gazebo_spawner/build install --prefix /home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner --record /home/wheeltec/wheeltec_ros2/build/nav2_gazebo_spawner/install.log --single-version-externally-managed
+[9.929s] /home/wheeltec/.local/lib/python3.8/site-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'script-dir' will not be supported in future versions. Please use the underscore name 'script_dir' instead
+[9.929s]   warnings.warn(
+[9.932s] /home/wheeltec/.local/lib/python3.8/site-packages/setuptools/dist.py:771: UserWarning: Usage of dash-separated 'install-scripts' will not be supported in future versions. Please use the underscore name 'install_scripts' instead
+[9.932s]   warnings.warn(
+[11.241s] running egg_info
+[11.384s] writing ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/PKG-INFO
+[11.386s] writing dependency_links to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/dependency_links.txt
+[11.387s] writing entry points to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/entry_points.txt
+[11.388s] writing requirements to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/requires.txt
+[11.388s] writing top-level names to ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/top_level.txt
+[11.960s] reading manifest file '../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/SOURCES.txt'
+[11.977s] writing manifest file '../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info/SOURCES.txt'
+[11.978s] running build
+[11.978s] running build_py
+[11.986s] running install
+[11.996s] /home/wheeltec/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[11.996s]   warnings.warn(
+[12.060s] running install_lib
+[12.386s] running install_data
+[12.556s] running install_egg_info
+[12.896s] removing '/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages/nav2_gazebo_spawner-0.3.0-py3.8.egg-info' (and everything under it)
+[12.898s] Copying ../../../../build/nav2_gazebo_spawner/nav2_gazebo_spawner.egg-info to /home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages/nav2_gazebo_spawner-0.3.0-py3.8.egg-info
+[12.915s] running install_scripts
+[14.381s] Installing nav2_gazebo_spawner script to /home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/nav2_gazebo_spawner
+[14.390s] writing list of installed files to '/home/wheeltec/wheeltec_ros2/build/nav2_gazebo_spawner/install.log'
+[14.837s] Invoked command in '/home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_bringup/nav2_gazebo_spawner' returned '0': PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../../build/nav2_gazebo_spawner build --build-base /home/wheeltec/wheeltec_ros2/build/nav2_gazebo_spawner/build install --prefix /home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner --record /home/wheeltec/wheeltec_ros2/build/nav2_gazebo_spawner/install.log --single-version-externally-managed

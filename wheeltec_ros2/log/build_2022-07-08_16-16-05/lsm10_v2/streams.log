@@ -1,0 +1,117 @@
+[0.046s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/lsm10_v2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/lsm10_v2 -- -j4 -l4
+[0.304s] [  8%] Built target lsm10_v2__rosidl_generator_c
+[0.306s] [ 11%] Built target lsm10_v2__cpp
+[0.334s] [ 20%] Built target LSM10
+[0.403s] [ 29%] Built target lsm10_v2__rosidl_typesupport_c
+[0.416s] [ 38%] Built target lsm10_v2__rosidl_typesupport_introspection_c
+[0.453s] [ 47%] Built target lsm10_v2__rosidl_typesupport_cpp
+[0.472s] [ 55%] Built target lsm10_v2__rosidl_typesupport_fastrtps_cpp
+[0.517s] [ 64%] Built target lsm10_v2__rosidl_typesupport_introspection_cpp
+[0.560s] [ 73%] Built target lsm10_v2__rosidl_typesupport_fastrtps_c
+[0.621s] [ 73%] Built target lsm10_v2
+[0.690s] [ 76%] Built target lsm10_v2__py
+[0.793s] [ 82%] Built target lsm10_v2__python
+[0.926s] [ 88%] Built target lsm10_v2__rosidl_typesupport_c__pyext
+[0.961s] [ 94%] Built target lsm10_v2__rosidl_typesupport_fastrtps_c__pyext
+[0.964s] [100%] Built target lsm10_v2__rosidl_typesupport_introspection_c__pyext
+[1.013s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/lsm10_v2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/lsm10_v2 -- -j4 -l4
+[1.262s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/lsm10_v2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/lsm10_v2
+[1.302s] -- Install configuration: ""
+[1.302s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/rosidl_interfaces/lsm10_v2
+[1.303s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+[1.303s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+[1.304s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+[1.304s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__struct.h
+[1.305s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__functions.c
+[1.305s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__functions.h
+[1.306s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.h
+[1.306s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/difop.h
+[1.307s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_generator_c__visibility_control.h
+[1.307s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/library_path.sh
+[1.308s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/library_path.dsv
+[1.313s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_generator_c.so
+[1.313s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+[1.314s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+[1.314s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.315s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+[1.315s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_fastrtps_c.h
+[1.316s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_c.so
+[1.316s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+[1.317s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+[1.318s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+[1.318s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/dds_fastrtps
+[1.318s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_fastrtps_cpp.hpp
+[1.319s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.319s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_cpp.so
+[1.319s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+[1.320s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+[1.320s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.320s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+[1.326s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_introspection_c.h
+[1.327s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.c
+[1.327s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_c.so
+[1.328s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_c.so
+[1.328s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+[1.329s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+[1.329s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/difop.hpp
+[1.330s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+[1.330s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__traits.hpp
+[1.331s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__builder.hpp
+[1.331s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__struct.hpp
+[1.332s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+[1.332s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+[1.335s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+[1.335s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_introspection_cpp.hpp
+[1.336s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.cpp
+[1.336s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_cpp.so
+[1.336s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_cpp.so
+[1.337s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/pythonpath.sh
+[1.337s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/pythonpath.dsv
+[1.338s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/__init__.py
+[1.463s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg
+[1.464s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/_difop_s.c
+[1.464s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/__init__.py
+[1.465s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/_difop.py
+[1.466s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[1.466s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[1.468s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[1.470s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__python.so
+[1.471s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/msg/Difop.idl
+[1.471s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/msg/Difop.msg
+[1.472s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/lsm10_v2/LSM10
+[1.473s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/launch
+[1.474s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/launch/ls_m10.launch.py
+[1.475s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/package_run_dependencies/lsm10_v2
+[1.476s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/parent_prefix_path/lsm10_v2
+[1.477s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/ament_prefix_path.sh
+[1.478s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/ament_prefix_path.dsv
+[1.479s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/path.sh
+[1.479s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/path.dsv
+[1.480s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.bash
+[1.481s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.sh
+[1.486s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.zsh
+[1.486s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.dsv
+[1.487s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/package.dsv
+[1.487s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/packages/lsm10_v2
+[1.488s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cExport.cmake
+[1.491s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cExport-noconfig.cmake
+[1.492s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cExport.cmake
+[1.493s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.494s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cExport.cmake
+[1.500s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cExport-noconfig.cmake
+[1.513s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cppExport.cmake
+[1.514s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cppExport.cmake
+[1.514s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.520s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cppExport.cmake
+[1.529s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cppExport-noconfig.cmake
+[1.530s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake-extras.cmake
+[1.530s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.531s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_libraries-extras.cmake
+[1.531s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_targets-extras.cmake
+[1.531s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.532s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.532s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.533s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2Config.cmake
+[1.533s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2Config-version.cmake
+[1.533s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/package.xml
+[1.534s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/lsm10_v2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/lsm10_v2

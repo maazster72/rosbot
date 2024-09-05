@@ -1,0 +1,304 @@
+[0.077s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/astra_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/ros2_astra_camera-main/astra_msgs -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/astra_msgs
+[0.374s] -- The C compiler identification is GNU 9.4.0
+[0.634s] -- The CXX compiler identification is GNU 9.4.0
+[0.674s] -- Check for working C compiler: /usr/bin/cc
+[1.043s] -- Check for working C compiler: /usr/bin/cc -- works
+[1.049s] -- Detecting C compiler ABI info
+[1.503s] -- Detecting C compiler ABI info - done
+[1.588s] -- Detecting C compile features
+[1.591s] -- Detecting C compile features - done
+[1.607s] -- Check for working CXX compiler: /usr/bin/c++
+[2.075s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[2.081s] -- Detecting CXX compiler ABI info
+[2.614s] -- Detecting CXX compiler ABI info - done
+[2.680s] -- Detecting CXX compile features
+[2.683s] -- Detecting CXX compile features - done
+[2.716s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[2.865s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[2.867s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[3.626s] -- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+[3.665s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[3.726s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[4.476s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[4.626s] -- Found FastRTPS: /opt/ros/galactic/include  
+[5.253s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[5.434s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[6.611s] -- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+[8.921s] -- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+[11.029s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[12.170s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[12.285s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+[12.297s] -- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+[12.423s] -- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") 
+[12.424s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[12.424s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+[12.425s] -- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+[12.525s] -- Found PythonExtra: .so  
+[14.712s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[14.907s] -- Added test 'copyright' to check source files copyright and LICENSE
+[14.927s] -- Added test 'lint_cmake' to check CMake code style
+[14.939s] -- Added test 'xmllint' to check XML markup files
+[14.968s] -- Configuring done
+[15.508s] -- Generating done
+[15.524s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/astra_msgs
+[15.573s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/astra_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/ros2_astra_camera-main/astra_msgs -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/astra_msgs
+[15.578s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/astra_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/astra_msgs -- -j4 -l4
+[15.796s] [  0%] [34m[1mGenerating C code for ROS interfaces[0m
+[29.076s] [35m[1mScanning dependencies of target astra_msgs__rosidl_generator_c[0m
+[29.165s] [  1%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_camera_info__functions.c.o[0m
+[29.386s] [  2%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_ir_exposure__functions.c.o[0m
+[29.605s] [  2%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_ir_gain__functions.c.o[0m
+[29.812s] [  3%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_serial__functions.c.o[0m
+[30.028s] [  3%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_uvc_exposure__functions.c.o[0m
+[30.233s] [  4%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_uvc_gain__functions.c.o[0m
+[30.441s] [  4%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_uvc_white_balance__functions.c.o[0m
+[30.651s] [  4%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_version__functions.c.o[0m
+[30.872s] [  5%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/reset_ir_exposure__functions.c.o[0m
+[31.077s] [  5%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/reset_ir_gain__functions.c.o[0m
+[31.281s] [  6%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_ae_enable__functions.c.o[0m
+[31.485s] [  6%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_auto_exposure__functions.c.o[0m
+[31.703s] [  7%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_auto_white_balance__functions.c.o[0m
+[31.910s] [  7%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_distortioncal__functions.c.o[0m
+[32.119s] [  7%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_fan__functions.c.o[0m
+[32.323s] [  8%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_ir_exposure__functions.c.o[0m
+[32.536s] [  8%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_ir_flood__functions.c.o[0m
+[32.760s] [  9%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_ir_gain__functions.c.o[0m
+[32.966s] [  9%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_laser__functions.c.o[0m
+[33.295s] [ 10%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_ldp__functions.c.o[0m
+[33.650s] [ 10%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_mirror__functions.c.o[0m
+[33.875s] [ 10%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_uvc_exposure__functions.c.o[0m
+[34.088s] [ 11%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_uvc_gain__functions.c.o[0m
+[34.303s] [ 11%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/set_uvc_white_balance__functions.c.o[0m
+[34.516s] [ 12%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/switch_ir_camera__functions.c.o[0m
+[34.731s] [ 12%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_generator_c.dir/rosidl_generator_c/astra_msgs/srv/detail/get_device_type__functions.c.o[0m
+[34.970s] [ 12%] [32m[1mLinking C shared library libastra_msgs__rosidl_generator_c.so[0m
+[35.158s] [ 12%] Built target astra_msgs__rosidl_generator_c
+[35.204s] [35m[1mScanning dependencies of target astra_msgs__cpp[0m
+[35.252s] [ 12%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[46.948s] [ 12%] Built target astra_msgs__cpp
+[46.992s] [ 13%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[52.245s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_c[0m
+[52.347s] [ 13%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_camera_info__type_support.cpp.o[0m
+[52.473s] [ 13%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_device_type__type_support.cpp.o[0m
+[52.594s] [ 14%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_ir_exposure__type_support.cpp.o[0m
+[52.713s] [ 14%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_ir_gain__type_support.cpp.o[0m
+[52.847s] [ 15%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_serial__type_support.cpp.o[0m
+[52.968s] [ 15%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_uvc_exposure__type_support.cpp.o[0m
+[53.088s] [ 16%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_uvc_gain__type_support.cpp.o[0m
+[53.212s] [ 16%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_uvc_white_balance__type_support.cpp.o[0m
+[53.331s] [ 17%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/get_version__type_support.cpp.o[0m
+[53.463s] [ 17%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/reset_ir_exposure__type_support.cpp.o[0m
+[53.580s] [ 17%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/reset_ir_gain__type_support.cpp.o[0m
+[53.697s] [ 18%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_ae_enable__type_support.cpp.o[0m
+[53.816s] [ 18%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_auto_exposure__type_support.cpp.o[0m
+[53.932s] [ 19%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_auto_white_balance__type_support.cpp.o[0m
+[54.052s] [ 19%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_distortioncal__type_support.cpp.o[0m
+[54.308s] [ 20%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_fan__type_support.cpp.o[0m
+[54.427s] [ 20%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_ir_exposure__type_support.cpp.o[0m
+[54.563s] [ 20%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_ir_flood__type_support.cpp.o[0m
+[54.684s] [ 21%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_ir_gain__type_support.cpp.o[0m
+[54.804s] [ 21%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_laser__type_support.cpp.o[0m
+[54.924s] [ 22%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_ldp__type_support.cpp.o[0m
+[55.045s] [ 22%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_mirror__type_support.cpp.o[0m
+[55.164s] [ 23%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_uvc_exposure__type_support.cpp.o[0m
+[55.287s] [ 23%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_uvc_gain__type_support.cpp.o[0m
+[55.411s] [ 23%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/set_uvc_white_balance__type_support.cpp.o[0m
+[55.542s] [ 24%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/astra_msgs/srv/switch_ir_camera__type_support.cpp.o[0m
+[55.680s] [ 24%] [32m[1mLinking CXX shared library libastra_msgs__rosidl_typesupport_c.so[0m
+[55.857s] [ 24%] Built target astra_msgs__rosidl_typesupport_c
+[55.902s] [ 25%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[61.344s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_cpp[0m
+[61.447s] [ 25%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_camera_info__type_support.cpp.o[0m
+[62.735s] [ 25%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_device_type__type_support.cpp.o[0m
+[63.985s] [ 26%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_ir_exposure__type_support.cpp.o[0m
+[65.305s] [ 26%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_ir_gain__type_support.cpp.o[0m
+[66.532s] [ 27%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_serial__type_support.cpp.o[0m
+[67.888s] [ 27%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_uvc_exposure__type_support.cpp.o[0m
+[69.155s] [ 28%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_uvc_gain__type_support.cpp.o[0m
+[70.549s] [ 28%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_uvc_white_balance__type_support.cpp.o[0m
+[71.923s] [ 28%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/get_version__type_support.cpp.o[0m
+[73.191s] [ 29%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/reset_ir_exposure__type_support.cpp.o[0m
+[74.658s] [ 29%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/reset_ir_gain__type_support.cpp.o[0m
+[76.272s] [ 30%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_ae_enable__type_support.cpp.o[0m
+[77.517s] [ 30%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_auto_exposure__type_support.cpp.o[0m
+[78.773s] [ 31%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_auto_white_balance__type_support.cpp.o[0m
+[80.092s] [ 31%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_distortioncal__type_support.cpp.o[0m
+[81.325s] [ 32%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_fan__type_support.cpp.o[0m
+[82.606s] [ 32%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_ir_exposure__type_support.cpp.o[0m
+[84.009s] [ 32%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_ir_flood__type_support.cpp.o[0m
+[85.433s] [ 33%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_ir_gain__type_support.cpp.o[0m
+[86.936s] [ 33%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_laser__type_support.cpp.o[0m
+[88.300s] [ 34%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_ldp__type_support.cpp.o[0m
+[89.631s] [ 34%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_mirror__type_support.cpp.o[0m
+[91.518s] [ 35%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_uvc_exposure__type_support.cpp.o[0m
+[94.129s] [ 35%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_uvc_gain__type_support.cpp.o[0m
+[95.501s] [ 35%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/set_uvc_white_balance__type_support.cpp.o[0m
+[96.845s] [ 36%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/astra_msgs/srv/switch_ir_camera__type_support.cpp.o[0m
+[98.211s] [ 36%] [32m[1mLinking CXX shared library libastra_msgs__rosidl_typesupport_cpp.so[0m
+[98.383s] [ 36%] Built target astra_msgs__rosidl_typesupport_cpp
+[98.434s] [ 37%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[108.219s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[108.424s] [ 37%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_camera_info__type_support.cpp.o[0m
+[110.365s] [ 38%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_device_type__type_support.cpp.o[0m
+[112.325s] [ 38%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_ir_exposure__type_support.cpp.o[0m
+[114.231s] [ 38%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_ir_gain__type_support.cpp.o[0m
+[116.069s] [ 39%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_serial__type_support.cpp.o[0m
+[117.963s] [ 39%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_uvc_exposure__type_support.cpp.o[0m
+[119.794s] [ 40%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_uvc_gain__type_support.cpp.o[0m
+[121.712s] [ 40%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_uvc_white_balance__type_support.cpp.o[0m
+[123.627s] [ 41%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/get_version__type_support.cpp.o[0m
+[125.631s] [ 41%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/reset_ir_exposure__type_support.cpp.o[0m
+[127.555s] [ 41%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/reset_ir_gain__type_support.cpp.o[0m
+[129.415s] [ 42%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_ae_enable__type_support.cpp.o[0m
+[131.337s] [ 42%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_auto_exposure__type_support.cpp.o[0m
+[133.384s] [ 43%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_auto_white_balance__type_support.cpp.o[0m
+[135.376s] [ 43%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_distortioncal__type_support.cpp.o[0m
+[137.391s] [ 44%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_fan__type_support.cpp.o[0m
+[139.419s] [ 44%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_ir_exposure__type_support.cpp.o[0m
+[141.418s] [ 44%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_ir_flood__type_support.cpp.o[0m
+[143.351s] [ 45%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_ir_gain__type_support.cpp.o[0m
+[145.251s] [ 45%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_laser__type_support.cpp.o[0m
+[147.195s] [ 46%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_ldp__type_support.cpp.o[0m
+[148.994s] [ 46%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_mirror__type_support.cpp.o[0m
+[150.785s] [ 47%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_uvc_exposure__type_support.cpp.o[0m
+[152.588s] [ 47%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_uvc_gain__type_support.cpp.o[0m
+[154.428s] [ 48%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/set_uvc_white_balance__type_support.cpp.o[0m
+[156.283s] [ 48%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/astra_msgs/srv/detail/dds_fastrtps/switch_ir_camera__type_support.cpp.o[0m
+[158.116s] [ 48%] [32m[1mLinking CXX shared library libastra_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[158.487s] [ 48%] Built target astra_msgs__rosidl_typesupport_fastrtps_cpp
+[158.536s] [ 49%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[166.131s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_introspection_cpp[0m
+[166.242s] [ 49%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_camera_info__type_support.cpp.o[0m
+[167.671s] [ 50%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_device_type__type_support.cpp.o[0m
+[168.904s] [ 50%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_ir_exposure__type_support.cpp.o[0m
+[170.092s] [ 51%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_ir_gain__type_support.cpp.o[0m
+[171.372s] [ 51%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_serial__type_support.cpp.o[0m
+[172.651s] [ 51%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_uvc_exposure__type_support.cpp.o[0m
+[173.869s] [ 52%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_uvc_gain__type_support.cpp.o[0m
+[175.081s] [ 52%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_uvc_white_balance__type_support.cpp.o[0m
+[176.325s] [ 53%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/get_version__type_support.cpp.o[0m
+[177.573s] [ 53%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/reset_ir_exposure__type_support.cpp.o[0m
+[178.797s] [ 54%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/reset_ir_gain__type_support.cpp.o[0m
+[180.090s] [ 54%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_ae_enable__type_support.cpp.o[0m
+[181.402s] [ 54%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_auto_exposure__type_support.cpp.o[0m
+[182.696s] [ 55%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_auto_white_balance__type_support.cpp.o[0m
+[183.970s] [ 55%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_distortioncal__type_support.cpp.o[0m
+[185.153s] [ 56%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_fan__type_support.cpp.o[0m
+[186.412s] [ 56%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_ir_exposure__type_support.cpp.o[0m
+[187.618s] [ 57%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_ir_flood__type_support.cpp.o[0m
+[188.937s] [ 57%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_ir_gain__type_support.cpp.o[0m
+[190.019s] [ 57%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_laser__type_support.cpp.o[0m
+[191.099s] [ 58%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_ldp__type_support.cpp.o[0m
+[192.176s] [ 58%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_mirror__type_support.cpp.o[0m
+[193.230s] [ 59%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_uvc_exposure__type_support.cpp.o[0m
+[194.315s] [ 59%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_uvc_gain__type_support.cpp.o[0m
+[195.367s] [ 60%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/set_uvc_white_balance__type_support.cpp.o[0m
+[196.479s] [ 60%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/astra_msgs/srv/detail/switch_ir_camera__type_support.cpp.o[0m
+[197.624s] [ 61%] [32m[1mLinking CXX shared library libastra_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[197.904s] [ 61%] Built target astra_msgs__rosidl_typesupport_introspection_cpp
+[197.945s] [ 63%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[197.946s] [ 63%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[205.152s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_introspection_c[0m
+[205.256s] [ 63%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_camera_info__type_support.c.o[0m
+[205.275s] [ 64%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_device_type__type_support.c.o[0m
+[205.405s] [ 64%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_ir_exposure__type_support.c.o[0m
+[205.423s] [ 65%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_ir_gain__type_support.c.o[0m
+[205.534s] [ 65%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_serial__type_support.c.o[0m
+[205.551s] [ 65%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_uvc_exposure__type_support.c.o[0m
+[205.627s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_fastrtps_c[0m
+[205.662s] [ 66%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_uvc_gain__type_support.c.o[0m
+[205.680s] [ 66%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_uvc_white_balance__type_support.c.o[0m
+[205.787s] [ 67%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/get_version__type_support.c.o[0m
+[205.807s] [ 67%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/reset_ir_exposure__type_support.c.o[0m
+[205.925s] [ 67%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_camera_info__type_support_c.cpp.o[0m
+[205.929s] [ 68%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_device_type__type_support_c.cpp.o[0m
+[205.940s] [ 69%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/reset_ir_gain__type_support.c.o[0m
+[205.960s] [ 69%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_ae_enable__type_support.c.o[0m
+[206.174s] [ 69%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_auto_exposure__type_support.c.o[0m
+[206.305s] [ 70%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_auto_white_balance__type_support.c.o[0m
+[206.434s] [ 70%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_distortioncal__type_support.c.o[0m
+[206.565s] [ 71%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_fan__type_support.c.o[0m
+[206.695s] [ 71%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_ir_exposure__type_support.c.o[0m
+[206.824s] [ 72%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_ir_flood__type_support.c.o[0m
+[206.961s] [ 72%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_ir_gain__type_support.c.o[0m
+[207.101s] [ 72%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_laser__type_support.c.o[0m
+[207.233s] [ 73%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_ldp__type_support.c.o[0m
+[207.365s] [ 73%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_mirror__type_support.c.o[0m
+[207.492s] [ 74%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_uvc_exposure__type_support.c.o[0m
+[207.573s] [ 74%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_ir_gain__type_support_c.cpp.o[0m
+[207.612s] [ 74%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_uvc_gain__type_support.c.o[0m
+[207.732s] [ 75%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/set_uvc_white_balance__type_support.c.o[0m
+[207.855s] [ 75%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/astra_msgs/srv/detail/switch_ir_camera__type_support.c.o[0m
+[207.984s] [ 76%] [32m[1mLinking C shared library libastra_msgs__rosidl_typesupport_introspection_c.so[0m
+[208.137s] [ 76%] Built target astra_msgs__rosidl_typesupport_introspection_c
+[208.946s] [ 76%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_uvc_exposure__type_support_c.cpp.o[0m
+[210.277s] [ 77%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_uvc_gain__type_support_c.cpp.o[0m
+[211.311s] [ 77%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_uvc_white_balance__type_support_c.cpp.o[0m
+[211.643s] [ 78%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_serial__type_support_c.cpp.o[0m
+[212.679s] [ 79%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_version__type_support_c.cpp.o[0m
+[212.718s] [ 79%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/get_ir_exposure__type_support_c.cpp.o[0m
+[213.327s] [ 79%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/reset_ir_exposure__type_support_c.cpp.o[0m
+[214.201s] [ 79%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/reset_ir_gain__type_support_c.cpp.o[0m
+[214.214s] [ 80%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_ae_enable__type_support_c.cpp.o[0m
+[214.872s] [ 80%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_auto_exposure__type_support_c.cpp.o[0m
+[215.667s] [ 81%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_auto_white_balance__type_support_c.cpp.o[0m
+[215.742s] [ 81%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_distortioncal__type_support_c.cpp.o[0m
+[215.825s] [ 82%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_fan__type_support_c.cpp.o[0m
+[216.560s] [ 82%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_ir_exposure__type_support_c.cpp.o[0m
+[217.679s] [ 83%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_ir_flood__type_support_c.cpp.o[0m
+[217.783s] [ 83%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_ir_gain__type_support_c.cpp.o[0m
+[217.914s] [ 83%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_laser__type_support_c.cpp.o[0m
+[218.501s] [ 84%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_ldp__type_support_c.cpp.o[0m
+[219.510s] [ 84%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_mirror__type_support_c.cpp.o[0m
+[219.718s] [ 85%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_uvc_exposure__type_support_c.cpp.o[0m
+[219.957s] [ 85%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_uvc_gain__type_support_c.cpp.o[0m
+[220.437s] [ 86%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/set_uvc_white_balance__type_support_c.cpp.o[0m
+[222.260s] [ 86%] [32mBuilding CXX object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/astra_msgs/srv/detail/switch_ir_camera__type_support_c.cpp.o[0m
+[223.600s] [ 86%] [32m[1mLinking CXX shared library libastra_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[223.918s] [ 86%] Built target astra_msgs__rosidl_typesupport_fastrtps_c
+[223.951s] [35m[1mScanning dependencies of target astra_msgs[0m
+[223.987s] [ 86%] Built target astra_msgs
+[224.023s] [35m[1mScanning dependencies of target astra_msgs__py[0m
+[224.062s] [ 86%] [34m[1mGenerating Python code for ROS interfaces[0m
+[242.836s] [ 86%] Built target astra_msgs__py
+[242.873s] [35m[1mScanning dependencies of target astra_msgs__python[0m
+[243.129s] [ 87%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_device_type_s.c.o[0m
+[243.129s] [ 87%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_camera_info_s.c.o[0m
+[243.496s] [ 87%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_ir_gain_s.c.o[0m
+[243.514s] [ 88%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_serial_s.c.o[0m
+[244.221s] [ 88%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_uvc_exposure_s.c.o[0m
+[244.645s] [ 88%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_uvc_gain_s.c.o[0m
+[244.691s] [ 89%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_uvc_white_balance_s.c.o[0m
+[245.023s] [ 89%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_version_s.c.o[0m
+[245.085s] [ 90%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_reset_ir_exposure_s.c.o[0m
+[245.415s] [ 90%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_reset_ir_gain_s.c.o[0m
+[245.463s] [ 91%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_ae_enable_s.c.o[0m
+[245.804s] [ 91%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_auto_exposure_s.c.o[0m
+[245.867s] [ 91%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_auto_white_balance_s.c.o[0m
+[246.199s] [ 92%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_distortioncal_s.c.o[0m
+[246.281s] [ 92%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_fan_s.c.o[0m
+[246.598s] [ 93%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_ir_exposure_s.c.o[0m
+[246.689s] [ 93%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_ir_flood_s.c.o[0m
+[246.996s] [ 94%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_ir_gain_s.c.o[0m
+[247.086s] [ 94%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_laser_s.c.o[0m
+[247.382s] [ 94%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_ldp_s.c.o[0m
+[247.478s] [ 95%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_mirror_s.c.o[0m
+[247.786s] [ 95%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_uvc_exposure_s.c.o[0m
+[247.875s] [ 96%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_uvc_gain_s.c.o[0m
+[248.242s] [ 96%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_set_uvc_white_balance_s.c.o[0m
+[248.292s] [ 97%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_switch_ir_camera_s.c.o[0m
+[248.640s] [ 98%] [32mBuilding C object CMakeFiles/astra_msgs__python.dir/rosidl_generator_py/astra_msgs/srv/_get_ir_exposure_s.c.o[0m
+[249.013s] [ 98%] [32m[1mLinking C shared library rosidl_generator_py/astra_msgs/libastra_msgs__python.so[0m
+[249.222s] [ 98%] Built target astra_msgs__python
+[249.260s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_c__pyext[0m
+[249.261s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[249.384s] [ 99%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/astra_msgs/_astra_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[249.393s] [ 99%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/astra_msgs/_astra_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[250.535s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/astra_msgs/astra_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[250.565s] [ 99%] [32m[1mLinking C shared library rosidl_generator_py/astra_msgs/astra_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[250.739s] [ 99%] Built target astra_msgs__rosidl_typesupport_c__pyext
+[250.770s] [ 99%] Built target astra_msgs__rosidl_typesupport_introspection_c__pyext
+[250.777s] [35m[1mScanning dependencies of target astra_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[250.877s] [100%] [32mBuilding C object CMakeFiles/astra_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/astra_msgs/_astra_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[252.026s] [100%] [32m[1mLinking CXX shared library rosidl_generator_py/astra_msgs/astra_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[252.345s] [100%] Built target astra_msgs__rosidl_typesupport_fastrtps_c__pyext

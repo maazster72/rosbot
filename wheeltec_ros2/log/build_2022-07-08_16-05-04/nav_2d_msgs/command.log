@@ -1,0 +1,6 @@
+Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav_2d_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_dwb_controller/nav_2d_msgs -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs
+Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav_2d_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/navigation2-galactic/nav2_dwb_controller/nav_2d_msgs -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs
+Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav_2d_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav_2d_msgs -- -j4 -l4
+Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav_2d_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav_2d_msgs -- -j4 -l4
+Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav_2d_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav_2d_msgs
+Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav_2d_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav_2d_msgs

@@ -1,0 +1,12 @@
+-- Found ament_cmake_core: 1.1.6 (/opt/ros/galactic/share/ament_cmake_core/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found ament_cmake_python: 1.1.6 (/opt/ros/galactic/share/ament_cmake_python/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/nav2_common
+[35m[1mScanning dependencies of target ament_cmake_python_symlink_nav2_common[0m
+failed to create symbolic link '/home/wheeltec/wheeltec_ros2/build/nav2_common/ament_cmake_python/nav2_common/nav2_common' because existing path cannot be removed: Is a directory
+make[2]: *** [CMakeFiles/ament_cmake_python_symlink_nav2_common.dir/build.make:57: CMakeFiles/ament_cmake_python_symlink_nav2_common] Error 1
+make[1]: *** [CMakeFiles/Makefile2:133: CMakeFiles/ament_cmake_python_symlink_nav2_common.dir/all] Error 2
+make: *** [Makefile:118: all] Error 2

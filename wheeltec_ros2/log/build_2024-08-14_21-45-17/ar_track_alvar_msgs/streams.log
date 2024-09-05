@@ -1,0 +1,132 @@
+[0.111s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs -- -j4 -l4
+[0.648s] [  2%] Built target ar_track_alvar_msgs__cpp
+[0.664s] [ 12%] Built target ar_track_alvar_msgs__rosidl_generator_c
+[0.853s] [ 23%] Built target ar_track_alvar_msgs__rosidl_typesupport_cpp
+[0.864s] [ 33%] Built target ar_track_alvar_msgs__rosidl_typesupport_introspection_cpp
+[0.906s] [ 43%] Built target ar_track_alvar_msgs__rosidl_typesupport_introspection_c
+[0.916s] [ 53%] Built target ar_track_alvar_msgs__rosidl_typesupport_fastrtps_cpp
+[1.042s] [ 64%] Built target ar_track_alvar_msgs__rosidl_typesupport_c
+[1.128s] [ 74%] Built target ar_track_alvar_msgs__rosidl_typesupport_fastrtps_c
+[1.260s] [ 74%] Built target ar_track_alvar_msgs
+[1.439s] [ 76%] Built target ar_track_alvar_msgs__py
+[1.767s] [ 84%] Built target ar_track_alvar_msgs__python
+[2.025s] [ 89%] Built target ar_track_alvar_msgs__rosidl_typesupport_c__pyext
+[2.077s] [ 94%] Built target ar_track_alvar_msgs__rosidl_typesupport_introspection_c__pyext
+[2.095s] [100%] Built target ar_track_alvar_msgs__rosidl_typesupport_fastrtps_c__pyext
+[2.158s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs -- -j4 -l4
+[2.770s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs
+[2.844s] -- Install configuration: ""
+[2.845s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ament_index/resource_index/rosidl_interfaces/ar_track_alvar_msgs
+[2.846s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs
+[2.846s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg
+[2.847s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/alvar_marker.h
+[2.847s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail
+[2.848s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__type_support.h
+[2.848s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__functions.h
+[2.850s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__type_support.h
+[2.851s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__struct.h
+[2.851s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__functions.h
+[2.852s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__functions.c
+[2.852s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__struct.h
+[2.853s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__functions.c
+[2.853s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/alvar_markers.h
+[2.853s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/rosidl_generator_c__visibility_control.h
+[2.854s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/library_path.sh
+[2.854s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/library_path.dsv
+[2.854s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__rosidl_generator_c.so
+[2.857s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs
+[2.862s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg
+[2.863s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail
+[2.863s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__rosidl_typesupport_fastrtps_c.h
+[2.864s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__rosidl_typesupport_fastrtps_c.h
+[2.864s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[2.865s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__rosidl_typesupport_fastrtps_c.so
+[2.865s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs
+[2.866s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg
+[2.866s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[2.867s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail
+[2.868s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/dds_fastrtps
+[2.868s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__rosidl_typesupport_fastrtps_cpp.hpp
+[2.868s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__rosidl_typesupport_fastrtps_cpp.hpp
+[2.869s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__rosidl_typesupport_fastrtps_cpp.so
+[2.869s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs
+[2.870s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg
+[2.871s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail
+[2.871s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__rosidl_typesupport_introspection_c.h
+[2.872s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__type_support.c
+[2.873s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__type_support.c
+[2.873s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__rosidl_typesupport_introspection_c.h
+[2.873s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[2.874s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__rosidl_typesupport_introspection_c.so
+[2.879s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__rosidl_typesupport_c.so
+[2.880s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs
+[2.880s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg
+[2.883s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail
+[2.885s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__struct.hpp
+[2.890s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__builder.hpp
+[2.890s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__traits.hpp
+[2.893s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__traits.hpp
+[2.893s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__struct.hpp
+[2.894s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__builder.hpp
+[2.894s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/alvar_markers.hpp
+[2.894s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/alvar_marker.hpp
+[2.895s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs
+[2.895s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg
+[2.896s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail
+[2.896s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__rosidl_typesupport_introspection_cpp.hpp
+[2.896s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_marker__type_support.cpp
+[2.897s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__rosidl_typesupport_introspection_cpp.hpp
+[2.897s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/include/ar_track_alvar_msgs/msg/detail/alvar_markers__type_support.cpp
+[2.898s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__rosidl_typesupport_introspection_cpp.so
+[2.899s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__rosidl_typesupport_cpp.so
+[2.899s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/pythonpath.sh
+[2.899s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/pythonpath.dsv
+[2.900s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/__init__.py
+[3.092s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/msg
+[3.093s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/msg/__init__.py
+[3.093s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/msg/_alvar_marker.py
+[3.094s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/msg/_alvar_marker_s.c
+[3.094s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/msg/_alvar_markers_s.c
+[3.095s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/msg/_alvar_markers.py
+[3.096s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/ar_track_alvar_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+[3.100s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/ar_track_alvar_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+[3.101s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages/ar_track_alvar_msgs/ar_track_alvar_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+[3.104s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/libar_track_alvar_msgs__python.so
+[3.106s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/msg/AlvarMarkers.idl
+[3.107s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/msg/AlvarMarker.idl
+[3.107s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/msg/AlvarMarkers.msg
+[3.108s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/msg/AlvarMarker.msg
+[3.108s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ament_index/resource_index/package_run_dependencies/ar_track_alvar_msgs
+[3.109s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ament_index/resource_index/parent_prefix_path/ar_track_alvar_msgs
+[3.109s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/ament_prefix_path.sh
+[3.110s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/ament_prefix_path.dsv
+[3.110s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/path.sh
+[3.112s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/environment/path.dsv
+[3.112s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/local_setup.bash
+[3.112s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/local_setup.sh
+[3.113s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/local_setup.zsh
+[3.113s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/local_setup.dsv
+[3.114s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/package.dsv
+[3.114s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ament_index/resource_index/packages/ar_track_alvar_msgs
+[3.118s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_generator_cExport.cmake
+[3.118s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_generator_cExport-noconfig.cmake
+[3.127s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_introspection_cExport.cmake
+[3.127s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[3.134s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_cExport.cmake
+[3.135s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[3.141s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_generator_cppExport.cmake
+[3.150s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[3.150s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[3.164s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_cppExport.cmake
+[3.165s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[3.165s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/rosidl_cmake-extras.cmake
+[3.165s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[3.173s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[3.181s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[3.182s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[3.182s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[3.183s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[3.183s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgsConfig.cmake
+[3.183s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/cmake/ar_track_alvar_msgsConfig-version.cmake
+[3.184s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/share/ar_track_alvar_msgs/package.xml
+[3.185s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ar_track_alvar_msgs

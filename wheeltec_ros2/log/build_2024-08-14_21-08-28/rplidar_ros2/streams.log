@@ -1,0 +1,449 @@
+[0.160s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/rplidar_ros2 -- -j4 -l4
+[0.407s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.610s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.196s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.429s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.445s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[2.249s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.493s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.518s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.721s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.777s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[4.369s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[5.054s] -- Configuring done
+[5.152s] -- Generating done
+[5.174s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/rplidar_ros2
+[5.456s] [35m[1mScanning dependencies of target rplidar_scan_publisher[0m
+[5.921s] [  8%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/src/rplidar_scan_publisher.cpp.o[0m
+[17.386s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[17.387s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[17.387s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar.h:36[m[K,
+[17.387s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:38[m[K:
+[17.388s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[17.388s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[17.389s]       |                [01;35m[K^[m[K
+[17.389s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[17.390s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar.h:36[m[K,
+[17.390s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:38[m[K:
+[17.390s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[17.391s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[17.391s]       |                    [01;35m[K^[m[K
+[17.443s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:[m[K In member function ‘[01m[Kvoid RPLidarScanPublisher::init_param()[m[K’:
+[17.445s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:67:47:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.446s]    67 |         this->declare_parameter("channel_type"[01;35m[K)[m[K;
+[17.447s]       |                                               [01;35m[K^[m[K
+[17.447s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.448s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.448s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.450s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.450s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.451s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.451s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.452s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:68:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.452s]    68 |         this->declare_parameter("tcp_ip"[01;35m[K)[m[K;
+[17.453s]       |                                         [01;35m[K^[m[K
+[17.453s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.453s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.454s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.454s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.455s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.455s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.455s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.456s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:69:41:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.456s]    69 |         this->declare_parameter("udp_ip"[01;35m[K)[m[K;
+[17.457s]       |                                         [01;35m[K^[m[K
+[17.457s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.458s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.458s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.458s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.459s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.465s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.465s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.466s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:70:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.466s]    70 |         this->declare_parameter("tcp_port"[01;35m[K)[m[K;
+[17.467s]       |                                           [01;35m[K^[m[K
+[17.467s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.468s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.468s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.468s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.469s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.469s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.470s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.470s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:71:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.470s]    71 |         this->declare_parameter("udp_port"[01;35m[K)[m[K;
+[17.471s]       |                                           [01;35m[K^[m[K
+[17.471s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.472s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.472s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.473s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.473s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.473s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.474s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.474s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:72:46:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.475s]    72 |         this->declare_parameter("serial_port"[01;35m[K)[m[K;
+[17.475s]       |                                              [01;35m[K^[m[K
+[17.488s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.489s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.489s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.489s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.490s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.490s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.490s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.491s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:73:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.491s]    73 |         this->declare_parameter("serial_baudrate"[01;35m[K)[m[K;
+[17.492s]       |                                                  [01;35m[K^[m[K
+[17.492s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.493s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.493s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.493s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.494s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.494s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.494s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.495s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:74:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.495s]    74 |         this->declare_parameter("frame_id"[01;35m[K)[m[K;
+[17.496s]       |                                           [01;35m[K^[m[K
+[17.496s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.496s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.508s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.508s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.509s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.509s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.509s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.510s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:75:43:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.510s]    75 |         this->declare_parameter("inverted"[01;35m[K)[m[K;
+[17.510s]       |                                           [01;35m[K^[m[K
+[17.511s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.511s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.512s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.512s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.512s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.513s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.525s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.525s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:76:51:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.526s]    76 |         this->declare_parameter("angle_compensate"[01;35m[K)[m[K;
+[17.526s]       |                                                   [01;35m[K^[m[K
+[17.526s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.527s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.527s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.528s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.528s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.529s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.529s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.529s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:77:44:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.530s]    77 |         this->declare_parameter("scan_mode"[01;35m[K)[m[K;
+[17.530s]       |                                            [01;35m[K^[m[K
+[17.531s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.531s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.532s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.532s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.532s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.533s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.533s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[17.534s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:78:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Kconst rclcpp::ParameterValue& rclcpp::Node::declare_parameter(const string&)[m[K’ is deprecated: declare_parameter() with only a name is deprecated and will be deleted in the future.\nIf you want to declare a parameter that won't change type without a default value use:\n`node->declare_parameter<ParameterT>(name)`, where e.g. ParameterT=int64_t.\n\nIf you want to declare a parameter that can dynamically change type use:\n```\nrcl_interfaces::msg::ParameterDescriptor descriptor;\ndescriptor.dynamic_typing = true;\nnode->declare_parameter(name, rclcpp::ParameterValue{}, descriptor);\n``` [[01;35m[K-Wdeprecated-declarations[m[K]
+[17.546s]    78 |         this->declare_parameter("scan_frequency"[01;35m[K)[m[K;
+[17.546s]       |                                                 [01;35m[K^[m[K
+[17.547s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[17.547s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[17.548s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[17.548s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:35[m[K:
+[17.548s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:422:3:[m[K [01;36m[Knote: [m[Kdeclared here
+[17.549s]   422 |   [01;36m[Kdeclare_parameter[m[K(const std::string & name);
+[17.549s]       |   [01;36m[K^~~~~~~~~~~~~~~~~[m[K
+[22.505s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:[m[K In member function ‘[01m[Kbool RPLidarScanPublisher::checkRPLIDARHealth(sl::ILidarDriver*)[m[K’:
+[22.506s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/src/rplidar_scan_publisher.cpp:150:5:[m[K [01;35m[Kwarning: [m[Kcontrol reaches end of non-void function [[01;35m[K-Wreturn-type[m[K]
+[22.507s]   150 |     [01;35m[K}[m[K
+[22.507s]       |     [01;35m[K^[m[K
+[40.227s] [ 16%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/arch/linux/timer.cpp.o[0m
+[42.461s] [ 25%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/hal/thread.cpp.o[0m
+[44.426s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[44.427s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[44.427s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/sdkcommon.h:49[m[K,
+[44.428s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/hal/thread.cpp:35[m[K:
+[44.428s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[44.429s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[44.429s]       |                [01;35m[K^[m[K
+[44.434s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[44.435s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[44.435s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/sdkcommon.h:49[m[K,
+[44.436s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/hal/thread.cpp:35[m[K:
+[44.436s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[44.437s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[44.437s]       |                    [01;35m[K^[m[K
+[44.750s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/hal/thread.cpp:43[m[K:
+[44.751s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:[m[K In static member function ‘[01m[Kstatic rp::hal::Thread rp::hal::Thread::create(thread_proc_t, void*)[m[K’:
+[44.753s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:48:77:[m[K [01;35m[Kwarning: [m[Kcast between incompatible function types from ‘[01m[Kthread_proc_t[m[K’ {aka ‘[01m[Klong unsigned int (*)(void*)[m[K’} to ‘[01m[Kvoid* (*)(void*)[m[K’ [[01;35m[K-Wcast-function-type[m[K]
+[44.755s]    48 |     pthread_create((pthread_t *)&newborn._handle, NULL, (void * (*)(void *))[01;35m[Kproc[m[K, data);
+[44.756s]       |                                                                             [01;35m[K^~~~[m[K
+[44.761s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:[m[K In member function ‘[01m[Ku_result rp::hal::Thread::join(long unsigned int)[m[K’:
+[44.762s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/arch/linux/thread.hpp:129:37:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[44.762s]   129 | u_result Thread::join([01;35m[Kunsigned long timeout[m[K)
+[44.763s]       |                       [01;35m[K~~~~~~~~~~~~~~^~~~~~~[m[K
+[45.432s] [ 33%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/rplidar_driver.cpp.o[0m
+[47.098s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[47.098s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[47.099s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sdkcommon.h:49[m[K,
+[47.099s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[47.099s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[47.100s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[47.100s]       |                [01;35m[K^[m[K
+[47.101s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[47.102s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[47.102s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sdkcommon.h:49[m[K,
+[47.102s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:33[m[K:
+[47.103s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[47.103s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[47.104s]       |                    [01;35m[K^[m[K
+[47.901s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::connect(const char*, _u32, _u32)[m[K’:
+[47.902s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:67:77:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[47.902s]    67 |     u_result RPlidarDriver::connect(const char *path, _u32 portOrBaud, [01;35m[K_u32 flag[m[K)
+[47.903s]       |                                                                        [01;35m[K~~~~~^~~~[m[K
+[47.905s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::reset(_u32)[m[K’:
+[47.906s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:101:40:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[47.907s]   101 |     u_result RPlidarDriver::reset([01;35m[K_u32 timeout[m[K)
+[47.908s]       |                                   [01;35m[K~~~~~^~~~~~~[m[K
+[47.913s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:[m[K In member function ‘[01m[Ku_result rp::standalone::rplidar::RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t*, size_t&)[m[K’:
+[47.914s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:175:91:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodebuffer[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[47.914s]   175 |     u_result RPlidarDriver::getScanDataWithInterval([01;35m[Krplidar_response_measurement_node_t * nodebuffer[m[K, size_t & count)
+[47.914s]       |                                                     [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~[m[K
+[47.915s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/rplidar_driver.cpp:175:112:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kcount[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[47.915s]   175 |     u_result RPlidarDriver::getScanDataWithInterval(rplidar_response_measurement_node_t * nodebuffer, [01;35m[Ksize_t & count[m[K)
+[47.916s]       |                                                                                                       [01;35m[K~~~~~~~~~^~~~~[m[K
+[48.951s] [ 41%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/sl_crc.cpp.o[0m
+[49.004s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[49.005s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_crc.h:36[m[K,
+[49.005s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_crc.cpp:33[m[K:
+[49.006s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[49.006s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[49.007s]       |                [01;35m[K^[m[K
+[49.007s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_crc.h:36[m[K,
+[49.008s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_crc.cpp:33[m[K:
+[49.008s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[49.009s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[49.010s]       |                    [01;35m[K^[m[K
+[49.010s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_crc.cpp:[m[K In function ‘[01m[Ksl_u32 sl::crc32::cal(sl_u32, void*, sl_u16)[m[K’:
+[49.011s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_crc.cpp:77:29:[m[K [01;35m[Kwarning: [m[Ksuggest parentheses around ‘[01m[K-[m[K’ in operand of ‘[01m[K&[m[K’ [[01;35m[K-Wparentheses[m[K]
+[49.011s]    77 |         sl_u8 leftBytes = [01;35m[K4 - len[m[K & 0x3;
+[49.012s]       |                           [01;35m[K~~^~~~~[m[K
+[49.374s] [ 50%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/sl_lidar_driver.cpp.o[0m
+[51.226s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[51.227s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[51.227s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sdkcommon.h:49[m[K,
+[51.228s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[51.228s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[51.229s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[51.230s]       |                [01;35m[K^[m[K
+[51.231s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[51.231s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[51.232s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sdkcommon.h:49[m[K,
+[51.232s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:33[m[K:
+[51.233s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[51.233s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[51.234s]       |                    [01;35m[K^[m[K
+[52.077s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::reset(sl_u32)[m[K’:
+[52.078s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:273:32:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.078s]   273 |         sl_result reset([01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[52.079s]       |                         [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.090s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getAllSupportedScanModes(std::vector<sl::LidarScanMode>&, sl_u32)[m[K’:
+[52.090s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:286:89:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.091s]   286 |         sl_result getAllSupportedScanModes(std::vector<LidarScanMode>& outModes, [01;35m[Ksl_u32 timeoutInMs = DEFAULT_TIMEOUT[m[K)
+[52.091s]       |                                                                                  [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.094s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::startScan(bool, bool, sl_u32, sl::LidarScanMode*)[m[K’:
+[52.095s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:347:69:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Koptions[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.095s]   347 |         sl_result startScan(bool force, bool useTypicalScan, [01;35m[Ksl_u32 options = 0[m[K, LidarScanMode* outUsedScanMode = nullptr)
+[52.096s]       |                                                              [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[52.106s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::stop(sl_u32)[m[K’:
+[52.106s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:534:31:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.107s]   534 |         sl_result stop([01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[52.107s]       |                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.108s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getDeviceInfo(sl_lidar_response_device_info_t&, sl_u32)[m[K’:
+[52.109s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:579:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.109s]   579 |         sl_result getDeviceInfo(sl_lidar_response_device_info_t& info, [01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[52.110s]       |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.112s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::checkMotorCtrlSupport(sl::MotorCtrlSupport&, sl_u32)[m[K’:
+[52.112s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:592:76:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.113s]   592 |         sl_result checkMotorCtrlSupport(MotorCtrlSupport & support, [01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[52.114s]       |                                                                     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.114s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getFrequency(const sl::LidarScanMode&, const sl_lidar_response_measurement_node_hq_t*, size_t, float&)[m[K’:
+[52.115s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:627:110:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Knodes[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.115s]   627 |         sl_result getFrequency(const LidarScanMode& scanMode, [01;35m[Kconst sl_lidar_response_measurement_node_hq_t* nodes[m[K, size_t count, float& frequency)
+[52.116s]       |                                                               [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~[m[K
+[52.132s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getHealth(sl_lidar_response_device_health_t&, sl_u32)[m[K’:
+[52.132s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:640:79:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.133s]   640 |         sl_result getHealth(sl_lidar_response_device_health_t& health, [01;35m[Ksl_u32 timeout = DEFAULT_TIMEOUT[m[K)
+[52.134s]       |                                                                        [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[52.134s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvirtual sl_result sl::SlamtecLidarDriver::getMotorInfo(sl::LidarMotorInfo&, sl_u32)[m[K’:
+[52.135s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:730:66:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[KtimeoutInMs[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[52.135s]   730 |         sl_result getMotorInfo(LidarMotorInfo &motorInfo, [01;35m[Ksl_u32 timeoutInMs[m[K)
+[52.136s]       |                                                           [01;35m[K~~~~~~~^~~~~~~~~~~[m[K
+[52.152s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Ksl_result sl::SlamtecLidarDriver::_sendCommand(sl_u16, const void*, size_t)[m[K’:
+[52.152s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:1089:35:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<unsigned char>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[52.153s]  1089 |             for (int pos = 0; [01;35m[Kpos < cmd_packet.size()[m[K; pos++) {
+[52.153s]       |                               [01;35m[K~~~~^~~~~~~~~~~~~~~~~~~[m[K
+[52.154s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:1058:19:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kpkt_header[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[52.154s]  1058 |             sl_u8 [01;35m[Kpkt_header[m[K[10];
+[52.155s]       |                   [01;35m[K^~~~~~~~~~[m[K
+[52.169s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvoid sl::SlamtecLidarDriver::_ultraCapsuleToNormal(const sl_lidar_response_ultra_capsule_measurement_nodes_t&, sl_lidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[52.170s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:1370:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[52.170s]  1370 |                     if (([01;35m[Kdist_predict1 == 0xFFFFFE00[m[K) || (dist_predict1 == 0x1FF)) {
+[52.171s]       |                          [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[52.171s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:1379:40:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[52.172s]  1379 |                     if (([01;35m[Kdist_predict2 == 0xFFFFFE00[m[K) || (dist_predict2 == 0x1FF)) {
+[52.172s]       |                          [01;35m[K~~~~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+[52.182s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K In member function ‘[01m[Kvoid sl::SlamtecLidarDriver::_dense_capsuleToNormal(const sl_lidar_response_capsule_measurement_nodes_t&, sl_lidar_response_measurement_node_hq_t*, size_t&)[m[K’:
+[52.183s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:1577:116:[m[K [01;35m[Kwarning: [m[Ktype qualifiers ignored on cast result type [[01;35m[K-Wignored-qualifiers[m[K]
+[52.183s]  1577 |                     const int dist = static_cast<const int>(_cached_previous_dense_capsuledata.cabins[pos].distance[01;35m[K)[m[K;
+[52.184s]       |                                                                                                                    [01;35m[K^[m[K
+[52.722s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:[m[K At global scope:
+[52.722s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:72:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::convert(const sl_lidar_response_measurement_node_hq_t&, sl_lidar_response_measurement_node_t&)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[52.723s]    72 |     static void [01;35m[Kconvert[m[K(const sl_lidar_response_measurement_node_hq_t& from, sl_lidar_response_measurement_node_t& to)
+[52.723s]       |                 [01;35m[K^~~~~~~[m[K
+[52.724s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_lidar_driver.cpp:59:17:[m[K [01;35m[Kwarning: [m[K‘[01m[Kvoid sl::printDeprecationWarn(const char*, const char*)[m[K’ defined but not used [[01;35m[K-Wunused-function[m[K]
+[52.724s]    59 |     static void [01;35m[KprintDeprecationWarn[m[K(const char* fn, const char* replacement)
+[52.725s]       |                 [01;35m[K^~~~~~~~~~~~~~~~~~~~[m[K
+[64.188s] [ 58%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/sl_serial_channel.cpp.o[0m
+[64.238s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_serial_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[64.239s]    33 | #pragma [01;35m[Konce[m[K
+[64.239s]       |         [01;35m[K^~~~[m[K
+[65.411s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[65.412s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[65.413s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_serial_channel.cpp:34[m[K:
+[65.413s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[65.414s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[65.415s]       |                [01;35m[K^[m[K
+[65.418s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[65.419s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_serial_channel.cpp:34[m[K:
+[65.420s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[65.420s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[65.421s]       |                    [01;35m[K^[m[K
+[65.838s] [ 66%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/sl_tcp_channel.cpp.o[0m
+[65.880s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_tcp_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[65.881s]    33 | #pragma [01;35m[Konce[m[K
+[65.882s]       |         [01;35m[K^~~~[m[K
+[67.024s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[67.025s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[67.026s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_tcp_channel.cpp:34[m[K:
+[67.027s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[67.027s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[67.028s]       |                [01;35m[K^[m[K
+[67.031s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[67.032s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_tcp_channel.cpp:34[m[K:
+[67.033s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[67.033s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[67.034s]       |                    [01;35m[K^[m[K
+[67.060s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_tcp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::TcpChannel::setStatus(_u32)[m[K’:
+[67.061s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_tcp_channel.cpp:95:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[67.062s]    95 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[67.062s]       |                        [01;35m[K~~~~~^~~~[m[K
+[67.428s] [ 75%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/sl_udp_channel.cpp.o[0m
+[67.477s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_udp_channel.cpp:33:9:[m[K [01;35m[Kwarning: [m[K#pragma once in main file
+[67.478s]    33 | #pragma [01;35m[Konce[m[K
+[67.478s]       |         [01;35m[K^~~~[m[K
+[68.737s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:36[m[K,
+[68.738s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[68.739s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_udp_channel.cpp:34[m[K:
+[68.740s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[68.741s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[68.742s]       |                [01;35m[K^[m[K
+[68.745s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_driver.h:54[m[K,
+[68.746s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_udp_channel.cpp:34[m[K:
+[68.746s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[68.747s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[68.748s]       |                    [01;35m[K^[m[K
+[68.772s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_udp_channel.cpp:[m[K In member function ‘[01m[Kvoid sl::UdpChannel::setStatus(_u32)[m[K’:
+[68.773s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/sl_udp_channel.cpp:103:29:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflag[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[68.773s]   103 |         void setStatus([01;35m[K_u32 flag[m[K){}
+[68.774s]       |                        [01;35m[K~~~~~^~~~[m[K
+[69.166s] [ 83%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/arch/linux/net_socket.cpp.o[0m
+[70.796s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_protocol.h:36[m[K,
+[70.797s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:39[m[K,
+[70.797s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/sdkcommon.h:49[m[K,
+[70.798s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[70.799s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_protocol.h:58:16:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kdata[m[K’ [[01;35m[K-Wpedantic[m[K]
+[70.800s]    58 |     sl_u8 data[[01;35m[K0[m[K];
+[70.801s]       |                [01;35m[K^[m[K
+[70.805s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar_cmd.h:36[m[K,
+[70.806s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/rplidar.h:40[m[K,
+[70.806s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/sdkcommon.h:49[m[K,
+[70.807s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:10[m[K:
+[70.808s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/include/sl_lidar_cmd.h:295:20:[m[K [01;35m[Kwarning: [m[KISO C++ forbids zero-size array ‘[01m[Kpayload[m[K’ [[01;35m[K-Wpedantic[m[K]
+[70.809s]   295 |     sl_u8  payload[[01;35m[K0[m[K];
+[70.810s]       |                    [01;35m[K^[m[K
+[71.139s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::net::SocketAddress::getAddressAsString(char*, size_t) const[m[K’:
+[71.140s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:170:17:[m[K [01;35m[Kwarning: [m[Kordered comparison of pointer with integer zero [[01;35m[K-Wextra[m[K]
+[71.140s]   170 |     return ans<=[01;35m[K0[m[K?RESULT_OPERATION_FAIL:RESULT_OK;
+[71.141s]       |                 [01;35m[K^[m[K
+[71.169s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::StreamSocketImpl::send(const void*, size_t)[m[K’:
+[71.170s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:438:17:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[71.171s]   438 |         if ([01;35m[Kans == (int)len[m[K) {
+[71.172s]       |             [01;35m[K~~~~^~~~~~~~~~~[m[K
+[71.637s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:[m[K In member function ‘[01m[Kvirtual u_result rp::arch::net::DGramSocketImpl::sendTo(const rp::net::SocketAddress&, const void*, size_t)[m[K’:
+[71.638s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_socket.cpp:722:47:[m[K [01;35m[Kwarning: [m[Knonnull argument ‘[01m[Ktarget[m[K’ compared to NULL [[01;35m[K-Wnonnull-compare[m[K]
+[71.638s]   722 |         const struct sockaddr* addr = &target [01;35m[K?[m[K reinterpret_cast<const struct sockaddr*>(target.getPlatformData()) : NULL;
+[71.639s]       |                                               [01;35m[K^[m[K
+[72.966s] [ 91%] [32mBuilding CXX object CMakeFiles/rplidar_scan_publisher.dir/sdk/src/arch/linux/net_serial.cpp.o[0m
+[75.179s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kbool rp::arch::net::raw_serial::open(const char*, uint32_t, uint32_t)[m[K’:
+[75.180s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:97:74:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[75.181s]    97 | bool raw_serial::open(const char * portname, uint32_t baudrate, [01;35m[Kuint32_t flags[m[K)
+[75.181s]       |                                                                 [01;35m[K~~~~~~~~~^~~~~[m[K
+[75.185s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::flush(_u32)[m[K’:
+[75.186s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:281:30:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[75.186s]   281 | void raw_serial::flush( [01;35m[K_u32 flags[m[K)
+[75.187s]       |                         [01;35m[K~~~~~^~~~~[m[K
+[75.188s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforsent(_u32, size_t*)[m[K’:
+[75.189s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:286:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[75.190s]   286 | int raw_serial::waitforsent([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[75.191s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[75.192s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual int rp::arch::net::raw_serial::waitforrecv(_u32, size_t*)[m[K’:
+[75.193s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:292:34:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ktimeout[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[75.194s]   292 | int raw_serial::waitforrecv([01;35m[K_u32 timeout[m[K, size_t * returned_size)
+[75.194s]       |                             [01;35m[K~~~~~^~~~~~~[m[K
+[75.536s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:[m[K In member function ‘[01m[Kvirtual void rp::arch::net::raw_serial::cancelOperation()[m[K’:
+[75.537s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:428:12:[m[K [01;35m[Kwarning: [m[Kignoring return value of ‘[01m[Kssize_t write(int, const void*, size_t)[m[K’, declared with attribute warn_unused_result [[01;35m[K-Wunused-result[m[K]
+[75.537s]   428 |     [01;35m[K::write(_selfpipe[1], "x", 1)[m[K;
+[75.538s]       |     [01;35m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~[m[K
+[75.610s] In file included from [01m[K/usr/include/string.h:495[m[K,
+[75.610s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/./sdk/src/arch/linux/arch_linux.h:40[m[K,
+[75.611s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:35[m[K:
+[75.612s] In function ‘[01m[Kchar* strncpy(char*, const char*, size_t)[m[K’,
+[75.613s]     inlined from ‘[01m[Kvirtual bool rp::arch::net::raw_serial::bind(const char*, uint32_t, uint32_t)[m[K’ at [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/rplidar_ros-ros2/sdk/src/arch/linux/net_serial.cpp:91:12[m[K:
+[75.614s] [01m[K/usr/include/aarch64-linux-gnu/bits/string_fortified.h:106:34:[m[K [01;35m[Kwarning: [m[K‘[01m[Kchar* __builtin_strncpy(char*, const char*, long unsigned int)[m[K’ specified bound 200 equals destination size [[01;35m[K-Wstringop-truncation[m[K]
+[75.614s]   106 |   return [01;35m[K__builtin___strncpy_chk (__dest, __src, __len, __bos (__dest))[m[K;
+[75.615s]       |          [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[76.115s] [100%] [32m[1mLinking CXX executable rplidar_scan_publisher[0m
+[76.844s] [100%] Built target rplidar_scan_publisher
+[76.910s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/rplidar_ros2 -- -j4 -l4
+[77.286s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/rplidar_ros2
+[77.370s] -- Install configuration: "Release"
+[77.370s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch
+[77.373s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s1_launch.py
+[77.375s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_a3_launch.py
+[77.377s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s1_tcp_launch.py
+[77.379s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s1_launch.py
+[77.381s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s1_tcp_launch.py
+[77.383s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s2_launch.py
+[77.384s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_a3_launch.py
+[77.386s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s2_launch.py
+[77.388s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_launch.py
+[77.390s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_launch.py
+[77.392s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/rviz
+[77.394s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/rviz/rplidar_ros2.rviz
+[77.399s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/lib/rplidar_ros2/rplidar_scan_publisher
+[77.405s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/rplidar_ros2/lib/rplidar_ros2/rplidar_scan_publisher" to ""
+[77.406s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/ament_index/resource_index/package_run_dependencies/rplidar_ros2
+[77.408s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/ament_index/resource_index/parent_prefix_path/rplidar_ros2
+[77.409s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.sh
+[77.411s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.dsv
+[77.412s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/path.sh
+[77.416s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/path.dsv
+[77.418s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.bash
+[77.419s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.sh
+[77.420s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.zsh
+[77.421s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.dsv
+[77.423s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/package.dsv
+[77.425s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/ament_index/resource_index/packages/rplidar_ros2
+[77.427s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake
+[77.428s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake
+[77.430s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config.cmake
+[77.431s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config-version.cmake
+[77.437s] -- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/package.xml
+[77.452s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/rplidar_ros2

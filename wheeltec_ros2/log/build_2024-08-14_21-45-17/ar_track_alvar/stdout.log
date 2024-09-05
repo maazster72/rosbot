@@ -1,0 +1,21 @@
+[  2%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o[0m
+[  4%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o[0m
+[  6%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o[0m
+[  8%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o[0m
+[ 10%] [32m[1mLinking CXX static library libar_track_alvar.a[0m
+[ 65%] Built target ar_track_alvar
+[35m[1mScanning dependencies of target kinect_filtering[0m
+[35m[1mScanning dependencies of target createMarker[0m
+[35m[1mScanning dependencies of target findMarkerBundlesNoKinect[0m
+[ 69%] Built target medianFilter
+[35m[1mScanning dependencies of target individualMarkersNoKinect[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/kinect_filtering.dir/src/kinect_filtering.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/findMarkerBundlesNoKinect.dir/nodes/FindMarkerBundlesNoKinect.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/individualMarkersNoKinect.dir/nodes/IndividualMarkersNoKinect.cpp.o[0m
+[ 80%] [32m[1mLinking CXX static library libkinect_filtering.a[0m
+[ 82%] [32m[1mLinking CXX executable createMarker[0m
+[ 82%] Built target kinect_filtering
+[ 84%] [32m[1mLinking CXX executable findMarkerBundlesNoKinect[0m
+[ 84%] Built target findMarkerBundlesNoKinect
+[ 84%] Built target createMarker

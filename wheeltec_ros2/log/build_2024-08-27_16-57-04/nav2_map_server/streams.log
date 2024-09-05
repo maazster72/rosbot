@@ -1,0 +1,54 @@
+[0.090s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_map_server': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_map_server -- -j4 -l4
+[0.434s] [  5%] Built target gtest_main
+[0.445s] [ 11%] Built target gtest
+[0.502s] [ 19%] Built target map_io
+[0.593s] [ 27%] Built target test_map_saver_cli
+[0.733s] [ 36%] Built target test_map_io
+[0.831s] [ 44%] Built target test_map_saver_publisher
+[0.834s] [ 55%] Built target map_server_core
+[1.157s] [ 61%] Built target map_server
+[1.177s] [ 66%] Built target costmap_filter_info_server
+[1.181s] [ 72%] Built target map_saver_cli
+[1.234s] [ 77%] Built target map_saver_server
+[1.435s] [ 83%] Built target test_costmap_filter_info_server
+[1.502s] [ 91%] Built target test_map_server_node
+[1.601s] [100%] Built target test_map_saver_node
+[1.657s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/nav2_map_server -- -j4 -l4
+[1.989s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/nav2_map_server': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav2_map_server
+[2.034s] -- Install configuration: "Release"
+[2.053s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib/libmap_server_core.so
+[2.054s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib/libmap_io.so
+[2.054s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib/nav2_map_server/map_server
+[2.056s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib/nav2_map_server/map_saver_cli
+[2.056s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib/nav2_map_server/map_saver_server
+[2.057s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/lib/nav2_map_server/costmap_filter_info_server
+[2.058s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/include/
+[2.058s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/include//nav2_map_server
+[2.069s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/include//nav2_map_server/costmap_filter_info_server.hpp
+[2.069s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/include//nav2_map_server/map_mode.hpp
+[2.070s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/include//nav2_map_server/map_server.hpp
+[2.071s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/include//nav2_map_server/map_io.hpp
+[2.071s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/include//nav2_map_server/map_saver.hpp
+[2.074s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/launch
+[2.084s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/launch/map_saver_server.launch.py
+[2.085s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/environment/library_path.sh
+[2.088s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/environment/library_path.dsv
+[2.090s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/ament_index/resource_index/package_run_dependencies/nav2_map_server
+[2.091s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/ament_index/resource_index/parent_prefix_path/nav2_map_server
+[2.091s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/environment/ament_prefix_path.sh
+[2.092s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/environment/ament_prefix_path.dsv
+[2.092s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/environment/path.sh
+[2.093s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/environment/path.dsv
+[2.093s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/local_setup.bash
+[2.094s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/local_setup.sh
+[2.094s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/local_setup.zsh
+[2.095s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/local_setup.dsv
+[2.096s] -- Installing: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/package.dsv
+[2.096s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/ament_index/resource_index/packages/nav2_map_server
+[2.097s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_include_directories-extras.cmake
+[2.097s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_libraries-extras.cmake
+[2.098s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/cmake/ament_cmake_export_dependencies-extras.cmake
+[2.098s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/cmake/nav2_map_serverConfig.cmake
+[2.099s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/cmake/nav2_map_serverConfig-version.cmake
+[2.099s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/nav2_map_server/share/nav2_map_server/package.xml
+[2.100s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/nav2_map_server' returned '0': AMENT_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/nav2_map_server

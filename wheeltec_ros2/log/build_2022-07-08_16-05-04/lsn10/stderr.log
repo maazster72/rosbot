@@ -1,0 +1,26 @@
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsiosr.cpp:[m[K In member function ‘[01m[Kint ls::LSIOSR::close()[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsiosr.cpp:389:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  389 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In member function ‘[01m[Kint ls::LSN10::getScan(std::vector<ls::ScanPoint>&, rclcpp::Time&, float&)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:153:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  153 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In member function ‘[01m[Kvoid ls::LSN10::recvThread()[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:261:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  261 |    for (size_t i = 0; [01;35m[Ki < invalidValue[m[K; i++)
+      |                       [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:278:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ls::ScanPoint>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  278 |     for(int k=0;[01;35m[Kk<scan_points_.size()[m[K;k++)
+      |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:304:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ls::ScanPoint>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  304 |      for(int k=0; [01;35m[Kk<scan_points_.size()[m[K; k++)
+      |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In function ‘[01m[Kvoid handleSig(int)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:423:20:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksigno[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  423 | void handleSig([01;35m[Kint signo[m[K)
+      |                [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:436:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klsn10[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  436 |   ls::LSN10* [01;35m[Klsn10[m[K = ls::LSN10::instance();
+      |              [01;35m[K^~~~~[m[K

@@ -1,0 +1,15 @@
+[0.146s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ackermann_msgs -- -j4 -l4
+[0.593s] [  2%] Built target ackermann_msgs__cpp
+[0.595s] [ 12%] Built target ackermann_msgs__rosidl_generator_c
+[0.918s] [ 23%] Built target ackermann_msgs__rosidl_typesupport_cpp
+[0.930s] [ 33%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_cpp
+[0.942s] [ 43%] Built target ackermann_msgs__rosidl_typesupport_introspection_cpp
+[1.103s] [ 53%] Built target ackermann_msgs__rosidl_typesupport_introspection_c
+[1.124s] [ 64%] Built target ackermann_msgs__rosidl_typesupport_c
+[1.155s] [ 74%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c
+[1.271s] [ 74%] Built target ackermann_msgs
+[1.388s] [ 76%] Built target ackermann_msgs__py
+[1.541s] [ 84%] Built target ackermann_msgs__python
+[1.768s] [ 94%] Built target ackermann_msgs__rosidl_typesupport_c__pyext
+[1.768s] [ 94%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.776s] [100%] Built target ackermann_msgs__rosidl_typesupport_introspection_c__pyext

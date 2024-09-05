@@ -1,0 +1,55 @@
+[0.170s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox -- -j4 -l4
+[0.361s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.509s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.911s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[1.136s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.153s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.920s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.181s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.208s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.310s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.077s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[3.475s] -- Added test 'copyright' to check source files copyright and LICENSE
+[3.488s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.489s] -- Configured cppcheck include dirs: 
+[3.490s] -- Configured cppcheck exclude dirs and/or files: 
+[3.495s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[3.496s] -- Configured cpplint exclude dirs and/or files: 
+[3.499s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.504s] -- Added test 'lint_cmake' to check CMake code style
+[3.507s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[3.516s] -- Added test 'uncrustify' to check C / C++ code style
+[3.517s] -- Configured uncrustify additional arguments: 
+[3.518s] -- Added test 'xmllint' to check XML markup files
+[3.533s] -- Configuring done
+[3.581s] -- Generating done
+[3.593s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox
+[3.770s] [35m[1mScanning dependencies of target talker[0m
+[3.979s] [ 50%] [32mBuilding CXX object CMakeFiles/talker.dir/src/publisher_member_function.cpp.o[0m
+[22.817s] [100%] [32m[1mLinking CXX executable talker[0m
+[24.065s] [100%] Built target talker
+[24.142s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox -- -j4 -l4
+[24.352s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox
+[24.417s] -- Install configuration: ""
+[24.421s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/lib/wheeltec_slam_toolbox/talker
+[24.428s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/lib/wheeltec_slam_toolbox/talker" to ""
+[24.431s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/config
+[24.435s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/config/mapper_params_online_sync.yaml
+[24.437s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/launch
+[24.438s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/launch/online_sync.launch.py
+[24.442s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/ament_index/resource_index/package_run_dependencies/wheeltec_slam_toolbox
+[24.447s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/ament_index/resource_index/parent_prefix_path/wheeltec_slam_toolbox
+[24.456s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/environment/ament_prefix_path.sh
+[24.458s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/environment/ament_prefix_path.dsv
+[24.460s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/environment/path.sh
+[24.463s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/environment/path.dsv
+[24.465s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/local_setup.bash
+[24.466s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/local_setup.sh
+[24.468s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/local_setup.zsh
+[24.469s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/local_setup.dsv
+[24.471s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/package.dsv
+[24.474s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/ament_index/resource_index/packages/wheeltec_slam_toolbox
+[24.475s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/cmake/wheeltec_slam_toolboxConfig.cmake
+[24.476s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/cmake/wheeltec_slam_toolboxConfig-version.cmake
+[24.478s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_slam_toolbox/share/wheeltec_slam_toolbox/package.xml
+[24.487s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_slam_toolbox

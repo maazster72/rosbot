@@ -1,0 +1,57 @@
+[0.438s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf -- -j4 -l4
+[4.358s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf -- -j4 -l4
+[4.920s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf
+[5.069s] -- Install configuration: ""
+[5.110s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes
+[5.112s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/wheels
+[5.116s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/wheels/right_tire.stl
+[5.117s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/wheels/left_tire.stl
+[5.118s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/sensors
+[5.121s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/sensors/r200.dae
+[5.128s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/sensors/r200.jpg
+[5.129s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/sensors/astra.jpg
+[5.130s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/sensors/astra.dae
+[5.149s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/sensors/lds.stl
+[5.149s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/bases
+[5.150s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/bases/waffle_pi_base.stl
+[5.173s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/bases/waffle_base.stl
+[5.174s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/meshes/bases/burger_base.stl
+[5.174s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/rviz
+[5.175s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/rviz/model.rviz
+[5.175s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf
+[5.220s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/senior_mec_dl_robot.urdf
+[5.245s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/top_diff_robot.urdf
+[5.245s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/top_mec_dl_robot.urdf
+[5.246s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/senior_omni_robot.urdf
+[5.246s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/four_wheel_diff_robot.urdf
+[5.246s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/common_properties.urdf
+[5.247s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/top_omni_robot.urdf
+[5.247s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/mec_EightDrive_robot.urdf
+[5.247s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/mini_diff_robot.urdf
+[5.248s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/senior_akm_robot.urdf
+[5.248s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/turtlebot3_waffle_pi.urdf
+[5.249s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/top_akm_bs_robot.urdf
+[5.253s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/top_mec_bs_robot.urdf
+[5.253s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/turtlebot3_burger.urdf
+[5.254s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/mini_omni_robot.urdf
+[5.254s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/turtlebot3_waffle.urdf
+[5.255s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/senior_mec_robot.urdf
+[5.255s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/mini_mec_robot.urdf
+[5.255s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/mini_akm_robot.urdf
+[5.256s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/urdf/top_akm_dl_robot.urdf
+[5.256s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/ament_index/resource_index/package_run_dependencies/wheeltec_robot_urdf
+[5.280s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/ament_index/resource_index/parent_prefix_path/wheeltec_robot_urdf
+[5.290s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/environment/ament_prefix_path.sh
+[5.291s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/environment/ament_prefix_path.dsv
+[5.296s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/environment/path.sh
+[5.298s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/environment/path.dsv
+[5.298s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/local_setup.bash
+[5.299s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/local_setup.sh
+[5.299s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/local_setup.zsh
+[5.300s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/local_setup.dsv
+[5.300s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/package.dsv
+[5.358s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/ament_index/resource_index/packages/wheeltec_robot_urdf
+[5.369s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/cmake/wheeltec_robot_urdfConfig.cmake
+[5.370s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/cmake/wheeltec_robot_urdfConfig-version.cmake
+[5.371s] -- Up-to-date: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_urdf/share/wheeltec_robot_urdf/package.xml
+[5.382s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_urdf

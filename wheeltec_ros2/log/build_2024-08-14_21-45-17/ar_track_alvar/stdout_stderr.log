@@ -1,0 +1,127 @@
+[  2%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Marker.cpp.o[0m
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Marker.h:38[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/src/Marker.cpp:25[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+[  4%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o[0m
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarker.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarkerBundle.h:34[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/src/MultiMarkerBundle.cpp:24[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+[  6%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarkerInitializer.cpp.o[0m
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarker.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarkerInitializer.h:34[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/src/MultiMarkerInitializer.cpp:24[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+[  8%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarker.cpp.o[0m
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarker.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/src/MultiMarker.cpp:25[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+[ 10%] [32m[1mLinking CXX static library libar_track_alvar.a[0m
+[ 65%] Built target ar_track_alvar
+[35m[1mScanning dependencies of target kinect_filtering[0m
+[35m[1mScanning dependencies of target createMarker[0m
+[35m[1mScanning dependencies of target findMarkerBundlesNoKinect[0m
+[ 69%] Built target medianFilter
+[35m[1mScanning dependencies of target individualMarkersNoKinect[0m
+[ 71%] [32mBuilding CXX object CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o[0m
+[ 73%] [32mBuilding CXX object CMakeFiles/kinect_filtering.dir/src/kinect_filtering.cpp.o[0m
+[ 76%] [32mBuilding CXX object CMakeFiles/findMarkerBundlesNoKinect.dir/nodes/FindMarkerBundlesNoKinect.cpp.o[0m
+[ 78%] [32mBuilding CXX object CMakeFiles/individualMarkersNoKinect.dir/nodes/IndividualMarkersNoKinect.cpp.o[0m
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarker.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/src/SampleMarkerCreator.cpp:1[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:40[m[K:
+[01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+   37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+      |  [01;35m[K^~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundlesNoKinect::makeMarkerMsgs(int, int, alvar::Pose&, sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr, geometry_msgs::msg::TransformStamped&, visualization_msgs::msg::Marker*, ar_track_alvar_msgs::msg::AlvarMarker*)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:312:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  312 |     rvizMarker->lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                 [01;35m[K^[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkersNoKinect::getCapCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:333:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+  333 |             rvizMarker_.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+      |                                                         [01;35m[K^[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:40[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+                 from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:39[m[K:
+[01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+   46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+      |            [01;36m[K^~~~~~~~[m[K
+[01m[Kc++:[m[K [01;31m[Kfatal error: [m[KKilled signal terminated program cc1plus
+compilation terminated.
+make[2]: *** [CMakeFiles/individualMarkersNoKinect.dir/build.make:63: CMakeFiles/individualMarkersNoKinect.dir/nodes/IndividualMarkersNoKinect.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:257: CMakeFiles/individualMarkersNoKinect.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+[ 80%] [32m[1mLinking CXX static library libkinect_filtering.a[0m
+[ 82%] [32m[1mLinking CXX executable createMarker[0m
+[ 82%] Built target kinect_filtering
+[ 84%] [32m[1mLinking CXX executable findMarkerBundlesNoKinect[0m
+[ 84%] Built target findMarkerBundlesNoKinect
+[ 84%] Built target createMarker
+make: *** [Makefile:141: all] Error 2

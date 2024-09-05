@@ -1,0 +1,229 @@
+-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found rclpy: 1.9.1 (/opt/ros/galactic/share/rclpy/cmake)
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Found lsm10_v2: 0.0.0 (/home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake)
+-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") 
+-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") 
+-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8
+-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so
+-- Added test 'copyright' to check source files copyright and LICENSE
+-- Added test 'cppcheck' to perform static code analysis on C / C++ code
+-- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/include;/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src;/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/LSM10
+-- Configured cppcheck exclude dirs and/or files: 
+-- Added test 'cpplint' to check C / C++ code against the Google style
+-- Configured cpplint exclude dirs and/or files: 
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+-- Added test 'uncrustify' to check C / C++ code style
+-- Configured uncrustify additional arguments: 
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/lsm10_v2
+[35m[1mScanning dependencies of target LSM10[0m
+[  2%] [32mBuilding CXX object CMakeFiles/LSM10.dir/src/lsiosr.cpp.o[0m
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsiosr.cpp:[m[K In member function ‘[01m[Kint ls::LSIOSR::close()[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsiosr.cpp:400:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  400 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[  5%] [32mBuilding CXX object CMakeFiles/LSM10.dir/src/lsm10.cpp.o[0m
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:[m[K In member function ‘[01m[Kvoid ls::LSM10::thread_tmp()[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:87:7:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Ktest_rmp[m[K’ [[01;35m[K-Wunused-variable[m[K]
+   87 |   int [01;35m[Ktest_rmp[m[K=0;
+      |       [01;35m[K^~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:[m[K In member function ‘[01m[Kint ls::LSM10::getScan(std::vector<ls::ScanPoint>&, rclcpp::Time&, float&)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:128:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  128 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:[m[K In member function ‘[01m[Kvoid ls::LSM10::recvThread()[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:218:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+  218 |    for (size_t i = 0; [01;35m[Ki < invalidValue[m[K; i++)
+      |                       [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:240:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ls::ScanPoint>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+  240 |     for(int k=0; [01;35m[Kk<scan_points_.size()[m[K; k++)
+      |                  [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:[m[K In function ‘[01m[Kvoid handleSig(int)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:360:20:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksigno[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  360 | void handleSig([01;35m[Kint signo[m[K)
+      |                [01;35m[K~~~~^~~~~[m[K
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src/lsm10.cpp:371:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klsm10[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  371 |   ls::LSM10* [01;35m[Klsm10[m[K = ls::LSM10::instance();
+      |              [01;35m[K^~~~~[m[K
+[  8%] [32m[1mLinking CXX executable LSM10[0m
+[  8%] Built target LSM10
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_generator_c[0m
+[ 11%] [32mBuilding C object CMakeFiles/lsm10_v2__rosidl_generator_c.dir/rosidl_generator_c/lsm10_v2/msg/detail/difop__functions.c.o[0m
+[ 14%] [32m[1mLinking C shared library liblsm10_v2__rosidl_generator_c.so[0m
+[ 17%] Built target lsm10_v2__rosidl_generator_c
+[ 20%] Built target lsm10_v2__cpp
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_c[0m
+[ 23%] [32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_c.dir/rosidl_typesupport_c/lsm10_v2/msg/difop__type_support.cpp.o[0m
+[ 26%] [32m[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_c.so[0m
+[ 29%] Built target lsm10_v2__rosidl_typesupport_c
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_fastrtps_cpp[0m
+[ 32%] [32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lsm10_v2/msg/detail/dds_fastrtps/difop__type_support.cpp.o[0m
+[ 35%] [32m[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 38%] Built target lsm10_v2__rosidl_typesupport_fastrtps_cpp
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_introspection_cpp[0m
+[ 41%] [32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lsm10_v2/msg/detail/difop__type_support.cpp.o[0m
+[ 44%] [32m[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_introspection_cpp.so[0m
+[ 47%] Built target lsm10_v2__rosidl_typesupport_introspection_cpp
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_fastrtps_c[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lsm10_v2/msg/detail/difop__type_support_c.cpp.o[0m
+[ 52%] [32m[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_fastrtps_c.so[0m
+[ 55%] Built target lsm10_v2__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_cpp[0m
+[ 58%] [32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lsm10_v2/msg/difop__type_support.cpp.o[0m
+[ 61%] [32m[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_cpp.so[0m
+[ 64%] Built target lsm10_v2__rosidl_typesupport_cpp
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_introspection_c[0m
+[ 67%] [32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lsm10_v2/msg/detail/difop__type_support.c.o[0m
+[ 70%] [32m[1mLinking C shared library liblsm10_v2__rosidl_typesupport_introspection_c.so[0m
+[ 73%] Built target lsm10_v2__rosidl_typesupport_introspection_c
+[ 73%] Built target lsm10_v2
+[ 76%] Built target lsm10_v2__py
+[35m[1mScanning dependencies of target lsm10_v2__python[0m
+[ 79%] [32mBuilding C object CMakeFiles/lsm10_v2__python.dir/rosidl_generator_py/lsm10_v2/msg/_difop_s.c.o[0m
+[ 82%] [32m[1mLinking C shared library rosidl_generator_py/lsm10_v2/liblsm10_v2__python.so[0m
+[ 82%] Built target lsm10_v2__python
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_c__pyext[0m
+[ 85%] [32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lsm10_v2/_lsm10_v2_s.ep.rosidl_typesupport_c.c.o[0m
+[ 88%] [32m[1mLinking C shared library rosidl_generator_py/lsm10_v2/lsm10_v2_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 88%] Built target lsm10_v2__rosidl_typesupport_c__pyext
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_fastrtps_c__pyext[0m
+[ 91%] [32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lsm10_v2/_lsm10_v2_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/lsm10_v2/lsm10_v2_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[ 94%] Built target lsm10_v2__rosidl_typesupport_fastrtps_c__pyext
+[35m[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_introspection_c__pyext[0m
+[ 97%] [32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lsm10_v2/_lsm10_v2_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[100%] [32m[1mLinking C shared library rosidl_generator_py/lsm10_v2/lsm10_v2_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[100%] Built target lsm10_v2__rosidl_typesupport_introspection_c__pyext
+-- Install configuration: ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/rosidl_interfaces/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__struct.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__functions.c
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__functions.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/difop.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_generator_c__visibility_control.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/library_path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/library_path.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_generator_c.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_generator_c.so" to ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_fastrtps_c.h
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_c.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_c.so" to ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/dds_fastrtps
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_fastrtps_cpp.hpp
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_cpp.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_cpp.so" to ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_introspection_c__visibility_control.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_introspection_c.h
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.c
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_c.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_c.so" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_c.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_c.so" to ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/difop.hpp
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__traits.hpp
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__builder.hpp
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__struct.hpp
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_introspection_cpp.hpp
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.cpp
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_cpp.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_cpp.so" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_cpp.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_cpp.so" to ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/pythonpath.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/pythonpath.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/__init__.py
+Compiling '/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/__init__.py'...
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/_difop_s.c
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/__init__.py
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/_difop.py
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__python.so
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__python.so" to ""
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/msg/Difop.idl
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/msg/Difop.msg
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/lsm10_v2/LSM10
+-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/lsm10_v2/LSM10" to ""
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/launch
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/launch/ls_m10.launch.py
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/package_run_dependencies/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/parent_prefix_path/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/ament_prefix_path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/path.sh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/path.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.bash
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.sh
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.zsh
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.dsv
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/package.dsv
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/packages/lsm10_v2
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cExport.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cExport-noconfig.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cExport.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cExport-noconfig.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cExport.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cExport-noconfig.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cppExport.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cppExport.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cppExport.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cppExport-noconfig.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake-extras.cmake
+-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_dependencies-extras.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_libraries-extras.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_targets-extras.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_include_directories-extras.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2Config.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2Config-version.cmake
+-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/package.xml

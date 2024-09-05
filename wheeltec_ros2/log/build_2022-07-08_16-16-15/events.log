@@ -1,0 +1,122 @@
+[0.000000] (-) TimerEvent: {}
+[0.007930] (-) JobUnselected: {'identifier': 'ackermann_msgs'}
+[0.008296] (-) JobUnselected: {'identifier': 'ar_track_alvar'}
+[0.008478] (-) JobUnselected: {'identifier': 'ar_track_alvar_msgs'}
+[0.008644] (-) JobUnselected: {'identifier': 'astra_msgs'}
+[0.008767] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.008875] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.008971] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.009071] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.009171] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.009271] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.009386] (-) JobUnselected: {'identifier': 'ldlidar_stl_ros2'}
+[0.009484] (-) JobUnselected: {'identifier': 'lidar_ros2'}
+[0.009600] (-) JobUnselected: {'identifier': 'lsm10_v2'}
+[0.009702] (-) JobUnselected: {'identifier': 'lsn10'}
+[0.009806] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.009915] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.010808] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.010958] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.011073] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.011183] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.011283] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.011666] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.011805] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.011901] (-) JobUnselected: {'identifier': 'nav2_gazebo_spawner'}
+[0.012000] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.018973] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.019201] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.019315] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.019417] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.019559] (-) JobUnselected: {'identifier': 'nav2_recoveries'}
+[0.019771] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.019935] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.020162] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.020324] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.021518] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.021747] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.023512] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.023671] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.023783] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.023899] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.023999] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.024100] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.024204] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.024299] (-) JobUnselected: {'identifier': 'openslam_gmapping'}
+[0.024397] (-) JobUnselected: {'identifier': 'pcl_conversions'}
+[0.024495] (-) JobUnselected: {'identifier': 'pcl_ros'}
+[0.024596] (-) JobUnselected: {'identifier': 'perception_pcl'}
+[0.024844] (-) JobUnselected: {'identifier': 'ros2_astra_camera'}
+[0.024972] (-) JobUnselected: {'identifier': 'serial'}
+[0.025121] (-) JobUnselected: {'identifier': 'simple_follower_ros2'}
+[0.025257] (-) JobUnselected: {'identifier': 'slam_gmapping'}
+[0.027385] (-) JobUnselected: {'identifier': 'tf2_tools'}
+[0.031209] (-) JobUnselected: {'identifier': 'turn_on_wheeltec_robot'}
+[0.031339] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.031611] (-) JobUnselected: {'identifier': 'web_video_server'}
+[0.031739] (-) JobUnselected: {'identifier': 'wheeltec_cartographer'}
+[0.031830] (-) JobUnselected: {'identifier': 'wheeltec_joy'}
+[0.031917] (-) JobUnselected: {'identifier': 'wheeltec_nav2'}
+[0.031997] (-) JobUnselected: {'identifier': 'wheeltec_robot_keyboard'}
+[0.032074] (-) JobUnselected: {'identifier': 'wheeltec_robot_msg'}
+[0.032158] (-) JobUnselected: {'identifier': 'wheeltec_robot_rrt'}
+[0.032247] (-) JobUnselected: {'identifier': 'wheeltec_robot_rtab'}
+[0.032339] (-) JobUnselected: {'identifier': 'wheeltec_robot_urdf'}
+[0.032432] (-) JobUnselected: {'identifier': 'wheeltec_rrt_msg'}
+[0.032564] (-) JobUnselected: {'identifier': 'wheeltec_slam_toolbox'}
+[0.032679] (rplidar_ros2) JobQueued: {'identifier': 'rplidar_ros2', 'dependencies': OrderedDict()}
+[0.032793] (rplidar_ros2) JobStarted: {'identifier': 'rplidar_ros2'}
+[0.092428] (-) TimerEvent: {}
+[0.101355] (rplidar_ros2) JobProgress: {'identifier': 'rplidar_ros2', 'progress': 'cmake'}
+[0.104032] (rplidar_ros2) JobProgress: {'identifier': 'rplidar_ros2', 'progress': 'build'}
+[0.107060] (rplidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2', '--', '-j4', '-l4'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7452'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64:'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7034'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0421018054037'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:36591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7488,unix/wheeltec:/tmp/.ICE-unix/7488'), ('INVOCATION_ID', '600c813717104c09aee07b2d631c9322'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/08ab6fc1_8976_4af9_8551_4ff085fdaf7c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.192634] (-) TimerEvent: {}
+[0.293557] (-) TimerEvent: {}
+[0.342408] (rplidar_ros2) StdoutLine: {'line': b'[100%] Built target rplidar_scan_publisher\n'}
+[0.384561] (rplidar_ros2) CommandEnded: {'returncode': 0}
+[0.393743] (-) TimerEvent: {}
+[0.496449] (-) TimerEvent: {}
+[0.552177] (rplidar_ros2) JobProgress: {'identifier': 'rplidar_ros2', 'progress': 'install'}
+[0.590830] (rplidar_ros2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7452'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64:'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7034'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0421018054037'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:36591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7488,unix/wheeltec:/tmp/.ICE-unix/7488'), ('INVOCATION_ID', '600c813717104c09aee07b2d631c9322'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/08ab6fc1_8976_4af9_8551_4ff085fdaf7c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/rplidar_ros2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.596651] (-) TimerEvent: {}
+[0.632242] (rplidar_ros2) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[0.633470] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch\n'}
+[0.634515] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s1_launch.py\n'}
+[0.635411] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s2_launch.py\n'}
+[0.636174] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_a3_launch.py\n'}
+[0.637067] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s2_launch.py\n'}
+[0.637971] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s1_launch.py\n'}
+[0.638786] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_launch.py\n'}
+[0.639754] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_s1_tcp_launch.py\n'}
+[0.640241] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_s1_tcp_launch.py\n'}
+[0.640850] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/view_rplidar_a3_launch.py\n'}
+[0.641655] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/launch/rplidar_launch.py\n'}
+[0.642447] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/rviz\n'}
+[0.642918] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/rviz/rplidar_ros2.rviz\n'}
+[0.643376] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/lib/rplidar_ros2/rplidar_scan_publisher\n'}
+[0.643942] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/ament_index/resource_index/package_run_dependencies/rplidar_ros2\n'}
+[0.644774] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/ament_index/resource_index/parent_prefix_path/rplidar_ros2\n'}
+[0.645287] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.sh\n'}
+[0.646614] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/ament_prefix_path.dsv\n'}
+[0.647081] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/path.sh\n'}
+[0.647597] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/environment/path.dsv\n'}
+[0.648188] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.bash\n'}
+[0.648617] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.sh\n'}
+[0.649045] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.zsh\n'}
+[0.649495] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/local_setup.dsv\n'}
+[0.650431] (rplidar_ros2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/package.dsv\n'}
+[0.670591] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/ament_index/resource_index/packages/rplidar_ros2\n'}
+[0.671037] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.671409] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.672085] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config.cmake\n'}
+[0.672715] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/cmake/rplidar_ros2Config-version.cmake\n'}
+[0.673089] (rplidar_ros2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/rplidar_ros2/share/rplidar_ros2/package.xml\n'}
+[0.673404] (rplidar_ros2) CommandEnded: {'returncode': 0}
+[0.696815] (-) TimerEvent: {}
+[0.797534] (-) TimerEvent: {}
+[0.898400] (-) TimerEvent: {}
+[0.999033] (-) TimerEvent: {}
+[1.114914] (-) TimerEvent: {}
+[1.213750] (rplidar_ros2) JobEnded: {'identifier': 'rplidar_ros2', 'rc': 0}
+[1.215141] (-) TimerEvent: {}
+[1.217158] (-) EventReactorShutdown: {}

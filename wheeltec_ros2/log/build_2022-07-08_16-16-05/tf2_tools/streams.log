@@ -1,0 +1,23 @@
+[4.728s] Invoking command in '/home/wheeltec/wheeltec_ros2/src/depend/tf2_tools': PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/tf2_tools build --build-base /home/wheeltec/wheeltec_ros2/build/tf2_tools/build install --prefix /home/wheeltec/wheeltec_ros2/install/tf2_tools --record /home/wheeltec/wheeltec_ros2/build/tf2_tools/install.log --single-version-externally-managed
+[6.471s] running egg_info
+[6.549s] writing ../../../build/tf2_tools/tf2_tools.egg-info/PKG-INFO
+[6.550s] writing dependency_links to ../../../build/tf2_tools/tf2_tools.egg-info/dependency_links.txt
+[6.551s] writing entry points to ../../../build/tf2_tools/tf2_tools.egg-info/entry_points.txt
+[6.552s] writing requirements to ../../../build/tf2_tools/tf2_tools.egg-info/requires.txt
+[6.552s] writing top-level names to ../../../build/tf2_tools/tf2_tools.egg-info/top_level.txt
+[6.702s] reading manifest file '../../../build/tf2_tools/tf2_tools.egg-info/SOURCES.txt'
+[6.706s] writing manifest file '../../../build/tf2_tools/tf2_tools.egg-info/SOURCES.txt'
+[6.706s] running build
+[6.707s] running build_py
+[6.707s] running install
+[6.708s] /home/wheeltec/.local/lib/python3.8/site-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[6.708s]   warnings.warn(
+[6.734s] running install_lib
+[6.808s] running install_data
+[6.879s] running install_egg_info
+[6.953s] removing '/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages/tf2_tools-0.17.1-py3.8.egg-info' (and everything under it)
+[6.955s] Copying ../../../build/tf2_tools/tf2_tools.egg-info to /home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages/tf2_tools-0.17.1-py3.8.egg-info
+[6.959s] running install_scripts
+[7.329s] Installing view_frames script to /home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/tf2_tools
+[7.330s] writing list of installed files to '/home/wheeltec/wheeltec_ros2/build/tf2_tools/install.log'
+[7.506s] Invoked command in '/home/wheeltec/wheeltec_ros2/src/depend/tf2_tools' returned '0': PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../../build/tf2_tools build --build-base /home/wheeltec/wheeltec_ros2/build/tf2_tools/build install --prefix /home/wheeltec/wheeltec_ros2/install/tf2_tools --record /home/wheeltec/wheeltec_ros2/build/tf2_tools/install.log --single-version-externally-managed

@@ -1,0 +1,65 @@
+[0.148s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/simple_follower_ros2:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_simple_commander:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ackermann_msgs -- -j4 -l4
+[0.468s] [  2%] [34m[1mGenerating C code for ROS interfaces[0m
+[0.596s] [  5%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[3.081s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_generator_c[0m
+[3.251s] [  7%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive__functions.c.o[0m
+[3.323s] [  7%] Built target ackermann_msgs__cpp
+[3.336s] [ 10%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_generator_c.dir/rosidl_generator_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__functions.c.o[0m
+[3.455s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.479s] [ 15%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[4.085s] [ 17%] [32m[1mLinking C shared library libackermann_msgs__rosidl_generator_c.so[0m
+[4.149s] [ 20%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[4.725s] [ 20%] Built target ackermann_msgs__rosidl_generator_c
+[4.949s] [ 23%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[6.820s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_introspection_cpp[0m
+[7.021s] [ 25%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive__type_support.cpp.o[0m
+[7.538s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_cpp[0m
+[7.743s] [ 28%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o[0m
+[8.364s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_fastrtps_cpp[0m
+[8.599s] [ 30%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive__type_support.cpp.o[0m
+[9.203s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_introspection_c[0m
+[9.412s] [ 33%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive__type_support.c.o[0m
+[9.879s] [ 35%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.cpp.o[0m
+[9.925s] [ 38%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support.c.o[0m
+[10.321s] [ 41%] [32m[1mLinking C shared library libackermann_msgs__rosidl_typesupport_introspection_c.so[0m
+[10.507s] [ 43%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o[0m
+[10.873s] [ 43%] Built target ackermann_msgs__rosidl_typesupport_introspection_c
+[11.040s] [ 46%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[12.678s] [ 48%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_introspection_cpp.so[0m
+[12.743s] [ 51%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/ackermann_msgs/msg/detail/dds_fastrtps/ackermann_drive_stamped__type_support.cpp.o[0m
+[13.215s] [ 53%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_cpp.so[0m
+[13.368s] [ 53%] Built target ackermann_msgs__rosidl_typesupport_introspection_cpp
+[13.720s] [ 53%] Built target ackermann_msgs__rosidl_typesupport_cpp
+[14.838s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_c[0m
+[14.995s] [ 56%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive__type_support.cpp.o[0m
+[15.065s] [ 58%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/ackermann_msgs/msg/ackermann_drive_stamped__type_support.cpp.o[0m
+[15.451s] [ 61%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_c.so[0m
+[15.959s] [ 61%] Built target ackermann_msgs__rosidl_typesupport_c
+[16.007s] [ 64%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_cpp.so[0m
+[16.892s] [ 64%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_cpp
+[17.027s] [ 66%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[19.813s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_fastrtps_c[0m
+[20.009s] [ 69%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive__type_support_c.cpp.o[0m
+[20.047s] [ 71%] [32mBuilding CXX object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/ackermann_msgs/msg/detail/ackermann_drive_stamped__type_support_c.cpp.o[0m
+[22.860s] [ 74%] [32m[1mLinking CXX shared library libackermann_msgs__rosidl_typesupport_fastrtps_c.so[0m
+[23.524s] [ 74%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c
+[23.809s] [ 74%] Built target ackermann_msgs
+[24.062s] [ 76%] [34m[1mGenerating Python code for ROS interfaces[0m
+[29.223s] [ 76%] Built target ackermann_msgs__py
+[29.300s] [35m[1mScanning dependencies of target ackermann_msgs__python[0m
+[29.523s] [ 79%] [32mBuilding C object CMakeFiles/ackermann_msgs__python.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_s.c.o[0m
+[29.535s] [ 82%] [32mBuilding C object CMakeFiles/ackermann_msgs__python.dir/rosidl_generator_py/ackermann_msgs/msg/_ackermann_drive_stamped_s.c.o[0m
+[30.087s] [ 84%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/libackermann_msgs__python.so[0m
+[30.338s] [ 84%] Built target ackermann_msgs__python
+[30.452s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_introspection_c__pyext[0m
+[30.461s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_c__pyext[0m
+[30.485s] [35m[1mScanning dependencies of target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext[0m
+[30.610s] [ 87%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_c.c.o[0m
+[30.646s] [ 89%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[30.648s] [ 92%] [32mBuilding C object CMakeFiles/ackermann_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/ackermann_msgs/_ackermann_msgs_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[31.094s] [ 94%] [32m[1mLinking CXX shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.101s] [ 97%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.111s] [100%] [32m[1mLinking C shared library rosidl_generator_py/ackermann_msgs/ackermann_msgs_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so[0m
+[31.325s] [100%] Built target ackermann_msgs__rosidl_typesupport_introspection_c__pyext
+[31.412s] [100%] Built target ackermann_msgs__rosidl_typesupport_c__pyext
+[31.471s] [100%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext

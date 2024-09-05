@@ -1,0 +1,15 @@
+[0.102s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ackermann_msgs': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ackermann_msgs -- -j4 -l4
+[0.347s] [  2%] Built target ackermann_msgs__cpp
+[0.407s] [ 12%] Built target ackermann_msgs__rosidl_generator_c
+[0.508s] [ 23%] Built target ackermann_msgs__rosidl_typesupport_introspection_cpp
+[0.541s] [ 33%] Built target ackermann_msgs__rosidl_typesupport_cpp
+[0.556s] [ 43%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_cpp
+[0.658s] [ 53%] Built target ackermann_msgs__rosidl_typesupport_introspection_c
+[0.677s] [ 64%] Built target ackermann_msgs__rosidl_typesupport_c
+[0.731s] [ 74%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c
+[0.799s] [ 74%] Built target ackermann_msgs
+[0.878s] [ 76%] Built target ackermann_msgs__py
+[0.979s] [ 84%] Built target ackermann_msgs__python
+[1.095s] [ 89%] Built target ackermann_msgs__rosidl_typesupport_introspection_c__pyext
+[1.118s] [ 94%] Built target ackermann_msgs__rosidl_typesupport_fastrtps_c__pyext
+[1.122s] [100%] Built target ackermann_msgs__rosidl_typesupport_c__pyext

@@ -1,0 +1,329 @@
+[0.097s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt
+[0.190s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.322s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.724s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.971s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.991s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[1.696s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.011s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[2.030s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[2.134s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[2.844s] -- Found rclcpp_action: 9.2.1 (/opt/ros/galactic/share/rclcpp_action/cmake)
+[3.241s] -- Found filters: 2.1.0 (/opt/ros/galactic/share/filters/cmake)
+[3.249s] -- Found geometry_msgs: 2.2.4 (/opt/ros/galactic/share/geometry_msgs/cmake)
+[3.414s] -- Found wheeltec_rrt_msg: 0.0.0 (/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/share/wheeltec_rrt_msg/cmake)
+[4.719s] -- Found tf2_ros: 0.17.3 (/opt/ros/galactic/share/tf2_ros/cmake)
+[5.962s] -- Found tf2_geometry_msgs: 0.17.3 (/opt/ros/galactic/share/tf2_geometry_msgs/cmake)
+[5.994s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/galactic/share/eigen3_cmake_module/cmake)
+[6.123s] -- Found visualization_msgs: 2.2.4 (/opt/ros/galactic/share/visualization_msgs/cmake)
+[6.472s] -- Found nav2_msgs: 1.0.12 (/home/wheeltec/wheeltec_ros2/install/nav2_msgs/share/nav2_msgs/cmake)
+[7.414s] -- Found laser_geometry: 2.2.1 (/opt/ros/galactic/share/laser_geometry/cmake)
+[7.431s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[7.808s] -- Found cv_bridge: 2.2.1 (/opt/ros/galactic/share/cv_bridge/cmake)
+[7.830s] -- Found behaviortree_cpp_v3: 3.6.0 (/opt/ros/galactic/share/behaviortree_cpp_v3/cmake)
+[7.866s] -- Found nav2_behavior_tree: 1.0.12 (/opt/ros/galactic/share/nav2_behavior_tree/cmake)
+[19.697s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[20.229s] -- Added test 'copyright' to check source files copyright and LICENSE
+[20.358s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[20.364s] -- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/include
+[20.365s] -- Configured cppcheck exclude dirs and/or files: 
+[20.451s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[20.452s] -- Configured cpplint exclude dirs and/or files: 
+[20.459s] -- Added test 'flake8' to check Python code syntax and style conventions
+[20.459s] -- Added test 'lint_cmake' to check CMake code style
+[20.460s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[20.461s] -- Added test 'uncrustify' to check C / C++ code style
+[20.462s] -- Configured uncrustify additional arguments: 
+[20.462s] -- Added test 'xmllint' to check XML markup files
+[20.473s] -- Configuring done
+[21.416s] -- Generating done
+[21.432s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt
+[21.486s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt
+[21.488s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt -- -j4 -l4
+[21.739s] [35m[1mScanning dependencies of target robot_pose_publisher[0m
+[21.933s] [  3%] [32mBuilding CXX object CMakeFiles/robot_pose_publisher.dir/src/robot_pose_publisher.cpp.o[0m
+[32.776s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:[m[K In constructor ‘[01m[KBoxPickupPosePublisher::BoxPickupPosePublisher()[m[K’:
+[32.777s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:215:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KBoxPickupPosePublisher::canTransformBasefootprint[m[K’ will be initialized after [[01;35m[K-Wreorder[m[K]
+[32.778s]   215 |     bool [01;35m[KcanTransformBasefootprint[m[K = false;
+[32.779s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[32.779s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:213:21:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Ktf2_ros::Buffer BoxPickupPosePublisher::tf_buffer_[m[K’ [[01;35m[K-Wreorder[m[K]
+[32.780s]   213 |     tf2_ros::Buffer [01;35m[Ktf_buffer_[m[K;
+[32.780s]       |                     [01;35m[K^~~~~~~~~~[m[K
+[32.781s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:18:5:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K-Wreorder[m[K]
+[32.781s]    18 |     [01;35m[KBoxPickupPosePublisher[m[K()
+[32.782s]       |     [01;35m[K^~~~~~~~~~~~~~~~~~~~~~[m[K
+[32.851s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:[m[K In member function ‘[01m[Kvoid BoxPickupPosePublisher::get_base_footprint_transform(geometry_msgs::msg::TransformStamped&)[m[K’:
+[32.852s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:109:44:[m[K [01;35m[Kwarning: [m[Kcatching polymorphic type ‘[01m[Kclass tf2::TransformException[m[K’ by value [[01;35m[K-Wcatch-value=[m[K]
+[32.852s]   109 |             catch (tf2::TransformException [01;35m[Kex[m[K)
+[32.853s]       |                                            [01;35m[K^~[m[K
+[32.859s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:[m[K In member function ‘[01m[Kvoid BoxPickupPosePublisher::get_goal_pose(const float&, const float&, const float&, const float&, geometry_msgs::msg::Pose&)[m[K’:
+[32.860s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:132:15:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kunit_through_vector_z[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[32.860s]   132 |         float [01;35m[Kunit_through_vector_z[m[K = 0.0;
+[32.861s]       |               [01;35m[K^~~~~~~~~~~~~~~~~~~~~[m[K
+[32.897s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:[m[K In member function ‘[01m[Kvoid BoxPickupPosePublisher::lidar_camera_fusion_sub_topic_callback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[32.897s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_pose_publisher.cpp:186:33:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<float> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[32.898s]   186 |                 for(int i = 0; [01;35m[Ki< red_line.size()[m[K; i++){
+[32.898s]       |                                [01;35m[K~^~~~~~~~~~~~~~~~~[m[K
+[57.900s] [  6%] [32m[1mLinking CXX executable robot_pose_publisher[0m
+[59.733s] [  6%] Built target robot_pose_publisher
+[59.786s] [35m[1mScanning dependencies of target mean_shift[0m
+[59.841s] [  9%] [32mBuilding CXX object CMakeFiles/mean_shift.dir/src/rrt_exploration/mean_shift.cpp.o[0m
+[60.410s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:3[m[K:
+[60.410s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/include/mean_shift.h:[m[K In constructor ‘[01m[KMeanShift::MeanShift(double (*)(double, double))[m[K’:
+[60.411s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/include/mean_shift.h:16:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_kernel_func[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[60.411s]    16 |     MeanShift([01;35m[Kdouble (*_kernel_func)(double,double)[m[K) { set_kernel(kernel_func); }
+[60.412s]       |               [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[60.413s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:[m[K In function ‘[01m[Kdouble euclidean_distance(const std::vector<double>&, const std::vector<double>&)[m[K’:
+[60.413s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:11:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.414s]    11 |     for(int i=0; [01;35m[Ki<point_a.size()[m[K; i++){
+[60.414s]       |                  [01;35m[K~^~~~~~~~~~~~~~~[m[K
+[60.414s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:[m[K In function ‘[01m[Kdouble euclidean_distance_sqr(const std::vector<double>&, const std::vector<double>&)[m[K’:
+[60.415s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:20:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.415s]    20 |     for(int i=0; [01;35m[Ki<point_a.size()[m[K; i++){
+[60.416s]       |                  [01;35m[K~^~~~~~~~~~~~~~~[m[K
+[60.417s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:[m[K In member function ‘[01m[Kvoid MeanShift::shift_point(const Point&, const std::vector<std::vector<double> >&, double, MeanShift::Point&)[m[K’:
+[60.418s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:45:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.418s]    45 |     for(int dim = 0; [01;35m[Kdim<shifted_point.size()[m[K; dim++){
+[60.418s]       |                      [01;35m[K~~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[60.419s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:49:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.419s]    49 |     for(int i=0; [01;35m[Ki<points.size()[m[K; i++){
+[60.420s]       |                  [01;35m[K~^~~~~~~~~~~~~~[m[K
+[60.420s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:53:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.421s]    53 |         for(int j=0; [01;35m[Kj<shifted_point.size()[m[K; j++){
+[60.421s]       |                      [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[60.422s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:60:19:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<double>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.422s]    60 |     for(int i=0; [01;35m[Ki<shifted_point.size()[m[K; i++){
+[60.422s]       |                  [01;35m[K~^~~~~~~~~~~~~~~~~~~~~[m[K
+[60.429s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:[m[K In member function ‘[01m[Kstd::vector<std::vector<double> > MeanShift::meanshift(const std::vector<std::vector<double> >&, double, double)[m[K’:
+[60.430s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:75:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.430s]    75 |         for(int i=0; [01;35m[Ki<points.size()[m[K; i++){
+[60.430s]       |                      [01;35m[K~^~~~~~~~~~~~~~[m[K
+[60.443s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:[m[K In member function ‘[01m[Kstd::vector<Cluster> MeanShift::cluster(const std::vector<std::vector<double> >&, const std::vector<std::vector<double> >&)[m[K’:
+[60.444s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:98:23:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.444s]    98 |     for (int i = 0; [01;35m[Ki < shifted_points.size()[m[K; i++) {
+[60.445s]       |                     [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~[m[K
+[60.446s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:101:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Cluster>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.447s]   101 |         for (; [01;35m[Kc < clusters.size()[m[K; c++) {
+[60.447s]       |                [01;35m[K~~^~~~~~~~~~~~~~~~~[m[K
+[60.449s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/mean_shift.cpp:107:15:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<Cluster>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[60.450s]   107 |         if ([01;35m[Kc == clusters.size()[m[K) {
+[60.450s]       |             [01;35m[K~~^~~~~~~~~~~~~~~~~~[m[K
+[61.413s] [ 12%] [32m[1mLinking CXX shared library libmean_shift.so[0m
+[61.719s] [ 12%] Built target mean_shift
+[61.797s] [35m[1mScanning dependencies of target mtrand[0m
+[61.874s] [ 15%] [32mBuilding CXX object CMakeFiles/mtrand.dir/src/rrt_exploration/mtrand.cpp.o[0m
+[62.053s] [ 18%] [32m[1mLinking CXX shared library libmtrand.so[0m
+[62.208s] [ 18%] Built target mtrand
+[62.260s] [35m[1mScanning dependencies of target find_coloured_box[0m
+[62.524s] [ 21%] [32mBuilding CXX object CMakeFiles/find_coloured_box.dir/src/bt_plugins/find_coloured_box.cpp.o[0m
+[84.784s] [ 25%] [32m[1mLinking CXX shared library libfind_coloured_box.so[0m
+[86.517s] [ 25%] Built target find_coloured_box
+[86.579s] [35m[1mScanning dependencies of target approach_coloured_box[0m
+[86.824s] [ 28%] [32mBuilding CXX object CMakeFiles/approach_coloured_box.dir/src/bt_plugins/approach_coloured_box.cpp.o[0m
+[108.857s] [ 31%] [32m[1mLinking CXX shared library libapproach_coloured_box.so[0m
+[110.506s] [ 31%] Built target approach_coloured_box
+[110.557s] [35m[1mScanning dependencies of target find_robot_action_server[0m
+[110.790s] [ 34%] [32mBuilding CXX object CMakeFiles/find_robot_action_server.dir/src/find_robot_action_server.cpp.o[0m
+[120.934s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[120.935s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[120.935s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[120.936s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[120.936s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[120.937s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[120.937s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[120.938s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[120.938s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[120.938s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[120.939s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/find_robot_action_server.cpp:6[m[K:
+[120.939s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/find_robot_action_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse FindColouredBoxActionServer::handle_goal(const GoalUUID&, std::shared_ptr<const wheeltec_rrt_msg::action::FindColouredBox_Goal_<std::allocator<void> > >)[m[K’:
+[120.940s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/find_robot_action_server.cpp:70:38:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kconst _box_colour_type[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} [[01;35m[K-Wformat=[m[K]
+[120.940s]    70 |     RCLCPP_DEBUG(this->get_logger(), [01;35m[K"Received goal request with box colour %s"[m[K, goal->box_colour);
+[120.941s]       |                                      [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[120.941s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/find_robot_action_server.cpp:70:78:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[120.941s]    70 |     RCLCPP_DEBUG(this->get_logger(), "Received goal request with box colour [01;36m[K%s[m[K", goal->box_colour);
+[120.942s]       |                                                                             [01;36m[K~^[m[K
+[120.942s]       |                                                                              [01;36m[K|[m[K
+[120.942s]       |                                                                              [01;36m[Kchar*[m[K
+[149.848s] [ 37%] [32m[1mLinking CXX executable find_robot_action_server[0m
+[152.184s] [ 37%] Built target find_robot_action_server
+[152.238s] [35m[1mScanning dependencies of target pick_robot_action_server[0m
+[152.544s] [ 40%] [32mBuilding CXX object CMakeFiles/pick_robot_action_server.dir/src/pick_robot_action_server.cpp.o[0m
+[162.476s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+[162.477s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[162.478s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[162.478s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[162.479s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[162.479s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[162.480s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[162.480s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[162.481s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[162.481s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[162.481s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/pick_robot_action_server.cpp:6[m[K:
+[162.482s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/pick_robot_action_server.cpp:[m[K In member function ‘[01m[Krclcpp_action::GoalResponse PickColouredBoxActionServer::handle_goal(const GoalUUID&, std::shared_ptr<const wheeltec_rrt_msg::action::PickColouredBox_Goal_<std::allocator<void> > >)[m[K’:
+[162.482s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/pick_robot_action_server.cpp:43:41:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%s[m[K’ expects argument of type ‘[01m[Kchar*[m[K’, but argument 5 has type ‘[01m[Kconst _box_colour_type[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>[m[K’} [[01;35m[K-Wformat=[m[K]
+[162.483s]    43 |         RCLCPP_INFO(this->get_logger(), [01;35m[K"Received goal request with box colour %s"[m[K, goal->box_colour);
+[162.483s]       |                                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[162.483s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/pick_robot_action_server.cpp:43:81:[m[K [01;36m[Knote: [m[Kformat string is defined here
+[162.484s]    43 |         RCLCPP_INFO(this->get_logger(), "Received goal request with box colour [01;36m[K%s[m[K", goal->box_colour);
+[162.484s]       |                                                                                [01;36m[K~^[m[K
+[162.485s]       |                                                                                 [01;36m[K|[m[K
+[162.485s]       |                                                                                 [01;36m[Kchar*[m[K
+[170.537s] [ 43%] [32m[1mLinking CXX executable pick_robot_action_server[0m
+[171.532s] [ 43%] Built target pick_robot_action_server
+[171.648s] [35m[1mScanning dependencies of target wait_for_fin[0m
+[171.894s] [ 46%] [32mBuilding CXX object CMakeFiles/wait_for_fin.dir/src/rrt_exploration/wait_for_fin.cpp.o[0m
+[181.907s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/wait_for_fin.cpp:[m[K In member function ‘[01m[Kvoid WaitForFin::start_Callback(geometry_msgs::msg::PointStamped_<std::allocator<void> >::SharedPtr)[m[K’:
+[181.908s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/wait_for_fin.cpp:56:73:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[181.908s]    56 |   void start_Callback([01;35m[Kconst geometry_msgs::msg::PointStamped::SharedPtr msg[m[K)
+[181.909s]       |                       [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[219.106s] [ 50%] [32m[1mLinking CXX executable wait_for_fin[0m
+[220.983s] [ 50%] Built target wait_for_fin
+[221.045s] [35m[1mScanning dependencies of target pick_coloured_box[0m
+[221.288s] [ 53%] [32mBuilding CXX object CMakeFiles/pick_coloured_box.dir/src/bt_plugins/pick_coloured_box.cpp.o[0m
+[243.071s] [ 56%] [32m[1mLinking CXX shared library libpick_coloured_box.so[0m
+[244.928s] [ 56%] Built target pick_coloured_box
+[244.986s] [35m[1mScanning dependencies of target robot_picker[0m
+[245.190s] [ 59%] [32mBuilding CXX object CMakeFiles/robot_picker.dir/src/robot_picker.cpp.o[0m
+[256.043s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_picker.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[256.043s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/robot_picker.cpp:68:10:[m[K [01;35m[Kwarning: [m[Kenumeration value ‘[01m[KSUCCEEDED[m[K’ not handled in switch [[01;35m[K-Wswitch[m[K]
+[256.044s]    68 |   switch [01;35m[K([m[Krc)
+[256.044s]       |          [01;35m[K^[m[K
+[260.927s] [ 62%] [32m[1mLinking CXX executable robot_picker[0m
+[262.157s] [ 62%] Built target robot_picker
+[262.214s] [35m[1mScanning dependencies of target robot[0m
+[262.468s] [ 65%] [32mBuilding CXX object CMakeFiles/robot.dir/src/rrt_exploration/robot.cpp.o[0m
+[282.144s] [ 68%] [32m[1mLinking CXX shared library librobot.so[0m
+[283.152s] [ 68%] Built target robot
+[283.210s] [35m[1mScanning dependencies of target utils[0m
+[283.291s] [ 71%] [32mBuilding CXX object CMakeFiles/utils.dir/src/rrt_exploration/utils.cpp.o[0m
+[286.378s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:[m[K In function ‘[01m[Kstd::vector<double> Nearest(std::vector<std::vector<double> >, std::vector<double>)[m[K’:
+[286.379s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:33:21:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<std::vector<double> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[286.380s]    33 |   for (int j = 0; [01;35m[Kj < V.size()[m[K; j++)
+[286.381s]       |                   [01;35m[K~~^~~~~~~~~~[m[K
+[286.386s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:[m[K In function ‘[01m[Kint grid_value(nav_msgs::msg::OccupancyGrid&, std::vector<double>)[m[K’:
+[286.386s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:86:16:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[286.387s]    86 |   if([01;35m[Kint(indx) >= Data.size()[m[K || int(indx) < 0)
+[286.387s]       |      [01;35m[K~~~~~~~~~~^~~~~~~~~~~~~~[m[K
+[286.393s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:[m[K In function ‘[01m[Kdouble information_gain(const OccupancyGrid&, const std::vector<double>&, const double&)[m[K’:
+[286.394s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:176:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[286.394s]   176 |     for (int i = start; [01;35m[Ki <= end[m[K; i++)
+[286.395s]       |                         [01;35m[K~~^~~~~~[m[K
+[286.395s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:178:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[286.396s]   178 |       if ((i >= 0) && ([01;35m[Ki < limit[m[K) && (i < mapData.data.size()))
+[286.397s]       |                        [01;35m[K~~^~~~~~~[m[K
+[286.397s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:178:41:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[286.398s]   178 |       if ((i >= 0) && (i < limit) && ([01;35m[Ki < mapData.data.size()[m[K))
+[286.398s]       |                                       [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[286.399s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:[m[K In function ‘[01m[Kint discount(const OccupancyGrid&, const std::vector<double>&, const std::vector<double>&, const double&)[m[K’:
+[286.400s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:205:36:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[286.400s]   205 |       if (i >= 0 && i < limit && [01;35m[Ki < mapData.data.size()[m[K)
+[286.401s]       |                                  [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[286.402s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:[m[K In function ‘[01m[Kdouble checkAround(const OccupancyGrid&, const std::vector<double>&, const double&)[m[K’:
+[286.402s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:228:27:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kunsigned int[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[286.403s]   228 |     for (int i = start; [01;35m[Ki <= end+1[m[K; i++)
+[286.403s]       |                         [01;35m[K~~^~~~~~~~[m[K
+[286.404s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/utils.cpp:230:26:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<signed char, std::allocator<signed char> >::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[286.404s]   230 |       if ((i >= 0) && ([01;35m[Ki < mapData.data.size()[m[K))
+[286.405s]       |                        [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~[m[K
+[287.555s] [ 75%] [32m[1mLinking CXX shared library libutils.so[0m
+[287.909s] [ 75%] Built target utils
+[287.969s] [35m[1mScanning dependencies of target assigner[0m
+[288.244s] [ 78%] [32mBuilding CXX object CMakeFiles/assigner.dir/src/rrt_exploration/assigner.cpp.o[0m
+[334.242s] [ 81%] [32m[1mLinking CXX executable assigner[0m
+[339.156s] [ 81%] Built target assigner
+[339.211s] [35m[1mScanning dependencies of target local_rrt[0m
+[339.421s] [ 84%] [32mBuilding CXX object CMakeFiles/local_rrt.dir/src/rrt_exploration/local_rrt.cpp.o[0m
+[350.161s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/local_rrt.cpp:[m[K In member function ‘[01m[Kvoid LocalRRT::timer_callback()[m[K’:
+[350.161s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/local_rrt.cpp:173:48:[m[K [01;35m[Kwarning: [m[Kcatching polymorphic type ‘[01m[Kclass tf2::TransformException[m[K’ by value [[01;35m[K-Wcatch-value=[m[K]
+[350.162s]   173 |                 catch (tf2::TransformException [01;35m[Kex[m[K)
+[350.162s]       |                                                [01;35m[K^~[m[K
+[387.882s] [ 87%] [32m[1mLinking CXX executable local_rrt[0m
+[390.282s] [ 87%] Built target local_rrt
+[390.600s] [35m[1mScanning dependencies of target global_rrt[0m
+[390.828s] [ 90%] [32mBuilding CXX object CMakeFiles/global_rrt.dir/src/rrt_exploration/global_rrt.cpp.o[0m
+[438.595s] [ 93%] [32m[1mLinking CXX executable global_rrt[0m
+[440.722s] [ 93%] Built target global_rrt
+[440.788s] [35m[1mScanning dependencies of target filter[0m
+[442.074s] [ 96%] [32mBuilding CXX object CMakeFiles/filter.dir/src/rrt_exploration/filter.cpp.o[0m
+[451.233s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/filter.cpp:3[m[K:
+[451.233s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/include/mean_shift.h:[m[K In constructor ‘[01m[KMeanShift::MeanShift(double (*)(double, double))[m[K’:
+[451.234s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/include/mean_shift.h:16:24:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K_kernel_func[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[451.234s]    16 |     MeanShift([01;35m[Kdouble (*_kernel_func)(double,double)[m[K) { set_kernel(kernel_func); }
+[451.234s]       |               [01;35m[K~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[452.224s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/filter.cpp:[m[K In member function ‘[01m[Kvoid Filter::timer_callback()[m[K’:
+[452.225s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2/src/rrt_exploration/filter.cpp:135:18:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Karound[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[452.225s]   135 |             bool [01;35m[Karound[m[K = (checkAround(mapData,{centroid[0], centroid[1]},info_radius*0.5)>1000);
+[452.226s]       |                  [01;35m[K^~~~~~[m[K
+[491.110s] [100%] [32m[1mLinking CXX executable filter[0m
+[493.393s] [100%] Built target filter
+[493.467s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt -- -j4 -l4
+[493.843s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt
+[493.912s] -- Install configuration: ""
+[493.921s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libfind_coloured_box.so
+[493.948s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libfind_coloured_box.so" to ""
+[493.949s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libapproach_coloured_box.so
+[493.976s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libapproach_coloured_box.so" to ""
+[493.978s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libpick_coloured_box.so
+[494.003s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libpick_coloured_box.so" to ""
+[494.004s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/robot_picker
+[494.011s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/robot_picker" to ""
+[494.012s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/find_robot_action_server
+[494.055s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/find_robot_action_server" to ""
+[494.056s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/pick_robot_action_server
+[494.069s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/pick_robot_action_server" to ""
+[494.071s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/wait_for_fin
+[494.125s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/wait_for_fin" to ""
+[494.126s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/local_rrt
+[494.178s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/local_rrt" to ""
+[494.179s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/global_rrt
+[494.247s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/global_rrt" to ""
+[494.247s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/filter
+[494.267s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/filter" to ""
+[494.268s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/assigner
+[494.321s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/assigner" to ""
+[494.321s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/robot_pose_publisher
+[494.358s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/robot_pose_publisher" to ""
+[494.362s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch
+[494.364s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation
+[494.367s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_navigation_launch.py
+[494.370s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_localization_launch.py
+[494.373s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_bringup_launch.py
+[494.375s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/navigation/nav2_slam_launch.py
+[494.377s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration
+[494.379s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/rrt_assigner.launch.py
+[494.382s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/rrt_exploration.launch.py
+[494.384s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/action_servers.launch.py
+[494.385s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/wheeltec_rrt_slam.launch.py
+[494.388s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//launch/rrt_exploration/visual_slam_start.py
+[494.389s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config
+[494.391s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/ekf.yaml
+[494.391s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/exploration_params.yaml
+[494.394s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/nav2_params.yaml
+[494.395s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//config/rtabmap.yaml
+[494.397s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees
+[494.398s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees/robot_picker_behaviour_tree.xml
+[494.400s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees/navigate_w_replanning_time.xml
+[494.403s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt//behaviour_trees/rrt_navigate_w_replanning_time.xml
+[494.405s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libutils.so
+[494.409s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libutils.so" to ""
+[494.410s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libmtrand.so
+[494.411s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/libmean_shift.so
+[494.413s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/librobot.so
+[494.434s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/librobot.so" to ""
+[494.434s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/lib/wheeltec_robot_rrt/boundary_publisher.py
+[494.441s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/ament_index/resource_index/package_run_dependencies/wheeltec_robot_rrt
+[494.444s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/ament_index/resource_index/parent_prefix_path/wheeltec_robot_rrt
+[494.456s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/ament_prefix_path.sh
+[494.459s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/ament_prefix_path.dsv
+[494.461s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/path.sh
+[494.462s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/environment/path.dsv
+[494.464s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.bash
+[494.466s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.sh
+[494.467s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.zsh
+[494.469s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/local_setup.dsv
+[494.471s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/package.dsv
+[494.473s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/ament_index/resource_index/packages/wheeltec_robot_rrt
+[494.476s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/cmake/wheeltec_robot_rrtConfig.cmake
+[494.478s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/cmake/wheeltec_robot_rrtConfig-version.cmake
+[494.480s] -- Installing: /home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt/share/wheeltec_robot_rrt/package.xml
+[494.498s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt

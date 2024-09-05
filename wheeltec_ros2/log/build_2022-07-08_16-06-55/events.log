@@ -1,0 +1,897 @@
+[0.000000] (-) TimerEvent: {}
+[0.000656] (-) JobUnselected: {'identifier': 'ackermann_msgs'}
+[0.000813] (-) JobUnselected: {'identifier': 'ar_track_alvar'}
+[0.000917] (-) JobUnselected: {'identifier': 'ar_track_alvar_msgs'}
+[0.001022] (-) JobUnselected: {'identifier': 'astra_msgs'}
+[0.001134] (-) JobUnselected: {'identifier': 'costmap_queue'}
+[0.001283] (-) JobUnselected: {'identifier': 'dwb_core'}
+[0.001405] (-) JobUnselected: {'identifier': 'dwb_critics'}
+[0.001514] (-) JobUnselected: {'identifier': 'dwb_msgs'}
+[0.001621] (-) JobUnselected: {'identifier': 'dwb_plugins'}
+[0.001724] (-) JobUnselected: {'identifier': 'ldlidar_sl_ros2'}
+[0.001832] (-) JobUnselected: {'identifier': 'ldlidar_stl_ros2'}
+[0.001933] (-) JobUnselected: {'identifier': 'lidar_ros2'}
+[0.002030] (-) JobUnselected: {'identifier': 'lsn10'}
+[0.002134] (-) JobUnselected: {'identifier': 'nav2_amcl'}
+[0.002238] (-) JobUnselected: {'identifier': 'nav2_behavior_tree'}
+[0.002332] (-) JobUnselected: {'identifier': 'nav2_bringup'}
+[0.002427] (-) JobUnselected: {'identifier': 'nav2_bt_navigator'}
+[0.002519] (-) JobUnselected: {'identifier': 'nav2_common'}
+[0.002615] (-) JobUnselected: {'identifier': 'nav2_controller'}
+[0.002715] (-) JobUnselected: {'identifier': 'nav2_core'}
+[0.002805] (-) JobUnselected: {'identifier': 'nav2_costmap_2d'}
+[0.002895] (-) JobUnselected: {'identifier': 'nav2_dwb_controller'}
+[0.002990] (-) JobUnselected: {'identifier': 'nav2_gazebo_spawner'}
+[0.003087] (-) JobUnselected: {'identifier': 'nav2_lifecycle_manager'}
+[0.003186] (-) JobUnselected: {'identifier': 'nav2_map_server'}
+[0.003477] (-) JobUnselected: {'identifier': 'nav2_msgs'}
+[0.007972] (-) JobUnselected: {'identifier': 'nav2_navfn_planner'}
+[0.008120] (-) JobUnselected: {'identifier': 'nav2_planner'}
+[0.008232] (-) JobUnselected: {'identifier': 'nav2_recoveries'}
+[0.008330] (-) JobUnselected: {'identifier': 'nav2_regulated_pure_pursuit_controller'}
+[0.008432] (-) JobUnselected: {'identifier': 'nav2_rotation_shim_controller'}
+[0.008538] (-) JobUnselected: {'identifier': 'nav2_rviz_plugins'}
+[0.008640] (-) JobUnselected: {'identifier': 'nav2_simple_commander'}
+[0.008752] (-) JobUnselected: {'identifier': 'nav2_smac_planner'}
+[0.008859] (-) JobUnselected: {'identifier': 'nav2_system_tests'}
+[0.008966] (-) JobUnselected: {'identifier': 'nav2_theta_star_planner'}
+[0.009066] (-) JobUnselected: {'identifier': 'nav2_util'}
+[0.009158] (-) JobUnselected: {'identifier': 'nav2_voxel_grid'}
+[0.009378] (-) JobUnselected: {'identifier': 'nav2_waypoint_follower'}
+[0.009475] (-) JobUnselected: {'identifier': 'nav_2d_msgs'}
+[0.009567] (-) JobUnselected: {'identifier': 'nav_2d_utils'}
+[0.009653] (-) JobUnselected: {'identifier': 'navigation2'}
+[0.009739] (-) JobUnselected: {'identifier': 'openslam_gmapping'}
+[0.009822] (-) JobUnselected: {'identifier': 'pcl_conversions'}
+[0.009910] (-) JobUnselected: {'identifier': 'pcl_ros'}
+[0.009993] (-) JobUnselected: {'identifier': 'perception_pcl'}
+[0.010076] (-) JobUnselected: {'identifier': 'ros2_astra_camera'}
+[0.010156] (-) JobUnselected: {'identifier': 'rplidar_ros2'}
+[0.010238] (-) JobUnselected: {'identifier': 'serial'}
+[0.010317] (-) JobUnselected: {'identifier': 'simple_follower_ros2'}
+[0.010401] (-) JobUnselected: {'identifier': 'slam_gmapping'}
+[0.010490] (-) JobUnselected: {'identifier': 'tf2_tools'}
+[0.011896] (-) JobUnselected: {'identifier': 'turn_on_wheeltec_robot'}
+[0.016003] (-) JobUnselected: {'identifier': 'usb_cam'}
+[0.017332] (-) JobUnselected: {'identifier': 'web_video_server'}
+[0.017490] (-) JobUnselected: {'identifier': 'wheeltec_cartographer'}
+[0.017723] (-) JobUnselected: {'identifier': 'wheeltec_joy'}
+[0.017875] (-) JobUnselected: {'identifier': 'wheeltec_nav2'}
+[0.017996] (-) JobUnselected: {'identifier': 'wheeltec_robot_keyboard'}
+[0.018109] (-) JobUnselected: {'identifier': 'wheeltec_robot_msg'}
+[0.018218] (-) JobUnselected: {'identifier': 'wheeltec_robot_rrt'}
+[0.018323] (-) JobUnselected: {'identifier': 'wheeltec_robot_rtab'}
+[0.018431] (-) JobUnselected: {'identifier': 'wheeltec_robot_urdf'}
+[0.018542] (-) JobUnselected: {'identifier': 'wheeltec_rrt_msg'}
+[0.018697] (-) JobUnselected: {'identifier': 'wheeltec_slam_toolbox'}
+[0.018820] (lsm10_v2) JobQueued: {'identifier': 'lsm10_v2', 'dependencies': OrderedDict()}
+[0.018951] (lsm10_v2) JobStarted: {'identifier': 'lsm10_v2'}
+[0.092025] (-) TimerEvent: {}
+[0.108516] (lsm10_v2) JobProgress: {'identifier': 'lsm10_v2', 'progress': 'cmake'}
+[0.109738] (lsm10_v2) Command: {'cmd': ['/usr/bin/cmake', '/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2', '-DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/lsm10_v2'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/lsm10_v2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7452'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64:'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7034'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0421018054037'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:36591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7488,unix/wheeltec:/tmp/.ICE-unix/7488'), ('INVOCATION_ID', '600c813717104c09aee07b2d631c9322'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/08ab6fc1_8976_4af9_8551_4ff085fdaf7c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/lsm10_v2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.192226] (-) TimerEvent: {}
+[0.293107] (-) TimerEvent: {}
+[0.393820] (-) TimerEvent: {}
+[0.494489] (-) TimerEvent: {}
+[0.517272] (lsm10_v2) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.594671] (-) TimerEvent: {}
+[0.695335] (-) TimerEvent: {}
+[0.796001] (-) TimerEvent: {}
+[0.888493] (lsm10_v2) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.896176] (-) TimerEvent: {}
+[0.923855] (lsm10_v2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.996373] (-) TimerEvent: {}
+[1.097083] (-) TimerEvent: {}
+[1.198096] (-) TimerEvent: {}
+[1.298795] (-) TimerEvent: {}
+[1.399725] (-) TimerEvent: {}
+[1.429093] (lsm10_v2) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[1.434593] (lsm10_v2) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.499909] (-) TimerEvent: {}
+[1.600621] (-) TimerEvent: {}
+[1.701347] (-) TimerEvent: {}
+[1.802041] (-) TimerEvent: {}
+[1.903004] (-) TimerEvent: {}
+[2.003711] (-) TimerEvent: {}
+[2.060303] (lsm10_v2) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.103889] (-) TimerEvent: {}
+[2.144762] (lsm10_v2) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.146080] (lsm10_v2) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.172277] (lsm10_v2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[2.204124] (-) TimerEvent: {}
+[2.304841] (-) TimerEvent: {}
+[2.405572] (-) TimerEvent: {}
+[2.506296] (-) TimerEvent: {}
+[2.607278] (-) TimerEvent: {}
+[2.707959] (-) TimerEvent: {}
+[2.808623] (-) TimerEvent: {}
+[2.882630] (lsm10_v2) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[2.887210] (lsm10_v2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.908815] (-) TimerEvent: {}
+[3.009537] (-) TimerEvent: {}
+[3.110173] (-) TimerEvent: {}
+[3.210880] (-) TimerEvent: {}
+[3.311764] (-) TimerEvent: {}
+[3.412538] (-) TimerEvent: {}
+[3.513332] (-) TimerEvent: {}
+[3.614025] (-) TimerEvent: {}
+[3.642013] (lsm10_v2) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.714192] (-) TimerEvent: {}
+[3.742232] (lsm10_v2) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.745316] (lsm10_v2) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.769061] (lsm10_v2) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[3.814388] (-) TimerEvent: {}
+[3.915318] (-) TimerEvent: {}
+[4.011798] (lsm10_v2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[4.012626] (lsm10_v2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[4.015477] (-) TimerEvent: {}
+[4.116141] (-) TimerEvent: {}
+[4.216849] (-) TimerEvent: {}
+[4.317800] (-) TimerEvent: {}
+[4.418472] (-) TimerEvent: {}
+[4.519139] (-) TimerEvent: {}
+[4.619825] (-) TimerEvent: {}
+[4.720585] (-) TimerEvent: {}
+[4.741471] (lsm10_v2) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[4.758724] (lsm10_v2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.796016] (lsm10_v2) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[4.820708] (-) TimerEvent: {}
+[4.921683] (-) TimerEvent: {}
+[5.022360] (-) TimerEvent: {}
+[5.124032] (-) TimerEvent: {}
+[5.224995] (-) TimerEvent: {}
+[5.325724] (-) TimerEvent: {}
+[5.427304] (-) TimerEvent: {}
+[5.527986] (-) TimerEvent: {}
+[5.628718] (-) TimerEvent: {}
+[5.729526] (-) TimerEvent: {}
+[5.831483] (-) TimerEvent: {}
+[5.917305] (lsm10_v2) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[5.931649] (-) TimerEvent: {}
+[6.032319] (-) TimerEvent: {}
+[6.132973] (-) TimerEvent: {}
+[6.141732] (lsm10_v2) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[6.233083] (-) TimerEvent: {}
+[6.333775] (-) TimerEvent: {}
+[6.434711] (-) TimerEvent: {}
+[6.535406] (-) TimerEvent: {}
+[6.636350] (-) TimerEvent: {}
+[6.737010] (-) TimerEvent: {}
+[6.837963] (-) TimerEvent: {}
+[6.875890] (lsm10_v2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[6.938143] (-) TimerEvent: {}
+[7.039092] (-) TimerEvent: {}
+[7.134688] (lsm10_v2) StdoutLine: {'line': b'-- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[7.139281] (-) TimerEvent: {}
+[7.240257] (-) TimerEvent: {}
+[7.341311] (-) TimerEvent: {}
+[7.442251] (-) TimerEvent: {}
+[7.543007] (-) TimerEvent: {}
+[7.643762] (-) TimerEvent: {}
+[7.744479] (-) TimerEvent: {}
+[7.804581] (lsm10_v2) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[7.841883] (lsm10_v2) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[7.844657] (-) TimerEvent: {}
+[7.945592] (-) TimerEvent: {}
+[8.041071] (lsm10_v2) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[8.045764] (-) TimerEvent: {}
+[8.047672] (lsm10_v2) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[8.145939] (-) TimerEvent: {}
+[8.246612] (-) TimerEvent: {}
+[8.347572] (-) TimerEvent: {}
+[8.448514] (-) TimerEvent: {}
+[8.549449] (-) TimerEvent: {}
+[8.651090] (-) TimerEvent: {}
+[8.655634] (lsm10_v2) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[8.657689] (lsm10_v2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[8.751253] (-) TimerEvent: {}
+[8.851883] (-) TimerEvent: {}
+[8.952495] (-) TimerEvent: {}
+[9.053516] (-) TimerEvent: {}
+[9.154162] (-) TimerEvent: {}
+[9.222383] (lsm10_v2) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed\n'}
+[9.223231] (lsm10_v2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads\n'}
+[9.254347] (-) TimerEvent: {}
+[9.355395] (-) TimerEvent: {}
+[9.456150] (-) TimerEvent: {}
+[9.557203] (-) TimerEvent: {}
+[9.657847] (-) TimerEvent: {}
+[9.689486] (lsm10_v2) StdoutLine: {'line': b'-- Looking for pthread_create in pthreads - not found\n'}
+[9.690309] (lsm10_v2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread\n'}
+[9.758045] (-) TimerEvent: {}
+[9.858998] (-) TimerEvent: {}
+[9.960119] (-) TimerEvent: {}
+[10.061506] (-) TimerEvent: {}
+[10.162442] (-) TimerEvent: {}
+[10.263443] (-) TimerEvent: {}
+[10.317294] (lsm10_v2) StdoutLine: {'line': b'-- Looking for pthread_create in pthread - found\n'}
+[10.322114] (lsm10_v2) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[10.363617] (-) TimerEvent: {}
+[10.464508] (-) TimerEvent: {}
+[10.565445] (-) TimerEvent: {}
+[10.666379] (-) TimerEvent: {}
+[10.767331] (-) TimerEvent: {}
+[10.867976] (-) TimerEvent: {}
+[10.968879] (-) TimerEvent: {}
+[11.069551] (-) TimerEvent: {}
+[11.170241] (-) TimerEvent: {}
+[11.271157] (-) TimerEvent: {}
+[11.372093] (-) TimerEvent: {}
+[11.473039] (-) TimerEvent: {}
+[11.532262] (lsm10_v2) StdoutLine: {'line': b'-- Found rclpy: 1.9.1 (/opt/ros/galactic/share/rclpy/cmake)\n'}
+[11.550611] (lsm10_v2) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[11.573237] (-) TimerEvent: {}
+[11.674131] (-) TimerEvent: {}
+[11.775047] (-) TimerEvent: {}
+[11.875955] (-) TimerEvent: {}
+[11.976699] (-) TimerEvent: {}
+[12.077696] (-) TimerEvent: {}
+[12.178384] (-) TimerEvent: {}
+[12.279047] (-) TimerEvent: {}
+[12.374637] (lsm10_v2) StdoutLine: {'line': b'-- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.65.1") found components: system filesystem thread \n'}
+[12.379226] (-) TimerEvent: {}
+[12.401059] (lsm10_v2) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[12.479399] (-) TimerEvent: {}
+[12.580039] (-) TimerEvent: {}
+[12.680696] (-) TimerEvent: {}
+[12.781401] (-) TimerEvent: {}
+[12.882273] (-) TimerEvent: {}
+[12.983164] (-) TimerEvent: {}
+[13.084064] (-) TimerEvent: {}
+[13.184943] (-) TimerEvent: {}
+[13.285877] (-) TimerEvent: {}
+[13.304447] (lsm10_v2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[13.386034] (-) TimerEvent: {}
+[13.486798] (-) TimerEvent: {}
+[13.587802] (-) TimerEvent: {}
+[13.688823] (-) TimerEvent: {}
+[13.789923] (-) TimerEvent: {}
+[13.890853] (-) TimerEvent: {}
+[13.991773] (-) TimerEvent: {}
+[14.042067] (lsm10_v2) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)\n'}
+[14.091948] (-) TimerEvent: {}
+[14.192832] (-) TimerEvent: {}
+[14.293831] (-) TimerEvent: {}
+[14.394724] (-) TimerEvent: {}
+[14.495631] (-) TimerEvent: {}
+[14.596489] (-) TimerEvent: {}
+[14.697123] (-) TimerEvent: {}
+[14.797785] (-) TimerEvent: {}
+[14.898401] (-) TimerEvent: {}
+[14.999287] (-) TimerEvent: {}
+[15.100813] (-) TimerEvent: {}
+[15.116727] (lsm10_v2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.200987] (-) TimerEvent: {}
+[15.301876] (-) TimerEvent: {}
+[15.402791] (-) TimerEvent: {}
+[15.463021] (lsm10_v2) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[15.502970] (-) TimerEvent: {}
+[15.603610] (-) TimerEvent: {}
+[15.665602] (lsm10_v2) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[15.675788] (lsm10_v2) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[15.703786] (-) TimerEvent: {}
+[15.804461] (-) TimerEvent: {}
+[15.824292] (lsm10_v2) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[15.825355] (lsm10_v2) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[15.825903] (lsm10_v2) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[15.826398] (lsm10_v2) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.8.so\n'}
+[15.904610] (-) TimerEvent: {}
+[15.948999] (lsm10_v2) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[16.004790] (-) TimerEvent: {}
+[16.105479] (-) TimerEvent: {}
+[16.206184] (-) TimerEvent: {}
+[16.307098] (-) TimerEvent: {}
+[16.408015] (-) TimerEvent: {}
+[16.508685] (-) TimerEvent: {}
+[16.609318] (-) TimerEvent: {}
+[16.709978] (-) TimerEvent: {}
+[16.810871] (-) TimerEvent: {}
+[16.911523] (-) TimerEvent: {}
+[17.012198] (-) TimerEvent: {}
+[17.112889] (-) TimerEvent: {}
+[17.213780] (-) TimerEvent: {}
+[17.314718] (-) TimerEvent: {}
+[17.415588] (-) TimerEvent: {}
+[17.516484] (-) TimerEvent: {}
+[17.617442] (-) TimerEvent: {}
+[17.718099] (-) TimerEvent: {}
+[17.818743] (-) TimerEvent: {}
+[17.919431] (-) TimerEvent: {}
+[17.921919] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[17.928421] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[17.939973] (lsm10_v2) StdoutLine: {'line': b'-- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/include;/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsm10_v2/src\n'}
+[17.940605] (lsm10_v2) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[17.944968] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'cpplint' to check C / C++ code against the Google style\n"}
+[17.945662] (lsm10_v2) StdoutLine: {'line': b'-- Configured cpplint exclude dirs and/or files: \n'}
+[17.947093] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[17.957820] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.962297] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the style conventions in PEP 257\n"}
+[17.967051] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[17.967652] (lsm10_v2) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[17.968940] (lsm10_v2) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.019623] (-) TimerEvent: {}
+[18.046688] (lsm10_v2) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.119807] (-) TimerEvent: {}
+[18.220929] (-) TimerEvent: {}
+[18.248449] (lsm10_v2) StdoutLine: {'line': b'-- Generating done\n'}
+[18.263274] (lsm10_v2) StdoutLine: {'line': b'-- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/lsm10_v2\n'}
+[18.311069] (lsm10_v2) CommandEnded: {'returncode': 0}
+[18.321625] (lsm10_v2) JobProgress: {'identifier': 'lsm10_v2', 'progress': 'build'}
+[18.322199] (-) TimerEvent: {}
+[18.323137] (lsm10_v2) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/wheeltec/wheeltec_ros2/build/lsm10_v2', '--', '-j4', '-l4'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/lsm10_v2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7452'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64:'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7034'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0421018054037'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:36591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7488,unix/wheeltec:/tmp/.ICE-unix/7488'), ('INVOCATION_ID', '600c813717104c09aee07b2d631c9322'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/08ab6fc1_8976_4af9_8551_4ff085fdaf7c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/lsm10_v2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[18.422386] (-) TimerEvent: {}
+[18.523036] (-) TimerEvent: {}
+[18.623673] (-) TimerEvent: {}
+[18.705398] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__cpp\x1b[0m\n'}
+[18.723862] (-) TimerEvent: {}
+[18.795421] (lsm10_v2) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[18.824037] (-) TimerEvent: {}
+[18.924968] (-) TimerEvent: {}
+[19.025680] (-) TimerEvent: {}
+[19.126340] (-) TimerEvent: {}
+[19.226986] (-) TimerEvent: {}
+[19.327626] (-) TimerEvent: {}
+[19.428597] (-) TimerEvent: {}
+[19.529591] (-) TimerEvent: {}
+[19.630508] (-) TimerEvent: {}
+[19.731165] (-) TimerEvent: {}
+[19.832086] (-) TimerEvent: {}
+[19.932985] (-) TimerEvent: {}
+[20.033666] (-) TimerEvent: {}
+[20.134387] (-) TimerEvent: {}
+[20.235045] (-) TimerEvent: {}
+[20.256358] (lsm10_v2) StdoutLine: {'line': b'[  3%] Built target lsm10_v2__cpp\n'}
+[20.335230] (-) TimerEvent: {}
+[20.364981] (lsm10_v2) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[20.435400] (-) TimerEvent: {}
+[20.536050] (-) TimerEvent: {}
+[20.636708] (-) TimerEvent: {}
+[20.737606] (-) TimerEvent: {}
+[20.838529] (-) TimerEvent: {}
+[20.939273] (-) TimerEvent: {}
+[21.040169] (-) TimerEvent: {}
+[21.141143] (-) TimerEvent: {}
+[21.242141] (-) TimerEvent: {}
+[21.343049] (-) TimerEvent: {}
+[21.443721] (-) TimerEvent: {}
+[21.544377] (-) TimerEvent: {}
+[21.645323] (-) TimerEvent: {}
+[21.745943] (-) TimerEvent: {}
+[21.846594] (-) TimerEvent: {}
+[21.947246] (-) TimerEvent: {}
+[22.047947] (-) TimerEvent: {}
+[22.148663] (-) TimerEvent: {}
+[22.244272] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_generator_c\x1b[0m\n'}
+[22.248829] (-) TimerEvent: {}
+[22.349501] (-) TimerEvent: {}
+[22.371593] (lsm10_v2) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/lsm10_v2__rosidl_generator_c.dir/rosidl_generator_c/lsm10_v2/msg/detail/difop__functions.c.o\x1b[0m\n'}
+[22.449667] (-) TimerEvent: {}
+[22.550294] (-) TimerEvent: {}
+[22.651165] (-) TimerEvent: {}
+[22.739305] (lsm10_v2) StdoutLine: {'line': b'[ 12%] \x1b[32m\x1b[1mLinking C shared library liblsm10_v2__rosidl_generator_c.so\x1b[0m\n'}
+[22.751322] (-) TimerEvent: {}
+[22.852177] (-) TimerEvent: {}
+[22.953072] (-) TimerEvent: {}
+[23.054177] (-) TimerEvent: {}
+[23.108919] (lsm10_v2) StdoutLine: {'line': b'[ 12%] Built target lsm10_v2__rosidl_generator_c\n'}
+[23.154345] (-) TimerEvent: {}
+[23.205927] (lsm10_v2) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[23.254521] (-) TimerEvent: {}
+[23.355434] (-) TimerEvent: {}
+[23.456082] (-) TimerEvent: {}
+[23.556753] (-) TimerEvent: {}
+[23.657447] (-) TimerEvent: {}
+[23.758364] (-) TimerEvent: {}
+[23.859263] (-) TimerEvent: {}
+[23.960240] (-) TimerEvent: {}
+[24.061145] (-) TimerEvent: {}
+[24.161830] (-) TimerEvent: {}
+[24.262488] (-) TimerEvent: {}
+[24.363135] (-) TimerEvent: {}
+[24.463777] (-) TimerEvent: {}
+[24.564759] (-) TimerEvent: {}
+[24.647464] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[24.664944] (-) TimerEvent: {}
+[24.755465] (lsm10_v2) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/lsm10_v2/msg/detail/difop__type_support.cpp.o\x1b[0m\n'}
+[24.765118] (-) TimerEvent: {}
+[24.865979] (-) TimerEvent: {}
+[24.966912] (-) TimerEvent: {}
+[25.067845] (-) TimerEvent: {}
+[25.168521] (-) TimerEvent: {}
+[25.269251] (-) TimerEvent: {}
+[25.369960] (-) TimerEvent: {}
+[25.470854] (-) TimerEvent: {}
+[25.571562] (-) TimerEvent: {}
+[25.672251] (-) TimerEvent: {}
+[25.773235] (-) TimerEvent: {}
+[25.874126] (-) TimerEvent: {}
+[25.975078] (-) TimerEvent: {}
+[26.075767] (-) TimerEvent: {}
+[26.176463] (-) TimerEvent: {}
+[26.277163] (-) TimerEvent: {}
+[26.377919] (-) TimerEvent: {}
+[26.478920] (-) TimerEvent: {}
+[26.562294] (lsm10_v2) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[26.579093] (-) TimerEvent: {}
+[26.680040] (-) TimerEvent: {}
+[26.780788] (-) TimerEvent: {}
+[26.874226] (lsm10_v2) StdoutLine: {'line': b'[ 22%] Built target lsm10_v2__rosidl_typesupport_introspection_cpp\n'}
+[26.880964] (-) TimerEvent: {}
+[26.981848] (-) TimerEvent: {}
+[26.988953] (lsm10_v2) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[27.082021] (-) TimerEvent: {}
+[27.182667] (-) TimerEvent: {}
+[27.283583] (-) TimerEvent: {}
+[27.384481] (-) TimerEvent: {}
+[27.485321] (-) TimerEvent: {}
+[27.585978] (-) TimerEvent: {}
+[27.686804] (-) TimerEvent: {}
+[27.787521] (-) TimerEvent: {}
+[27.888180] (-) TimerEvent: {}
+[27.988856] (-) TimerEvent: {}
+[28.089782] (-) TimerEvent: {}
+[28.190661] (-) TimerEvent: {}
+[28.291556] (-) TimerEvent: {}
+[28.392497] (-) TimerEvent: {}
+[28.457445] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[28.492683] (-) TimerEvent: {}
+[28.576690] (lsm10_v2) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/lsm10_v2/msg/detail/difop__type_support.c.o\x1b[0m\n'}
+[28.592847] (-) TimerEvent: {}
+[28.693550] (-) TimerEvent: {}
+[28.794335] (-) TimerEvent: {}
+[28.835487] (lsm10_v2) StdoutLine: {'line': b'[ 32%] \x1b[32m\x1b[1mLinking C shared library liblsm10_v2__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[28.894516] (-) TimerEvent: {}
+[28.995450] (-) TimerEvent: {}
+[29.053534] (lsm10_v2) StdoutLine: {'line': b'[ 32%] Built target lsm10_v2__rosidl_typesupport_introspection_c\n'}
+[29.095632] (-) TimerEvent: {}
+[29.175575] (lsm10_v2) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[29.195807] (-) TimerEvent: {}
+[29.296732] (-) TimerEvent: {}
+[29.397672] (-) TimerEvent: {}
+[29.498594] (-) TimerEvent: {}
+[29.599479] (-) TimerEvent: {}
+[29.700391] (-) TimerEvent: {}
+[29.801318] (-) TimerEvent: {}
+[29.902176] (-) TimerEvent: {}
+[30.003042] (-) TimerEvent: {}
+[30.103976] (-) TimerEvent: {}
+[30.204771] (-) TimerEvent: {}
+[30.305747] (-) TimerEvent: {}
+[30.337386] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_c\x1b[0m\n'}
+[30.405912] (-) TimerEvent: {}
+[30.414192] (lsm10_v2) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_c.dir/rosidl_typesupport_c/lsm10_v2/msg/difop__type_support.cpp.o\x1b[0m\n'}
+[30.506084] (-) TimerEvent: {}
+[30.606741] (-) TimerEvent: {}
+[30.654945] (lsm10_v2) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_c.so\x1b[0m\n'}
+[30.706923] (-) TimerEvent: {}
+[30.807833] (-) TimerEvent: {}
+[30.908500] (-) TimerEvent: {}
+[31.009466] (-) TimerEvent: {}
+[31.010353] (lsm10_v2) StdoutLine: {'line': b'[ 41%] Built target lsm10_v2__rosidl_typesupport_c\n'}
+[31.109631] (-) TimerEvent: {}
+[31.124392] (lsm10_v2) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[31.209804] (-) TimerEvent: {}
+[31.310713] (-) TimerEvent: {}
+[31.411390] (-) TimerEvent: {}
+[31.512058] (-) TimerEvent: {}
+[31.612766] (-) TimerEvent: {}
+[31.713449] (-) TimerEvent: {}
+[31.814159] (-) TimerEvent: {}
+[31.914779] (-) TimerEvent: {}
+[32.015415] (-) TimerEvent: {}
+[32.116087] (-) TimerEvent: {}
+[32.216761] (-) TimerEvent: {}
+[32.317530] (-) TimerEvent: {}
+[32.418178] (-) TimerEvent: {}
+[32.491131] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[32.518336] (-) TimerEvent: {}
+[32.568024] (lsm10_v2) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/lsm10_v2/msg/detail/dds_fastrtps/difop__type_support.cpp.o\x1b[0m\n'}
+[32.619029] (-) TimerEvent: {}
+[32.719792] (-) TimerEvent: {}
+[32.820533] (-) TimerEvent: {}
+[32.921516] (-) TimerEvent: {}
+[33.022311] (-) TimerEvent: {}
+[33.123175] (-) TimerEvent: {}
+[33.225075] (-) TimerEvent: {}
+[33.327616] (-) TimerEvent: {}
+[33.428325] (-) TimerEvent: {}
+[33.528949] (-) TimerEvent: {}
+[33.630041] (-) TimerEvent: {}
+[33.730806] (-) TimerEvent: {}
+[33.831447] (-) TimerEvent: {}
+[33.932126] (-) TimerEvent: {}
+[34.033161] (-) TimerEvent: {}
+[34.134076] (-) TimerEvent: {}
+[34.234816] (-) TimerEvent: {}
+[34.335729] (-) TimerEvent: {}
+[34.436413] (-) TimerEvent: {}
+[34.537216] (-) TimerEvent: {}
+[34.637917] (-) TimerEvent: {}
+[34.738639] (-) TimerEvent: {}
+[34.839377] (-) TimerEvent: {}
+[34.940284] (-) TimerEvent: {}
+[35.040934] (-) TimerEvent: {}
+[35.141881] (-) TimerEvent: {}
+[35.242770] (-) TimerEvent: {}
+[35.343515] (-) TimerEvent: {}
+[35.358728] (lsm10_v2) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[35.443673] (-) TimerEvent: {}
+[35.544512] (-) TimerEvent: {}
+[35.645478] (-) TimerEvent: {}
+[35.746203] (-) TimerEvent: {}
+[35.848119] (-) TimerEvent: {}
+[35.909697] (lsm10_v2) StdoutLine: {'line': b'[ 51%] Built target lsm10_v2__rosidl_typesupport_fastrtps_cpp\n'}
+[35.948294] (-) TimerEvent: {}
+[35.974218] (lsm10_v2) StdoutLine: {'line': b'[ 54%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[36.048668] (-) TimerEvent: {}
+[36.149594] (-) TimerEvent: {}
+[36.250246] (-) TimerEvent: {}
+[36.352235] (-) TimerEvent: {}
+[36.454183] (-) TimerEvent: {}
+[36.555884] (-) TimerEvent: {}
+[36.657727] (-) TimerEvent: {}
+[36.759483] (-) TimerEvent: {}
+[36.860158] (-) TimerEvent: {}
+[36.960834] (-) TimerEvent: {}
+[37.062506] (-) TimerEvent: {}
+[37.080121] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_cpp\x1b[0m\n'}
+[37.142012] (lsm10_v2) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/lsm10_v2/msg/difop__type_support.cpp.o\x1b[0m\n'}
+[37.162689] (-) TimerEvent: {}
+[37.263367] (-) TimerEvent: {}
+[37.364060] (-) TimerEvent: {}
+[37.464720] (-) TimerEvent: {}
+[37.565594] (-) TimerEvent: {}
+[37.666255] (-) TimerEvent: {}
+[37.766968] (-) TimerEvent: {}
+[37.867698] (-) TimerEvent: {}
+[37.968668] (-) TimerEvent: {}
+[38.069736] (-) TimerEvent: {}
+[38.170459] (-) TimerEvent: {}
+[38.271201] (-) TimerEvent: {}
+[38.371841] (-) TimerEvent: {}
+[38.472581] (-) TimerEvent: {}
+[38.573237] (-) TimerEvent: {}
+[38.674131] (-) TimerEvent: {}
+[38.695839] (lsm10_v2) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[38.774357] (-) TimerEvent: {}
+[38.875284] (-) TimerEvent: {}
+[38.879404] (lsm10_v2) StdoutLine: {'line': b'[ 61%] Built target lsm10_v2__rosidl_typesupport_cpp\n'}
+[38.923156] (lsm10_v2) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[38.975440] (-) TimerEvent: {}
+[39.076089] (-) TimerEvent: {}
+[39.177069] (-) TimerEvent: {}
+[39.278019] (-) TimerEvent: {}
+[39.378664] (-) TimerEvent: {}
+[39.479609] (-) TimerEvent: {}
+[39.580647] (-) TimerEvent: {}
+[39.681807] (-) TimerEvent: {}
+[39.782737] (-) TimerEvent: {}
+[39.883651] (-) TimerEvent: {}
+[39.984494] (-) TimerEvent: {}
+[40.085258] (-) TimerEvent: {}
+[40.161395] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[40.185358] (-) TimerEvent: {}
+[40.271218] (lsm10_v2) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/lsm10_v2__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/lsm10_v2/msg/detail/difop__type_support_c.cpp.o\x1b[0m\n'}
+[40.285522] (-) TimerEvent: {}
+[40.386189] (-) TimerEvent: {}
+[40.486853] (-) TimerEvent: {}
+[40.587569] (-) TimerEvent: {}
+[40.688488] (-) TimerEvent: {}
+[40.789137] (-) TimerEvent: {}
+[40.889806] (-) TimerEvent: {}
+[40.990467] (-) TimerEvent: {}
+[41.091281] (-) TimerEvent: {}
+[41.192189] (-) TimerEvent: {}
+[41.292891] (-) TimerEvent: {}
+[41.393678] (-) TimerEvent: {}
+[41.494349] (-) TimerEvent: {}
+[41.595063] (-) TimerEvent: {}
+[41.695811] (-) TimerEvent: {}
+[41.796668] (-) TimerEvent: {}
+[41.897534] (-) TimerEvent: {}
+[41.998189] (-) TimerEvent: {}
+[42.099109] (-) TimerEvent: {}
+[42.199765] (-) TimerEvent: {}
+[42.300645] (-) TimerEvent: {}
+[42.401565] (-) TimerEvent: {}
+[42.502489] (-) TimerEvent: {}
+[42.603394] (-) TimerEvent: {}
+[42.691305] (lsm10_v2) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library liblsm10_v2__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[42.703630] (-) TimerEvent: {}
+[42.804659] (-) TimerEvent: {}
+[42.905591] (-) TimerEvent: {}
+[43.006597] (-) TimerEvent: {}
+[43.107545] (-) TimerEvent: {}
+[43.208227] (-) TimerEvent: {}
+[43.308949] (-) TimerEvent: {}
+[43.385973] (lsm10_v2) StdoutLine: {'line': b'[ 70%] Built target lsm10_v2__rosidl_typesupport_fastrtps_c\n'}
+[43.409137] (-) TimerEvent: {}
+[43.506693] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2\x1b[0m\n'}
+[43.509326] (-) TimerEvent: {}
+[43.610082] (-) TimerEvent: {}
+[43.685591] (lsm10_v2) StdoutLine: {'line': b'[ 70%] Built target lsm10_v2\n'}
+[43.710138] (-) TimerEvent: {}
+[43.811158] (-) TimerEvent: {}
+[43.867230] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__py\x1b[0m\n'}
+[43.911326] (-) TimerEvent: {}
+[43.963534] (lsm10_v2) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[44.011797] (-) TimerEvent: {}
+[44.113747] (-) TimerEvent: {}
+[44.214377] (-) TimerEvent: {}
+[44.315372] (-) TimerEvent: {}
+[44.416088] (-) TimerEvent: {}
+[44.517001] (-) TimerEvent: {}
+[44.617946] (-) TimerEvent: {}
+[44.718862] (-) TimerEvent: {}
+[44.819788] (-) TimerEvent: {}
+[44.920882] (-) TimerEvent: {}
+[45.021546] (-) TimerEvent: {}
+[45.122371] (-) TimerEvent: {}
+[45.223281] (-) TimerEvent: {}
+[45.324204] (-) TimerEvent: {}
+[45.425082] (-) TimerEvent: {}
+[45.525740] (-) TimerEvent: {}
+[45.626377] (-) TimerEvent: {}
+[45.727013] (-) TimerEvent: {}
+[45.827894] (-) TimerEvent: {}
+[45.947775] (-) TimerEvent: {}
+[46.048691] (-) TimerEvent: {}
+[46.149621] (-) TimerEvent: {}
+[46.250425] (-) TimerEvent: {}
+[46.351080] (-) TimerEvent: {}
+[46.452003] (-) TimerEvent: {}
+[46.552640] (-) TimerEvent: {}
+[46.653685] (-) TimerEvent: {}
+[46.754784] (-) TimerEvent: {}
+[46.756515] (lsm10_v2) StdoutLine: {'line': b'[ 74%] Built target lsm10_v2__py\n'}
+[46.838310] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__python\x1b[0m\n'}
+[46.854975] (-) TimerEvent: {}
+[46.955750] (-) TimerEvent: {}
+[46.979270] (lsm10_v2) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/lsm10_v2__python.dir/rosidl_generator_py/lsm10_v2/msg/_difop_s.c.o\x1b[0m\n'}
+[47.055971] (-) TimerEvent: {}
+[47.157329] (-) TimerEvent: {}
+[47.258465] (-) TimerEvent: {}
+[47.360272] (-) TimerEvent: {}
+[47.461687] (-) TimerEvent: {}
+[47.562394] (-) TimerEvent: {}
+[47.596872] (lsm10_v2) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lsm10_v2/liblsm10_v2__python.so\x1b[0m\n'}
+[47.662785] (-) TimerEvent: {}
+[47.764233] (-) TimerEvent: {}
+[47.865131] (-) TimerEvent: {}
+[47.965835] (-) TimerEvent: {}
+[48.066671] (-) TimerEvent: {}
+[48.153413] (lsm10_v2) StdoutLine: {'line': b'[ 80%] Built target lsm10_v2__python\n'}
+[48.166842] (-) TimerEvent: {}
+[48.248825] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[48.267020] (-) TimerEvent: {}
+[48.367990] (-) TimerEvent: {}
+[48.411049] (lsm10_v2) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/lsm10_v2/_lsm10_v2_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[48.468171] (-) TimerEvent: {}
+[48.570235] (-) TimerEvent: {}
+[48.671215] (-) TimerEvent: {}
+[48.772079] (-) TimerEvent: {}
+[48.872923] (-) TimerEvent: {}
+[48.973919] (-) TimerEvent: {}
+[49.074867] (-) TimerEvent: {}
+[49.175800] (-) TimerEvent: {}
+[49.276815] (-) TimerEvent: {}
+[49.377825] (-) TimerEvent: {}
+[49.478532] (-) TimerEvent: {}
+[49.579507] (-) TimerEvent: {}
+[49.634711] (lsm10_v2) StdoutLine: {'line': b'[ 87%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lsm10_v2/lsm10_v2_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[49.679686] (-) TimerEvent: {}
+[49.780408] (-) TimerEvent: {}
+[49.837027] (lsm10_v2) StdoutLine: {'line': b'[ 87%] Built target lsm10_v2__rosidl_typesupport_c__pyext\n'}
+[49.880590] (-) TimerEvent: {}
+[49.937718] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[49.980762] (-) TimerEvent: {}
+[50.081742] (-) TimerEvent: {}
+[50.123324] (lsm10_v2) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/lsm10_v2/_lsm10_v2_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[50.181935] (-) TimerEvent: {}
+[50.282843] (-) TimerEvent: {}
+[50.383514] (-) TimerEvent: {}
+[50.484181] (-) TimerEvent: {}
+[50.584817] (-) TimerEvent: {}
+[50.675100] (lsm10_v2) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/lsm10_v2/lsm10_v2_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[50.685626] (-) TimerEvent: {}
+[50.786546] (-) TimerEvent: {}
+[50.887603] (-) TimerEvent: {}
+[50.988505] (-) TimerEvent: {}
+[51.089393] (-) TimerEvent: {}
+[51.190272] (-) TimerEvent: {}
+[51.263914] (lsm10_v2) StdoutLine: {'line': b'[ 93%] Built target lsm10_v2__rosidl_typesupport_fastrtps_c__pyext\n'}
+[51.290439] (-) TimerEvent: {}
+[51.390848] (lsm10_v2) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target lsm10_v2__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[51.391444] (-) TimerEvent: {}
+[51.492251] (-) TimerEvent: {}
+[51.569585] (lsm10_v2) StdoutLine: {'line': b'[ 96%] \x1b[32mBuilding C object CMakeFiles/lsm10_v2__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/lsm10_v2/_lsm10_v2_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[51.592435] (-) TimerEvent: {}
+[51.693313] (-) TimerEvent: {}
+[51.793967] (-) TimerEvent: {}
+[51.894603] (-) TimerEvent: {}
+[51.995253] (-) TimerEvent: {}
+[52.095952] (-) TimerEvent: {}
+[52.196907] (-) TimerEvent: {}
+[52.297585] (-) TimerEvent: {}
+[52.398532] (-) TimerEvent: {}
+[52.499197] (-) TimerEvent: {}
+[52.600066] (-) TimerEvent: {}
+[52.700739] (-) TimerEvent: {}
+[52.801661] (-) TimerEvent: {}
+[52.902547] (-) TimerEvent: {}
+[53.003452] (-) TimerEvent: {}
+[53.411178] (-) TimerEvent: {}
+[53.512218] (-) TimerEvent: {}
+[53.613108] (-) TimerEvent: {}
+[53.713885] (-) TimerEvent: {}
+[53.814691] (-) TimerEvent: {}
+[53.915284] (-) TimerEvent: {}
+[54.015891] (-) TimerEvent: {}
+[54.116476] (-) TimerEvent: {}
+[54.217115] (-) TimerEvent: {}
+[54.317800] (-) TimerEvent: {}
+[54.418449] (-) TimerEvent: {}
+[54.519328] (-) TimerEvent: {}
+[54.620209] (-) TimerEvent: {}
+[54.720831] (-) TimerEvent: {}
+[54.821912] (-) TimerEvent: {}
+[54.922778] (-) TimerEvent: {}
+[55.023418] (-) TimerEvent: {}
+[55.123999] (-) TimerEvent: {}
+[55.224956] (-) TimerEvent: {}
+[55.325864] (-) TimerEvent: {}
+[55.426894] (-) TimerEvent: {}
+[55.527558] (-) TimerEvent: {}
+[55.628147] (-) TimerEvent: {}
+[55.728759] (-) TimerEvent: {}
+[55.829493] (-) TimerEvent: {}
+[55.930334] (-) TimerEvent: {}
+[56.031379] (-) TimerEvent: {}
+[56.132174] (-) TimerEvent: {}
+[56.232836] (-) TimerEvent: {}
+[56.333703] (-) TimerEvent: {}
+[56.434301] (-) TimerEvent: {}
+[56.534891] (-) TimerEvent: {}
+[56.635487] (-) TimerEvent: {}
+[56.736109] (-) TimerEvent: {}
+[56.760784] (lsm10_v2) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/lsm10_v2/lsm10_v2_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\x1b[0m\n'}
+[56.836280] (-) TimerEvent: {}
+[56.926259] (lsm10_v2) StdoutLine: {'line': b'[100%] Built target lsm10_v2__rosidl_typesupport_introspection_c__pyext\n'}
+[56.936445] (-) TimerEvent: {}
+[57.037354] (-) TimerEvent: {}
+[57.047798] (lsm10_v2) CommandEnded: {'returncode': 0}
+[57.137525] (-) TimerEvent: {}
+[57.238328] (-) TimerEvent: {}
+[57.342939] (-) TimerEvent: {}
+[57.443812] (-) TimerEvent: {}
+[57.544707] (-) TimerEvent: {}
+[57.655295] (-) TimerEvent: {}
+[57.658537] (lsm10_v2) JobProgress: {'identifier': 'lsm10_v2', 'progress': 'install'}
+[57.739723] (lsm10_v2) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/wheeltec/wheeltec_ros2/build/lsm10_v2'], 'cwd': '/home/wheeltec/wheeltec_ros2/build/lsm10_v2', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('JETSON_BOARD', 'UNKNOWN'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('JETSON_TYPE', 'TX1'), ('USER', 'wheeltec'), ('LC_TIME', 'en_US.UTF-8'), ('JETSON_CUDA', '10.2.89'), ('SSH_AGENT_PID', '7452'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64:'), ('HOME', '/home/wheeltec'), ('OLDPWD', '/home/wheeltec'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_TENSORRT', '7.1.3.0'), ('JETSON_L4T', '32.5.2'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'en_US.UTF-8'), ('MANAGERPID', '7034'), ('JETSON_OPENCV_CUDA', 'NO'), ('JETSON_VISIONWORKS', '1.6.0.501'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('JETSON_CHIP_ID', '33'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'wheeltec'), ('JETSON_MODULE', 'P2597-2180'), ('JETSON_SERIAL_NUMBER', '0421018054037'), ('JETSON_CUDNN', '8.0.0.180'), ('JOURNAL_STREAM', '8:36591'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'jetson'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'wheeltec'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/cuda-10.2/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/wheeltec:@/tmp/.ICE-unix/7488,unix/wheeltec:/tmp/.ICE-unix/7488'), ('INVOCATION_ID', '600c813717104c09aee07b2d631c9322'), ('JETSON_OPENCV', '4.2.0'), ('PAPERSIZE', 'letter'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'en_US.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/08ab6fc1_8976_4af9_8551_4ff085fdaf7c'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('JETSON_MACHINE', 'NVIDIA Jetson TX1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'en_US.UTF-8'), ('JETSON_L4T_REVISION', '5.2'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra210'), ('GNOME_TERMINAL_SERVICE', ':1.103'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('LC_NAME', 'en_US.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('JETSON_BOARDIDS', ''), ('LC_MEASUREMENT', 'en_US.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('LC_IDENTIFICATION', 'en_US.UTF-8'), ('JETSON_L4T_RELEASE', '32'), ('JETSON_VULKAN_INFO', '1.2.131'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '5.3'), ('PWD', '/home/wheeltec/wheeltec_ros2/build/lsm10_v2'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('JETSON_VPI', 'ii libnvvpi1 1.0.15 arm64 NVIDIA Vision Programming Interface library'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'en_US.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', '4.5.1'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[57.755489] (-) TimerEvent: {}
+[57.786691] (lsm10_v2) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[57.788464] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/rosidl_interfaces/lsm10_v2\n'}
+[57.790152] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2\n'}
+[57.791412] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg\n'}
+[57.792565] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail\n'}
+[57.793817] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__struct.h\n'}
+[57.795362] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__functions.c\n'}
+[57.797039] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__functions.h\n'}
+[57.798487] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.h\n'}
+[57.799884] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/difop.h\n'}
+[57.801331] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_generator_c__visibility_control.h\n'}
+[57.803208] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/library_path.sh\n'}
+[57.804932] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/library_path.dsv\n'}
+[57.806875] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_generator_c.so\n'}
+[57.809116] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_generator_c.so" to ""\n'}
+[57.810274] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2\n'}
+[57.811198] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg\n'}
+[57.812099] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[57.813384] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail\n'}
+[57.814417] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_fastrtps_c.h\n'}
+[57.816124] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_c.so\n'}
+[57.818580] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[57.819818] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2\n'}
+[57.820818] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg\n'}
+[57.821912] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail\n'}
+[57.822955] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/dds_fastrtps\n'}
+[57.824232] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[57.825827] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[57.827565] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_cpp.so\n'}
+[57.829762] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[57.830837] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2\n'}
+[57.831762] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg\n'}
+[57.832704] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[57.834078] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail\n'}
+[57.835170] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_introspection_c.h\n'}
+[57.836519] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.c\n'}
+[57.838242] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_c.so\n'}
+[57.841723] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_c.so" to ""\n'}
+[57.843130] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_c.so\n'}
+[57.845314] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_c.so" to ""\n'}
+[57.847583] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2\n'}
+[57.848604] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg\n'}
+[57.861520] (-) TimerEvent: {}
+[57.862319] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/difop.hpp\n'}
+[57.862997] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail\n'}
+[57.863606] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__traits.hpp\n'}
+[57.864132] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__builder.hpp\n'}
+[57.869308] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__struct.hpp\n'}
+[57.870089] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2\n'}
+[57.875983] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg\n'}
+[57.876547] (lsm10_v2) StdoutLine: {'line': b'-- Up-to-date: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail\n'}
+[57.876965] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__rosidl_typesupport_introspection_cpp.hpp\n'}
+[57.877590] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/include/lsm10_v2/msg/detail/difop__type_support.cpp\n'}
+[57.878103] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_cpp.so\n'}
+[57.878791] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[57.879467] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_cpp.so\n'}
+[57.879965] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__rosidl_typesupport_cpp.so" to ""\n'}
+[57.880711] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/pythonpath.sh\n'}
+[57.884462] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/pythonpath.dsv\n'}
+[57.885081] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/__init__.py\n'}
+[57.961702] (-) TimerEvent: {}
+[58.076940] (lsm10_v2) StdoutLine: {'line': b"Compiling '/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/__init__.py'...\n"}
+[58.077581] (-) TimerEvent: {}
+[58.102927] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg\n'}
+[58.104150] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/_difop_s.c\n'}
+[58.105614] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/__init__.py\n'}
+[58.107031] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/msg/_difop.py\n'}
+[58.109336] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so\n'}
+[58.112075] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_fastrtps_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[58.113892] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so\n'}
+[58.115739] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_introspection_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[58.116543] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so\n'}
+[58.118067] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages/lsm10_v2/lsm10_v2_s__rosidl_typesupport_c.cpython-38-aarch64-linux-gnu.so" to ""\n'}
+[58.119476] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__python.so\n'}
+[58.122027] (lsm10_v2) StdoutLine: {'line': b'-- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/liblsm10_v2__python.so" to ""\n'}
+[58.131547] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/msg/Difop.idl\n'}
+[58.132043] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/msg/Difop.msg\n'}
+[58.134814] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/package_run_dependencies/lsm10_v2\n'}
+[58.135645] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/parent_prefix_path/lsm10_v2\n'}
+[58.146214] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/ament_prefix_path.sh\n'}
+[58.146703] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/ament_prefix_path.dsv\n'}
+[58.152738] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/path.sh\n'}
+[58.153393] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/environment/path.dsv\n'}
+[58.153852] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.bash\n'}
+[58.154428] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.sh\n'}
+[58.155875] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.zsh\n'}
+[58.157521] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/local_setup.dsv\n'}
+[58.165315] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/package.dsv\n'}
+[58.169569] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/ament_index/resource_index/packages/lsm10_v2\n'}
+[58.171521] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cExport.cmake\n'}
+[58.177759] (-) TimerEvent: {}
+[58.178449] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cExport-noconfig.cmake\n'}
+[58.181520] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cExport.cmake\n'}
+[58.183724] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[58.185577] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cExport.cmake\n'}
+[58.187280] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[58.201522] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_generator_cppExport.cmake\n'}
+[58.204902] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[58.215589] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[58.217306] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cppExport.cmake\n'}
+[58.218781] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[58.221369] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake-extras.cmake\n'}
+[58.229702] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[58.230161] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[58.230554] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[58.230968] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[58.231335] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[58.234320] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[58.236043] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2Config.cmake\n'}
+[58.237781] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/cmake/lsm10_v2Config-version.cmake\n'}
+[58.239308] (lsm10_v2) StdoutLine: {'line': b'-- Installing: /home/wheeltec/wheeltec_ros2/install/lsm10_v2/share/lsm10_v2/package.xml\n'}
+[58.252205] (lsm10_v2) CommandEnded: {'returncode': 0}
+[58.287551] (-) TimerEvent: {}
+[58.388293] (-) TimerEvent: {}
+[58.490714] (-) TimerEvent: {}
+[58.591696] (-) TimerEvent: {}
+[58.695953] (-) TimerEvent: {}
+[58.797840] (-) TimerEvent: {}
+[58.903659] (-) TimerEvent: {}
+[59.019827] (-) TimerEvent: {}
+[59.120414] (-) TimerEvent: {}
+[59.237409] (-) TimerEvent: {}
+[59.338037] (-) TimerEvent: {}
+[59.475600] (lsm10_v2) JobEnded: {'identifier': 'lsm10_v2', 'rc': 0}
+[59.477028] (-) TimerEvent: {}
+[59.479110] (-) EventReactorShutdown: {}

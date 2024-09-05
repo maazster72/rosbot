@@ -1,0 +1,2 @@
+Invoking command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt
+Invoked command in '/home/wheeltec/wheeltec_ros2/build/wheeltec_robot_rrt' returned '1': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_robot_rrt2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_rrt

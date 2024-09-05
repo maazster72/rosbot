@@ -1,0 +1,111 @@
+[0.058s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/lsn10': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/lsn10
+[0.284s] -- The C compiler identification is GNU 9.4.0
+[0.484s] -- The CXX compiler identification is GNU 9.4.0
+[0.501s] -- Check for working C compiler: /usr/bin/cc
+[0.742s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.745s] -- Detecting C compiler ABI info
+[0.991s] -- Detecting C compiler ABI info - done
+[1.035s] -- Detecting C compile features
+[1.037s] -- Detecting C compile features - done
+[1.048s] -- Check for working CXX compiler: /usr/bin/c++
+[1.327s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.331s] -- Detecting CXX compiler ABI info
+[1.617s] -- Detecting CXX compiler ABI info - done
+[1.664s] -- Detecting CXX compile features
+[1.667s] -- Detecting CXX compile features - done
+[1.681s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.784s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.785s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.154s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.401s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.441s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[2.810s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[2.918s] -- Found FastRTPS: /opt/ros/galactic/include  
+[3.254s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.507s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[3.521s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[3.610s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.611s] -- Looking for pthread.h
+[6.092s] -- Looking for pthread.h - found
+[6.093s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[6.696s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[6.698s] -- Looking for pthread_create in pthreads
+[7.008s] -- Looking for pthread_create in pthreads - not found
+[7.010s] -- Looking for pthread_create in pthread
+[7.483s] -- Looking for pthread_create in pthread - found
+[7.488s] -- Found Threads: TRUE  
+[8.177s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[8.700s] -- Found std_srvs: 2.2.4 (/opt/ros/galactic/share/std_srvs/cmake)
+[8.847s] -- Found Boost: /usr/lib/aarch64-linux-gnu/cmake/Boost-1.71.0/BoostConfig.cmake (found suitable version "1.71.0", minimum required is "1.65.1") found components: system filesystem thread 
+[8.864s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[9.350s] -- Added test 'copyright' to check source files copyright and LICENSE
+[9.357s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[9.360s] -- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/include;/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src;/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/lsn10
+[9.361s] -- Configured cppcheck exclude dirs and/or files: 
+[9.367s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[9.368s] -- Configured cpplint exclude dirs and/or files: 
+[9.371s] -- Added test 'flake8' to check Python code syntax and style conventions
+[9.374s] -- Added test 'lint_cmake' to check CMake code style
+[9.377s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[9.383s] -- Added test 'uncrustify' to check C / C++ code style
+[9.384s] -- Configured uncrustify additional arguments: 
+[9.387s] -- Added test 'xmllint' to check XML markup files
+[9.403s] -- Configuring done
+[9.443s] -- Generating done
+[9.450s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/lsn10
+[9.489s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/lsn10' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/lsn10
+[9.499s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/lsn10': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/lsn10 -- -j4 -l4
+[9.768s] [35m[1mScanning dependencies of target lsn10[0m
+[9.970s] [ 33%] [32mBuilding CXX object CMakeFiles/lsn10.dir/src/lsiosr.cpp.o[0m
+[11.216s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsiosr.cpp:[m[K In member function ‘[01m[Kint ls::LSIOSR::close()[m[K’:
+[11.217s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsiosr.cpp:389:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[11.217s]   389 | [01;35m[K}[m[K
+[11.218s]       | [01;35m[K^[m[K
+[11.511s] [ 66%] [32mBuilding CXX object CMakeFiles/lsn10.dir/src/lsn10.cpp.o[0m
+[25.753s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In member function ‘[01m[Kint ls::LSN10::getScan(std::vector<ls::ScanPoint>&, rclcpp::Time&, float&)[m[K’:
+[25.754s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:153:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[25.755s]   153 | [01;35m[K}[m[K
+[25.755s]       | [01;35m[K^[m[K
+[25.768s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In member function ‘[01m[Kvoid ls::LSN10::recvThread()[m[K’:
+[25.769s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:261:25:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K-Wsign-compare[m[K]
+[25.769s]   261 |    for (size_t i = 0; [01;35m[Ki < invalidValue[m[K; i++)
+[25.770s]       |                       [01;35m[K~~^~~~~~~~~~~~~~[m[K
+[25.772s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:278:18:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ls::ScanPoint>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[25.773s]   278 |     for(int k=0;[01;35m[Kk<scan_points_.size()[m[K;k++)
+[25.773s]       |                 [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[25.776s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:304:20:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kint[m[K’ and ‘[01m[Kstd::vector<ls::ScanPoint>::size_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+[25.777s]   304 |      for(int k=0; [01;35m[Kk<scan_points_.size()[m[K; k++)
+[25.778s]       |                   [01;35m[K~^~~~~~~~~~~~~~~~~~~~[m[K
+[25.823s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In function ‘[01m[Kvoid handleSig(int)[m[K’:
+[25.823s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:423:20:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Ksigno[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[25.824s]   423 | void handleSig([01;35m[Kint signo[m[K)
+[25.825s]       |                [01;35m[K~~~~^~~~~[m[K
+[25.832s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:[m[K In function ‘[01m[Kint main(int, char**)[m[K’:
+[25.833s] [01m[K/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LSlidar/lsn10_v2/src/lsn10.cpp:436:14:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Klsn10[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[25.833s]   436 |   ls::LSN10* [01;35m[Klsn10[m[K = ls::LSN10::instance();
+[25.834s]       |              [01;35m[K^~~~~[m[K
+[38.614s] [100%] [32m[1mLinking CXX executable lsn10[0m
+[39.613s] [100%] Built target lsn10
+[39.665s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/lsn10' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/lsn10 -- -j4 -l4
+[39.839s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/lsn10': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/lsn10
+[39.877s] -- Install configuration: ""
+[39.878s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/lib/lsn10/lsn10
+[39.886s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/lsn10/lib/lsn10/lsn10" to ""
+[39.887s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/launch
+[39.888s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/launch/ls_n10.launch.py
+[39.893s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/ament_index/resource_index/package_run_dependencies/lsn10
+[39.894s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/ament_index/resource_index/parent_prefix_path/lsn10
+[39.896s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/ament_prefix_path.sh
+[39.898s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/ament_prefix_path.dsv
+[39.900s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/path.sh
+[39.902s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/environment/path.dsv
+[39.903s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.bash
+[39.905s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.sh
+[39.906s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.zsh
+[39.908s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/local_setup.dsv
+[39.910s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/package.dsv
+[39.911s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/ament_index/resource_index/packages/lsn10
+[39.913s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/cmake/lsn10Config.cmake
+[39.914s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/cmake/lsn10Config-version.cmake
+[39.916s] -- Installing: /home/wheeltec/wheeltec_ros2/install/lsn10/share/lsn10/package.xml
+[39.935s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/lsn10' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/lsn10

@@ -1,0 +1,415 @@
+[0.462s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar': CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ar_track_alvar -- -j4 -l4
+[2.414s] [  2%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/MultiMarkerBundle.cpp.o[0m
+[4.753s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+[4.754s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[4.755s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[4.756s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarker.h:35[m[K,
+[4.756s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarkerBundle.h:34[m[K,
+[4.757s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/src/MultiMarkerBundle.cpp:24[m[K:
+[4.758s] [01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+[4.760s]    37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+[4.762s]       |  [01;35m[K^~~~~~~[m[K
+[71.416s] [  4%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Mutex_unix.cpp.o[0m
+[71.574s] [  6%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Optimization.cpp.o[0m
+[77.155s] [  8%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Plugin.cpp.o[0m
+[78.086s] [ 10%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Plugin_unix.cpp.o[0m
+[79.451s] [ 13%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Pose.cpp.o[0m
+[85.456s] [ 15%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Rotation.cpp.o[0m
+[91.689s] [ 17%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Threads.cpp.o[0m
+[91.816s] [ 19%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Threads_unix.cpp.o[0m
+[92.461s] [ 21%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Util.cpp.o[0m
+[105.040s] [ 23%] [32mBuilding CXX object CMakeFiles/ar_track_alvar.dir/src/Mutex.cpp.o[0m
+[105.166s] [ 26%] [32m[1mLinking CXX static library libar_track_alvar.a[0m
+[105.812s] [ 65%] Built target ar_track_alvar
+[106.065s] [35m[1mScanning dependencies of target kinect_filtering[0m
+[106.672s] [ 67%] [32mBuilding CXX object CMakeFiles/kinect_filtering.dir/src/kinect_filtering.cpp.o[0m
+[161.999s] [ 69%] [32m[1mLinking CXX static library libkinect_filtering.a[0m
+[162.208s] [ 69%] Built target kinect_filtering
+[162.267s] [35m[1mScanning dependencies of target createMarker[0m
+[163.173s] [ 71%] [32mBuilding CXX object CMakeFiles/createMarker.dir/src/SampleMarkerCreator.cpp.o[0m
+[164.238s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+[164.238s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[164.239s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[164.239s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MultiMarker.h:35[m[K,
+[164.239s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/src/SampleMarkerCreator.cpp:1[m[K:
+[164.240s] [01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+[164.240s]    37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+[164.241s]       |  [01;35m[K^~~~~~~[m[K
+[221.726s] [ 73%] [32m[1mLinking CXX executable createMarker[0m
+[272.342s] [ 73%] Built target createMarker
+[272.404s] [35m[1mScanning dependencies of target individualMarkersNoKinect[0m
+[273.025s] [ 76%] [32mBuilding CXX object CMakeFiles/individualMarkersNoKinect.dir/nodes/IndividualMarkersNoKinect.cpp.o[0m
+[273.781s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+[273.782s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[273.783s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[273.783s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:40[m[K:
+[273.784s] [01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+[273.785s]    37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+[273.785s]       |  [01;35m[K^~~~~~~[m[K
+[309.416s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkersNoKinect::getCapCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[309.416s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:333:57:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[309.417s]   333 |             rvizMarker_.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[309.417s]       |                                                         [01;35m[K^[m[K
+[309.419s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[309.420s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[309.420s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[309.421s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[309.421s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[309.422s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[309.422s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[309.423s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[309.423s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[309.424s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[309.424s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[309.425s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[309.425s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[309.426s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[309.438s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[309.439s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkersNoKinect.cpp:40[m[K:
+[309.439s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[309.439s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[309.440s]       |            [01;36m[K^~~~~~~~[m[K
+[371.390s] [ 78%] [32m[1mLinking CXX executable individualMarkersNoKinect[0m
+[382.528s] [ 78%] Built target individualMarkersNoKinect
+[382.589s] [35m[1mScanning dependencies of target trainMarkerBundle[0m
+[383.689s] [ 80%] [32mBuilding CXX object CMakeFiles/trainMarkerBundle.dir/nodes/TrainMarkerBundle.cpp.o[0m
+[384.487s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+[384.487s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[384.489s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[384.490s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:39[m[K:
+[384.490s] [01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+[384.491s]    37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+[384.491s]       |  [01;35m[K^~~~~~~[m[K
+[423.506s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:[m[K In member function ‘[01m[Kvoid TrainMarkerBundle::makeMarkerMsgs(int, int, alvar::Pose&, sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr, geometry_msgs::msg::TransformStamped&, visualization_msgs::msg::Marker*, ar_track_alvar_msgs::msg::AlvarMarker*)[m[K’:
+[423.507s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:410:48:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[423.507s]   410 |    rvizMarker->lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[423.508s]       |                                                [01;35m[K^[m[K
+[423.508s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[423.509s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[423.509s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[423.510s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[423.511s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[423.511s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[423.511s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[423.512s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[423.512s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[423.513s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[423.513s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[423.514s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[423.514s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[423.515s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[423.515s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[423.515s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/TrainMarkerBundle.cpp:39[m[K:
+[423.516s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[423.516s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[423.526s]       |            [01;36m[K^~~~~~~~[m[K
+[479.708s] [ 82%] [32m[1mLinking CXX executable trainMarkerBundle[0m
+[490.692s] [ 82%] Built target trainMarkerBundle
+[490.755s] [35m[1mScanning dependencies of target individualMarkers[0m
+[491.853s] [ 84%] [32mBuilding CXX object CMakeFiles/individualMarkers.dir/nodes/IndividualMarkers.cpp.o[0m
+[492.634s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+[492.634s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[492.635s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[492.635s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[492.636s] [01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+[492.636s]    37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+[492.636s]       |  [01;35m[K^~~~~~~[m[K
+[528.449s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkers::draw3dPoints(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, std::string, int, int, double)[m[K’:
+[528.450s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:238:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[528.451s]   238 |       rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[528.452s]       |                                                  [01;35m[K^[m[K
+[528.453s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[528.454s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[528.455s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[528.456s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[528.457s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[528.458s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[528.458s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[528.460s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[528.461s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[528.461s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[528.462s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[528.463s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[528.466s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[528.466s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[528.467s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[528.467s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[528.468s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[528.469s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[528.469s]       |            [01;36m[K^~~~~~~~[m[K
+[528.508s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkers::drawArrow(geometry_msgs::msg::Point, tf2::Matrix3x3, std::string, int, int)[m[K’:
+[528.509s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:268:54:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[528.510s]   268 |           rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[528.511s]       |                                                      [01;35m[K^[m[K
+[528.512s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[528.512s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[528.513s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[528.514s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[528.515s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[528.516s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[528.516s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[528.517s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[528.518s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[528.519s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[528.520s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[528.520s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[528.527s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[528.527s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[528.528s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[528.528s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[528.529s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[528.529s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[528.530s]       |            [01;36m[K^~~~~~~~[m[K
+[528.662s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:[m[K In member function ‘[01m[Kvoid IndividualMarkers::getPointCloudCallback(sensor_msgs::msg::PointCloud2_<std::allocator<void> >::SharedPtr)[m[K’:
+[528.663s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:599:55:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[528.664s]   599 |           rvizMarker_.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[528.665s]       |                                                       [01;35m[K^[m[K
+[528.666s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[528.667s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[528.668s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[528.669s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[528.669s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[528.670s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[528.671s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[528.672s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[528.673s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[528.674s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[528.675s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[528.677s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[528.678s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[528.678s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[528.679s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[528.680s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/IndividualMarkers.cpp:39[m[K:
+[528.680s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[528.681s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[528.681s]       |            [01;36m[K^~~~~~~~[m[K
+[593.252s] [ 86%] [32m[1mLinking CXX executable individualMarkers[0m
+[612.808s] [ 86%] Built target individualMarkers
+[613.002s] [35m[1mScanning dependencies of target findMarkerBundlesNoKinect[0m
+[614.103s] [ 89%] [32mBuilding CXX object CMakeFiles/findMarkerBundlesNoKinect.dir/nodes/FindMarkerBundlesNoKinect.cpp.o[0m
+[614.887s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+[614.888s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[614.888s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[614.889s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:39[m[K:
+[614.889s] [01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+[614.890s]    37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+[614.890s]       |  [01;35m[K^~~~~~~[m[K
+[651.427s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundlesNoKinect::makeMarkerMsgs(int, int, alvar::Pose&, sensor_msgs::msg::Image_<std::allocator<void> >::ConstSharedPtr, geometry_msgs::msg::TransformStamped&, visualization_msgs::msg::Marker*, ar_track_alvar_msgs::msg::AlvarMarker*)[m[K’:
+[651.428s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:312:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[651.429s]   312 |     rvizMarker->lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[651.429s]       |                                                 [01;35m[K^[m[K
+[651.430s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[651.430s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[651.431s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[651.431s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[651.432s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[651.432s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[651.433s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[651.433s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[651.433s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[651.434s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[651.434s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[651.435s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[651.435s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[651.436s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[651.436s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[651.436s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundlesNoKinect.cpp:39[m[K:
+[651.437s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[651.437s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[651.438s]       |            [01;36m[K^~~~~~~~[m[K
+[704.355s] [ 91%] [32m[1mLinking CXX executable findMarkerBundlesNoKinect[0m
+[716.096s] [ 91%] Built target findMarkerBundlesNoKinect
+[716.160s] [35m[1mScanning dependencies of target medianFilter[0m
+[716.623s] [ 93%] [32mBuilding CXX object CMakeFiles/medianFilter.dir/src/medianFilter.cpp.o[0m
+[723.799s] [ 95%] [32m[1mLinking CXX static library libmedianFilter.a[0m
+[723.961s] [ 95%] Built target medianFilter
+[724.027s] [35m[1mScanning dependencies of target findMarkerBundles[0m
+[725.278s] [ 97%] [32mBuilding CXX object CMakeFiles/findMarkerBundles.dir/nodes/FindMarkerBundles.cpp.o[0m
+[726.081s] In file included from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:45[m[K,
+[726.081s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[726.082s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[726.082s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[726.083s] [01m[K/opt/ros/galactic/include/resource_retriever/retriever.h:37:2:[m[K [01;35m[Kwarning: [m[K#warning Including header <resource_retriever/retriever.h> is deprecated, include <resource_retriever/retriever.hpp> instead. [[01;35m[K-Wcpp[m[K]
+[726.083s]    37 | #[01;35m[Kwarning[m[K Including header <resource_retriever/retriever.h> is deprecated, \
+[726.084s]       |  [01;35m[K^~~~~~~[m[K
+[765.731s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundles::draw3dPoints(pcl::PointCloud<pcl::PointXYZRGB>::Ptr, std::string, int, int, double)[m[K’:
+[765.733s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:293:50:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[765.734s]   293 |       rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[765.734s]       |                                                  [01;35m[K^[m[K
+[765.735s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[765.735s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[765.736s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[765.736s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[765.736s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[765.738s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[765.739s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[765.739s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[765.740s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[765.740s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[765.741s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[765.741s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[765.742s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[765.742s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[765.743s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[765.743s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[765.745s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[765.745s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[765.746s]       |            [01;36m[K^~~~~~~~[m[K
+[765.746s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundles::drawArrow(geometry_msgs::msg::Point, tf2::Matrix3x3, std::string, int, int)[m[K’:
+[765.747s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:323:52:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[765.747s]   323 |         rvizMarker.lifetime = rclcpp::Duration (1.0[01;35m[K)[m[K;
+[765.748s]       |                                                    [01;35m[K^[m[K
+[765.748s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[765.749s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[765.749s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[765.750s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[765.750s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[765.750s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[765.751s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[765.751s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[765.752s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[765.752s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[765.753s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[765.753s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[765.753s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[765.756s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[765.759s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[765.760s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[765.760s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[765.761s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[765.761s]       |            [01;36m[K^~~~~~~~[m[K
+[765.856s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:[m[K In member function ‘[01m[Kvoid FindMarkerBundles::makeMarkerMsgs(int, int, alvar::Pose&, sensor_msgs::msg::Image, geometry_msgs::msg::TransformStamped&, visualization_msgs::msg::Marker*, ar_track_alvar_msgs::msg::AlvarMarker*, int)[m[K’:
+[765.857s] [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:718:49:[m[K [01;35m[Kwarning: [m[K‘[01m[Krclcpp::Duration::Duration(rcl_duration_value_t)[m[K’ is deprecated: Use Duration::from_nanoseconds instead or std::chrono_literals. For example:rclcpp::Duration::from_nanoseconds(int64_variable);rclcpp::Duration(0ns); [[01;35m[K-Wdeprecated-declarations[m[K]
+[765.857s]   718 |     rvizMarker->lifetime = rclcpp::Duration (0.1[01;35m[K)[m[K;
+[765.858s]       |                                                 [01;35m[K^[m[K
+[765.858s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/qos.hpp:20[m[K,
+[765.859s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_graph_interface.hpp:31[m[K,
+[765.859s]                  from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:34[m[K,
+[765.860s]                  from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+[765.860s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+[765.861s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[765.861s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[765.861s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[765.862s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[765.862s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[765.863s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[765.863s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[765.863s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/Camera.h:40[m[K,
+[765.864s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h:36[m[K,
+[765.864s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h:35[m[K,
+[765.865s]                  from [01m[K/home/wheeltec/wheeltec_ros2/src/ar_track/ar_track_alvar/nodes/FindMarkerBundles.cpp:37[m[K:
+[765.865s] [01m[K/opt/ros/galactic/include/rclcpp/duration.hpp:46:12:[m[K [01;36m[Knote: [m[Kdeclared here
+[765.866s]    46 |   explicit [01;36m[KDuration[m[K(rcl_duration_value_t nanoseconds);
+[765.866s]       |            [01;36m[K^~~~~~~~[m[K
+[828.958s] [100%] [32m[1mLinking CXX executable findMarkerBundles[0m
+[850.644s] [100%] Built target findMarkerBundles
+[850.715s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar' returned '0': CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ar_track_alvar -- -j4 -l4
+[851.319s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar': CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ar_track_alvar
+[851.383s] -- Install configuration: ""
+[851.385s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/environment/library_path.sh
+[851.387s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/environment/library_path.dsv
+[851.391s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/libar_track_alvar.a
+[851.419s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/individualMarkers
+[851.492s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/individualMarkers" to ""
+[851.494s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/individualMarkersNoKinect
+[851.561s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/individualMarkersNoKinect" to ""
+[851.562s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/trainMarkerBundle
+[851.618s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/trainMarkerBundle" to ""
+[851.620s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/findMarkerBundles
+[851.648s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/findMarkerBundles" to ""
+[851.649s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/findMarkerBundlesNoKinect
+[851.702s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/findMarkerBundlesNoKinect" to ""
+[851.704s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/createMarker
+[851.721s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/ar_track_alvar/createMarker" to ""
+[851.722s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/libkinect_filtering.a
+[851.727s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/lib/libmedianFilter.a
+[851.737s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar
+[851.739s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Draw.h
+[851.742s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/MultiMarker.h
+[851.744s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Ransac.h
+[851.747s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/TrackerStat.h
+[851.749s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/filter
+[851.750s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/filter/kinect_filtering.h
+[851.752s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/filter/medianFilter.h
+[851.755s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/FileFormat.h
+[851.757s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/CaptureFactory.h
+[851.759s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Container3d.h
+[851.761s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Lock.h
+[851.763s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/TrackerFeatures.h
+[851.764s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Plugin_private.h
+[851.766s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Line.h
+[851.769s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/TrackerPsa.h
+[851.771s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Uncopyable.h
+[851.773s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/TrifocalTensor.h
+[851.775s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Kalman.h
+[851.777s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Timer.h
+[851.779s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/DirectoryIterator.h
+[851.782s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Capture.h
+[851.784s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/UnscentedKalman.h
+[851.786s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/IntegralImage.h
+[851.788s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Camera.h
+[851.791s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Mutex.h
+[851.793s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Tracker.h
+[851.795s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/GlutViewer.h
+[851.796s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/CaptureFactory_private.h
+[851.799s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/CaptureDevice.h
+[851.800s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Plugin.h
+[851.802s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Filter.h
+[851.804s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Threads_private.h
+[851.806s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/AlvarException.h
+[851.808s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Rotation.h
+[851.810s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/EC.h
+[851.813s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Optimization.h
+[851.815s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/FernImageDetector.h
+[851.817s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/CvTestbed.h
+[851.819s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Threads.h
+[851.821s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Mutex_private.h
+[851.823s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/MultiMarkerInitializer.h
+[851.825s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Shared.h
+[851.827s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Pose.h
+[851.829s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/CapturePlugin.h
+[851.831s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/FernPoseEstimator.h
+[851.833s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Platform.h
+[851.835s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/MultiMarkerFiltered.h
+[851.837s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/DirectoryIterator_private.h
+[851.839s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Bitset.h
+[851.841s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/MultiMarkerBundle.h
+[851.843s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/SfM.h
+[851.845s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Timer_private.h
+[851.847s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Marker.h
+[851.849s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Util.h
+[851.851s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/FileFormatUtils.h
+[851.853s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/MarkerDetector.h
+[851.855s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/ConnectedComponents.h
+[851.857s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/TrackerOrientation.h
+[851.859s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/include/ar_track_alvar/Alvar.h
+[851.861s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/launch
+[851.863s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/launch/pr2_train.py
+[851.865s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/launch/pr2_indiv_no_kinect.launch.py
+[851.867s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/launch/pr2_indiv.py
+[851.869s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/launch/pr2_bundle_no_kinect_testing.py
+[851.871s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/launch/pr2_bundle_no_kinect.launch.py
+[851.873s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/launch/pr2_bundle.py
+[851.875s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/bundles
+[851.877s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/bundles/truthTableLeg.xml
+[851.879s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/bundles/tags8and9.xml
+[851.881s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/bundles/table_8_9_10.xml
+[851.886s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ament_index/resource_index/package_run_dependencies/ar_track_alvar
+[851.889s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ament_index/resource_index/parent_prefix_path/ar_track_alvar
+[851.892s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/environment/ament_prefix_path.sh
+[851.894s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/environment/ament_prefix_path.dsv
+[851.896s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/environment/path.sh
+[851.898s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/environment/path.dsv
+[851.900s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/local_setup.bash
+[851.903s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/local_setup.sh
+[851.905s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/local_setup.zsh
+[851.907s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/local_setup.dsv
+[851.910s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/package.dsv
+[851.914s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ament_index/resource_index/packages/ar_track_alvar
+[851.916s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/cmake/ament_cmake_export_include_directories-extras.cmake
+[851.919s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/cmake/ament_cmake_export_libraries-extras.cmake
+[851.922s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/cmake/ament_cmake_export_dependencies-extras.cmake
+[851.925s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/cmake/ar_track_alvarConfig.cmake
+[851.927s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/cmake/ar_track_alvarConfig-version.cmake
+[851.930s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ar_track_alvar/share/ar_track_alvar/package.xml
+[851.949s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ar_track_alvar' returned '0': CMAKE_PREFIX_PATH=/home/wheeltec/wheeltec_ros2/install/perception_pcl:/home/wheeltec/wheeltec_ros2/install/pcl_ros:/home/wheeltec/wheeltec_ros2/install/pcl_conversions:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg:/home/wheeltec/wheeltec_ros2/install/wheeltec_joy:/home/wheeltec/wheeltec_ros2/install/wheeltec_cartographer:/home/wheeltec/wheeltec_ros2/install/web_video_server:/home/wheeltec/wheeltec_ros2/install/usb_cam:/home/wheeltec/wheeltec_ros2/install/serial:/home/wheeltec/wheeltec_ros2/install/rplidar_ros2:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils:/home/wheeltec/wheeltec_ros2/install/dwb_msgs:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager:/home/wheeltec/wheeltec_ros2/install/nav2_amcl:/home/wheeltec/wheeltec_ros2/install/nav2_util:/home/wheeltec/wheeltec_ros2/install/nav2_msgs:/home/wheeltec/wheeltec_ros2/install/nav2_common:/home/wheeltec/wheeltec_ros2/install/lsn10:/home/wheeltec/wheeltec_ros2/install/lsm10_v2:/home/wheeltec/wheeltec_ros2/install/lidar_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2:/home/wheeltec/wheeltec_ros2/install/ldlidar_sl_ros2:/home/wheeltec/wheeltec_ros2/install/astra_msgs:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard:/home/wheeltec/wheeltec_ros2/install/tf2_tools:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner:/opt/ros/galactic LD_LIBRARY_PATH=/home/wheeltec/wheeltec_ros2/install/pcl_ros/lib:/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib:/home/wheeltec/wheeltec_ros2/install/usb_cam/lib:/home/wheeltec/wheeltec_ros2/install/serial/lib:/home/wheeltec/wheeltec_ros2/install/openslam_gmapping/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_utils/lib:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib:/home/wheeltec/wheeltec_ros2/install/nav2_voxel_grid/lib:/home/wheeltec/wheeltec_ros2/install/nav2_lifecycle_manager/lib:/home/wheeltec/wheeltec_ros2/install/nav2_amcl/lib:/home/wheeltec/wheeltec_ros2/install/nav2_util/lib:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib:/usr/local/cuda-10.2/lib64:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib:/usr/local/cuda-10.2/lib64 PYTHONPATH=/home/wheeltec/wheeltec_ros2/install/ar_track_alvar_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_rrt_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/turn_on_wheeltec_robot/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_msg/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/wheeltec_robot_keyboard/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/tf2_tools/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/dwb_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav_2d_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_gazebo_spawner/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/nav2_common/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/lsm10_v2/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/astra_msgs/lib/python3.8/site-packages:/home/wheeltec/wheeltec_ros2/install/ackermann_msgs/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ar_track_alvar

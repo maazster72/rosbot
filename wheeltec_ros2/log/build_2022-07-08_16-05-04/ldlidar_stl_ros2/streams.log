@@ -1,0 +1,90 @@
+[0.060s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LDlidar/ldlidar0619 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2
+[0.277s] -- The C compiler identification is GNU 9.4.0
+[0.476s] -- The CXX compiler identification is GNU 9.4.0
+[0.496s] -- Check for working C compiler: /usr/bin/cc
+[0.751s] -- Check for working C compiler: /usr/bin/cc -- works
+[0.754s] -- Detecting C compiler ABI info
+[1.167s] -- Detecting C compiler ABI info - done
+[1.214s] -- Detecting C compile features
+[1.216s] -- Detecting C compile features - done
+[1.226s] -- Check for working CXX compiler: /usr/bin/c++
+[1.508s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[1.512s] -- Detecting CXX compiler ABI info
+[1.804s] -- Detecting CXX compiler ABI info - done
+[1.851s] -- Detecting CXX compile features
+[1.854s] -- Detecting CXX compile features - done
+[1.868s] -- Found ament_cmake: 1.1.5 (/opt/ros/galactic/share/ament_cmake/cmake)
+[1.991s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[1.993s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.386s] -- Found rclcpp: 9.2.1 (/opt/ros/galactic/share/rclcpp/cmake)
+[2.629s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.668s] -- Found rosidl_adapter: 2.2.2 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[3.038s] -- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+[3.172s] -- Found FastRTPS: /opt/ros/galactic/include  
+[3.537s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[3.834s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[3.849s] -- Found rmw_cyclonedds_cpp: 0.22.5 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[3.938s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[3.941s] -- Looking for pthread.h
+[4.217s] -- Looking for pthread.h - found
+[4.219s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[4.490s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[4.492s] -- Looking for pthread_create in pthreads
+[4.719s] -- Looking for pthread_create in pthreads - not found
+[4.721s] -- Looking for pthread_create in pthread
+[4.977s] -- Looking for pthread_create in pthread - found
+[4.982s] -- Found Threads: TRUE  
+[5.681s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[6.197s] -- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)
+[6.568s] -- Added test 'copyright' to check source files copyright and LICENSE
+[6.579s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[6.581s] -- Configured cppcheck include dirs: /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LDlidar/ldlidar0619/include;/home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LDlidar/ldlidar0619/include/ldlidar_driver/include
+[6.582s] -- Configured cppcheck exclude dirs and/or files: 
+[6.592s] -- Added test 'cpplint' to check C / C++ code against the Google style
+[6.593s] -- Configured cpplint exclude dirs and/or files: 
+[6.597s] -- Added test 'flake8' to check Python code syntax and style conventions
+[6.602s] -- Added test 'lint_cmake' to check CMake code style
+[6.605s] -- Added test 'pep257' to check Python code against some of the style conventions in PEP 257
+[6.615s] -- Added test 'uncrustify' to check C / C++ code style
+[6.616s] -- Configured uncrustify additional arguments: 
+[6.619s] -- Added test 'xmllint' to check XML markup files
+[6.635s] -- Configuring done
+[6.671s] -- Generating done
+[6.678s] -- Build files have been written to: /home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2
+[6.719s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/wheeltec/wheeltec_ros2/src/wheeltec_lidar_ros2/LDlidar/ldlidar0619 -DCMAKE_INSTALL_PREFIX=/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2
+[6.723s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2 -- -j4 -l4
+[6.885s] [35m[1mScanning dependencies of target ldlidar_stl_ros2_node[0m
+[7.063s] [ 20%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/src/demo.cpp.o[0m
+[24.488s] [ 40%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/include/ldlidar_driver/tofbf.cpp.o[0m
+[28.022s] [ 60%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/include/ldlidar_driver/lipkg.cpp.o[0m
+[31.734s] [ 80%] [32mBuilding CXX object CMakeFiles/ldlidar_stl_ros2_node.dir/include/ldlidar_driver/cmd_interface_linux.cpp.o[0m
+[34.488s] [100%] [32m[1mLinking CXX executable ldlidar_stl_ros2_node[0m
+[35.374s] [100%] Built target ldlidar_stl_ros2_node
+[35.419s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2 -- -j4 -l4
+[35.548s] Invoking command in '/home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2
+[35.588s] -- Install configuration: ""
+[35.590s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node
+[35.597s] -- Set runtime path of "/home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/lib/ldlidar_stl_ros2/ldlidar_stl_ros2_node" to ""
+[35.598s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch
+[35.600s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld06.launch.py
+[35.603s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/ld19.launch.py
+[35.605s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld19.launch.py
+[35.607s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//launch/viewer_ld06.launch.py
+[35.609s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2
+[35.610s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2//rviz2/ldlidar.rviz
+[35.613s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ament_index/resource_index/package_run_dependencies/ldlidar_stl_ros2
+[35.615s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ament_index/resource_index/parent_prefix_path/ldlidar_stl_ros2
+[35.616s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.sh
+[35.618s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/ament_prefix_path.dsv
+[35.620s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.sh
+[35.621s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/environment/path.dsv
+[35.623s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.bash
+[35.625s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.sh
+[35.626s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.zsh
+[35.628s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/local_setup.dsv
+[35.630s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.dsv
+[35.631s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ament_index/resource_index/packages/ldlidar_stl_ros2
+[35.633s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config.cmake
+[35.635s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/cmake/ldlidar_stl_ros2Config-version.cmake
+[35.636s] -- Installing: /home/wheeltec/wheeltec_ros2/install/ldlidar_stl_ros2/share/ldlidar_stl_ros2/package.xml
+[35.659s] Invoked command in '/home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/wheeltec/wheeltec_ros2/build/ldlidar_stl_ros2
