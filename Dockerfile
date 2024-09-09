@@ -7,7 +7,7 @@ ENV ROS_DISTRO=galactic
 ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ENV GIT_REPO=https://github.com/maazster72/rosbot.git 
 
-# Install basic utilities, build tools, ROS 2, and other necessary packages
+# Install basic utilities, build tools, ROS 2, rosdep, and other necessary packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         wget \
@@ -30,12 +30,19 @@ RUN apt-get update && \
         ros-$ROS_DISTRO-desktop \
         ros-$ROS_DISTRO-navigation2 \
         ros-$ROS_DISTRO-nav2-bringup \
-        ros-$ROS_DISTRO-gazebo-ros-pkgs\
+        ros-$ROS_DISTRO-gazebo-ros-pkgs \
         ros-$ROS_DISTRO-xacro \
         ros-$ROS_DISTRO-joint-state-publisher \
-        ros-$ROS_DISTRO-rmw-cyclonedds-cpp && \
+        ros-$ROS_DISTRO-rmw-cyclonedds-cpp \
+        ros-$ROS_DISTRO-ackermann-msgs \
+        ros-$ROS_DISTRO-serial-driver \
+        python3-rosdep && \
     rm -rf /var/lib/apt/lists/*
-    
+
+# Initialize rosdep
+RUN rosdep init && \
+    rosdep update
+
 # Create the runtime directory
 RUN mkdir -p /tmp/runtime-root && chmod 0700 /tmp/runtime-root
 
@@ -56,6 +63,9 @@ RUN mkdir -p src
 RUN git clone $GIT_REPO /tmp/rosbot && \
     cp -r /tmp/rosbot/src/* /workspace/src/ && \
     rm -rf /tmp/rosbot
+
+# Install package dependencies using rosdep
+RUN source /opt/ros/$ROS_DISTRO/setup.bash && rosdep install --from-paths src --ignore-src -r -y
 
 # Build the workspace
 RUN source /opt/ros/$ROS_DISTRO/setup.bash && colcon build

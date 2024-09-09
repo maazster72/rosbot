@@ -32,7 +32,7 @@ find_package(std_srvs REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(ackermann_msgs REQUIRED)                         
 find_package(wheeltec_robot_msg REQUIRED)                         
-find_package(serial REQUIRED)
+find_package(serial_driver REQUIRED)
 find_package(rosidl_default_generators REQUIRED)
 # uncomment the following section in order to fill in
 # further dependencies manually.
