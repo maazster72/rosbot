@@ -432,7 +432,7 @@ turn_on_robot::turn_on_robot()
 
   if (Stm32_Serial.isOpen())
   {
-    RCLCPP_INFO(this->get_logger(), "wheeltec_robot serial port opened: %s", usart_portn_name.c_str());
+    RCLCPP_INFO(this->get_logger(), "wheeltec_robot serial port opened: %s", usart_port_name.c_str());
   }
 }
 
