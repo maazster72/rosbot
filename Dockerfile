@@ -66,7 +66,8 @@ RUN git clone $GIT_REPO /tmp/rosbot && \
     rm -rf /tmp/rosbot
 
 # Install package dependencies using rosdep
-RUN source /opt/ros/$ROS_DISTRO/setup.bash && rosdep install --from-paths src --ignore-src -r -y
+RUN source /opt/ros/$ROS_DISTRO/setup.bash && rosdep install --from-paths src --ignore-src -r -y || apt-get install -y libpcap0.8
+
 
 # Build the workspace
 RUN source /opt/ros/$ROS_DISTRO/setup.bash && colcon build
