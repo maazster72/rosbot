@@ -385,7 +385,7 @@ turn_on_robot::turn_on_robot()
 
   // Declare parameters
   this->declare_parameter("serial_baud_rate");
-  this->declare_parameter<std::string>("usart_port_name", "/dev/ttyCH343USB0");
+  this->declare_parameter<std::string>("usart_port_name", "/dev/ttyACM1");
   this->declare_parameter<std::string>("cmd_vel", "cmd_vel");
   this->declare_parameter<std::string>("akm_cmd_vel", "ackermann_cmd");
   this->declare_parameter<std::string>("odom_frame_id", "odom");
