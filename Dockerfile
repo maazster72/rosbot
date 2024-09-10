@@ -36,6 +36,7 @@ RUN apt-get update && \
         ros-$ROS_DISTRO-rmw-cyclonedds-cpp \
         ros-$ROS_DISTRO-ackermann-msgs \
         ros-$ROS_DISTRO-serial-driver \
+        ros-$ROS_DISTRO-robot-localization \
         python3-rosdep && \
     rm -rf /var/lib/apt/lists/*
 
@@ -72,6 +73,9 @@ RUN source /opt/ros/$ROS_DISTRO/setup.bash && colcon build
 
 # Source the workspace's setup.bash
 RUN echo "source /workspace/install/setup.bash" >> ~/.bashrc
+
+# Add user to dialout group
+# RUN usermod -aG dialout ${USERNAME}
 
 # Set the entrypoint to automatically source ROS 2, the workspace environment, and enter a bash shell
 ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/$ROS_DISTRO/setup.bash && source /workspace/install/setup.bash && exec bash"]
