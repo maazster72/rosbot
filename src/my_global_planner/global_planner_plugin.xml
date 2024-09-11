@@ -1,0 +1,6 @@
+<library path="my_global_planner_plugin">
+	<class name="my_global_planner/MyGlobalPlanner" type="my_global_planner::MyGlobalPlanner" base_class_type="nav2_core::GlobalPlanner">
+	  <description>This plugin is a template global planner</description>
+	</class>
+</library>
+
