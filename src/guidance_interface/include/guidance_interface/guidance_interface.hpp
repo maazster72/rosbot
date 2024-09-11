@@ -7,16 +7,18 @@
 #include "rclcpp/rclcpp.hpp"
 #include "geometry_msgs/msg/point.hpp"
 #include "geometry_msgs/msg/pose_stamped.hpp"
+
 #include "nav2_core/global_planner.hpp"
 #include "nav_msgs/msg/path.hpp"
 #include "nav2_util/robot_utils.hpp"
 #include "nav2_util/lifecycle_node.hpp"
 #include "nav2_costmap_2d/costmap_2d_ros.hpp"
-#include "tf2_ros/buffer.h" // Include tf2_ros for tf buffer
 
-namespace guidance_interface {
+namespace guidance_interface
+{
 
-class GuidanceInterface : public nav2_core::GlobalPlanner {
+class GuidanceInterface : public nav2_core::GlobalPlanner
+{
 public:
   GuidanceInterface() = default;
   ~GuidanceInterface() = default; 
@@ -24,8 +26,7 @@ public:
   // Plugin configure
   void configure(
     const rclcpp_lifecycle::LifecycleNode::WeakPtr & parent,
-    const std::string & name,  // Pass name as const reference for better performance
-    std::shared_ptr<tf2_ros::Buffer> tf,
+    std::string name, std::shared_ptr<tf2_ros::Buffer> tf,
     std::shared_ptr<nav2_costmap_2d::Costmap2DROS> costmap_ros) override;
 
   // Plugin cleanup
@@ -44,19 +45,18 @@ public:
 
 private:
   // TF buffer
-  std::shared_ptr<tf2_ros::Buffer> tf_;  // Ensure the tf buffer is a shared pointer
+  std::shared_ptr<tf2_ros::Buffer> tf_;
 
   // Node pointer
-  rclcpp_lifecycle::LifecycleNode::SharedPtr node_;  // Changed to SharedPtr
+  nav2_util::LifecycleNode::SharedPtr node_;
 
   // Global Costmap
-  nav2_costmap_2d::Costmap2D * costmap_;  // Pointer to Costmap2D
+  nav2_costmap_2d::Costmap2D * costmap_;
 
   // The global frame of the costmap
-  std::string global_frame_;  // Make sure to have only the global frame variable
-  std::string name_;  // Name of the planner
+  std::string global_frame_, name_;
 
-  double interpolation_resolution_;  // Resolution for interpolation
+  double interpolation_resolution_;
 };
 
 }  // namespace guidance_interface

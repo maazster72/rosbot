@@ -67,7 +67,7 @@ ament_target_dependencies(${library_name}
 target_compile_definitions(${library_name} PUBLIC "PLUGINLIB__DISABLE_BOOST_FUNCTIONS")
 
 # Export the plugin description file for pluginlib
-pluginlib_export_plugin_description_file(nav2_core guidance_interface_plugin.xml)
+pluginlib_export_plugin_description_file(nav2_core global_planner_plugin.xml)
 
 # Install directives for the library
 install(TARGETS ${library_name}
@@ -82,7 +82,7 @@ install(DIRECTORY include/
 )
 
 # Install the plugin description XML file
-install(FILES guidance_interface_plugin.xml
+install(FILES global_planner_plugin.xml
   DESTINATION share/${PROJECT_NAME}
 )
 

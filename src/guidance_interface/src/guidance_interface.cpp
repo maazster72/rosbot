@@ -3,13 +3,13 @@
 #include <memory>
 #include "nav2_util/node_utils.hpp"
 
-#include "guidance_interface/guidance_interface.hpp"
+#include "guidance_interface/guidance_interface.hpp" // Include the custom global planner header
 
-namespace GuidanceInterface // Define the namespace for the planner
+namespace guidance_interface // Define the namespace for the planner
 {
 
 // Configuration method to initialize the planner with parameters and resources
-void guidance_interface::configure(
+void GuidanceInterface::configure(
   const rclcpp_lifecycle::LifecycleNode::WeakPtr & parent, // Pointer to the parent lifecycle node
   std::string name, // Name of the planner
   std::shared_ptr<tf2_ros::Buffer> tf, // Transform buffer for coordinate transformations
@@ -28,31 +28,31 @@ void guidance_interface::configure(
 }
 
 // Cleanup method called when the planner is deactivated
-void guidance_interface::cleanup()
+void GuidanceInterface::cleanup()
 {
   RCLCPP_INFO(
-    node_->get_logger(), "Cleaning up plugin %s of type guidance_interface", // Log the cleanup process
+    node_->get_logger(), "CleaningUp plugin %s of type GuidanceInterface", // Log the cleanup process
     name_.c_str());
 }
 
 // Activation method called when the planner is activated
-void guidance_interface::activate()
+void GuidanceInterface::activate()
 {
   RCLCPP_INFO(
-    node_->get_logger(), "Activating plugin %s of type guidance_interface", // Log the activation process
+    node_->get_logger(), "Activating plugin %s of type GuidanceInterface", // Log the activation process
     name_.c_str());
 }
 
 // Deactivation method called when the planner is deactivated
-void guidance_interface::deactivate()
+void GuidanceInterface::deactivate()
 {
   RCLCPP_INFO(
-    node_->get_logger(), "Deactivating plugin %s of type guidance_interface", // Log the deactivation process
+    node_->get_logger(), "Deactivating plugin %s of type GuidanceInterface", // Log the deactivation process
     name_.c_str());
 }
 
 // Method to create a plan based on the start and goal poses
-nav_msgs::msg::Path guidance_interface::createPlan(
+nav_msgs::msg::Path GuidanceInterface::createPlan(
   const geometry_msgs::msg::PoseStamped & start, // Starting pose
   const geometry_msgs::msg::PoseStamped & goal) // Goal pose
 {
@@ -112,8 +112,9 @@ nav_msgs::msg::Path guidance_interface::createPlan(
   return global_path; // Return the generated path
 }
 
-}  // namespace GuidanceInterface
+}  // namespace guidance_interface
 
 #include "pluginlib/class_list_macros.hpp"
 // Export the planner class for use with pluginlib
-PLUGINLIB_EXPORT_CLASS(GuidanceInterface::guidance_interface, nav2_core::GlobalPlanner)
+PLUGINLIB_EXPORT_CLASS(guidance_interface::GuidanceInterface, nav2_core::GlobalPlanner)
+
