@@ -1,0 +1,6 @@
+<library path="guidiance_interface_plugin">
+	<class name="guidance_interface/GuidanceInterface" type="guidance_interface::GuidanceInterface" base_class_type="nav2_core::GlobalPlanner">
+	  <description>This plugin is for the guidance interface</description>
+	</class>
+</library>
+
