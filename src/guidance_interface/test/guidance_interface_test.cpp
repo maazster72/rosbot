@@ -7,11 +7,15 @@ protected:
     std::shared_ptr<guidance_interface::GuidanceInterface> planner_;
 
     void SetUp() override {
-        planner_ = std::make_shared<guidance_interface::GuidanceInterface>(); // Create instance
-        // Simulate configuration
-        rclcpp::NodeOptions options;
-        auto node = std::make_shared<rclcpp::Node>("test_node", options);
-        planner_->configure(node->get_node_base_interface(), "test_planner", nullptr, nullptr);
+         // Create a new Lifecycle Node
+        node = std::make_shared<rclcpp_lifecycle::LifecycleNode>("test_node");
+
+        // Obtain a weak pointer to the LifecycleNode
+        auto weak_node = node->get_node_base_interface()->get_weak_ptr();
+
+        // Pass the weak pointer to the configure function
+        planner_ = std::make_shared<guidance_interface::GuidanceInterface>();
+        planner_->configure(weak_node, "test_planner", nullptr, nullptr);
     }
 };
 
