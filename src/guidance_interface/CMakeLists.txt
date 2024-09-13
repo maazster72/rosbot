@@ -89,13 +89,19 @@ install(FILES global_planner_plugin.xml
 # Conditional testing setup
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED) # Find linting tools for ROS 2
-  # Skip linter checks if copyrights are missing
-  # Uncomment the next line when a copyright/license is present in all source files
-  # set(ament_cmake_copyright_FOUND TRUE)
-  # Skip cpplint if not in a git repository
-  # Uncomment the next line when this package is not in a git repo
-  # set(ament_cmake_cpplint_FOUND TRUE)
   ament_lint_auto_find_test_dependencies() # Automatically find test dependencies
+  
+  # GTest Setup
+  find_package(ament_cmake_gtest REQUIRED)
+  ament_add_gtest(${PROJECT_NAME}_guidance_interface test/guidance_interface_test.cpp)
+  
+  # Link the test executable to the library
+  target_link_libraries(${PROJECT_NAME}_guidance_interface ${library_name})
+  
+  target_include_directories(${PROJECT_NAME}_guidance_interface PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
+    $<INSTALL_INTERFACE:include>
+  )
 endif()
 
 # Export include directories and libraries for use in other packages
