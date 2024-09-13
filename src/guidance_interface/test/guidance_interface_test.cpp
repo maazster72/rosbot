@@ -8,6 +8,10 @@ protected:
 
     void SetUp() override {
         planner_ = std::make_shared<guidance_interface::GuidanceInterface>(); // Create instance
+        // Simulate configuration
+        rclcpp::NodeOptions options;
+        auto node = std::make_shared<rclcpp::Node>("test_node", options);
+        planner_->configure(node->get_node_base_interface()->get_shared_ptr(), "test_planner", nullptr, nullptr);
     }
 };
 
