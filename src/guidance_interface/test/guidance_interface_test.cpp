@@ -8,15 +8,13 @@ protected:
      std::shared_ptr<rclcpp_lifecycle::LifecycleNode> node;
 
     void SetUp() override {
-         // Create a new Lifecycle Node
-        node = std::make_shared<rclcpp_lifecycle::LifecycleNode>("test_node");
-
-        // Convert the shared pointer to a weak pointer
-        rclcpp_lifecycle::LifecycleNode::WeakPtr weak_node = node;
-
-        // Initialize the planner with the weak pointer to the LifecycleNode
-        planner_ = std::make_shared<guidance_interface::GuidanceInterface>();
-        planner_->configure(weak_node, "test_planner", nullptr, nullptr);
+        auto node = std::make_shared<rclcpp_lifecycle::LifecycleNode>("Navfntest");
+  		auto costmap = std::make_shared<nav2_costmap_2d::Costmap2DROS>("global_costmap");
+  		costmap->on_configure(rclcpp_lifecycle::State());
+  		auto planner = std::make_unique<guidance_interface::GuidanceInterface>();
+  		auto tf = std::make_shared<tf2_ros::Buffer>(node->get_clock());
+  		planner->configure(node, "test", tf, costmap);
+  		planner->activate();
     }
 };
 
