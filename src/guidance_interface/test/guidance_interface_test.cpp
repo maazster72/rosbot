@@ -5,6 +5,7 @@
 class GuidanceInterfaceTest : public ::testing::Test {
 protected:
     std::shared_ptr<guidance_interface::GuidanceInterface> planner_;
+     std::shared_ptr<rclcpp_lifecycle::LifecycleNode> node;
 
     void SetUp() override {
          // Create a new Lifecycle Node
