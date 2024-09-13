@@ -44,30 +44,40 @@ static string read_line(const string& file);
 static string usb_sysfs_hw_string(const string& sysfs_path);
 static string format(const char* format, ...);
 
-vector<string>
+vector<string> 
 glob(const vector<string>& patterns)
 {
     vector<string> paths_found;
 
-	if(patterns.size() == 0)
-	    return paths_found;
+    if (patterns.empty())
+        return paths_found;
 
     glob_t glob_results;
 
+    // Call glob for the first pattern
     int glob_retval = glob(patterns[0].c_str(), 0, NULL, &glob_results);
-
-    vector<string>::const_iterator iter = patterns.begin();
-
-    while(++iter != patterns.end())
-    {
-        glob_retval = glob(iter->c_str(), GLOB_APPEND, NULL, &glob_results);
+    if (glob_retval != 0) {
+        std::cerr << "Error: glob() failed for pattern: " << patterns[0] << std::endl;
+        return paths_found;  // Return empty if glob fails
     }
 
-    for(size_t path_index = 0; path_index < glob_results.gl_pathc; path_index++)
+    // Iterate through the remaining patterns
+    for (auto iter = patterns.begin() + 1; iter != patterns.end(); ++iter)
+    {
+        glob_retval = glob(iter->c_str(), GLOB_APPEND, NULL, &glob_results);
+        if (glob_retval != 0) {
+            std::cerr << "Error: glob() failed for pattern: " << *iter << std::endl;
+            break;  // Optionally handle errors or continue to the next pattern
+        }
+    }
+
+    // Add the paths found to paths_found
+    for (size_t path_index = 0; path_index < glob_results.gl_pathc; ++path_index)
     {
         paths_found.push_back(glob_results.gl_pathv[path_index]);
     }
 
+    // Free glob results memory
     globfree(&glob_results);
 
     return paths_found;
