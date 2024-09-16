@@ -7,7 +7,8 @@ find_package(builtin_interfaces REQUIRED)
 find_package(nav_msgs REQUIRED)
 
 set(MSG_FILES
-	"msg/RoutePoint.msg"
+	"msg/RoutePoint.msg",
+	"msg/Route.msg"
 )
 
 set(ACTION_FILES

@@ -1,5 +1,5 @@
 # Request
-RoutePoint[] routepoint
+Route route
 
 ---
 # Response
