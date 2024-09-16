@@ -1,0 +1,18 @@
+# Request
+RoutePoint[] routepoint
+
+---
+# Response
+
+# Error codes
+uint16 NONE=0
+uint16 UNKNOWN=200
+uint16 INVALID_TRANSLATOR=201
+uint16 TF_ERROR=202
+uint16 TIMEOUT=203
+uint16 TRANSLATION_ERROR=204
+
+nav_msgs/Path path
+builtin_interfaces/Duration translation_time
+uint16 error_code
+string error_msg
