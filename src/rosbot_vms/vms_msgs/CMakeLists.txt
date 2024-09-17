@@ -6,6 +6,8 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(nav_msgs REQUIRED)
 
+nav2_package()
+
 set(MSG_FILES
 	"msg/RoutePoint.msg"
 	"msg/Route.msg"
