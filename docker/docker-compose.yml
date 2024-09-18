@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  rosbot-base:
+    build:
+      context: .
+      dockerfile: Dockerfile.base
+
+  rosbot-packages:
+    build:
+      context: .
+      dockerfile: Dockerfile.packages
+    depends_on:
+      - rosbot-base
+  
+  rosbot-image:
+    build:
+      context: .
+      dockerfile: Dockerfile.local
+    depends_on:
+      - rosbot-packages
+    image: rosbot-image
+    container_name: rosbot_container
+    network_mode: host
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=${HOME}/.Xauthority
+      - XDG_RUNTIME_DIR=/tmp/runtime-root
+      - LIBGL_ALWAYS_SOFTWARE=1
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix
+      - ${HOME}/.Xauthority:${HOME}/.Xauthority
+      - /dev:/dev               
+    devices:
+      - /dev:/dev               
+    stdin_open: true    
+    tty: true            
+
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: "cgroup"
+              count: 0
+              capabilities: ["rmw"]
+              rules:
+                - 'c 168:* rmw' 
+

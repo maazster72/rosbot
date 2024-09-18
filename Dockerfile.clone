@@ -1,0 +1,30 @@
+# Use the base image with Jetson Linux and ROS 2 and packages installed
+FROM rosbot-packages:latest
+
+# Set the environment variables
+ENV GIT_REPO=https://github.com/maazster72/rosbot.git
+
+# Install Git
+RUN sudo apt-get update && \
+    sudo apt-get install -y git
+
+# Set up the workspace
+WORKDIR /workspace
+
+# Clone the repository
+RUN git clone $GIT_REPO /tmp/rosbot && \
+    cp -r /tmp/rosbot/src/* /workspace/src/ && \
+    rm -rf /tmp/rosbot
+
+# Install package dependencies using rosdep
+RUN source /opt/ros/$ROS_DISTRO/setup.bash && rosdep install --from-paths src --ignore-src -r -y || apt-get install -y libpcap0.8
+
+# Build the workspace
+RUN source /opt/ros/$ROS_DISTRO/setup.bash && colcon build
+
+# Source the workspace's setup.bash
+RUN echo "source /workspace/install/setup.bash" >> ~/.bashrc
+
+# Set the entrypoint to automatically source ROS 2 and the workspace environment
+ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/$ROS_DISTRO/setup.bash && source /workspace/install/setup.bash && exec bash"]
+

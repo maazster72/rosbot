@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set the image name
-IMAGE_NAME="rosbot-local-image"
+IMAGE_NAME="rosbot-image"
 
 # Check if the Docker image exists
 if [[ "$(docker images -q $IMAGE_NAME 2> /dev/null)" == "" ]]; then
@@ -13,17 +13,9 @@ fi
 echo "Allowing Docker container access to X11 server..."
 xhost +local:docker
 
-# Run the Docker container with display access
-echo "Starting $IMAGE_NAME Docker container..."
-docker run -it --network=host \
-    --rm \
-    --env DISPLAY=$DISPLAY \
-    --env XAUTHORITY=$HOME/.Xauthority \
-    --env XDG_RUNTIME_DIR=/tmp/runtime-root \
-    --env LIBGL_ALWAYS_SOFTWARE=1 \
-    --volume /tmp/.X11-unix:/tmp/.X11-unix \
-    --volume $HOME/.Xauthority:$HOME/.Xauthority \
-    $IMAGE_NAME
+# Start the Docker container using docker-compose
+echo "Starting $IMAGE_NAME Docker container with docker-compose..."
+docker-compose -f ../docker/docker-compose.yml up
 
 # Revoke access to X11 server after the container stops
 echo "Revoking access to X11 server..."

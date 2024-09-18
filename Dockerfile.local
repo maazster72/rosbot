@@ -1,0 +1,23 @@
+# Use the base image with Jetson Linux and ROS 2 installed
+FROM rosbot-packages:latest
+
+# Set up the workspace
+WORKDIR /workspace
+
+# Copy the local src folder
+COPY src /workspace/src/
+
+# Update rosdep
+RUN rosdep update
+
+# Install package dependencies using rosdep and build the workspace
+RUN /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+    rosdep install --from-paths src --ignore-src -r -y || apt-get install -y libpcap0.8 && \
+    colcon build"
+
+# Source the workspace's setup.bash
+RUN echo "source /workspace/install/setup.bash" >> ~/.bashrc
+
+# Set the entrypoint to automatically source ROS 2 and the workspace environment
+ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/$ROS_DISTRO/setup.bash && source /workspace/install/setup.bash && exec bash"]
+
