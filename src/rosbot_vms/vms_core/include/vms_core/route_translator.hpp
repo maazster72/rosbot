@@ -52,12 +52,12 @@ public:
 
 
     /*
-     * @brief Method to translate a route to a path
+     * @brief Method to translate a route to a navigation path
      * @param route The route to translate
      * @param cancel_checker A callable function to check if the action has been canceled, which should return true if the action needs to be stopped.
      * @return The translated path derived from the route which is a sequence of poses to get from start to goal
      */
-    virtual nav_msgs::msg::Path translateRouteToPath(
+    virtual nav_msgs::msg::Path convertRoute(
         const vms_msgs::msg::Route & route,
         std::function<bool()> cancel_checker) = 0;
 };
