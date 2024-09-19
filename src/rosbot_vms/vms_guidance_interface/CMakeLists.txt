@@ -42,9 +42,9 @@ target_link_libraries(${library_name} PRIVATE
   rclcpp_components::component
 )
 
-# add_executable(${executable_name}
-#   src/main.cpp
-# )
+add_executable(${executable_name}
+  src/main.cpp
+)
 target_link_libraries(${executable_name} PRIVATE ${library_name} rclcpp::rclcpp)
 
 rclcpp_components_register_nodes(${library_name} "vms_guidance_interface::GuidanceInterface")
