@@ -18,9 +18,9 @@ nav2_package()
 set(executable_name guidance_interface)
 set(library_name ${executable_name}_core)
 
-add_library(${library_name} SHARED
-  src/guidance_interface.cpp
-)
+# add_library(${library_name} SHARED
+#   src/guidance_interface.cpp
+# )
 target_include_directories(${library_name}
   PUBLIC
     "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
