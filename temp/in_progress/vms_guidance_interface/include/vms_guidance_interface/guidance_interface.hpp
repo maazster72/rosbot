@@ -1,6 +1,7 @@
 #ifndef VMS_GUIDANCE_INTERFACE__GUIDANCE_INTERFACE_HPP_
 #define VMS_GUIDANCE_INTERFACE__GUIDANCE_INTERFACE_HPP_
 
+#include <chrono>
 #include <string>
 #include <memory>
 #include <vector>
@@ -11,9 +12,9 @@
 #include "nav2_util/lifecycle_node.hpp"
 #include "nav2_util/simple_action_server.hpp"
 #include "pluginlib/class_loader.hpp"
-#include "nav2_core/global_planner.hpp"
-#include "nav2_msgs/srv/is_path_valid.hpp"
+#include "pluginlib/class_list_macros.hpp"
 
+#include "vms_core/route_translator.hpp"
 #include "vms_msgs/action/translate_route_to_path.hpp"
 #include "vms_msgs/msg/route.hpp"
 
