@@ -235,9 +235,6 @@ protected:
 	double max_translator_duration_;
 	std::string translator_ids_concat_;
 	
-	// TF buffer
-	std::shared_ptr<tf2_ros::Buffer> tf_;
-	
 	// Publishers for the path
 	rclcpp_lifecycle::LifeCyclePublisher<nav_msgs::msg::Path>::SharedPtr path_publisher_;
 	
