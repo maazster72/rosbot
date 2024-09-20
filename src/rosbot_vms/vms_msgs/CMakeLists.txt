@@ -2,32 +2,22 @@ cmake_minimum_required(VERSION 3.5)
 project(vms_msgs)
 
 find_package(ament_cmake REQUIRED)
-find_package(rosidl_default_generators REQUIRED)
+find_package(nav2_common REQUIRED)
 find_package(builtin_interfaces REQUIRED)
 find_package(nav_msgs REQUIRED)
-find_package(nav2_common REQUIRED)
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(action_msgs REQUIRED)
 
 nav2_package()
 
-set(MSG_FILES
+rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/RoutePoint.msg"
 	"msg/Route.msg"
-)
-
-set(ACTION_FILES
 	"action/TranslateRouteToPath.action"
-)
-
-rosidl_generate_interfaces(${PROJECT_NAME}
-	${MSG_FILES}
-	${ACTION_FILES}
-	DEPENDENCIES builtin_interfaces nav_msgs
+	DEPENDENCIES builtin_interfaces nav_msgs std_msgs action_msgs
 )
 
 ament_export_dependencies(rosidl_default_runtime)
-
-install(DIRECTORY msg action
-	DESTINATION share/${PROJECT_NAME}
-)
 
 ament_package()
