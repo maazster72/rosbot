@@ -19,7 +19,7 @@ using namespace std::chrono_literals;
 namespace vms_guidance_interface
 {
 
-GuidanceInterface::GuidanceInterface(const rclcpp::NodeOptions& options)
+GuidanceInterface::GuidanceInterface(const rclcpp::NodeOptions& /*options*/)
 : nav2_util::LifecycleNode("vms_guidance_interface", "", true),
 translator_loader_("vms_core", "vms_core::RouteTranslator"),
 default_ids_{"GridBased"},

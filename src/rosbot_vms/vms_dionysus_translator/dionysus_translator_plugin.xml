@@ -1,0 +1,5 @@
+<library path="vms_dionysus_translator">
+	<class name="vms_dionysus_translator/DionysusTranslator" type="vms_dionysus_translator::DionysusTranslator" base_class_type="vms_core::RouteTranslator">
+	  <description></description>
+	</class>
+</library>
