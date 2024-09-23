@@ -1,5 +1,6 @@
 #include "vms_dionysus_translator/dionysus_translator.hpp"
 #include "rclcpp/rclcpp.hpp"
+#include "rclcpp/time.hpp"
 
 namespace vms_dionysus_translator
 {
@@ -23,7 +24,8 @@ void DionysusTranslator::configure(
     const rclcpp_lifecycle::LifecycleNode::WeakPtr & /*parent*/,
     std::string /*name*/)
 {
-    // Initialization code, if any
+    // Initialize the clock
+    clock_ = std::make_shared<rclcpp::Clock>(RCL_ROS_TIME);
     RCLCPP_INFO(rclcpp::get_logger("DionysusTranslator"), "Configuring Dionysus Translator");
 }
 
@@ -48,7 +50,7 @@ void DionysusTranslator::deactivate()
 nav_msgs::msg::Path DionysusTranslator::convertRoute(const vms_msgs::msg::Route & route)
 {
     nav_msgs::msg::Path path;
-    path.header.stamp = rclcpp::Time(); // Set to current time or appropriate value
+    path.header.stamp = clock_->now(); // Set to current time using the clock_
     path.header.frame_id = "odom"; // Set to the appropriate frame
 
     // Convert each RoutePoint to Cartesian coordinates

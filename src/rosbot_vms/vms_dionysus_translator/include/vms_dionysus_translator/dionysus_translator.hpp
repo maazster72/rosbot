@@ -6,6 +6,7 @@
 #include "vms_core/route_translator.hpp"
 #include "vms_msgs/msg/route.hpp"
 #include "nav_msgs/msg/path.hpp"
+#include "rclcpp/rclcpp.hpp"
 
 namespace vms_dionysus_translator
 {
@@ -30,6 +31,9 @@ public:
     void deactivate() override;
 
     nav_msgs::msg::Path convertRoute(const vms_msgs::msg::Route & route) override;
+
+private:
+    rclcpp::Clock::SharedPtr clock_;  // Declare the clock_ member variable
 };
 
 } // namespace vms_dionysus_translator
