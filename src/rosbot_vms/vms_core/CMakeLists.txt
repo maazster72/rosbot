@@ -10,6 +10,7 @@ find_package(pluginlib REQUIRED)
 find_package(nav_msgs REQUIRED)
 find_package(nav2_util REQUIRED)
 find_package(vms_msgs REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 nav2_package()
 
@@ -21,6 +22,7 @@ set(dependencies
   visualization_msgs
   nav2_msgs
   vms_msgs
+  geometry_msgs
 )
 
 install(DIRECTORY include/
