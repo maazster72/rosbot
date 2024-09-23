@@ -18,6 +18,9 @@ public:
     DionysusTranslator() = default;
     ~DionysusTranslator() override = default;
 
+    // Member function to convert latitude and longitude to Cartesian coordinates
+    void latLongToCartesian(double latitude, double longitude, double &x, double &y);
+
     void configure(
         const rclcpp_lifecycle::LifecycleNode::WeakPtr & parent,
         std::string name) override;

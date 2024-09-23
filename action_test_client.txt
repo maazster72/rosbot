@@ -1,0 +1,12 @@
+ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{"route": {"routepoints": [
+    {"latitude": 53.903189, "longitude": -2.770097, "altitude": 1.0, "satisfies_requirement_id": "r1"},
+    {"latitude": 53.90260751992973, "longitude": -2.768975693510622, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.9015216741791, "longitude": -2.76934213850459, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.898165963266024, "longitude": -2.772003020502416, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.8820012020602, "longitude": -2.7861321602053444, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.85715661881761, "longitude": -2.8086620391969417, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.8245221468988, "longitude": -2.8387566137159372, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.74217395580648, "longitude": -2.9156892075816536, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.647353557027024, "longitude": -3.005032274529839, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.6475, "longitude": -3.005278, "altitude": 1.0, "satisfies_requirement_id": "r2"}
+]}, "translator_id": "GridBased"}'

@@ -4,6 +4,21 @@
 namespace vms_dionysus_translator
 {
 
+// Conversion constants
+const double EARTH_RADIUS = 6378137.0; // Earth's radius in meters
+
+// Member function to convert latitude and longitude to Cartesian coordinates
+void DionysusTranslator::latLongToCartesian(double latitude, double longitude, double &x, double &y)
+{
+    // Convert latitude and longitude from degrees to radians
+    double lat_rad = latitude * M_PI / 180.0;
+    double lon_rad = longitude * M_PI / 180.0;
+
+    // Simple equirectangular projection
+    x = EARTH_RADIUS * lon_rad * cos(lat_rad);
+    y = EARTH_RADIUS * lat_rad;
+}
+
 void DionysusTranslator::configure(
     const rclcpp_lifecycle::LifecycleNode::WeakPtr & /*parent*/,
     std::string /*name*/)
@@ -34,13 +49,15 @@ nav_msgs::msg::Path DionysusTranslator::convertRoute(const vms_msgs::msg::Route 
 {
     nav_msgs::msg::Path path;
     path.header.stamp = rclcpp::Time(); // Set to current time or appropriate value
-    path.header.frame_id = "map"; // Set to the appropriate frame
+    path.header.frame_id = "odom"; // Set to the appropriate frame
 
+    // Convert each RoutePoint to Cartesian coordinates
     for (const auto & point : route.routepoints) {
         geometry_msgs::msg::PoseStamped pose;
         pose.header = path.header;
-        pose.pose.position.x = point.longitude; // Convert to appropriate coordinates if needed
-        pose.pose.position.y = point.latitude; // Convert to appropriate coordinates if needed
+
+        // Convert latitude and longitude to Cartesian coordinates
+        latLongToCartesian(point.latitude, point.longitude, pose.pose.position.x, pose.pose.position.y);
         pose.pose.position.z = point.altitude;
 
         // Set orientation if needed (default to no rotation)
