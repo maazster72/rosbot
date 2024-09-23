@@ -2,55 +2,66 @@ cmake_minimum_required(VERSION 3.5)
 project(vms_guidance_interface)
 
 find_package(ament_cmake REQUIRED)
-find_package(lifecycle_msgs REQUIRED)
 find_package(nav2_common REQUIRED)
+find_package(rclcpp REQUIRED)
+find_package(rclcpp_action REQUIRED)
+find_package(rclcpp_lifecycle REQUIRED)
+find_package(std_msgs REQUIRED)
+find_package(visualization_msgs REQUIRED)
 find_package(nav2_util REQUIRED)
 find_package(nav_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 find_package(pluginlib REQUIRED)
-find_package(rclcpp REQUIRED)
-find_package(rclcpp_components REQUIRED)
-find_package(rclcpp_lifecycle REQUIRED)
 find_package(vms_core REQUIRED)
 find_package(vms_msgs REQUIRED)
 
 nav2_package()
 
+include_directories(
+  include
+)
+
 set(executable_name guidance_interface)
 set(library_name ${executable_name}_core)
+
+set(dependencies
+  rclcpp
+  rclcpp_action
+  rclcpp_lifecycle
+  std_msgs
+  visualization_msgs
+  nav2_util
+  nav_msgs
+  builtin_interfaces
+  pluginlib
+  vms_core
+  vms_msgs
+)
 
 add_library(${library_name} SHARED
   src/guidance_interface.cpp
 )
-target_include_directories(${library_name}
-  PUBLIC
-    "$<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>"
-    "$<INSTALL_INTERFACE:include/${PROJECT_NAME}>"
+
+ament_target_dependencies(${library_name}
+  ${dependencies}
 )
-target_link_libraries(${library_name} PUBLIC
-  vms_core::vms_core
-  ${nav2_msgs_TARGETS}
-  nav2_util::nav2_util_core
-  ${nav_msgs_TARGETS}
-  pluginlib::pluginlib
-  rclcpp::rclcpp
-  rclcpp_lifecycle::rclcpp_lifecycle
-  ${rcl_interfaces_TARGETS}
-  ${vms_msgs_TARGETS}
-)
-target_link_libraries(${library_name} PRIVATE
-  ${lifecycle_msgs_TARGETS}
-  rclcpp_components::component
-)
+
+target_compile_definitions(${library_name} PUBLIC "PLUGINLIB__DISABLE_BOOST_FUNCTIONS")
 
 add_executable(${executable_name}
   src/main.cpp
 )
-target_link_libraries(${executable_name} PRIVATE ${library_name} rclcpp::rclcpp)
 
-rclcpp_components_register_nodes(${library_name} "vms_guidance_interface::GuidanceInterface")
+target_link_libraries(${executable_name} ${library_name})
+
+ament_target_dependencies(${executable_name}
+  ${dependencies}
+)
+
+# prevent pluginlib from using boost
+target_compile_definitions(${library_name} PUBLIC "PLUGINLIB__DISABLE_BOOST_FUNCTIONS")
 
 install(TARGETS ${library_name}
-  EXPORT ${library_name}
   ARCHIVE DESTINATION lib
   LIBRARY DESTINATION lib
   RUNTIME DESTINATION bin
@@ -61,28 +72,15 @@ install(TARGETS ${executable_name}
 )
 
 install(DIRECTORY include/
-  DESTINATION include/${PROJECT_NAME}
+  DESTINATION include/
 )
 
-# if(BUILD_TESTING)
-#   find_package(ament_lint_auto REQUIRED)
-#   find_package(ament_cmake_gtest REQUIRED)
-#   ament_lint_auto_find_test_dependencies()
+if(BUILD_TESTING)
+  find_package(ament_lint_auto REQUIRED)
+  ament_lint_auto_find_test_dependencies()
+endif()
 
-#   ament_find_gtest()
-#   add_subdirectory(test)
-# endif()
-
-ament_export_include_directories(include/${PROJECT_NAME})
+ament_export_include_directories(include)
 ament_export_libraries(${library_name})
-ament_export_dependencies(
-  nav2_util
-  nav_msgs
-  pluginlib
-  rclcpp
-  rclcpp_lifecycle
-  vms_core
-  vms_msgs
-)
-ament_export_targets(${library_name})
+ament_export_dependencies(${dependencies})
 ament_package()

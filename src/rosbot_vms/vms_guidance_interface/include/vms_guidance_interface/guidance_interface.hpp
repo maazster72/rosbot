@@ -6,18 +6,19 @@
 #include <memory>
 #include <vector>
 #include <unordered_map>
-#include <mutex>
 
 #include "nav_msgs/msg/path.hpp"
 #include "nav2_util/lifecycle_node.hpp"
+#include "nav2_util/robot_utils.hpp"
 #include "nav2_util/simple_action_server.hpp"
+#include "visualization_msgs/msg/marker.hpp"
 #include "pluginlib/class_loader.hpp"
 #include "pluginlib/class_list_macros.hpp"
 
 #include "vms_core/route_translator.hpp"
 #include "vms_msgs/action/translate_route_to_path.hpp"
 #include "vms_msgs/msg/route.hpp"
-#include "vms_core/planner_exceptions.hpp"
+#include "vms_core/translator_exceptions.hpp"
 
 namespace vms_guidance_interface
 {
@@ -35,10 +36,8 @@ public:
 	/**
 	 * @function GuidanceInterface
 	 * @brief A constructor for vms_guidance_interface::GuidanceInterface
-	 * @param options Additional options to control the creation of the node.
 	 */
-	 explicit GuidanceInterface(
-	 	const rclcpp::NodeOptions & options = rclcpp::NodeOptions());
+	 explicit GuidanceInterface(const rclcpp::NodeOptions& options);
 	 
 	 /**
 	  * @function ~GuidanceInterface
@@ -58,13 +57,11 @@ public:
 	 * @brief Method to get translated path from the desired translator plugin
 	 * @param route The provided route to be translated
 	 * @param translator_id The translator to translate the route with
-	 * @param cancel_checker A function to check if the action has been canceled
 	 * @return Path
 	 */
 	 nav_msgs::msg::Path getPath(
 	 	const vms_msgs::msg::Route & route,
-	 	const std::string & translator_id,
-	 	std::function<bool()> cancel_checker);
+	 	const std::string & translator_id);
    	
 protected:
 
@@ -120,12 +117,6 @@ protected:
 	using ActionTranslateRouteToPath = vms_msgs::action::TranslateRouteToPath;
 
 	/**
-	 * @var ActionTranslateRouteToPathResult
-	 * @brief Alias for the result type of the TranslateRouteToPath action.
-	 */
-	using ActionTranslateRouteToPathResult = ActionTranslateRouteToPath::Result;
-
-	/**
 	 * @var ActionServerTranslateRouteToPath
 	 * @brief Alias for the SimpleActionServer handling the TranslateRouteToPath action.
 	 */
@@ -152,30 +143,35 @@ protected:
 		std::unique_ptr<nav2_util::SimpleActionServer<T>> & action_server);
 
 	/**
-	* @function getPreemptedRouteIfRequested
-	* @brief Check if an action server has a preemption request and replaces the route
+	* @function getPreemptedGoalIfRequested
+	* @brief Check if an action server has a preemption request and replaces the goal
 	* with the new preemption goal.
-	* @param action_server Action server to get updated route if required
-	* @param route Route to overwrite
+	* @param action_server Action server to get updated goal if required
+	* @param goal Goal to overwrite
 	*/
 	template<typename T>
-	void getPreemptedRouteIfRequested(
+	void getPreemptedGoalIfRequested(
 		std::unique_ptr<nav2_util::SimpleActionServer<T>> & action_server,
-		typename std::shared_ptr<const typename T::Route> route);
+		typename std::shared_ptr<const typename T::Goal> goal);
 
 	/**
 	* @function validatePath
 	* @brief Validate that the path contains a meaningful path
+	* @param action_server Action server to terminate if required
 	* @param route Current Route
 	* @param path Current path
 	* @param translator_id The translator ID used to translate the route
 	* @return bool If path is valid
 	*/
 	template<typename T>
-	bool ValidatePath(
+	bool validatePath(
+		std::unique_ptr<nav2_util::SimpleActionServer<T>> & action_server,
 		const vms_msgs::msg::Route & curr_route,
 		const nav_msgs::msg::Path & path,
 		const std::string & translator_id);
+
+	// Our action server implements the TranslateRouteToPath action
+	std::unique_ptr<ActionServerTranslateRouteToPath> action_server_path_;
 	  	
 	/**
 	* @function translateRoute
@@ -202,10 +198,7 @@ protected:
 	 	const vms_msgs::msg::Route & route,
 	 	const std::string & translator_id,
 	 	const std::exception & ex);
-	 	
-	// Our action server implements the TranslateRouteToPath action
-	std::unique_ptr<ActionServerTranslateRouteToPath> action_server_path_;
-	
+
 	// Translator
 	TranslatorMap translators_;
 	pluginlib::ClassLoader<vms_core::RouteTranslator> translator_loader_;
@@ -215,9 +208,13 @@ protected:
 	std::vector<std::string> translator_types_;
 	double max_translator_duration_;
 	std::string translator_ids_concat_;
+
+	// Clock
+	rclcpp::Clock steady_clock_{RCL_STEADY_TIME};
+
 	
 	// Publishers for the path
-	rclcpp_lifecycle::LifeCyclePublisher<nav_msgs::msg::Path>::SharedPtr path_publisher_;
+	rclcpp_lifecycle::LifecyclePublisher<nav_msgs::msg::Path>::SharedPtr path_publisher_;
 };
 
 } // namespace vms_guidance_interface

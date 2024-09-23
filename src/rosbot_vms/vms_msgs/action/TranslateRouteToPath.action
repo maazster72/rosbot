@@ -1,8 +1,9 @@
-# Request
+# Goal Definition
 Route route
+string translator_id
 
 ---
-# Response
+# Result definition
 
 # Error codes
 uint16 NONE=0

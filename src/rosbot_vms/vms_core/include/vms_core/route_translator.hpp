@@ -58,8 +58,7 @@ public:
      * @return The translated path derived from the route which is a sequence of poses to get from start to goal
      */
     virtual nav_msgs::msg::Path convertRoute(
-        const vms_msgs::msg::Route & route,
-        std::function<bool()> cancel_checker) = 0;
+        const vms_msgs::msg::Route & route) = 0;
 };
 
 
