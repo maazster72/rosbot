@@ -41,7 +41,7 @@ class PathFollower(Node):
             self.get_logger().info(f'Initial position set to: {self.robot_x}, {self.robot_y}')
 
         # Follow each pose in the path
-        for pose in msg.poses:
+        for pose in msg.poses[1:]:
             self.follow_pose(pose)
 
     def follow_pose(self, pose: PoseStamped):
@@ -56,6 +56,8 @@ class PathFollower(Node):
         delta_x = target_x - self.robot_x
         delta_y = target_y - self.robot_y
 
+        self.get_logger().info(f'Robot distance from next target pose: {delta_x}, {delta_y}')
+
         distance = math.sqrt(delta_x**2 + delta_y**2)
         angle_to_target = math.atan2(delta_y, delta_x)
 
@@ -66,6 +68,7 @@ class PathFollower(Node):
         else:
             cmd_msg.linear.x = 0.0
             cmd_msg.angular.z = 0.0
+            self.get_logger().info(f'Reached goal pose: {pose.pose.position.x}, {pose.pose.position.y}')
 
         # Publish the velocity command
         self.cmd_vel_publisher.publish(cmd_msg)
@@ -74,6 +77,7 @@ class PathFollower(Node):
         self.robot_x += cmd_msg.linear.x * math.cos(angle_to_target)
         self.robot_y += cmd_msg.linear.x * math.sin(angle_to_target)
 
+        self.get_logger().info(f'Robot current position: {self.robot_x}, {self.robot_y}')
         self.get_logger().info(f'Moving to pose: {pose.pose.position.x}, {pose.pose.position.y}')
 
 def main(args=None):
