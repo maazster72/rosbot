@@ -1,0 +1,13 @@
+sudo mosquitto -c /etc/mosquitto/mosquitto.conf
+mosquitto_pub -h localhost -t "test/topic" -m '{"route": {"routepoints": [
+    {"latitude": 53.9000, "longitude": -2.7700, "altitude": 1.0, "satisfies_requirement_id": "r1"},
+    {"latitude": 53.9010, "longitude": -2.7690, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.9020, "longitude": -2.7680, "altitude": 1.0, "satisfies_requirement_id": null},
+    {"latitude": 53.9030, "longitude": -2.7670, "altitude": 1.0, "satisfies_requirement_id": null}
+]}, "translator_id": "GridBased"}'
+
+mosquitto_pub -h localhost -t "test/topic" -m '{"route": {"routepoints": [
+    {"latitude": 0.0, "longitude": 0.0, "altitude": 1.0, "satisfies_requirement_id": "r1"}
+]}, "translator_id": "GridBased"}'
+
+mosquitto_pub -h localhost -t "test/topic" -m '{"route": {"routepoints": [{"latitude": 53.9000, "longitude": -2.7700, "altitude": 1.0, "satisfies_requirement_id": "r1"}, {"latitude": 53.900018, "longitude": -2.7700, "altitude": 1.0, "satisfies_requirement_id": null}, {"latitude": 53.900036, "longitude": -2.7700, "altitude": 1.0, "satisfies_requirement_id": null}], "translator_id": "GridBased"}}'
