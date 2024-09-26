@@ -29,3 +29,6 @@ RUN apt-get update && \
         mosquitto \ 
         mosquitto-clients && \
     rm -rf /var/lib/apt/lists/*
+
+RUN pip3 install -U \
+    paho-mqtt
