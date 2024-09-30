@@ -1,0 +1,5 @@
+<library path="vms_simple_translator">
+	<class name="vms_simple_translator/SimpleTranslator" type="vms_simple_translator::SimpleTranslator" base_class_type="vms_core::RouteTranslator">
+	  <description></description>
+	</class>
+</library>
