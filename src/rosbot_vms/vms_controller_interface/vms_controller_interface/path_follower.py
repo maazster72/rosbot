@@ -7,20 +7,25 @@ from rclpy.node import Node
 import math
 from scipy.interpolate import CubicSpline
 import numpy as np
-
+import vms_controller_interface.vms_controller as controller
+import vms_controller_interface.vms_controller_util as util
 
 class PathFollower(Node):
     def __init__(self):
         super().__init__('path_follower')
 
-        self.k = 1.0  # Stanley control gain
-        self.max_steering_angle = 0.5 # Max steering angle in radians
-
         self.plan = None
+        self.poses = None
         self.current_pose = PoseStamped()
-        self.smoothed_path = None
-
+        self.current_target_pose_index = None
+        self.current_target_pose = None
+        self.distance_to_target = None
+        self.goal_pose = None
         self.goal_achieved = True
+        self.distance_to_goal = None
+
+        self.threshold_linear = 1e-3
+        self.threshold_angular = 0.1
 
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
@@ -32,51 +37,166 @@ class PathFollower(Node):
         # Publisher for velocity commands
         self.cmd_vel_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
 
-        # Publisher for smoothed path
-        self.smooth_path_publisher = self.create_publisher(Path, '/smooth_path', 10)
-
-        # # Publisher for current pose
-        # self.current_pose
-
         # Timer to control movement towards the next goal
         self.timer = self.create_timer(0.1, self.move_towards_goal)
 
-    # def pose_callback(self, msg: PoseStamped):
-    #     self.current_pose = msg
-
     def plan_callback(self, msg: Path):
         self.plan = msg
-
+        self.poses = self.plan.poses[1:]
+        self.current_pose = self.plan.poses[0]
+        self.current_target_pose_index = 0
+        self.current_target_pose = self.poses[self.current_target_pose_index]
+        self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
+        self.goal_pose = self.poses.pop()
         self.goal_achieved = False
-
-        self.get_logger().info(f"Received path with {len(msg.poses)} poses")
-        try:
-            self.smoothed_path = self.smooth_nav_path(self.plan)
-            self.smooth_path_publisher.publish(self.smoothed_path)
-            self.get_logger().info(f"Published smoothed path with {len(self.smoothed_path.poses)} poses")
-
-            self.current_pose = self.smoothed_path.poses[0]
-            self.get_logger().info(f"Starting position: {self.current_pose}")
-
-        except ValueError as e:
-            self.get_logger().warn(f"Smoothing failed: {e}")
+        self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
+        
+        # Logging
+        self.get_logger().info(f"Received path: {self.plan}")
+        self.get_logger().info(f"Initial pose: {self.current_pose}")
+        self.get_logger().info(f"Goal Pose: {self.goal_pose}")
+        self.get_logger().info(f"Poses to follow: {self.poses}")
+        self.get_logger().info(f"Distance to goal pose: {self.distance_to_goal}")
 
     def move_towards_goal(self):
-        if self.goal_achieved:
-            # Stop the robot by setting cmd_vel to zero
-            cmd_vel = Twist()
-            self.cmd_vel_publisher.publish(cmd_vel)
+        cmd_vel = Twist()
 
-        elif self.current_pose and self.smoothed_path:
-            # Compute and publish cmd velocities to follow the smoothed path
-            cmd_vel = self.compute_cmd_velocities(self.current_pose, self.smoothed_path)
-            self.cmd_vel_publisher.publish(cmd_vel)
-            self.get_logger().info(f"Moving with following cmd_vel: {cmd_vel}")
+        if self.plan:
+            # Logging
+            self.get_logger().info(f"Current pose: {self.current_pose}")
+            self.get_logger().info(f"Current target pose ({self.current_target_pose_index + 1}/{len(self.poses) + 1}): {self.current_target_pose}")
+            self.get_logger().info(f"Distance to target pose: {self.distance_to_target}")
+            self.get_logger().info(f"Distance to goal pose: {self.distance_to_goal}")
+            # Check if goal has been reached
+            if self.distance_to_goal < self.threshold_linear:
+                self.plan = None
+                self.poses = None
+                self.current_pose = PoseStamped()
+                self.current_target_pose_index = None
+                self.current_target_pose = None
+                self.distance_to_target = None
+                self.goal_pose = None
+                self.goal_achieved = True
+                self.distance_to_goal = None
+                # Logging
+                self.get_logger().info(f"Goal pose reached. Executed plan successfully")
+            # Check if target pose has been reached
+            elif self.distance_to_target < self.threshold_linear:
+                # Logging
+                self.get_logger().info(f"Pose {self.current_target_pose_index + 1}/{len(self.poses) + 1} complete.")
+                # Check if any more poses to follow
+                if len(self.poses) > 0:
+                    self.current_target_pose = self.poses.pop()
+                    self.current_target_pose_index += 1
+                    # Logging
+                    self.get_logger().info(f"New target pose: {self.current_target_pose}")
+            else:
+                if self.check_if_rotate_needed(self.current_pose, self.current_target_pose):
+                    cmd_vel = controller.orient_to_target(self.current_pose, self.current_target_pose)
+                    # Logging
+                    self.get_logger().info(f"Rotating to target...")
+                # else:
+                #     # Compute cmd_vel
+                #     # cmd_vel = self.compute_cmd_velocities(self.current_pose, self.current_target_pose)
+            
+                # Update current pose and distances
+                self.current_pose = util.update_current_pose(self.current_pose, cmd_vel)
+                self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
+                self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
 
-            self.update_current_pose(cmd_vel)
-            self.get_logger().info(f"Current position: {self.current_pose}")
+        self.cmd_vel_publisher.publish(cmd_vel)
 
-            self.check_goal_reached()
+        # Logging
+        self.get_logger().info(f"cmd_vel: {cmd_vel}")
+
+        # if self.goal_achieved:
+        #     # Stop the robot by setting cmd_vel to zero
+        #     cmd_vel = Twist()
+        #     self.cmd_vel_publisher.publish(cmd_vel)
+        
+        # if self.current_target_pose:
+        #     # Logging
+        #     self.get_logger().info(f"Current pose: {self.current_pose}")
+        #     self.get_logger().info(f"Current target pose: {self.current_target_pose}")
+        #     # Compute and publish velocities
+        #     cmd_vel = self.compute_cmd_velocities(self.current_pose, self.current_target_pose)
+        #     self.cmd_vel_publisher.publish(cmd_vel)
+        #     # Update current pose
+        #     self.current_pose = self.update_current_pose(self.current_pose, cmd_vel)
+        #     # Update target pose
+        #     if self.check_target_pose_reached(self.current_pose, self.current_target_pose):
+        #         # Reached goal
+        #         if (self.poses[self.current_target_pose_index] == self.goal_pose):
+        #             self.current_target_pose_index = None
+        #             self.current_target_pose = None
+        #             # Stop the robot by setting cmd_vel to zero
+        #             cmd_vel = Twist()
+        #             self.cmd_vel_publisher.publish(cmd_vel)
+        #         else:
+        #             self.current_target_pose = self.poses[self.current_target_pose_index]
+        #             self.current_target_pose_index += 1
+                
+            # Check if goal has been reached
+            # self.check_goal_reached()
+
+
+        # elif self.current_pose and self.plan:
+        #     # Get current pose as lists
+        #     current_position_list, current_orientation_list = self.poseToLists(self.current_pose)
+        #     # Set current target pose in the plan
+        #     self.current_target_pose = self.get_target_pose(current_position_list, self.plan.poses[1:])
+        #     target_position_list, target_orientation_list = self.poseToLists(self.current_target_pose)
+        #     # Logging
+        #     self.get_logger().info(f"Target position: {target_position_list}")
+        #     self.get_logger().info(f"Target orientation: {target_orientation_list}")
+        #     # Compute and publish cmd velocities to follow the path
+        #     # cmd_vel = self.compute_cmd_velocities(self.current_pose, self.plan.poses[1:])
+        #     # self.cmd_vel_publisher.publish(cmd_vel)
+        #     # self.get_logger().info(f"Moving with following cmd_vel: {cmd_vel}")
+
+        #     # self.update_current_pose(cmd_vel)
+        #     # self.get_logger().info(f"Current position: {self.current_pose}")
+
+        #     # self.check_goal_reached()
+
+    def compute_cmd_velocities(self, current_pose, target_pose):
+        cmd_vel = Twist()
+
+        # Get current positions and orientations as list
+        current_position_list, current_orientation_list = self.poseToLists(current_pose) 
+        # Logging
+        self.get_logger().info(f"Current position : {current_position_list}")
+        self.get_logger().info(f"Current orientation : {current_orientation_list}")
+        
+        # Get target position and orientation
+        target_position_list, target_orientation_list = self.poseToLists(target_pose) 
+        # Logging
+        self.get_logger().info(f"Target position: {target_position_list}")
+        self.get_logger().info(f"Target orientation: {target_orientation_list}")
+
+        # Compute linear and angular velocity
+        linear_velocity = controller.compute_linear_velocity(current_position_list, target_position_list)
+        angular_velocity = controller.compute_angular_velocity(current_orientation_list, target_orientation_list)
+
+        # Logging
+        self.get_logger().info(f"Linear_velocity: {linear_velocity}")
+        self.get_logger().info(f"Angular velocity: {angular_velocity}")
+
+        # Assign cmd_vel
+        cmd_vel.linear.x = linear_velocity[0]
+        cmd_vel.linear.y = linear_velocity[1]
+        cmd_vel.linear.z = linear_velocity[2]
+
+        cmd_vel.angular.x = angular_velocity[0]
+        cmd_vel.angular.y = angular_velocity[1]
+        cmd_vel.angular.z = angular_velocity[2]
+
+        # cmd_vel.angular = self.euler_to_quaternion(angular_velocity[0], angular_velocity[1], angular_velocity[2])
+        
+        # Logging
+        self.get_logger().info(f"cmd_vel: {cmd_vel}")
+
+        return cmd_vel
 
     def smooth_nav_path(self, input_path, num_points=100):        
         # Extract x and y positions from the input path
@@ -114,125 +234,7 @@ class PathFollower(Node):
         
         return smoothed_path
 
-    def compute_cmd_velocities(self, current_pose, smoothed_path: Path, lookahead_distance: float = 0.5) -> Twist:
-        cmd_vel = Twist()
-        current_x = current_pose.pose.position.x
-        current_y = current_pose.pose.position.y
-        
-        # Extract the current yaw (orientation) from the quaternion
-        orientation_q = current_pose.pose.orientation
-        _, _, current_yaw = self.quaternion_to_euler(orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w)
-
-        # Find the closest point on the path (for cross-track error calculation)
-        closest_point = None
-        closest_distance = float('inf')
-        closest_index = 0
-
-        for i, pose in enumerate(smoothed_path.poses):
-            waypoint_x = pose.pose.position.x
-            waypoint_y = pose.pose.position.y
-            
-            # Calculate distance from current position to the path point
-            distance = math.hypot(waypoint_x - current_x, waypoint_y - current_y)
-            
-            # Update closest point
-            if distance < closest_distance:
-                closest_distance = distance
-                closest_point = pose
-                closest_index = i
-
-        if closest_point is None:
-            return cmd_vel  # Return zero velocities if no path point is found
-
-        # Compute cross-track error (perpendicular distance to the path)
-        cross_track_error = closest_distance
-
-        # Compute the heading to the target point (the point we are tracking)
-        target_x = closest_point.pose.position.x
-        target_y = closest_point.pose.position.y
-        path_yaw = math.atan2(target_y - current_y, target_x - current_x)
-
-        # Heading error (difference between current heading and path heading)
-        heading_error = path_yaw - current_yaw
-        heading_error = (heading_error + math.pi) % (2 * math.pi) - math.pi  # Normalize to [-pi, pi]
-
-        # Stanley control law: Steering = heading error + atan(k * cross-track error / velocity)
-        velocity = 0.5  # Assume a constant velocity (can be dynamically adjusted)
-        steering_angle = heading_error + math.atan2(self.k * cross_track_error, velocity)
-
-        # Limit the steering angle to a maximum value
-        steering_angle = max(-self.max_steering_angle, min(self.max_steering_angle, steering_angle))
-
-        # Set linear and angular velocities based on the Stanley controller
-        cmd_vel.linear.x = target_x
-        cmd_vel.linear.y = target_y
-        cmd_vel.linear.z = closest_point.pose.position.z
-        cmd_vel.angular.x, cmd_vel.angular.y, cmd_vel.angular.z = self.quaternion_to_euler(orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w)
-
-        return cmd_vel
-
-    def update_current_pose(self, cmd_vel: Twist):
-        # Assuming a simple motion model for the robot
-        dt = 0.1  # Time interval (e.g., 100 ms)
-        current_x = self.current_pose.pose.position.x
-        current_y = self.current_pose.pose.position.y
-        
-        # Calculate current orientation (yaw) from quaternion
-        orientation_q = self.current_pose.pose.orientation
-        _, _, current_theta = self.quaternion_to_euler(orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w)
-
-        # Update position based on cmd_vel
-        current_x += cmd_vel.linear.x * math.cos(current_theta) * dt
-        current_y += cmd_vel.linear.x * math.sin(current_theta) * dt
-
-        # Update orientation (yaw) based on cmd_vel
-        current_theta += cmd_vel.angular.z * dt
-        
-        # Normalise yaw to be within [-pi, pi]
-        current_theta = (current_theta + math.pi) % (2 * math.pi) - math.pi
-
-        # Create updated pose
-        self.current_pose.pose.position.x = current_x
-        self.current_pose.pose.position.y = current_y
-        self.current_pose.pose.orientation = self.euler_to_quaternion(0.0, 0.0, current_theta)
-
-    def quaternion_to_euler(self, x, y, z, w):
-        t0 = +2.0 * (w * x + y * z)
-        t1 = +1.0 - 2.0 * (x * x + y * y)
-        roll_x = math.atan2(t0, t1)
-
-        t2 = +2.0 * (w * y - z * x)
-        t2 = +1.0 if t2 > +1.0 else t2
-        t2 = -1.0 if t2 < -1.0 else t2
-        pitch_y = math.asin(t2)
-
-        t3 = +2.0 * (w * z + x * y)
-        t4 = +1.0 - 2.0 * (y * y + z * z)
-        yaw_z = math.atan2(t3, t4)
-
-        return roll_x, pitch_y, yaw_z
-
-    def euler_to_quaternion(self, roll: float, pitch: float, yaw: float):
-        # Calculate the quaternion components
-        cy = math.cos(yaw * 0.5)
-        sy = math.sin(yaw * 0.5)
-        cp = math.cos(pitch * 0.5)
-        sp = math.sin(pitch * 0.5)
-        cr = math.cos(roll * 0.5)
-        sr = math.sin(roll * 0.5)
-
-        # Compute the quaternion
-        w = cr * cp * cy + sr * sp * sy
-        x = sr * cp * cy - cr * sp * sy
-        y = cr * sp * cy + sr * cp * sy
-        z = cr * cp * sy - sr * sp * cy
-
-        return Quaternion(x=x, y=y, z=z, w=w)
-
     def check_goal_reached(self):
-        if not self.smoothed_path:
-            return  # No path to follow
-
         # Get the last waypoint in the smoothed path
         last_waypoint = self.smoothed_path.poses[-1]  # Last waypoint
 
@@ -250,6 +252,25 @@ class PathFollower(Node):
             self.goal_achieved = True
             self.smoothed_path = None
             self.get_logger().info("Reached the goal.")
+
+    def check_target_pose_reached(self, current_pose, target_pose, threshold=1e-3):
+        # Calculate distance to the target pose from the current pose
+        distance_to_target = math.hypot(target_pose.pose.position.x - current_pose.pose.position.x, target_pose.pose.position.y - current_pose.pose.position.y, target_pose.pose.position.z - current_pose.pose.position.z)
+        self.get_logger().info(f"Distance from current position to target: {distance_to_target}")
+
+        # Check if the robot has reached the last target pose
+        if distance_to_target < threshold:
+            self.get_logger().info(f"Reached the target {target_pose} with threshold {threshold}")
+            return True
+        
+        return False
+
+    def check_if_rotate_needed(self, current_pose, target_pose):
+        yaw_rotation = controller.compute_required_yaw_rotation(current_pose, target_pose)
+        if yaw_rotation > self.threshold_angular:
+            return True
+        
+        return False
 
 def main(args=None):
     rclpy.init(args=args)

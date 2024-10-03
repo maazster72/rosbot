@@ -31,4 +31,6 @@ RUN apt-get update && \
     rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install -U \
-    paho-mqtt
+    paho-mqtt \
+    scipy \
+    numpy
