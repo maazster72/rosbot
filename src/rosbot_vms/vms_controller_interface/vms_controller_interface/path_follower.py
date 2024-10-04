@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 
 from geometry_msgs.msg import PoseStamped, Twist, Quaternion
-from nav_msgs.msg import Path
+from nav_msgs.msg import Path, Odometry
 import rclpy
 from rclpy.node import Node
 import math
@@ -25,13 +25,20 @@ class PathFollower(Node):
         self.distance_to_goal = None
 
         self.threshold_linear = 1e-3
-        self.threshold_angular = 0.1
+        self.threshold_angular = 0.01
 
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
             Path,
             '/plan',
             self.plan_callback,
+            10)
+
+        # Subscribe to the /odom topic
+        self.odom_subscriber = self.create_subscription(
+            Odometry,
+            '/odom',
+            self.odom_callback,
             10)
 
         # Publisher for velocity commands
@@ -58,17 +65,23 @@ class PathFollower(Node):
         self.get_logger().info(f"Poses to follow: {self.poses}")
         self.get_logger().info(f"Distance to goal pose: {self.distance_to_goal}")
 
+    def odom_callback(self, msg: Odometry):
+        self.current_pose.pose.position = msg.pose.pose.position
+        self.current_pose.pose.orientation = msg.pose.pose.orientation
+
+        # Logging
+        self.get_logger().info(f"Updated pose: {self.current_pose}")
+    
     def move_towards_goal(self):
         cmd_vel = Twist()
 
         if self.plan:
             # Logging
-            self.get_logger().info(f"Current pose: {self.current_pose}")
             self.get_logger().info(f"Current target pose ({self.current_target_pose_index + 1}/{len(self.poses) + 1}): {self.current_target_pose}")
             self.get_logger().info(f"Distance to target pose: {self.distance_to_target}")
             self.get_logger().info(f"Distance to goal pose: {self.distance_to_goal}")
             # Check if goal has been reached
-            if self.distance_to_goal < self.threshold_linear:
+            if abs(self.distance_to_goal) < self.threshold_linear:
                 self.plan = None
                 self.poses = None
                 self.current_pose = PoseStamped()
@@ -81,7 +94,7 @@ class PathFollower(Node):
                 # Logging
                 self.get_logger().info(f"Goal pose reached. Executed plan successfully")
             # Check if target pose has been reached
-            elif self.distance_to_target < self.threshold_linear:
+            elif abs(self.distance_to_target) < self.threshold_linear:
                 # Logging
                 self.get_logger().info(f"Pose {self.current_target_pose_index + 1}/{len(self.poses) + 1} complete.")
                 # Check if any more poses to follow
@@ -100,7 +113,7 @@ class PathFollower(Node):
                 #     # cmd_vel = self.compute_cmd_velocities(self.current_pose, self.current_target_pose)
             
                 # Update current pose and distances
-                self.current_pose = util.update_current_pose(self.current_pose, cmd_vel)
+                # self.current_pose = util.update_current_pose(self.current_pose, cmd_vel)
                 self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
                 self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
 
@@ -267,7 +280,7 @@ class PathFollower(Node):
 
     def check_if_rotate_needed(self, current_pose, target_pose):
         yaw_rotation = controller.compute_required_yaw_rotation(current_pose, target_pose)
-        if yaw_rotation > self.threshold_angular:
+        if abs(yaw_rotation) > self.threshold_angular:
             return True
         
         return False

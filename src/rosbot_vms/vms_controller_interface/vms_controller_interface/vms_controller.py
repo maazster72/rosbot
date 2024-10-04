@@ -16,7 +16,7 @@ def compute_linear_velocity(current_position, target_position, K_v=1.0):
 
         return v
 
-def compute_angular_velocity(current_orientation, target_orientation, K_omega=1.0):
+def compute_angular_velocity(current_orientation, target_orientation, K_omega=2):
     # Convert quaternions to rotation objects
     rotation_current = Rotation.from_quat(current_orientation)
     rotation_target = Rotation.from_quat(target_orientation)
