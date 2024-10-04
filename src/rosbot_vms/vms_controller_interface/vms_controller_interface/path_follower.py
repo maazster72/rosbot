@@ -24,8 +24,8 @@ class PathFollower(Node):
         self.goal_achieved = True
         self.distance_to_goal = None
 
-        self.threshold_linear = 1e-3
-        self.threshold_angular = 0.01
+        self.threshold_linear = 0.375
+        self.threshold_angular = 0.5
 
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
@@ -44,17 +44,22 @@ class PathFollower(Node):
         # Publisher for velocity commands
         self.cmd_vel_publisher = self.create_publisher(Twist, '/cmd_vel', 10)
 
+        # Publisher for goal pose
+        self.goal_pose_publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
+
         # Timer to control movement towards the next goal
         self.timer = self.create_timer(0.1, self.move_towards_goal)
 
     def plan_callback(self, msg: Path):
         self.plan = msg
         self.poses = self.plan.poses[1:]
-        self.current_pose = self.plan.poses[0]
         self.current_target_pose_index = 0
         self.current_target_pose = self.poses[self.current_target_pose_index]
         self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
+
         self.goal_pose = self.poses.pop()
+        self.goal_pose_publisher.publish(self.goal_pose)
+
         self.goal_achieved = False
         self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
         
@@ -70,16 +75,16 @@ class PathFollower(Node):
         self.current_pose.pose.orientation = msg.pose.pose.orientation
 
         # Logging
-        self.get_logger().info(f"Updated pose: {self.current_pose}")
+        # self.get_logger().info(f"Updated pose: {self.current_pose}")
     
     def move_towards_goal(self):
         cmd_vel = Twist()
 
         if self.plan:
             # Logging
-            self.get_logger().info(f"Current target pose ({self.current_target_pose_index + 1}/{len(self.poses) + 1}): {self.current_target_pose}")
+            # self.get_logger().info(f"Current target pose ({self.current_target_pose_index + 1}/{len(self.poses) + 1}): {self.current_target_pose}")
             self.get_logger().info(f"Distance to target pose: {self.distance_to_target}")
-            self.get_logger().info(f"Distance to goal pose: {self.distance_to_goal}")
+            # self.get_logger().info(f"Distance to goal pose: {self.distance_to_goal}")
             # Check if goal has been reached
             if abs(self.distance_to_goal) < self.threshold_linear:
                 self.plan = None
@@ -108,69 +113,17 @@ class PathFollower(Node):
                     cmd_vel = controller.orient_to_target(self.current_pose, self.current_target_pose)
                     # Logging
                     self.get_logger().info(f"Rotating to target...")
-                # else:
-                #     # Compute cmd_vel
-                #     # cmd_vel = self.compute_cmd_velocities(self.current_pose, self.current_target_pose)
+                else:
+                    # Compute cmd_vel
+                    cmd_vel = controller.move_to_target(self.current_pose, self.current_target_pose)
+                    # Logging
+                    self.get_logger().info(f"cmd_vel: {cmd_vel}")
             
-                # Update current pose and distances
-                # self.current_pose = util.update_current_pose(self.current_pose, cmd_vel)
+                # Update distances
                 self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
                 self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
 
         self.cmd_vel_publisher.publish(cmd_vel)
-
-        # Logging
-        self.get_logger().info(f"cmd_vel: {cmd_vel}")
-
-        # if self.goal_achieved:
-        #     # Stop the robot by setting cmd_vel to zero
-        #     cmd_vel = Twist()
-        #     self.cmd_vel_publisher.publish(cmd_vel)
-        
-        # if self.current_target_pose:
-        #     # Logging
-        #     self.get_logger().info(f"Current pose: {self.current_pose}")
-        #     self.get_logger().info(f"Current target pose: {self.current_target_pose}")
-        #     # Compute and publish velocities
-        #     cmd_vel = self.compute_cmd_velocities(self.current_pose, self.current_target_pose)
-        #     self.cmd_vel_publisher.publish(cmd_vel)
-        #     # Update current pose
-        #     self.current_pose = self.update_current_pose(self.current_pose, cmd_vel)
-        #     # Update target pose
-        #     if self.check_target_pose_reached(self.current_pose, self.current_target_pose):
-        #         # Reached goal
-        #         if (self.poses[self.current_target_pose_index] == self.goal_pose):
-        #             self.current_target_pose_index = None
-        #             self.current_target_pose = None
-        #             # Stop the robot by setting cmd_vel to zero
-        #             cmd_vel = Twist()
-        #             self.cmd_vel_publisher.publish(cmd_vel)
-        #         else:
-        #             self.current_target_pose = self.poses[self.current_target_pose_index]
-        #             self.current_target_pose_index += 1
-                
-            # Check if goal has been reached
-            # self.check_goal_reached()
-
-
-        # elif self.current_pose and self.plan:
-        #     # Get current pose as lists
-        #     current_position_list, current_orientation_list = self.poseToLists(self.current_pose)
-        #     # Set current target pose in the plan
-        #     self.current_target_pose = self.get_target_pose(current_position_list, self.plan.poses[1:])
-        #     target_position_list, target_orientation_list = self.poseToLists(self.current_target_pose)
-        #     # Logging
-        #     self.get_logger().info(f"Target position: {target_position_list}")
-        #     self.get_logger().info(f"Target orientation: {target_orientation_list}")
-        #     # Compute and publish cmd velocities to follow the path
-        #     # cmd_vel = self.compute_cmd_velocities(self.current_pose, self.plan.poses[1:])
-        #     # self.cmd_vel_publisher.publish(cmd_vel)
-        #     # self.get_logger().info(f"Moving with following cmd_vel: {cmd_vel}")
-
-        #     # self.update_current_pose(cmd_vel)
-        #     # self.get_logger().info(f"Current position: {self.current_pose}")
-
-        #     # self.check_goal_reached()
 
     def compute_cmd_velocities(self, current_pose, target_pose):
         cmd_vel = Twist()
@@ -280,6 +233,7 @@ class PathFollower(Node):
 
     def check_if_rotate_needed(self, current_pose, target_pose):
         yaw_rotation = controller.compute_required_yaw_rotation(current_pose, target_pose)
+        self.get_logger().info(f"Yaw rotation: {yaw_rotation}")
         if abs(yaw_rotation) > self.threshold_angular:
             return True
         

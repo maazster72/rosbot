@@ -16,35 +16,6 @@ def poseToLists(pose):
 
     return position_list, orientation_list
 
-def update_current_pose(current_pose, cmd_vel):
-    # Assuming a simple motion model for the robot
-    dt = 0.1  # Time interval (e.g., 100 ms)
-    current_x = current_pose.pose.position.x
-    current_y = current_pose.pose.position.y
-    current_z = current_pose.pose.position.z
-
-    # Calculate current orientation (yaw) from quaternion
-    orientation_q = current_pose.pose.orientation
-    _, _, current_theta = quaternion_to_euler(orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w)
-
-    # Update position based on cmd_vel
-    current_x += cmd_vel.linear.x * math.cos(current_theta) * dt
-    current_y += cmd_vel.linear.x * math.sin(current_theta) * dt
-
-    # Update orientation (yaw) based on cmd_vel
-    current_theta += cmd_vel.angular.z * dt
-
-    # Normalise yaw to be within [-pi, pi]
-    current_theta = (current_theta + math.pi) % (2 * math.pi) - math.pi
-
-    # Create updated pose
-    current_pose.pose.position.x = current_x
-    current_pose.pose.position.y = current_y
-    current_pose.pose.position.z = current_z
-    current_pose.pose.orientation = euler_to_quaternion(0.0, 0.0, current_theta)
-
-    return current_pose
-
 def quaternion_to_euler(x, y, z, w):
     t0 = +2.0 * (w * x + y * z)
     t1 = +1.0 - 2.0 * (x * x + y * y)

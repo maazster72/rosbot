@@ -3,20 +3,20 @@ from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import PoseStamped, Twist, Quaternion
 import vms_controller_interface.vms_controller_util as util
 
-def compute_linear_velocity(current_position, target_position, K_v=1.0):
+def compute_linear_velocity(current_position, target_position, K_v=1.25):
         delta_position = numpy.array(target_position) - numpy.array(current_position)
         distance = numpy.linalg.norm(delta_position)
+        direction = delta_position / distance
 
         # If the distance is non-zero
-        if distance > 1e-3:
-            direction = delta_position / distance
-            v = K_v * direction
+        if abs(distance) > 0.375:
+            v = K_v * direction * distance
         else:
             v = numpy.zeros(3)
 
         return v
 
-def compute_angular_velocity(current_orientation, target_orientation, K_omega=2):
+def compute_angular_velocity(current_orientation, target_orientation, K_omega=1.0):
     # Convert quaternions to rotation objects
     rotation_current = Rotation.from_quat(current_orientation)
     rotation_target = Rotation.from_quat(target_orientation)
@@ -28,7 +28,7 @@ def compute_angular_velocity(current_orientation, target_orientation, K_omega=2)
     axis, angle = quaternion_to_axis_angle(relative_rotation.as_quat())
 
     # Compute angular velocity
-    if angle > 1e-3:     # If there is a non-zero angular difference
+    if angle > 0.5:     # If there is a non-zero angular difference
         omega = K_omega * numpy.array(axis) * angle
     else:
         omega = numpy.zeros(3)  # No rotation needed
@@ -81,5 +81,24 @@ def orient_to_target(current_pose, target_pose):
         current_pose,
         target_pose
         )
+
+    return cmd_vel
+
+def move_to_target(current_pose, target_pose):
+    current_position, current_orientation = util.poseToLists(current_pose)
+    target_position, target_orientation = util.poseToLists(target_pose)
+
+    cmd_vel = Twist()
+
+    linear_velocity = compute_linear_velocity(current_position, target_position)
+    angular_velocity = compute_angular_velocity(current_orientation, target_orientation)
+
+    cmd_vel.linear.x = linear_velocity[0]
+    cmd_vel.linear.y = linear_velocity[1]
+    cmd_vel.linear.z = linear_velocity[2]
+
+    # cmd_vel.angular.x = angular_velocity[0]
+    # cmd_vel.angular.y = angular_velocity[1]
+    # cmd_vel.angular.z = angular_velocity[2]
 
     return cmd_vel
