@@ -47,18 +47,22 @@ class PathFollower(Node):
         # Publisher for goal pose
         self.goal_pose_publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
 
+        # Publisher for initial pose
+        self.initial_pose_publisher = self.create_publisher(PoseStamped, '/initial_pose', 10)
+
         # Timer to control movement towards the next goal
-        self.timer = self.create_timer(0.1, self.move_towards_goal)
+        self.timer = self.create_timer(0.2, self.move_towards_goal)
 
     def plan_callback(self, msg: Path):
         self.plan = msg
-        self.poses = self.plan.poses[1:]
+        self.poses = self.plan.poses
         self.current_target_pose_index = 0
         self.current_target_pose = self.poses[self.current_target_pose_index]
         self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
 
-        self.goal_pose = self.poses.pop()
+        self.goal_pose = self.poses[len(self.plan.poses) - 1]
         self.goal_pose_publisher.publish(self.goal_pose)
+        self.initial_pose_publisher.publish(self.current_pose)
 
         self.goal_achieved = False
         self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
@@ -101,13 +105,19 @@ class PathFollower(Node):
             # Check if target pose has been reached
             elif abs(self.distance_to_target) < self.threshold_linear:
                 # Logging
-                self.get_logger().info(f"Pose {self.current_target_pose_index + 1}/{len(self.poses) + 1} complete.")
+                self.get_logger().info(f"Pose {self.current_target_pose_index + 1}/{len(self.poses)} complete.")
                 # Check if any more poses to follow
                 if len(self.poses) > 0:
-                    self.current_target_pose = self.poses.pop()
                     self.current_target_pose_index += 1
+                    self.current_target_pose = self.poses[self.current_target_pose_index]
+                    self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
                     # Logging
                     self.get_logger().info(f"New target pose: {self.current_target_pose}")
+
+                    if self.check_if_rotate_needed(self.current_pose, self.current_target_pose):
+                        cmd_vel = controller.orient_to_target(self.current_pose, self.current_target_pose)
+                        # Logging
+                        self.get_logger().info(f"Rotating to target...")
             else:
                 if self.check_if_rotate_needed(self.current_pose, self.current_target_pose):
                     cmd_vel = controller.orient_to_target(self.current_pose, self.current_target_pose)

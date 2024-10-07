@@ -2,19 +2,27 @@ import numpy
 from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import PoseStamped, Twist, Quaternion
 import vms_controller_interface.vms_controller_util as util
-
-def compute_linear_velocity(current_position, target_position, K_v=1.25):
+0
+def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.5, max_velocity=1.5):
         delta_position = numpy.array(target_position) - numpy.array(current_position)
         distance = numpy.linalg.norm(delta_position)
         direction = delta_position / distance
 
+        v = numpy.zeros(3)
+
         # If the distance is non-zero
         if abs(distance) > 0.375:
-            v = K_v * direction * distance
-        else:
-            v = numpy.zeros(3)
+            raw_velocity = K_v * direction * distance
 
-        return v
+            velocity_magnitude = numpy.linalg.norm(raw_velocity)
+            if velocity_magnitude < min_velocity:
+                v = direction * min_velocity
+            elif velocity_magnitude > max_velocity:
+                v = direction * max_velocity
+            else:
+                v = raw_velocity
+        
+        return numpy.abs(v)
 
 def compute_angular_velocity(current_orientation, target_orientation, K_omega=1.0):
     # Convert quaternions to rotation objects
@@ -85,6 +93,8 @@ def orient_to_target(current_pose, target_pose):
     return cmd_vel
 
 def move_to_target(current_pose, target_pose):
+    yaw_rotation = compute_required_yaw_rotation(current_pose, target_pose)
+
     current_position, current_orientation = util.poseToLists(current_pose)
     target_position, target_orientation = util.poseToLists(target_pose)
 
@@ -97,8 +107,6 @@ def move_to_target(current_pose, target_pose):
     cmd_vel.linear.y = linear_velocity[1]
     cmd_vel.linear.z = linear_velocity[2]
 
-    # cmd_vel.angular.x = angular_velocity[0]
-    # cmd_vel.angular.y = angular_velocity[1]
-    # cmd_vel.angular.z = angular_velocity[2]
+    cmd_vel.angular.z = yaw_rotation
 
     return cmd_vel

@@ -102,3 +102,44 @@ ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToP
   },
   "translator_id": "GridBased"
 }'
+
+ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{
+  "route": {
+    "routepoints":[
+      {"latitude":-1.0,"longitude":-1.0,"altitude":0.0,"satisfies_requirement_id":"r1"}]
+  },
+  "translator_id": "GridBased"
+}'
+
+ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{
+  "route": {
+    "routepoints":[
+      {"latitude":0.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":1.0,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":2.0,"longitude":2.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":3.0,"longitude":3.0,"altitude":0.0,"satisfies_requirement_id":"r1"}]
+  },
+  "translator_id": "GridBased"
+}'
+
+ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{
+  "route": {
+    "routepoints":[
+      {"latitude":0.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":1.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":1.0,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":2.0,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r1"}]
+  },
+  "translator_id": "GridBased"
+}'
+
+ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{
+  "route": {
+    "routepoints":[
+      {"latitude":0.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":-1.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":-1.0,"longitude":-1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":-2.0,"longitude":-1.0,"altitude":0.0,"satisfies_requirement_id":"r1"}]
+  },
+  "translator_id": "GridBased"
+}'
