@@ -50,7 +50,7 @@ def generate_launch_description():
             package='robot_localization', 
             executable='ekf_node', 
             parameters=[ekf_config],
-            remappings=[("odometry/filtered", "odom_combined")]
+            remappings=[("odometry/filtered", "odom")]
             )
                               
     joint_state_publisher_node = launch_ros.actions.Node(

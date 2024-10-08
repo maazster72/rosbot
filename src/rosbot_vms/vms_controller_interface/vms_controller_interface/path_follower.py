@@ -37,7 +37,7 @@ class PathFollower(Node):
         # Subscribe to the /odom topic
         self.odom_subscriber = self.create_subscription(
             Odometry,
-            '/odom',
+            '/odom_combined',
             self.odom_callback,
             10)
 

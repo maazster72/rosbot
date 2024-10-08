@@ -47,7 +47,7 @@ def main():
     global wheelbase
     global cmd_angle_instead_rotvel
     wheelbase = 0.143
-    frame_id = "odom_combined"
+    frame_id = "odom"
     cmd_angle_instead_rotvel = False
     print("Node 'cmd_vel_to_ackermann_drive' started")
     qos = QoSProfile(depth=10)

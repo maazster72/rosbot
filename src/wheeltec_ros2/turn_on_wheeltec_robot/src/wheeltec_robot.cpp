@@ -402,7 +402,7 @@ turn_on_robot::turn_on_robot()
   this->get_parameter("gyro_frame_id", gyro_frame_id);
 
   // Create publishers
-  odom_publisher = create_publisher<nav_msgs::msg::Odometry>("odom_combined", 10);
+  odom_publisher = create_publisher<nav_msgs::msg::Odometry>("odom", 10);
   imu_publisher = create_publisher<sensor_msgs::msg::Imu>("mobile_base/sensors/imu_data", 10);
   voltage_publisher = create_publisher<std_msgs::msg::Float32>("PowerVoltage", 1);
   robotpose_publisher = create_publisher<wheeltec_robot_msg::msg::Data>("robotpose", 10);
