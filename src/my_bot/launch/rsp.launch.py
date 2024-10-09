@@ -29,6 +29,15 @@ def generate_launch_description():
         parameters=[params]
     )
 
+    params = {'use_sim_time': use_sim_time}
+    joint_state_publisher_node = Node(
+            package='joint_state_publisher',
+            executable='joint_state_publisher',
+            name='joint_state_publisher',
+            parameters=[params]
+            #remappings=remappings
+    )
+
 
     # Launch!
     return LaunchDescription([
@@ -37,5 +46,6 @@ def generate_launch_description():
             default_value='false',
             description='Use sim time if true'),
 
-        node_robot_state_publisher
+        node_robot_state_publisher,
+        joint_state_publisher_node
     ])
