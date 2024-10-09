@@ -3,26 +3,24 @@ from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import PoseStamped, Twist, Quaternion
 import vms_controller_interface.vms_controller_util as util
 0
-def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.5, max_velocity=2.0):
-        delta_position = numpy.array(target_position) - numpy.array(current_position)
-        distance = numpy.linalg.norm(delta_position)
-        direction = delta_position / distance
+def compute_linear_velocity(current_position, target_position, K_v=0.25, min_velocity=0.125, max_velocity=0.5):
+    # Calculate the delta position and the distance between the current and target positions
+    delta_position = numpy.array(target_position) - numpy.array(current_position)
+    distance = numpy.linalg.norm(delta_position)
 
-        v = numpy.zeros(3)
+    # Normalise the direction
+    direction = delta_position / distance if distance != 0 else numpy.zeros_like(delta_position)
 
-        # If the distance is non-zero
-        if abs(distance) > 0.375:
-            raw_velocity = K_v * direction * distance
+    # Compute the velocity magnitude using the proportional gain
+    velocity_magnitude = K_v * distance
 
-            velocity_magnitude = numpy.linalg.norm(raw_velocity)
-            if velocity_magnitude < min_velocity:
-                v = direction * min_velocity
-            elif velocity_magnitude > max_velocity:
-                v = direction * max_velocity
-            else:
-                v = raw_velocity
-        
-        return numpy.abs(v)
+    # Clamp the velocity to be within the minimum and maximum limits
+    velocity_magnitude = max(min_velocity, min(velocity_magnitude, max_velocity))
+
+    # Scale the direction by the velocity magnitude
+    velocity = direction * velocity_magnitude
+
+    return velocity
 
 def compute_angular_velocity(current_orientation, target_orientation, K_omega=1.0):
     # Convert quaternions to rotation objects
@@ -93,20 +91,14 @@ def orient_to_target(current_pose, target_pose):
     return cmd_vel
 
 def move_to_target(current_pose, target_pose):
-    yaw_rotation = compute_required_yaw_rotation(current_pose, target_pose)
-
-    current_position, current_orientation = util.poseToLists(current_pose)
-    target_position, target_orientation = util.poseToLists(target_pose)
+    current_position, _ = util.poseToLists(current_pose)
+    target_position, _ = util.poseToLists(target_pose)
 
     cmd_vel = Twist()
 
     linear_velocity = compute_linear_velocity(current_position, target_position)
-    angular_velocity = compute_angular_velocity(current_orientation, target_orientation)
 
     cmd_vel.linear.x = linear_velocity[0]
     cmd_vel.linear.y = linear_velocity[1]
-    cmd_vel.linear.z = linear_velocity[2]
-
-    cmd_vel.angular.z = yaw_rotation
 
     return cmd_vel

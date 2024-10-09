@@ -11,7 +11,7 @@ def get_distance_to_target_pose(current_pose, target_pose):
 def poseToLists(pose):
     position = pose.pose.position
     orientation = pose.pose.orientation
-    position_list = [position.x, position.y, position.y]
+    position_list = [position.x, position.y]
     orientation_list = [orientation.x, orientation.y, orientation.z, orientation.w]
 
     return position_list, orientation_list

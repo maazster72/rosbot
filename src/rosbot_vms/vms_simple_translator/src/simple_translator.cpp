@@ -8,8 +8,6 @@ namespace vms_simple_translator
 // Member function to convert latitude and longitude to Cartesian coordinates
 void SimpleTranslator::latLongToCartesian(double latitude, double longitude, double &x, double &y)
 {
-
-
     // Simple equirectangular projection
     x = latitude;
     y = longitude;
@@ -55,7 +53,7 @@ nav_msgs::msg::Path SimpleTranslator::convertRoute(const vms_msgs::msg::Route & 
 
         // Convert latitude and longitude to Cartesian coordinates
         latLongToCartesian(point.latitude, point.longitude, pose.pose.position.x, pose.pose.position.y);
-        pose.pose.position.z = point.altitude;
+        pose.pose.position.z = 0;
 
         // Set orientation if needed (default to no rotation)
         pose.pose.orientation.w = 1.0;
