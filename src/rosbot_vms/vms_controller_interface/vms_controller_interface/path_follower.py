@@ -17,15 +17,10 @@ class PathFollower(Node):
         self.plan = None
         self.poses = None
         self.current_pose = PoseStamped()
-        self.current_target_pose_index = None
-        self.current_target_pose = None
-        self.distance_to_target = None
+        self.current_goal_pose_index = None
         self.goal_pose = None
-        self.goal_achieved = True
         self.distance_to_goal = None
-
         self.threshold_linear = 0.08
-        self.threshold_angular = 0.5
 
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
@@ -63,30 +58,17 @@ class PathFollower(Node):
 
     def plan_callback(self, msg: Path):
         self.plan = msg
-        self.poses = self.plan.poses
-        self.current_target_pose_index = 0
-        self.current_target_pose = self.poses[self.current_target_pose_index]
-        self.distance_to_target = util.get_distance_to_target_pose(self.current_pose, self.current_target_pose)
-
-        self.goal_pose = self.poses[len(self.plan.poses) - 1]
-        self.goal_pose_publisher.publish(self.goal_pose)
-
-        self.goal_achieved = False
-        self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
+        self.current_goal_pose_index = 0
+        self.goal_pose_publisher.publish(self.plan.poses[self.current_goal_pose_index])
         
         # Logging
         self.get_logger().info(f"Received path: {self.plan}")
-        self.get_logger().info(f"Initial pose: {self.current_pose}")
-        self.get_logger().info(f"Goal Pose: {self.goal_pose}")
-        self.get_logger().info(f"Poses to follow: {self.poses}")
-        self.get_logger().info(f"Distance to goal pose: {self.distance_to_goal}")
 
     def odom_callback(self, msg: Odometry):
         self.current_pose.pose.position = msg.pose.pose.position
         self.current_pose.pose.orientation = msg.pose.pose.orientation
     
     def move_towards_goal(self):
-        cmd_vel = Twist()
         # if self.plan:
         #     # Logging
         #     # self.get_logger().info(f"Current target pose ({self.current_target_pose_index + 1}/{len(self.poses) + 1}): {self.current_target_pose}")
@@ -130,19 +112,24 @@ class PathFollower(Node):
             self.get_logger().info(f"Goal: {self.goal_pose}")
             self.get_logger().info(f"Current pose (Odomoetry): {self.current_pose}")
             self.get_logger().info(f"Distance to goal: {self.distance_to_goal}")
-            if abs(self.distance_to_goal) < self.threshold_linear:
-                self.goal_pose = None
-                self.distance_to_goal = None
-                # Logging
-                self.get_logger().info(f"Goal pose reached. Executed plan successfully")
-            else:
-                # Compute cmd_vel
-                cmd_vel = controller.move_to_target(self.current_pose, self.goal_pose)
-                # Logging
-                self.get_logger().info(f"Moving with cmd_vel: {cmd_vel}")
+            self.navToPose()
+        else:
+            self.cmd_vel_publisher.publish(Twist())
 
-        self.cmd_vel_publisher.publish(cmd_vel)
-        if self.goal_pose:
+    def navToPose(self):
+        if abs(self.distance_to_goal) < self.threshold_linear:
+            self.goal_pose = None
+            self.distance_to_goal = None
+            # Logging
+            self.get_logger().info(f"Goal pose reached. Executed plan successfully")
+        else:
+            # Compute cmd_vel
+            cmd_vel = controller.move_to_target(self.current_pose, self.goal_pose)
+            # Logging
+            self.get_logger().info(f"Moving with cmd_vel: {cmd_vel}")
+            # Publish cmd_vel
+            self.cmd_vel_publisher.publish(cmd_vel)
+            # Update distance
             self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
 
     # def smooth_nav_path(self, input_path, num_points=100):        
