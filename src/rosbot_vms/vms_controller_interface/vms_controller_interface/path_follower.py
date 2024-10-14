@@ -119,42 +119,6 @@ class PathFollower(Node):
         # Update distance
         self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
 
-    def smooth_nav_path(self, input_path, num_points=100):        
-        # Extract x and y positions from the input path
-        x_points = [pose.pose.position.x for pose in input_path.poses]
-        y_points = [pose.pose.position.y for pose in input_path.poses]
-
-        # Ensure there are enough points to interpolate
-        if len(x_points) < 3 or len(y_points) < 3:
-            raise ValueError("Not enough points to perform spline interpolation")
-        
-        # Perform cubic spline interpolation
-        t = np.arange(len(x_points))  # Time (or index) array for the original waypoints
-        cs_x = CubicSpline(t, x_points)  # Spline for x-coordinates
-        cs_y = CubicSpline(t, y_points)  # Spline for y-coordinates
-        
-        # Generate new points for the smoothed path
-        t_new = np.linspace(0, len(x_points) - 1, num_points)
-        smooth_x = cs_x(t_new)
-        smooth_y = cs_y(t_new)
-        
-        # Reconstruct the smoothed path as nav_msgs/Path
-        smoothed_path = Path()
-        smoothed_path.header = input_path.header  # Copy over the header
-        
-        for i in range(num_points):
-            pose = PoseStamped()
-            pose.pose.position.x = smooth_x[i]
-            pose.pose.position.y = smooth_y[i]
-            pose.pose.position.z = 0.0  # Assuming 2D navigation; set z to 0
-            
-            # Optionally set orientation (you could calculate it based on the path direction)
-            pose.pose.orientation.w = 1.0  # Default orientation (unit quaternion)
-            
-            smoothed_path.poses.append(pose)
-        
-        return smoothed_path
-
 def main(args=None):
     rclpy.init(args=args)
     path_follower = PathFollower()
