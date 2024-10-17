@@ -8,6 +8,7 @@ def generate_launch_description():
     my_bot_pkg_share         = launch_ros.substitutions.FindPackageShare(package = 'my_bot').find('my_bot')
     model_path               = os.path.join(my_bot_pkg_share, 'description/robot_car.vm.simulation.urdf')
     world_path               = os.path.join(my_bot_pkg_share, 'worlds/my_world.sdf'),
+    rviz_config_path         = os.path.join(my_bot_pkg_share, 'config/drive_bot.rviz')
 
     robot_state_publisher_node = launch_ros.actions.Node(
         package    = 'robot_state_publisher',
@@ -20,12 +21,21 @@ def generate_launch_description():
         arguments  = ['-entity', 'my_bot', '-topic', 'robot_description'],
         output     = 'screen'
     )
+    rviz_node = launch_ros.actions.Node(
+        package    = 'rviz2',
+        executable = 'rviz2',
+        name       = 'rviz2',
+        output     = 'screen',
+        arguments  = ['-d', LaunchConfiguration('rvizconfig')],
+    )
 
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name = 'model'       , default_value = model_path      , description = 'Absolute path to robot urdf file' ),
+        launch.actions.DeclareLaunchArgument(name = 'rvizconfig'  , default_value = rviz_config_path, description = 'Absolute path to rviz config file'),
         launch.actions.DeclareLaunchArgument(name = 'use_sim_time', default_value = 'True'          , description = 'Flag to enable use_sim_time'      ),
         launch.actions.ExecuteProcess       (cmd  = ['gazebo', '--verbose', '-s', 'libgazebo_ros_factory.so', world_path], output = 'screen'           ),
         
         robot_state_publisher_node,
-        spawn_gazebo_entity
+        spawn_gazebo_entity,
+        TimerAction(period = 7.0, actions = [rviz_node])
     ])
