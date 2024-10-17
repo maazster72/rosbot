@@ -7,6 +7,8 @@ import os
 def generate_launch_description():
     my_bot_pkg_share         = launch_ros.substitutions.FindPackageShare(package = 'my_bot').find('my_bot')
     model_path               = os.path.join(my_bot_pkg_share, 'description/robot_car.vm.simulation.urdf')
+    slam_toolbox_pkg_share   = launch_ros.substitutions.FindPackageShare(package = 'slam_toolbox').find('slam_toolbox')
+
     world_path               = os.path.join(my_bot_pkg_share, 'worlds/my_world.sdf'),
     rviz_config_path         = os.path.join(my_bot_pkg_share, 'config/drive_bot.rviz')
 
@@ -20,6 +22,21 @@ def generate_launch_description():
         executable =  'spawn_entity.py',
         arguments  = ['-entity', 'my_bot', '-topic', 'robot_description'],
         output     = 'screen'
+    )
+    robot_localization_node = launch_ros.actions.Node(
+        package    = 'robot_localization',
+        executable = 'ekf_node',
+        name       = 'ekf_filter_node',
+        output     = 'screen',
+        parameters = [os.path.join(my_bot_pkg_share, 'config/ekf.simulation.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    )
+    slam_toolbox_node = launch_ros.actions.Node(
+        package    = 'slam_toolbox',
+        executable = 'async_slam_toolbox_node',
+        name       = 'slam_toolbox',
+        output     = 'screen',
+        parameters = [os.path.join(slam_toolbox_pkg_share, 'config', 'mapper_params_online_async.yaml'), {'use_sim_time': LaunchConfiguration('use_sim_time')}
+        ],
     )
     rviz_node = launch_ros.actions.Node(
         package    = 'rviz2',
@@ -37,5 +54,7 @@ def generate_launch_description():
         
         robot_state_publisher_node,
         spawn_gazebo_entity,
+        robot_localization_node,
+        slam_toolbox_node,
         TimerAction(period = 7.0, actions = [rviz_node])
     ])
