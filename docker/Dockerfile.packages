@@ -10,6 +10,9 @@ USER root
 # Install additional ROS packages
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
+        python3-rospkg \
+        ros-$ROS_DISTRO-tf2-tools \
+        ros-$ROS_DISTRO-tf-transformations \
         ros-$ROS_DISTRO-navigation2 \
         ros-$ROS_DISTRO-nav2-bringup \
         ros-$ROS_DISTRO-nav2-common \
@@ -33,4 +36,6 @@ RUN apt-get update && \
 RUN pip3 install -U \
     paho-mqtt \
     scipy \
-    numpy
+    numpy \
+    pyserial \
+    transforms3d
