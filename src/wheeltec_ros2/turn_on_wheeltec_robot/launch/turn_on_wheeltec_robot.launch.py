@@ -16,7 +16,7 @@ def generate_launch_description():
     # Get the launch directory
     bringup_dir = get_package_share_directory('turn_on_wheeltec_robot')
     launch_dir = os.path.join(bringup_dir, 'launch')
-    ekf_config = Path(get_package_share_directory('turn_on_wheeltec_robot'), 'config', 'ekf.yaml')
+    ekf_config = Path(get_package_share_directory('turn_on_wheeltec_robot'), 'config', 'ekf.physical.yaml')
 
     
     carto_slam = LaunchConfiguration('carto_slam', default='false')
