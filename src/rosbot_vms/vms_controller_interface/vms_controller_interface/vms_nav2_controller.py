@@ -4,6 +4,7 @@ from geometry_msgs.msg import PoseStamped
 from nav_msgs.msg import Path, Odometry
 import rclpy
 from rclpy.node import Node
+from rclpy.duration import Duration
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 import vms_controller_interface.vms_controller_util as util
 
@@ -17,8 +18,18 @@ class PathFollower(Node):
         self.goal_pose = PoseStamped()
         self.threshold_linear = 0.1
 
-        # Initialize SimpleCommander (BasicNavigator)
+        # Initialise BasicNavigator
         self.navigator = BasicNavigator()
+
+        # Set our initial pose
+        self.initial_pose = PoseStamped()
+        self.initial_pose.header.frame_id = 'map'
+        self.initial_pose.header.stamp = self.navigator.get_clock().now().to_msg()
+        self.initial_pose.pose.position.x = 0.0
+        self.initial_pose.pose.position.y = 0.0
+        self.initial_pose.pose.orientation.z = 0.0
+        self.initial_pose.pose.orientation.w = 1.0
+        self.navigator.setInitialPose(self.initial_pose)
 
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
@@ -42,7 +53,7 @@ class PathFollower(Node):
             10)
 
         # Timer to check goal status
-        self.timer = self.create_timer(0.1, self.check_goal_status)
+        self.timer = self.create_timer(0.05, self.check_goal_status)
 
     def goal_callback(self, msg: PoseStamped):
         self.goal_pose = msg
@@ -53,13 +64,14 @@ class PathFollower(Node):
         self.plan = msg
         for pose in self.plan.poses:
             pose.header.frame_id = 'map'
+            pose.header.stamp = self.navigator.get_clock().now().to_msg()
         waypoints = [pose for pose in msg.poses]
         
         # Logging
         self.get_logger().info(f"New path received with {len(waypoints)} waypoints.")
         
         # Send waypoints to SimpleCommander
-        self.navigator.followWaypoints(waypoints)
+        self.navigator.goThroughPoses(waypoints)
 
     def odom_callback(self, msg: Odometry):
         self.current_pose.pose.position = msg.pose.pose.position
@@ -67,16 +79,21 @@ class PathFollower(Node):
 
     def check_goal_status(self):
         # Check if SimpleCommander is active and monitor the current status
-        if self.navigator.isTaskComplete():
-            result = self.navigator.getResult()
-            if result == TaskResult.SUCCEEDED:
-                self.get_logger().info("Successfully reached all waypoints.")
-            elif result == TaskResult.CANCELED:
-                self.get_logger().info("Navigation canceled.")
-            elif result == TaskResult.FAILED:
-                self.get_logger().info("Navigation failed.")
-            else:
-                self.get_logger().info("Navigation has an unknown result.")
+        if not self.navigator.isTaskComplete():
+            feedback = self.navigator.getFeedback()
+            if feedback:
+                self.get_logger().info('Estimated time of arrival: ' + '{0:.0f}'.format(Duration.from_msg(feedback.estimated_time_remaining).nanoseconds / 1e9) + ' seconds.')
+
+        result = self.navigator.getResult()
+        if result == TaskResult.SUCCEEDED:
+            self.get_logger().info("Successfully reached all waypoints.")
+            self.navigator.setInitialPose(self.current_pose)
+        elif result == TaskResult.CANCELED:
+            self.get_logger().info("Navigation canceled.")
+        elif result == TaskResult.FAILED:
+            self.get_logger().info("Navigation failed.")
+        else:
+            self.get_logger().info("Navigation has an unknown result.")
 
 def main(args=None):
     rclpy.init(args=args)
