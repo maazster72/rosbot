@@ -9,7 +9,7 @@ def generate_launch_description():
     model_path               = os.path.join(my_bot_pkg_share, 'description/robot_car.vm.simulation.urdf')
     slam_toolbox_pkg_share   = launch_ros.substitutions.FindPackageShare(package = 'slam_toolbox').find('slam_toolbox')
 
-    world_path               = os.path.join(my_bot_pkg_share, 'worlds/my_world.sdf'),
+    world_path               = os.path.join(my_bot_pkg_share, 'worlds/5x5_world.sdf'),
     rviz_config_path         = os.path.join(my_bot_pkg_share, 'config/drive_bot.rviz')
 
     robot_state_publisher_node = launch_ros.actions.Node(
@@ -46,6 +46,20 @@ def generate_launch_description():
         arguments  = ['-d', LaunchConfiguration('rvizconfig')],
     )
 
+    vms_guidance_interface_node = launch_ros.actions.Node(
+        package    = 'vms_guidance_interface' ,
+        executable = 'guidance_interface',
+        name       = 'guidance_interface',
+        output     = 'screen'
+    )
+
+    vms_controller_interface_node = launch_ros.actions.Node(
+        package    = 'vms_controller_interface' ,
+        executable = 'vms_nav2_controller',
+        name       = 'vms_controller',
+        output     = 'screen'
+    )
+
     return launch.LaunchDescription([
         launch.actions.DeclareLaunchArgument(name = 'model'       , default_value = model_path      , description = 'Absolute path to robot urdf file' ),
         launch.actions.DeclareLaunchArgument(name = 'rvizconfig'  , default_value = rviz_config_path, description = 'Absolute path to rviz config file'),
@@ -56,5 +70,7 @@ def generate_launch_description():
         spawn_gazebo_entity,
         robot_localization_node,
         slam_toolbox_node,
+        vms_guidance_interface_node,
+        vms_controller_interface_node,
         TimerAction(period = 7.0, actions = [rviz_node])
     ])

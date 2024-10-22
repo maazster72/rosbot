@@ -100,7 +100,7 @@ nav2_util::CallbackReturn GuidanceInterface::on_configure(const rclcpp_lifecycle
     }
 
     // Initialise pubs & subs
-    path_publisher_ = create_publisher<nav_msgs::msg::Path>("plan", 1);
+    path_publisher_ = create_publisher<nav_msgs::msg::Path>("vms_plan", 1);
 
     // Create the action servers for translating a route to a path
     action_server_path_ = std::make_unique<ActionServerTranslateRouteToPath>(

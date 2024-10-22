@@ -9,8 +9,8 @@ def generate_launch_description():
     return LaunchDescription([
         Node(
             package='vms_controller_interface',
-            executable='vms_pure_pursuit',
-            name='vms_pure_pursuit_node',
+            executable='vms_nav2_controller',
+            name='vms_nav2_controller_node',
             output='screen',
         )
     ])
