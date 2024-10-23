@@ -88,11 +88,6 @@ def generate_launch_description():
 
     mini_mec = GroupAction([
         launch_ros.actions.Node(
-            package='robot_state_publisher', 
-            executable='robot_state_publisher', 
-            name='robot_state_publisher',
-            arguments=[os.path.join(get_package_share_directory('wheeltec_robot_urdf'),'urdf','mini_mec_robot.urdf')],),
-        launch_ros.actions.Node(
             package='tf2_ros', 
             executable='static_transform_publisher', 
             name='base_to_laser',

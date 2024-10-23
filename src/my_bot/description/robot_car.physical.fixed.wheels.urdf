@@ -97,7 +97,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-            <mesh filename="file:///home/stef/RCAP/robot_car/meshes/omni_wheel.dae" scale="0.325 0.325 0.325"/>
+            <mesh filename="file:///workspace/src/my_bot/meshes/omni_wheel.dae" scale="0.325 0.325 0.325"/>
         </geometry>
       </visual>
 
