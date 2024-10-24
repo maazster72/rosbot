@@ -10,7 +10,7 @@
     <xacro:property name="base_height" value="0.060"/>
     <xacro:property name="base_mass"   value="1.500"/>
 
-    <xacro:property name="wheel_radius" value="0.040"/>
+    <xacro:property name="wheel_radius" value="0.0375"/>
     <xacro:property name="wheel_width"  value="0.035"/>
     <xacro:property name="wheel_ygap"   value="0.025"/>
     <xacro:property name="wheel_zoff"   value="0.010"/>
@@ -26,11 +26,6 @@
     <xacro:property name="lidar_width"  value="0.0380"/>
     <xacro:property name="lidar_mass"   value="0.2000"/>
 
-    <xacro:property name="tower_width"  value="0.085"/>
-    <xacro:property name="tower_length" value="0.085"/>
-    <xacro:property name="tower_height" value="0.060"/>
-    <xacro:property name="tower_mass"   value="0.200"/>
-
     <xacro:property name="board_1_width"  value="0.060"/>
     <xacro:property name="board_1_length" value="0.080"/>
     <xacro:property name="board_1_height" value="0.015"/>
@@ -40,11 +35,6 @@
     <xacro:property name="board_2_length" value="0.090"/>
     <xacro:property name="board_2_height" value="0.025"/>
     <xacro:property name="board_2_mass"   value="0.200"/>
-
-    <xacro:property name="antenna_width"  value="0.010"/>
-    <xacro:property name="antenna_length" value="0.040"/>
-    <xacro:property name="antenna_height" value="0.060"/>
-    <xacro:property name="antenna_mass"   value="0.100"/>  
 
     <!-- Define some commonly used intertial properties  -->
     <xacro:macro name="box_inertia" params="m w h d">
@@ -145,5 +135,99 @@
   <xacro:wheel prefix="front_right_wheel" x_reflect="1"  y_reflect="-1" />
   <xacro:wheel prefix="rear_left_wheel"   x_reflect="-1" y_reflect="1"  />
   <xacro:wheel prefix="rear_right_wheel"  x_reflect="-1" y_reflect="-1" />
+
+    <link name="imu_link">
+    <visual>
+      <geometry>
+        <box size="${imu_length} ${imu_width} ${imu_height}"/>
+      </geometry>
+      <material name="Dark Blue">
+        <color rgba="0.0 0.0 0.4 1.0"/>
+      </material>
+    </visual>
+    
+    <collision>
+      <geometry>
+        <box size="${imu_length} ${imu_width} ${imu_height}"/>
+      </geometry>
+    </collision>
+      
+    <xacro:box_inertia m="${imu_mass}" w="${imu_width}" d="${imu_length}" h="${imu_height}"/>
+  </link>
+    
+  <joint name="imu_joint" type="fixed">
+    <parent link="base_link"/>
+    <child  link="imu_link"/>
+    <origin xyz="0.02 -0.02 ${base_height/2 + 0.02}"/>
+  </joint>
+    
+  <gazebo reference="imu_link">
+    <sensor name="imu_sensor" type="imu">
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <ros>
+          <namespace>/demo</namespace>
+          <remapping>~/out:=imu</remapping>
+        </ros>
+        <initial_orientation_as_reference>false</initial_orientation_as_reference>
+      </plugin>
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+     <imu>
+      <angular_velocity>
+        <x>
+          <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>2e-4</stddev>
+              <bias_mean>0.0000075</bias_mean>
+              <bias_stddev>0.0000008</bias_stddev>
+            </noise>
+          </z>
+        </angular_velocity>
+        <linear_acceleration>
+          <x>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </x>
+          <y>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </y>
+          <z>
+            <noise type="gaussian">
+              <mean>0.0</mean>
+              <stddev>1.7e-2</stddev>
+              <bias_mean>0.1</bias_mean>
+              <bias_stddev>0.001</bias_stddev>
+            </noise>
+          </z>
+        </linear_acceleration>
+      </imu>
+    </sensor>
+  </gazebo>
    
 </robot>

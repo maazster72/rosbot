@@ -17,11 +17,12 @@ def generate_launch_description():
                 launch_arguments={'use_sim_time': 'true'}.items()
     )
 
-    # Include the Gazebo launch file
     gazebo = IncludeLaunchDescription(
-                PythonLaunchDescriptionSource([os.path.join(
-                    get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')])
-             )
+            PythonLaunchDescriptionSource([os.path.join(
+                get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')]),
+            launch_arguments={'world': os.path.join(
+                get_package_share_directory('my_bot'), 'worlds', '5x5_world.sdf')}.items()
+        )
 
     # Spawner for the robot in Gazebo
     spawn_entity = Node(
@@ -46,6 +47,6 @@ def generate_launch_description():
         rsp,
         gazebo,
         spawn_entity,
-        rviz,
+        rviz
     ])
 
