@@ -23,7 +23,7 @@ setup(
     entry_points={
         'console_scripts': [
             'vms_controller = vms_controller_interface.path_follower:main',
-            'vms_pure_pursuit = vms_controller_interface.pure_pursuit:main',
+            'vms_nav2_controller = vms_controller_interface.vms_nav2_controller:main',
         ],
     },
 )

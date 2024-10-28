@@ -44,7 +44,7 @@ nav_msgs::msg::Path SimpleTranslator::convertRoute(const vms_msgs::msg::Route & 
 {
     nav_msgs::msg::Path path;
     path.header.stamp = clock_->now(); // Set to current time using the clock_
-    path.header.frame_id = "odom"; // Set to the appropriate frame
+    path.header.frame_id = "map"; // Set to the appropriate frame
 
     // Convert each RoutePoint to Cartesian coordinates
     for (const auto & point : route.routepoints) {
