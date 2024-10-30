@@ -106,7 +106,7 @@ ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToP
 ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{
   "route": {
     "routepoints":[
-      {"latitude":0.0,"longitude":10.0,"altitude":0.0,"satisfies_requirement_id":"r1"}]
+      {"latitude":0.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r1"}]
   },
   "translator_id": "GridBased"
 }'
@@ -151,7 +151,31 @@ ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToP
       {"latitude":1.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
       {"latitude":1.0,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
       {"latitude":0.0,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":0.0,"longitude":0.5,"altitude":0.0,"satisfies_requirement_id":"r1"}]
+  },
+  "translator_id": "GridBased"
+}'
+
+ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{
+  "route": {
+    "routepoints":[
+      {"latitude":0.0,"longitude":0.5,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":1.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":1.0,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":0.5,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
       {"latitude":0.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r1"}]
+  },
+  "translator_id": "GridBased"
+}'
+
+ros2 action send_goal /translate_route_to_path vms_msgs/action/TranslateRouteToPath '{
+  "route": {
+    "routepoints":[
+      {"latitude":0.0,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":0.5,"longitude":0.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":1.0,"longitude":0.5,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":0.5,"longitude":1.0,"altitude":0.0,"satisfies_requirement_id":"r0"},
+      {"latitude":0.0,"longitude":0.5,"altitude":0.0,"satisfies_requirement_id":"r1"}]
   },
   "translator_id": "GridBased"
 }'

@@ -9,6 +9,9 @@ from scipy.interpolate import CubicSpline
 import numpy as np
 import vms_controller_interface.vms_controller as controller
 import vms_controller_interface.vms_controller_util as util
+from tf2_ros import TransformListener, Buffer
+import tf_transformations
+from rclpy.time import Time
 
 class PathFollower(Node):
     def __init__(self):
@@ -21,6 +24,17 @@ class PathFollower(Node):
         self.distance_to_goal = float("inf")
         self.threshold_linear = 0.1
 
+        # Create a TransformListener and Buffer
+        self.tf_buffer = Buffer()
+        self.tf_listener = TransformListener(self.tf_buffer, self)
+
+        # Set the fixed frame (e.g., map) and target frame (e.g., base_link)
+        self.fixed_frame = 'map'
+        self.target_frame = 'base_link'
+
+        # Create a timer to periodically check for transforms
+        self.timer = self.create_timer(0.1, self.update_current_pose)
+
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
             Path,
@@ -29,11 +43,11 @@ class PathFollower(Node):
             10)
 
         # Subscribe to the /odom topic
-        self.odom_subscriber = self.create_subscription(
-            Odometry,
-            '/odom',
-            self.odom_callback,
-            10)
+        # self.odom_subscriber = self.create_subscription(
+        #     Odometry,
+        #     '/odom',
+        #     self.odom_callback,
+        #     10)
 
         # Subscribe to the /goal_pose topic
         self.odom_subscriber = self.create_subscription(
@@ -64,14 +78,42 @@ class PathFollower(Node):
         # Logging
         self.get_logger().info(f"New path received: {self.plan}")
 
-    def odom_callback(self, msg: Odometry):
-        self.current_pose.pose.position = msg.pose.pose.position
-        self.current_pose.pose.orientation = msg.pose.pose.orientation
+    def update_current_pose(self):
+        try:
+            # Look up the transform from fixed_frame to target_frame
+            now = Time()
+            transform = self.tf_buffer.lookup_transform(
+                self.fixed_frame,
+                self.target_frame,
+                now
+            )
+            
+            # Update current_pose with translation and rotation from transform
+            self.current_pose.header.stamp = transform.header.stamp
+            self.current_pose.header.frame_id = self.fixed_frame
+            
+            # Set position
+            self.current_pose.pose.position.x = transform.transform.translation.x
+            self.current_pose.pose.position.y = transform.transform.translation.y
+            self.current_pose.pose.position.z = transform.transform.translation.z
+            
+            # Set orientation
+            self.current_pose.pose.orientation = transform.transform.rotation
+
+            # Log the updated pose
+            self.get_logger().info(f"Updated Pose: {self.current_pose}")
+        
+        except Exception as e:
+            self.get_logger().warn(f"Transform not available: {e}")
+
+    # def odom_callback(self, msg: Odometry):
+    #     self.current_pose.pose.position = msg.pose.pose.position
+    #     self.current_pose.pose.orientation = msg.pose.pose.orientation
     
     def move_towards_goal(self):
         if self.plan:
             self.get_logger().info(f"Current Goal: {self.goal_pose}")
-            self.get_logger().info(f"Current pose (Odomoetry): {self.current_pose}")
+            self.get_logger().info(f"Current pose: {self.current_pose}")
             self.get_logger().info(f"Distance to current goal: {self.distance_to_goal}")
             self.navThroughPoses()
         elif self.goal_pose:

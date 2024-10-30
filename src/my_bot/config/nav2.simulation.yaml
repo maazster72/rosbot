@@ -104,7 +104,7 @@ controller_server:
     # Goal checker settings for precision
     goal_checker:
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.02  # Tight tolerance for position
+      xy_goal_tolerance: 0.01  # Tight tolerance for position
       yaw_goal_tolerance: 0.05  # Tight tolerance for orientation
 
     # Path-following settings for increased accuracy
@@ -237,7 +237,7 @@ planner_server:
 
     GridBased:
       plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.1  # Low tolerance for precise paths
+      tolerance: 0.01  # Low tolerance for precise paths
       use_astar: true
       allow_unknown: true
       default_tolerance: 0.1
