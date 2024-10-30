@@ -65,6 +65,8 @@ class PathFollower(Node):
         
         # Logging
         self.get_logger().info(f"New path received with {len(waypoints)} waypoints.")
+
+        self.navigator.setInitialPose(self.current_pose)
         
         # Send waypoints to SimpleCommander
         self.navigator.goThroughPoses(waypoints)
