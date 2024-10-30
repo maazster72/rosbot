@@ -7,6 +7,7 @@ from rclpy.node import Node
 from rclpy.duration import Duration
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
 import vms_controller_interface.vms_controller_util as util
+import time
 
 class PathFollower(Node):
     def __init__(self):
@@ -17,6 +18,8 @@ class PathFollower(Node):
         self.current_goal_pose_index = 0
         self.goal_pose = PoseStamped()
         self.threshold_linear = 0.1
+        self.canceling_task = False
+        self.task_canceled_time = time.time()
 
         # Initialise BasicNavigator
         self.navigator = BasicNavigator()
@@ -36,13 +39,6 @@ class PathFollower(Node):
             Path,
             '/vms_plan',
             self.plan_callback,
-            10)
-
-        # Subscribe to the /odom topic
-        self.odom_subscriber = self.create_subscription(
-            Odometry,
-            '/odom',
-            self.odom_callback,
             10)
 
         # Subscribe to the /goal_pose topic
@@ -72,28 +68,36 @@ class PathFollower(Node):
         
         # Send waypoints to SimpleCommander
         self.navigator.goThroughPoses(waypoints)
-
-    def odom_callback(self, msg: Odometry):
-        self.current_pose.pose.position = msg.pose.pose.position
-        self.current_pose.pose.orientation = msg.pose.pose.orientation
+        # self.navigator.followWaypoints(waypoints)
 
     def check_goal_status(self):
+        # If we're in the process of canceling, wait a bit before proceeding
+        if self.canceling_task:
+            if time.time() - self.task_canceled_time >= 1.0:  # Wait for 1 second after canceling
+                self.canceling_task = False  # Reset flag after giving cancel time to process
+                self.get_logger().info("Task cancellation should be complete.")
+            return  # Skip rest of main loop until cancellation is complete
+
         # Check if SimpleCommander is active and monitor the current status
         if not self.navigator.isTaskComplete():
             feedback = self.navigator.getFeedback()
             if feedback:
                 self.get_logger().info('Estimated time of arrival: ' + '{0:.0f}'.format(Duration.from_msg(feedback.estimated_time_remaining).nanoseconds / 1e9) + ' seconds.')
-
+                self.get_logger().info(f'feedback.current_pose: {feedback.current_pose}')
+                self.current_pose = feedback.current_pose
+                self.get_logger().info(f'feedback.distance_remaining: {feedback.distance_remaining}')
+                self.get_logger().info(f'feedback.number_of_poses_remaining: {feedback.number_of_poses_remaining}')
+                if feedback.distance_remaining < 1e-2 and feedback.number_of_poses_remaining == 1:
+                    self.get_logger().info("Goal complete. Canceling task...")
+                    self.navigator.cancelTask()
+                    self.canceling_task = True
+                    self.task_canceled_time = time.time()
+                
         result = self.navigator.getResult()
-        if result == TaskResult.SUCCEEDED:
-            self.get_logger().info("Successfully reached all waypoints.")
-            self.navigator.setInitialPose(self.current_pose)
-        elif result == TaskResult.CANCELED:
+        if result == TaskResult.CANCELED:
             self.get_logger().info("Navigation canceled.")
         elif result == TaskResult.FAILED:
             self.get_logger().info("Navigation failed.")
-        else:
-            self.get_logger().info("Navigation has an unknown result.")
 
 def main(args=None):
     rclpy.init(args=args)
