@@ -22,7 +22,7 @@ class PathFollower(Node):
         self.current_goal_pose_index = 0
         self.goal_pose = PoseStamped()
         self.distance_to_goal = float("inf")
-        self.threshold_linear = 0.1
+        self.threshold_linear = 0.12
 
         # Create a TransformListener and Buffer
         self.tf_buffer = Buffer()
