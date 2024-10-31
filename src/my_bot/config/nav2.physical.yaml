@@ -98,50 +98,35 @@ bt_navigator_rclcpp_node:
 
 controller_server:
   ros__parameters:
-    use_sim_time: False
-    controller_frequency: 20.0
-    min_x_velocity_threshold: 0.001
-    min_y_velocity_threshold: 0.5
-    min_theta_velocity_threshold: 0.001
-    progress_checker_plugin: "progress_checker"
-    goal_checker_plugin: "goal_checker"
+    use_sim_time: True
     controller_plugins: ["FollowPath"]
-
-    progress_checker:
-      plugin: "nav2_controller::SimpleProgressChecker"
-      required_movement_radius: 0.5
-      movement_time_allowance: 10.0
+    
+    # Goal checker settings for precision
     goal_checker:
       plugin: "nav2_controller::SimpleGoalChecker"
-      xy_goal_tolerance: 0.20
-      yaw_goal_tolerance: 0.20
-      stateful: True
+      xy_goal_tolerance: 0.01  # Tight tolerance for position
+      yaw_goal_tolerance: 0.05  # Tight tolerance for orientation
+
+    # Path-following settings for increased accuracy
     FollowPath:
       plugin: "nav2_regulated_pure_pursuit_controller::RegulatedPurePursuitController"
-      desired_linear_vel: 0.25
-      lookahead_dist: 0.6
-      min_lookahead_dist: 0.3
-      max_lookahead_dist: 0.9
-      lookahead_time: 1.5
-      rotate_to_heading_angular_vel: 1.0
-      transform_tolerance: 0.1
-      use_velocity_scaled_lookahead_dist: false
-      min_approach_linear_velocity: 0.05
-      use_approach_linear_velocity_scaling: true
-      approach_velocity_scaling_dist: 1.0
-      max_allowed_time_to_collision_up_to_carrot: 1.0
-      use_regulated_linear_velocity_scaling: true
-      use_cost_regulated_linear_velocity_scaling: false
-      regulated_linear_scaling_min_radius: 0.9
-      regulated_linear_scaling_min_speed: 0.25
-      use_rotate_to_heading: true
-      rotate_to_heading_min_angle: 0.785
-      max_angular_accel: 14.0
-      max_robot_pose_search_dist: 10.0
-      use_interpolation: false
-      cost_scaling_dist: 0.3
-      cost_scaling_gain: 1.0
-      inflation_cost_scaling_factor: 3.0
+      desired_linear_vel: 0.3
+      # use_approach_velocity_scaling: false
+      min_approach_linear_velocity: 0.02
+      lookahead_dist: 0.5
+      min_lookahead_dist: 0.5
+      max_lookahead_dist: 0.7
+      rotate_to_heading_angular_vel: 0.2
+      max_linear_velocity: 0.4
+      max_angular_velocity: 0.3
+      # curvature_weight: 0.5 # Lower value promotes straighter paths
+      # max_allowed_time_to_missed_goal: 2.0
+
+    # Progress checker configuration to prevent premature success
+    progress_checker:
+      plugin: "nav2_controller::SimpleProgressChecker"
+      required_movement_radius: 0.0
+      movement_time_allowance: 15.0  # Allow more time for precise positioning
 
 controller_server_rclcpp_node:
   ros__parameters:
@@ -251,14 +236,18 @@ map_saver:
 
 planner_server:
   ros__parameters:
-    expected_planner_frequency: 10.0
-    use_sim_time: False
+    use_sim_time: True
+    expected_planner_frequency: 5.0
     planner_plugins: ["GridBased"]
+
     GridBased:
       plugin: "nav2_navfn_planner/NavfnPlanner"
-      tolerance: 0.5
-      use_astar: false
+      tolerance: 0.01  # Low tolerance for precise paths
+      use_astar: true
       allow_unknown: true
+      default_tolerance: 0.1
+      max_planning_attempts: 3
+      max_planning_time: 2.0
 
 planner_server_rclcpp_node:
   ros__parameters:
