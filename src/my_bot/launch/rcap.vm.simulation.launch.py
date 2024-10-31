@@ -71,6 +71,6 @@ def generate_launch_description():
         robot_localization_node,
         slam_toolbox_node,
         vms_guidance_interface_node,
-        vms_controller_interface_node,
+        # vms_controller_interface_node,
         TimerAction(period = 7.0, actions = [rviz_node])
     ])
