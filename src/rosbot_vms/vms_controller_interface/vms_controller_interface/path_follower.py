@@ -33,12 +33,12 @@ class PathFollower(Node):
         self.target_frame = 'base_link'
 
         # Create a timer to periodically check for transforms
-        self.timer = self.create_timer(0.1, self.update_current_pose)
+        self.timer = self.create_timer(0.02, self.update_current_pose)
 
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
             Path,
-            '/plan',
+            '/vms_plan',
             self.plan_callback,
             10)
 
@@ -126,15 +126,21 @@ class PathFollower(Node):
             self.cmd_vel_publisher.publish(Twist())
 
     def navToPose(self):
+        if self.current_pose and self.goal_pose:
+            # Update distance
+            self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
         if abs(self.distance_to_goal) < self.threshold_linear:
             self.goal_pose = None
-            self.distance_to_goal = None
+            self.distance_to_goal = float("inf")
             # Logging
             self.get_logger().info(f"Goal pose reached. Executed plan successfully")
         else:
             self.compute_cmd_velocity()
 
     def navThroughPoses(self):
+        if self.current_pose and self.goal_pose:
+            # Update distance
+            self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
         if abs(self.distance_to_goal) < self.threshold_linear:
             # Logging
             self.get_logger().info(f"Goal pose reached. ({self.current_goal_pose_index + 1}/{len(self.plan.poses)})")
@@ -145,7 +151,7 @@ class PathFollower(Node):
                 self.plan = None
                 self.current_goal_pose_index = None
                 self.goal_pose = None
-                self.distance_to_goal = None
+                self.distance_to_goal = float("inf")
                 # Logging
                 self.get_logger().info(f"Goal pose reached. Executed plan successfully")
         else:
@@ -153,13 +159,14 @@ class PathFollower(Node):
 
     def compute_cmd_velocity(self):
         # Compute cmd_vel
-        cmd_vel = controller.move_to_target(self.current_pose, self.goal_pose)
+        if self.current_pose and self.goal_pose:
+            cmd_vel = controller.move_to_target(self.current_pose, self.goal_pose)
+        else:
+            cmd_vel = Twist()
         # Logging
         self.get_logger().info(f"Moving with cmd_vel: {cmd_vel}")
         # Publish cmd_vel
         self.cmd_vel_publisher.publish(cmd_vel)
-        # Update distance
-        self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
 
 def main(args=None):
     rclpy.init(args=args)

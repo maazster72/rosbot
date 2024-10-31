@@ -3,7 +3,7 @@ from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import PoseStamped, Twist, Quaternion
 import vms_controller_interface.vms_controller_util as util
 
-def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.5, max_velocity=1.0):
+def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.05, max_velocity=0.1):
     # Calculate the delta position and the distance between the current and target positions
     delta_position = numpy.array(target_position) - numpy.array(current_position)
     distance = numpy.linalg.norm(delta_position)
