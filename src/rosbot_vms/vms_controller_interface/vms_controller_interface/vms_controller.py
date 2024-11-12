@@ -99,7 +99,7 @@ def orient_to_target(current_pose, target_pose, min_angular_velocity=2.0, max_an
 
     return cmd_vel
 
-def move_to_target(current_pose, target_pose):
+def move_to_target(current_pose, target_pose, min_angular_velocity=1.0, max_angular_velocity=2.0):
     current_position, current_orientation = util.poseToLists(current_pose)
     target_position, _ = util.poseToLists(target_pose)
 
@@ -112,10 +112,21 @@ def move_to_target(current_pose, target_pose):
     cmd_vel.linear.x = abs(linear_velocity[0])
     cmd_vel.linear.y = abs(linear_velocity[1])
 
-    cmd_vel.angular.z = compute_required_yaw_rotation(
-        current_pose,
-        target_pose
-        ) * 1.5
+    local_target_pose = PoseStamped()
+    local_target_pose.pose.position = local_target_position
+
+    required_yaw_rotation = compute_required_yaw_rotation(PoseStamped(), local_target_pose)
+
+    # Calculate the angular velocity based on the yaw rotation
+    angular_velocity = required_yaw_rotation * 1.5  # scaling factor
+
+    # Ensure the angular velocity is within the specified range
+    if abs(angular_velocity) < min_angular_velocity:
+        angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
+    elif abs(angular_velocity) > max_angular_velocity:
+        angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
+
+    cmd_vel.angular.z = angular_velocity
 
     return cmd_vel
 

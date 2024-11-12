@@ -127,7 +127,7 @@ class PathFollower(Node):
         if self.plan:
             # self.get_logger().info(f"Current Goal: {self.goal_pose}")
             # self.get_logger().info(f"Current pose: {self.current_pose}")
-            # self.get_logger().info(f"Distance to current goal: {self.distance_to_goal}")
+            self.get_logger().info(f"Distance to current goal: {self.distance_to_goal}")
             self.navThroughPoses()
         elif self.goal_pose:
             # Logging
@@ -204,7 +204,7 @@ class PathFollower(Node):
         else:
             cmd_vel = Twist()
         # Logging
-        # self.get_logger().info(f"Moving with cmd_vel: {cmd_vel}")
+        self.get_logger().info(f"Moving with cmd_vel: {cmd_vel}")
         # Publish cmd_vel
         self.cmd_vel_publisher.publish(cmd_vel)
 
