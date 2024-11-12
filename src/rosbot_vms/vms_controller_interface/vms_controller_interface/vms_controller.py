@@ -106,7 +106,7 @@ def move_to_target(current_pose, target_pose):
     cmd_vel.angular.z = compute_required_yaw_rotation(
         current_pose,
         target_pose
-        )
+        ) * 1.5
 
     return cmd_vel
 
