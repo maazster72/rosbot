@@ -80,13 +80,22 @@ def quaternion_to_axis_angle(quaternion):
 
     return (x, y , z), angle
 
-def orient_to_target(current_pose, target_pose):
+def orient_to_target(current_pose, target_pose, min_angular_velocity=2.0, max_angular_velocity=5.0):
     cmd_vel = Twist()
 
-    cmd_vel.angular.z = compute_required_yaw_rotation(
-        current_pose,
-        target_pose
-        ) * 5.0
+    # Calculate the required yaw rotation to face the target
+    required_yaw_rotation = compute_required_yaw_rotation(current_pose, target_pose)
+
+    # Calculate the angular velocity based on the yaw rotation
+    angular_velocity = required_yaw_rotation * 5.0  # scaling factor
+
+    # Ensure the angular velocity is within the specified range
+    if abs(angular_velocity) < min_angular_velocity:
+        angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
+    elif abs(angular_velocity) > max_angular_velocity:
+        angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
+
+    cmd_vel.angular.z = angular_velocity
 
     return cmd_vel
 
