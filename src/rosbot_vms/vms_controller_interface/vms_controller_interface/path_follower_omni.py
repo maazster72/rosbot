@@ -23,9 +23,7 @@ class PathFollower(Node):
         self.goal_pose = PoseStamped()
         self.distance_to_goal = float("inf")
         self.threshold_linear = 0.12
-        self.threshold_angular = 0.2
-        self.rotate = False
-        self.linear = False
+        self.threshold_angular = 0.1
 
         # Create a TransformListener and Buffer
         self.tf_buffer = Buffer()
@@ -73,23 +71,13 @@ class PathFollower(Node):
         self.distance_to_goal = util.get_distance_to_target_pose(self.current_pose, self.goal_pose)
         # Logging
         self.get_logger().info(f"New goal pose received: {self.goal_pose}")
-        if(self.check_if_rotate_needed(self.current_pose, self.goal_pose)):
-            self.rotate = True
-            self.linear = False
-            # Logging
-            self.get_logger().info(f"Rotate mode activated")
-        else:
-            self.rotate = False
-            self.linear = True
-            # Logging
-            self.get_logger().info(f"Linear mode activated")
 
     def plan_callback(self, msg: Path):
         self.current_goal_pose_index = 0
         self.goal_pose_publisher.publish(msg.poses[self.current_goal_pose_index])
         self.plan = msg
         # Logging
-        # self.get_logger().info(f"New path received: {self.plan}")
+        self.get_logger().info(f"New path received: {self.plan}")
 
     def update_current_pose(self):
         try:
@@ -114,7 +102,7 @@ class PathFollower(Node):
             self.current_pose.pose.orientation = transform.transform.rotation
 
             # Log the updated pose
-            # self.get_logger().info(f"Updated Pose: {self.current_pose}")
+            self.get_logger().info(f"Updated Pose: {self.current_pose}")
         
         except Exception as e:
             self.get_logger().warn(f"Transform not available: {e}")
@@ -125,15 +113,15 @@ class PathFollower(Node):
     
     def move_towards_goal(self):
         if self.plan:
-            # self.get_logger().info(f"Current Goal: {self.goal_pose}")
-            # self.get_logger().info(f"Current pose: {self.current_pose}")
-            # self.get_logger().info(f"Distance to current goal: {self.distance_to_goal}")
+            self.get_logger().info(f"Current Goal: {self.goal_pose}")
+            self.get_logger().info(f"Current pose: {self.current_pose}")
+            self.get_logger().info(f"Distance to current goal: {self.distance_to_goal}")
             self.navThroughPoses()
         elif self.goal_pose:
             # Logging
-            # self.get_logger().info(f"Goal: {self.goal_pose}")
-            # self.get_logger().info(f"Current pose (Odomoetry): {self.current_pose}")
-            # self.get_logger().info(f"Distance to goal: {self.distance_to_goal}")
+            self.get_logger().info(f"Goal: {self.goal_pose}")
+            self.get_logger().info(f"Current pose (Odomoetry): {self.current_pose}")
+            self.get_logger().info(f"Distance to goal: {self.distance_to_goal}")
             self.navToPose()
         else:
             self.cmd_vel_publisher.publish(Twist())
@@ -160,17 +148,6 @@ class PathFollower(Node):
             if self.current_goal_pose_index != (len(self.plan.poses) - 1):
                 self.current_goal_pose_index += 1
                 self.goal_pose_publisher.publish(self.plan.poses[self.current_goal_pose_index])
-                if(self.check_if_rotate_needed(self.current_pose, self.goal_pose)):
-                    self.linear = False
-                    self.rotate = True
-                    # Logging
-                    self.get_logger().info(f"Linear mode deactivated")
-                    self.get_logger().info(f"Rotate mode activated")
-                else:
-                    self.rotate = False
-                    self.linear = True
-                    # Logging
-                    self.get_logger().info(f"Linear mode activated")
             else:
                 self.plan = None
                 self.current_goal_pose_index = None
@@ -183,28 +160,12 @@ class PathFollower(Node):
 
     def compute_cmd_velocity(self):
         # Compute cmd_vel
-        if self.rotate:
-            self.get_logger().info(f"Rotate mode...")
-            cmd_vel = controller.orient_to_target(self.current_pose, self.goal_pose)
-            if(self.check_if_rotate_needed(self.current_pose, self.goal_pose)):
-                self.linear = False
-                self.rotate = True
-                # Logging
-                self.get_logger().info(f"Linear mode deactivated")
-                self.get_logger().info(f"Rotate mode activated")
-            else:
-                self.rotate = False
-                self.linear = True
-                # Logging
-                self.get_logger().info(f"Rotate mode deactivated")
-                self.get_logger().info(f"Linear mode activated")
-        elif self.current_pose and self.goal_pose and self.linear:
-            self.get_logger().info(f"Linear mode...")
+        if self.current_pose and self.goal_pose:
             cmd_vel = controller.move_to_target(self.current_pose, self.goal_pose)
         else:
             cmd_vel = Twist()
         # Logging
-        # self.get_logger().info(f"Moving with cmd_vel: {cmd_vel}")
+        self.get_logger().info(f"Moving with cmd_vel: {cmd_vel}")
         # Publish cmd_vel
         self.cmd_vel_publisher.publish(cmd_vel)
 
@@ -213,8 +174,6 @@ class PathFollower(Node):
         self.get_logger().info(f"Yaw rotation: {yaw_rotation}")
         if abs(yaw_rotation) > self.threshold_angular:
             return True
-        else:
-            return False
 
 def main(args=None):
     rclpy.init(args=args)

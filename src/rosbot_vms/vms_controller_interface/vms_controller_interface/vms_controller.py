@@ -86,7 +86,7 @@ def orient_to_target(current_pose, target_pose):
     cmd_vel.angular.z = compute_required_yaw_rotation(
         current_pose,
         target_pose
-        )
+        ) * 5.0
 
     return cmd_vel
 
@@ -98,7 +98,12 @@ def move_to_target(current_pose, target_pose):
 
     linear_velocity = compute_linear_velocity(current_position, target_position)
 
-    cmd_vel.linear.x = linear_velocity[0]
-    cmd_vel.linear.y = linear_velocity[1]
+    cmd_vel.linear.x = abs(linear_velocity[0])
+    cmd_vel.linear.y = abs(linear_velocity[1])
+
+    cmd_vel.angular.z = compute_required_yaw_rotation(
+        current_pose,
+        target_pose
+        )
 
     return cmd_vel

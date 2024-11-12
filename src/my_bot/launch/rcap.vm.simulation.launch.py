@@ -6,7 +6,7 @@ import os
 
 def generate_launch_description():
     my_bot_pkg_share         = launch_ros.substitutions.FindPackageShare(package = 'my_bot').find('my_bot')
-    model_path               = os.path.join(my_bot_pkg_share, 'description/robot_car.vm.simulation.urdf')
+    model_path               = os.path.join(my_bot_pkg_share, 'description/robot.urdf.xacro')
     slam_toolbox_pkg_share   = launch_ros.substitutions.FindPackageShare(package = 'slam_toolbox').find('slam_toolbox')
 
     world_path               = os.path.join(my_bot_pkg_share, 'worlds/5x5_world.sdf'),
