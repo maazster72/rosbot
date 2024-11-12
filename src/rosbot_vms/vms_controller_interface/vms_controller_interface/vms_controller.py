@@ -91,12 +91,14 @@ def orient_to_target(current_pose, target_pose):
     return cmd_vel
 
 def move_to_target(current_pose, target_pose):
-    current_position, _ = util.poseToLists(current_pose)
+    current_position, current_orientation = util.poseToLists(current_pose)
     target_position, _ = util.poseToLists(target_pose)
+
+    local_target_position = transform_target_to_local_frame(current_position, current_orientation, target_position)
 
     cmd_vel = Twist()
 
-    linear_velocity = compute_linear_velocity(current_position, target_position)
+    linear_velocity = compute_linear_velocity([0,0,0], [local_target_position.x, local_target_position.y, local_target_position.z])
 
     cmd_vel.linear.x = abs(linear_velocity[0])
     cmd_vel.linear.y = abs(linear_velocity[1])
@@ -107,3 +109,27 @@ def move_to_target(current_pose, target_pose):
         )
 
     return cmd_vel
+
+def transform_target_to_local_frame(current_position, current_orientation, target_position):
+    # Calculate delta position in the global frame
+    delta_position = numpy.array(target_position) - numpy.array(current_position)
+
+    yaw = compute_yaw_from_orientation(current_orientation)
+
+    # Calculate the rotation angle to align with the robot's heading
+    rotation_angle = -yaw
+
+    # Rotation matrix for transformation to local frame
+    rotation_matrix = numpy.array([
+        [numpy.cos(rotation_angle), -numpy.sin(rotation_angle)],
+        [numpy.sin(rotation_angle),  numpy.cos(rotation_angle)]
+    ])
+
+    # Apply rotation matrix to delta position to get the local target position
+    local_target_position = rotation_matrix @ delta_position
+
+    local_target_pose = PoseStamped()
+    local_target_pose.pose.position.x = local_target_position[0]
+    local_target_pose.pose.position.y = local_target_position[1]
+
+    return local_target_pose.pose.position
