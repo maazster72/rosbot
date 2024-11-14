@@ -80,14 +80,14 @@ def quaternion_to_axis_angle(quaternion):
 
     return (x, y , z), angle
 
-def orient_to_target(current_pose, target_pose, min_angular_velocity=2.0, max_angular_velocity=5.0):
+def orient_to_target(current_pose, target_pose, min_angular_velocity=0.01, max_angular_velocity=0.05):
     cmd_vel = Twist()
 
     # Calculate the required yaw rotation to face the target
     required_yaw_rotation = compute_required_yaw_rotation(current_pose, target_pose)
 
     # Calculate the angular velocity based on the yaw rotation
-    angular_velocity = required_yaw_rotation * 5.0  # scaling factor
+    angular_velocity = required_yaw_rotation * 1.0  # scaling factor
 
     # Ensure the angular velocity is within the specified range
     if abs(angular_velocity) < min_angular_velocity:
@@ -99,7 +99,7 @@ def orient_to_target(current_pose, target_pose, min_angular_velocity=2.0, max_an
 
     return cmd_vel
 
-def move_to_target(current_pose, target_pose, min_angular_velocity=1.0, max_angular_velocity=2.0):
+def move_to_target(current_pose, target_pose, min_angular_velocity=0.1, max_angular_velocity=0.2):
     current_position, current_orientation = util.poseToLists(current_pose)
     target_position, _ = util.poseToLists(target_pose)
 
@@ -118,13 +118,13 @@ def move_to_target(current_pose, target_pose, min_angular_velocity=1.0, max_angu
     required_yaw_rotation = compute_required_yaw_rotation(PoseStamped(), local_target_pose)
 
     # Calculate the angular velocity based on the yaw rotation
-    angular_velocity = required_yaw_rotation * 1.5  # scaling factor
+    angular_velocity = required_yaw_rotation * 1.0  # scaling factor
 
-    # Ensure the angular velocity is within the specified range
-    if abs(angular_velocity) < min_angular_velocity:
-        angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
-    elif abs(angular_velocity) > max_angular_velocity:
-        angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
+    # # Ensure the angular velocity is within the specified range
+    # if abs(angular_velocity) < min_angular_velocity:
+    #     angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
+    # elif abs(angular_velocity) > max_angular_velocity:
+    #     angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
 
     cmd_vel.angular.z = angular_velocity
 

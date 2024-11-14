@@ -22,8 +22,8 @@ class PathFollower(Node):
         self.current_goal_pose_index = 0
         self.goal_pose = PoseStamped()
         self.distance_to_goal = float("inf")
-        self.threshold_linear = 0.05
-        self.threshold_angular = 0.1
+        self.threshold_linear = 0.15
+        self.threshold_angular = 0.2
         self.rotate = False
         self.linear = False
 
@@ -36,7 +36,7 @@ class PathFollower(Node):
         self.target_frame = 'base_link'
 
         # Create a timer to periodically check for transforms
-        self.timer = self.create_timer(0.02, self.update_current_pose)
+        self.timer = self.create_timer(0.01, self.update_current_pose)
 
         # Subscribe to the /plan topic
         self.plan_subscriber = self.create_subscription(
@@ -66,7 +66,7 @@ class PathFollower(Node):
         self.goal_pose_publisher = self.create_publisher(PoseStamped, '/goal_pose', 10)
 
         # Timer to control movement towards the next goal
-        self.timer = self.create_timer(0.02, self.move_towards_goal)
+        self.timer = self.create_timer(0.01, self.move_towards_goal)
 
     def goal_callback(self, msg: PoseStamped):
         self.goal_pose = msg
