@@ -55,9 +55,4 @@ install(
 
 ament_python_install_package(${PROJECT_NAME})
 
-install(PROGRAMS
-  scripts/drive_controller.py
-  DESTINATION lib/${PROJECT_NAME}
-)
-
 ament_package()
