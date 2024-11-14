@@ -10,12 +10,12 @@ def generate_launch_description():
     wheeltec_robot_pkg_share    = launch_ros.substitutions.FindPackageShare(package = 'turn_on_wheeltec_robot').find('turn_on_wheeltec_robot')
     my_bot_pkg_share   = launch_ros.substitutions.FindPackageShare(package = 'my_bot').find('my_bot')
     slam_toolbox_pkg_share = launch_ros.substitutions.FindPackageShare(package = 'slam_toolbox').find('slam_toolbox')
-    model_path             = os.path.join(my_bot_pkg_share, 'description/robot_car.physical.urdf')
+    model_path             = os.path.join(my_bot_pkg_share, 'description/robot.urdf.xacro')
 
-    robot_state_publisher_node = launch_ros.actions.Node(
-        package    = 'robot_state_publisher',
-        executable = 'robot_state_publisher',
-        parameters = [{'robot_description': Command(['xacro ', LaunchConfiguration('model')])}, {'use_sim_time': LaunchConfiguration('use_sim_time')}]
+    robot_state_publisher_node = IncludeLaunchDescription(
+                PythonLaunchDescriptionSource([os.path.join(
+                    get_package_share_directory('my_bot'), 'launch', 'rsp.launch.py'
+                )])
     )
 
     slam_toolbox_node = launch_ros.actions.Node(

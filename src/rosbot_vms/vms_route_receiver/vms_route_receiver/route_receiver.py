@@ -10,20 +10,16 @@ class TranslateRouteClient(Node):
     def __init__(self):
         super().__init__('translate_route_action_client')
         self._action_client = ActionClient(self, TranslateRouteToPath, '/translate_route_to_path')
-        self.get_logger().info("TranslateRouteClient initialized.")
+        self.get_logger().info("TranslateRouteClient initialised.")
 
     def send_goal(self, route_message):
         goal_msg = TranslateRouteToPath.Goal()
-
-        initial_latitude = 53.745793304041634
-        initial_longitude = -2.894669081029672
-        scale_factor = 10000 * 1.5
         
         # Parse the route from the received MQTT message
         goal_msg.route.routepoints = [
             RoutePoint(
-                latitude=(point['latitude'] - initial_latitude) * scale_factor * -1,
-                longitude=(point['longitude'] - initial_longitude) * scale_factor,
+                latitude=point['latitude'],
+                longitude=point['longitude'],
                 altitude=point['altitude'],
                 satisfies_requirement_id=''
             ) for point in route_message['routepoint']
@@ -79,13 +75,17 @@ def main():
     rclpy.init(args=None)
     logger = rclpy.logging.get_logger('mqtt_client')
 
-    # Initialize MQTT client
+    # Initialise MQTT client
     mqtt_client = mqtt.Client()
     mqtt_client.on_connect = lambda client, userdata, flags, rc: on_connect(client, userdata, flags, rc, logger)
     mqtt_client.on_message = lambda client, userdata, msg: on_message(client, userdata, msg, logger)
 
+    # MQTT Broker configuration
+    ip_address = '172.26.0.39'
+    port_number = 1883
+
     # Connect to the MQTT broker
-    mqtt_client.connect("172.26.0.39", 1883, 600)  # Change broker address if necessary
+    mqtt_client.connect(ip_address, port_number, 600)
     mqtt_client.loop_forever()
 
 if __name__ == "__main__":
