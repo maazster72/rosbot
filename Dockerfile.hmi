@@ -11,3 +11,9 @@ RUN apt-get update && apt-get install -y \
     openjdk-17-jdk \
     maven \
     && rm -rf /var/lib/apt/lists/*
+
+yeah, this was all it needed to run
+docker run -it --network=host     --rm     --env DISPLAY=$DISPLAY     --env XAUTHORITY=$HOME/.Xauthority     --env XDG_RUNTIME_DIR=/tmp/runtime-root     --env LIBGL_ALWAYS_SOFTWARE=1     --volume /tmp/.X11-unix:/tmp/.X11-unix     --volume $HOME/.Xauthority:$HOME/.Xauthority hmi 
+run it with that
+and then when you're in the container run this mvn compile exec:java -Dexec.mainClass="com.hmi.router.Application" 
+then it should work
