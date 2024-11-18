@@ -150,39 +150,6 @@ No Title
       </plugins>
     </pluginManagement>
   </build>
-</project> 
-
-ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
-Authorization required, but no authorization protocol specified
-java.lang.reflect.InvocationTargetException
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at gov.nasa.worldwindx.examples.ApplicationTemplate.start(ApplicationTemplate.java:293)
-	at com.baesystems.midas.Application.main(Application.java:488)
-	at org.codehaus.mojo.exec.ExecJavaMojo.doMain(ExecJavaMojo.java:375)
-	at org.codehaus.mojo.exec.ExecJavaMojo.doExec(ExecJavaMojo.java:364)
-	at org.codehaus.mojo.exec.ExecJavaMojo.lambda$execute$0(ExecJavaMojo.java:286)
-	at java.base/java.lang.Thread.run(Thread.java:840)
-Caused by: java.awt.AWTError: Can't connect to X11 window server using ':0' as the value of the DISPLAY variable.
-	at java.desktop/sun.awt.X11GraphicsEnvironment.initDisplay(Native Method)
-	at java.desktop/sun.awt.X11GraphicsEnvironment$1.run(X11GraphicsEnvironment.java:105)
-	at java.base/java.security.AccessController.doPrivileged(AccessController.java:318)
-	at java.desktop/sun.awt.X11GraphicsEnvironment.initStatic(X11GraphicsEnvironment.java:64)
-	at java.desktop/sun.awt.X11GraphicsEnvironment.<clinit>(X11GraphicsEnvironment.java:59)
-	at java.desktop/sun.awt.PlatformGraphicsInfo.createGE(PlatformGraphicsInfo.java:36)
-	at java.desktop/java.awt.GraphicsEnvironment$LocalGE.createGE(GraphicsEnvironment.java:91)
-	at java.desktop/java.awt.GraphicsEnvironment$LocalGE.<clinit>(GraphicsEnvironment.java:82)
-	at java.desktop/java.awt.GraphicsEnvironment.getLocalGraphicsEnvironment(GraphicsEnvironment.java:104)
-	at java.desktop/java.awt.Window.initGC(Window.java:492)
-	at java.desktop/java.awt.Window.init(Window.java:512)
-	at java.desktop/java.awt.Window.<init>(Window.java:554)
-	at java.desktop/java.awt.Frame.<init>(Frame.java:428)
-	at java.desktop/java.awt.Frame.<init>(Frame.java:393)
-	at java.desktop/javax.swing.JFrame.<init>(JFrame.java:180)
-	at gov.nasa.worldwindx.examples.ApplicationTemplate$AppFrame.<init>(ApplicationTemplate.java:105)
-	at com.baesystems.midas.Application$AppFrame.<init>(Application.java:98)
+</project>
  
 
