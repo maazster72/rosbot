@@ -11,3 +11,36 @@ mosquitto_pub -h localhost -t "test/topic" -m '{"route": {"routepoints": [
 ]}, "translator_id": "GridBased"}'
 
 mosquitto_pub -h localhost -t "test/topic" -m '{"route": {"routepoints": [{"latitude": 53.9000, "longitude": -2.7700, "altitude": 1.0, "satisfies_requirement_id": "r1"}, {"latitude": 53.900018, "longitude": -2.7700, "altitude": 1.0, "satisfies_requirement_id": null}, {"latitude": 53.900036, "longitude": -2.7700, "altitude": 1.0, "satisfies_requirement_id": null}], "translator_id": "GridBased"}}'
+
+/usr/bin/env /usr/lib/jvm/java-11-openjdk-arm64/bin/java -agentlib:jdwp=transport=dt_socket,server=n,suspend=y,address=localhost:40403 @/tmp/cp_belxngncdmbosynfop18ehta4.argfile com.baesystems.midas.Application 
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+java.lang.reflect.InvocationTargetException
+        at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+        at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+        at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+        at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+        at gov.nasa.worldwindx.examples.ApplicationTemplate.start(ApplicationTemplate.java:293)
+        at com.baesystems.midas.Application.main(Application.java:488)
+Caused by: java.lang.UnsatisfiedLinkError: Can't load library: /home/maazahmed/GitRepos/ROS/hmi/natives/linux-aarch64//libgluegen_rt.so
+        at java.base/java.lang.ClassLoader.loadLibrary(ClassLoader.java:2638)
+        at java.base/java.lang.Runtime.load0(Runtime.java:768)
+        at java.base/java.lang.System.load(System.java:1854)
+        at com.jogamp.common.jvm.JNILibLoaderBase.loadLibraryInternal(JNILibLoaderBase.java:625)
+        at com.jogamp.common.jvm.JNILibLoaderBase.access$000(JNILibLoaderBase.java:64)
+        at com.jogamp.common.jvm.JNILibLoaderBase$DefaultAction.loadLibrary(JNILibLoaderBase.java:107)
+        at com.jogamp.common.jvm.JNILibLoaderBase.loadLibrary(JNILibLoaderBase.java:488)
+        at com.jogamp.common.os.DynamicLibraryBundle$GlueJNILibLoader.loadLibrary(DynamicLibraryBundle.java:427)
+        at com.jogamp.common.os.Platform$1.run(Platform.java:321)
+        at java.base/java.security.AccessController.doPrivileged(Native Method)
+        at com.jogamp.common.os.Platform.<clinit>(Platform.java:290)
+        at com.jogamp.opengl.GLProfile.<clinit>(GLProfile.java:154)
+        at gov.nasa.worldwind.Configuration.getMaxCompatibleGLProfile(Configuration.java:679)
+        at gov.nasa.worldwind.Configuration.getRequiredGLCapabilities(Configuration.java:692)
+        at gov.nasa.worldwind.awt.WorldWindowGLCanvas.<init>(WorldWindowGLCanvas.java:86)
+        at gov.nasa.worldwindx.examples.ApplicationTemplate$AppPanel.createWorldWindow(ApplicationTemplate.java:84)
+        at gov.nasa.worldwindx.examples.ApplicationTemplate$AppPanel.<init>(ApplicationTemplate.java:61)
+        at gov.nasa.worldwindx.examples.ApplicationTemplate$AppFrame.createAppPanel(ApplicationTemplate.java:173)
+        at gov.nasa.worldwindx.examples.ApplicationTemplate$AppFrame.initialize(ApplicationTemplate.java:120)
+        at gov.nasa.worldwindx.examples.ApplicationTemplate$AppFrame.<init>(ApplicationTemplate.java:106)
+        at com.baesystems.midas.Application$AppFrame.<init>(Application.java:98)
+        ... 6 more
