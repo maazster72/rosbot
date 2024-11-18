@@ -11,13 +11,15 @@ const double EARTH_RADIUS = 6378137.0; // Earth's radius in meters
 // Member function to convert latitude and longitude to Cartesian coordinates
 void DionysusTranslator::latLongToCartesian(double latitude, double longitude, double &x, double &y)
 {
-    // Convert latitude and longitude from degrees to radians
-    double lat_rad = latitude * M_PI / 180.0;
-    double lon_rad = longitude * M_PI / 180.0;
+    // Define initial reference point (latitude, longitude)
+    double initial_latitude = 53.745793304041634;
+    double initial_longitude = -2.894669081029672;
+    // Scale factor to control the precision of the conversion
+    double scale_factor = 10000 * 1.5;
 
     // Simple equirectangular projection
-    x = EARTH_RADIUS * lon_rad * cos(lat_rad);
-    y = EARTH_RADIUS * lat_rad;
+    x = (latitude - initial_latitude) * scale_factor * -1;
+    y = (longitude - initial_longitude) * scale_factor;
 }
 
 void DionysusTranslator::configure(
@@ -51,7 +53,7 @@ nav_msgs::msg::Path DionysusTranslator::convertRoute(const vms_msgs::msg::Route 
 {
     nav_msgs::msg::Path path;
     path.header.stamp = clock_->now(); // Set to current time using the clock_
-    path.header.frame_id = "odom"; // Set to the appropriate frame
+    path.header.frame_id = "map"; // Set to the appropriate frame
 
     // Convert each RoutePoint to Cartesian coordinates
     for (const auto & point : route.routepoints) {

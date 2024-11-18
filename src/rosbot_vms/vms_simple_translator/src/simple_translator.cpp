@@ -8,15 +8,9 @@ namespace vms_simple_translator
 // Member function to convert latitude and longitude to Cartesian coordinates
 void SimpleTranslator::latLongToCartesian(double latitude, double longitude, double &x, double &y)
 {
-    // Define initial reference point (latitude, longitude)
-    double initial_latitude = 53.745793304041634;
-    double initial_longitude = -2.894669081029672;
-    // Scale factor to control the precision of the conversion
-    double scale_factor = 10000 * 1.5;
-
     // Simple equirectangular projection
-    x = latitude - initial_latitude * scale_factor * -1;
-    y = longitude - initial_longitude * scale_factor;
+    x = latitude;
+    y = longitude;
 }
 
 void SimpleTranslator::configure(
