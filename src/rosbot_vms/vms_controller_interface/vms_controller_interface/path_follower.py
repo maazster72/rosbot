@@ -74,13 +74,9 @@ class PathFollower(Node):
         # Logging
         self.get_logger().info(f"New goal pose received: {self.goal_pose}")
         if(self.check_if_rotate_needed(self.current_pose, self.goal_pose)):
-            self.rotate = True
-            self.linear = False
             # Logging
             self.get_logger().info(f"Rotate mode activated")
         else:
-            self.rotate = False
-            self.linear = True
             # Logging
             self.get_logger().info(f"Linear mode activated")
 
@@ -183,21 +179,9 @@ class PathFollower(Node):
 
     def compute_cmd_velocity(self):
         # Compute cmd_vel
-        if self.rotate:
+        if self.check_if_rotate_needed(self.current_pose, self.goal_pose):
             self.get_logger().info(f"Rotate mode...")
             cmd_vel = controller.orient_to_target(self.current_pose, self.goal_pose)
-            if(self.check_if_rotate_needed(self.current_pose, self.goal_pose)):
-                self.linear = False
-                self.rotate = True
-                # Logging
-                self.get_logger().info(f"Linear mode deactivated")
-                self.get_logger().info(f"Rotate mode activated")
-            else:
-                self.rotate = False
-                self.linear = True
-                # Logging
-                self.get_logger().info(f"Rotate mode deactivated")
-                self.get_logger().info(f"Linear mode activated")
         elif self.current_pose and self.goal_pose and self.linear:
             self.get_logger().info(f"Linear mode...")
             cmd_vel = controller.move_to_target(self.current_pose, self.goal_pose)
@@ -211,10 +195,24 @@ class PathFollower(Node):
     def check_if_rotate_needed(self, current_pose, target_pose):
         yaw_rotation = controller.compute_required_yaw_rotation(current_pose, target_pose)
         self.get_logger().info(f"Yaw rotation: {yaw_rotation}")
-        if abs(yaw_rotation) > self.threshold_angular:
-            return True
-        else:
-            return False
+        if self.linear:
+            if abs(yaw_rotation) > 0.78:
+                self.linear = False
+                self.rotate = True
+                return True
+            else:
+                self.rotate = False
+                self.linear = True
+                return False
+        if self.rotate:
+            if abs(yaw_rotation) > self.threshold_angular:
+                self.linear = False
+                self.rotate = True
+                return True
+            else:
+                self.rotate = False
+                self.linear = True
+                return False
 
 def main(args=None):
     rclpy.init(args=args)

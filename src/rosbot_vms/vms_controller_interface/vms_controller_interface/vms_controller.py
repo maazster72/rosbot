@@ -87,13 +87,13 @@ def orient_to_target(current_pose, target_pose, min_angular_velocity=0.01, max_a
     required_yaw_rotation = compute_required_yaw_rotation(current_pose, target_pose)
 
     # Calculate the angular velocity based on the yaw rotation
-    angular_velocity = required_yaw_rotation * 1.0  # scaling factor
+    angular_velocity = required_yaw_rotation / 3.0  # scaling factor
 
     # Ensure the angular velocity is within the specified range
-    if abs(angular_velocity) < min_angular_velocity:
-        angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
-    elif abs(angular_velocity) > max_angular_velocity:
-        angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
+    # if abs(angular_velocity) < min_angular_velocity:
+    #     angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
+    # elif abs(angular_velocity) > max_angular_velocity:
+    #     angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
 
     cmd_vel.angular.z = angular_velocity
 
@@ -118,7 +118,7 @@ def move_to_target(current_pose, target_pose, min_angular_velocity=0.1, max_angu
     required_yaw_rotation = compute_required_yaw_rotation(PoseStamped(), local_target_pose)
 
     # Calculate the angular velocity based on the yaw rotation
-    angular_velocity = required_yaw_rotation * 1.0  # scaling factor
+    angular_velocity = required_yaw_rotation / 5.0  # scaling factor
 
     # # Ensure the angular velocity is within the specified range
     # if abs(angular_velocity) < min_angular_velocity:
@@ -126,7 +126,7 @@ def move_to_target(current_pose, target_pose, min_angular_velocity=0.1, max_angu
     # elif abs(angular_velocity) > max_angular_velocity:
     #     angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
 
-    cmd_vel.angular.z = angular_velocity
+    # cmd_vel.angular.z = angular_velocity
 
     return cmd_vel
 
