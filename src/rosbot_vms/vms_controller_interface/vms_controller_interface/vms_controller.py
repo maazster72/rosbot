@@ -99,36 +99,44 @@ def orient_to_target(current_pose, target_pose, min_angular_velocity=0.01, max_a
 
     return cmd_vel
 
-def move_to_target(current_pose, target_pose, min_angular_velocity=0.1, max_angular_velocity=0.2):
+def move_to_target(current_pose, target_pose, min_angular_velocity=0.1, max_angular_velocity=0.2, position_tolerance=0.01, angular_tolerance=0.01):
     current_position, current_orientation = util.poseToLists(current_pose)
     target_position, _ = util.poseToLists(target_pose)
-
+    
+    # Transform the global target into the local frame
     local_target_position = transform_target_to_local_frame(current_position, current_orientation, target_position)
 
+    # Calculate linear velocity
     cmd_vel = Twist()
+    linear_velocity = compute_linear_velocity([0, 0, 0], [local_target_position.x, local_target_position.y, local_target_position.z])
+    cmd_vel.linear.x = linear_velocity[0]
+    cmd_vel.linear.y = linear_velocity[1]
 
-    linear_velocity = compute_linear_velocity([0,0,0], [local_target_position.x, local_target_position.y, local_target_position.z])
-
-    cmd_vel.linear.x = abs(linear_velocity[0])
-    cmd_vel.linear.y = abs(linear_velocity[1])
-
+    # Calculate required yaw rotation
     local_target_pose = PoseStamped()
     local_target_pose.pose.position = local_target_position
-
     required_yaw_rotation = compute_required_yaw_rotation(PoseStamped(), local_target_pose)
 
-    # Calculate the angular velocity based on the yaw rotation
-    angular_velocity = required_yaw_rotation / 5.0  # scaling factor
+    # Use a proportional controller for angular velocity
+    k_angular = 1.0  # Tune this gain for responsiveness
+    angular_velocity = k_angular * required_yaw_rotation
 
-    # # Ensure the angular velocity is within the specified range
-    # if abs(angular_velocity) < min_angular_velocity:
-    #     angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
-    # elif abs(angular_velocity) > max_angular_velocity:
-    #     angular_velocity = max_angular_velocity * numpy.sign(angular_velocity)
+    # Clamp angular velocity within bounds
+    angular_velocity = max(min(angular_velocity, max_angular_velocity), -max_angular_velocity)
+    if abs(angular_velocity) < min_angular_velocity:
+        angular_velocity = min_angular_velocity * numpy.sign(angular_velocity)
 
-    # cmd_vel.angular.z = angular_velocity
+    cmd_vel.angular.z = angular_velocity
+
+    # Check for convergence
+    position_error = numpy.linalg.norm([local_target_position.x, local_target_position.y])
+    if position_error < position_tolerance and abs(required_yaw_rotation) < angular_tolerance:
+        cmd_vel.linear.x = 0.0
+        cmd_vel.linear.y = 0.0
+        cmd_vel.angular.z = 0.0
 
     return cmd_vel
+
 
 def transform_target_to_local_frame(current_position, current_orientation, target_position):
     # Calculate delta position in the global frame
