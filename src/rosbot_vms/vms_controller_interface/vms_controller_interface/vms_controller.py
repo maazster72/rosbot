@@ -3,7 +3,7 @@ from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import PoseStamped, Twist, Quaternion
 import vms_controller_interface.vms_controller_util as util
 
-def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.05, max_velocity=0.1):
+def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.05, max_velocity=0.15):
     # Calculate the delta position and the distance between the current and target positions
     delta_position = numpy.array(target_position) - numpy.array(current_position)
     distance = numpy.linalg.norm(delta_position)
@@ -161,3 +161,43 @@ def transform_target_to_local_frame(current_position, current_orientation, targe
     local_target_pose.pose.position.y = local_target_position[1]
 
     return local_target_pose.pose.position
+
+def move_holonomic_to_target(current_pose, target_pose, max_linear_velocity=0.15, k_linear=1.0,
+                             position_tolerance=0.01, angular_tolerance=0.01):
+
+    # Transform target position to local frame
+    current_position, current_orientation = util.poseToLists(current_pose)
+    target_position, _ = util.poseToLists(target_pose)
+    local_target_position = transform_target_to_local_frame(
+        current_position, current_orientation, target_position
+    )
+
+    # Initialise command velocity
+    cmd_vel = Twist()
+
+    # Compute linear velocities (holonomic movement)
+    cmd_vel.linear.x = k_linear * local_target_position.x
+    cmd_vel.linear.y = k_linear * local_target_position.y
+
+    # Clamp velocities to maximum linear velocity
+    speed = numpy.sqrt(cmd_vel.linear.x**2 + cmd_vel.linear.y**2)
+    if speed > max_linear_velocity:
+        scale = max_linear_velocity / speed
+        cmd_vel.linear.x *= scale
+        cmd_vel.linear.y *= scale
+
+    # Compute yaw control (optional, for orientation maintenance)
+    required_yaw_rotation = compute_required_yaw_rotation(current_pose, target_pose)
+    if abs(required_yaw_rotation) > angular_tolerance:
+        cmd_vel.angular.z = required_yaw_rotation * 0.5  # Example proportional control
+    else:
+        cmd_vel.angular.z = 0.0
+
+    # Convergence check
+    position_error = numpy.linalg.norm([local_target_position.x, local_target_position.y])
+    if position_error < position_tolerance:
+        cmd_vel.linear.x = 0.0
+        cmd_vel.linear.y = 0.0
+        cmd_vel.angular.z = 0.0
+
+    return cmd_vel
