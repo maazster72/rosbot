@@ -14,19 +14,24 @@ class TranslateRouteClient(Node):
 
     def send_goal(self, route_message):
         goal_msg = TranslateRouteToPath.Goal()
+
+        initial_latitude = 53.745793304041634
+        initial_longitude = -2.894669081029672
+        scale_factor = 10000 * 1.5
         
         # Parse the route from the received MQTT message
         goal_msg.route.routepoints = [
             RoutePoint(
-                latitude=point['latitude'],
-                longitude=point['longitude'],
+                latitude=(point['latitude'] - initial_latitude) * scale_factor * -1,
+                longitude=(point['longitude'] - initial_longitude) * scale_factor,
                 altitude=point['altitude'],
                 satisfies_requirement_id=''
-            ) for point in route_message['route']['routepoints']
+            ) for point in route_message['routepoint']
         ]
         goal_msg.translator_id = "GridBased"
         
         self.get_logger().info("Sending goal to action server.")
+        self.get_logger().info(f"Relative routepoint: {goal_msg}")
         self._action_client.wait_for_server()
         future = self._action_client.send_goal_async(goal_msg)
         future.add_done_callback(self.goal_response_callback)
@@ -54,10 +59,10 @@ def on_message(client, userdata, msg, logger):
         logger.info(f"Received MQTT message: {route_message}" )
         
         # Check for the nested keys correctly
-        if 'route' in route_message and 'routepoints' in route_message['route']:
+        if 'routepoint' in route_message:
             translate_route_client.send_goal(route_message)
         else:
-            logger.info("Invalid message format. 'route' or 'routepoints' key is missing.")
+            logger.info("Invalid message format. 'routepoint' key is missing.")
     except json.JSONDecodeError:
         logger.info("Error decoding JSON message.")
 
@@ -65,7 +70,7 @@ def on_message(client, userdata, msg, logger):
 def on_connect(client, userdata, flags, rc, logger):
     if rc == 0:
         logger.info("Connected successfully to MQTT broker")
-        client.subscribe("test/topic")  # Change topic as needed
+        client.subscribe("route")  # Change topic as needed
     else:
         logger.info(f"Connection failed with code {rc}")
 
@@ -80,7 +85,7 @@ def main():
     mqtt_client.on_message = lambda client, userdata, msg: on_message(client, userdata, msg, logger)
 
     # Connect to the MQTT broker
-    mqtt_client.connect("localhost", 1883, 60)  # Change broker address if necessary
+    mqtt_client.connect("192.168.0.100", 1883, 600)  # Change broker address if necessary
     mqtt_client.loop_forever()
 
 if __name__ == "__main__":
