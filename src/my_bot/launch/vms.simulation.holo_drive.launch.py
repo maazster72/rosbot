@@ -64,7 +64,7 @@ def generate_launch_description():
 
     vms_controller_interface_node = launch_ros.actions.Node(
         package    = 'vms_controller_interface' ,
-        executable = 'vms_controller_physical_holo_drive',
+        executable = 'vms_controller_simulation_holo_drive',
         name       = 'vms_controller',
         output     = 'screen'
     )
