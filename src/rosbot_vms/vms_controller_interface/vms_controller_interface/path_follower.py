@@ -184,7 +184,7 @@ class PathFollower(Node):
             cmd_vel = controller.orient_to_target(self.current_pose, self.goal_pose)
         elif self.current_pose and self.goal_pose and self.linear:
             self.get_logger().info(f"Linear mode...")
-            cmd_vel = controller.move_to_target(self.current_pose, self.goal_pose)
+            cmd_vel = controller.move_holonomic_to_target(self.current_pose, self.goal_pose)
         else:
             cmd_vel = Twist()
         # Logging
