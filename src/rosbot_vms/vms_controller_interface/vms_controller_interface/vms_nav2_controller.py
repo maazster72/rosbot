@@ -6,7 +6,7 @@ import rclpy
 from rclpy.node import Node
 from rclpy.duration import Duration
 from nav2_simple_commander.robot_navigator import BasicNavigator, TaskResult
-import vms_controller_interface.vms_controller_util as util
+import vms_controller_interface.vms_controller_utility as util
 import time
 
 class PathFollower(Node):
