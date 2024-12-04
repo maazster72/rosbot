@@ -22,7 +22,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'vms_controller = vms_controller_interface.path_follower:main',
+            'vms_controller_physical_holo_drive = vms_controller_interface.path_follower_physical_holo_drive:main',
             'vms_nav2_controller = vms_controller_interface.vms_nav2_controller:main',
         ],
     },
