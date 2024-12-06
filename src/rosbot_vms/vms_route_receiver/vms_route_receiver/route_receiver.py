@@ -15,9 +15,9 @@ class TranslateRouteClient(Node):
     def send_goal(self, route_message):
         goal_msg = TranslateRouteToPath.Goal()
 
-        initial_latitude = 53.745793304041634
-        initial_longitude = -2.894669081029672
-        scale_factor = 10000 * 1.5
+        initial_latitude = 53.745573837592566
+        initial_longitude = -2.8941473617619193
+        scale_factor = 10000
         
         # Parse the route from the received MQTT message
         goal_msg.route.routepoints = [
