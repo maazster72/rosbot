@@ -3,7 +3,7 @@ from scipy.spatial.transform import Rotation
 from geometry_msgs.msg import PoseStamped, Twist, Quaternion
 import vms_controller_interface.vms_controller_utility as util
 
-def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.05, max_velocity=0.15):
+def compute_linear_velocity(current_position, target_position, K_v=1.0, min_velocity=0.05, max_velocity=0.1):
     # Calculate the delta position and the distance between the current and target positions
     delta_position = numpy.array(target_position) - numpy.array(current_position)
     distance = numpy.linalg.norm(delta_position)
@@ -99,7 +99,7 @@ def orient_to_target(current_pose, target_pose, min_angular_velocity=0.01, max_a
 
     return cmd_vel
 
-def move_to_target(current_pose, target_pose, min_angular_velocity=0.1, max_angular_velocity=0.2, position_tolerance=0.01, angular_tolerance=0.01):
+def move_to_target(current_pose, target_pose, min_angular_velocity=0.01, max_angular_velocity=0.05, position_tolerance=0.01, angular_tolerance=0.01):
     current_position, current_orientation = util.poseToLists(current_pose)
     target_position, _ = util.poseToLists(target_pose)
     
@@ -162,8 +162,8 @@ def transform_target_to_local_frame(current_position, current_orientation, targe
 
     return local_target_pose.pose.position
 
-def move_holonomic_to_target(current_pose, target_pose, max_linear_velocity=0.15, k_linear=1.0,
-                             position_tolerance=0.01, angular_tolerance=0.01):
+def move_holonomic_to_target(current_pose, target_pose, max_linear_velocity=0.1, k_linear=1.0,
+                             position_tolerance=0.01, angular_tolerance=0.05):
 
     # Transform target position to local frame
     current_position, current_orientation = util.poseToLists(current_pose)
@@ -189,7 +189,7 @@ def move_holonomic_to_target(current_pose, target_pose, max_linear_velocity=0.15
     # Compute yaw control (optional, for orientation maintenance)
     required_yaw_rotation = compute_required_yaw_rotation(current_pose, target_pose)
     if abs(required_yaw_rotation) > angular_tolerance:
-        cmd_vel.angular.z = required_yaw_rotation * 0.5  # Example proportional control
+        cmd_vel.angular.z = required_yaw_rotation / 3.0  # Example proportional control
     else:
         cmd_vel.angular.z = 0.0
 

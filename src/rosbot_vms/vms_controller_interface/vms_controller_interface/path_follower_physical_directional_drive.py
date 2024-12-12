@@ -23,7 +23,7 @@ class PathFollower(Node):
         self.goal_pose = PoseStamped()
         self.distance_to_goal = float("inf")
         self.threshold_linear = 0.15
-        self.threshold_angular = 0.05
+        self.threshold_angular = 0.06
         self.rotate = False
         self.linear = False
 
