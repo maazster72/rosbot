@@ -23,7 +23,7 @@ GuidanceInterface::GuidanceInterface(const rclcpp::NodeOptions& /*options*/)
 : nav2_util::LifecycleNode("vms_guidance_interface", "", true),
 translator_loader_("vms_core", "vms_core::RouteTranslator"),
 default_ids_{"GridBased"},
-default_types_{"vms_simple_translator/SimpleTranslator"}
+default_types_{"vms_dionysus_translator/DionysusTranslator"}
 {
     RCLCPP_INFO(
         get_logger(), "Creating");

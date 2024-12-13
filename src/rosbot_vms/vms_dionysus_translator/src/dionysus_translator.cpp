@@ -1,6 +1,9 @@
 #include "vms_dionysus_translator/dionysus_translator.hpp"
 #include "rclcpp/rclcpp.hpp"
 #include "rclcpp/time.hpp"
+#include "geometry/Coordinates.hpp"
+#include "geometry/Ellipsoid.hpp"
+
 
 namespace vms_dionysus_translator
 {
@@ -51,16 +54,24 @@ nav_msgs::msg::Path DionysusTranslator::convertRoute(const vms_msgs::msg::Route 
 {
     nav_msgs::msg::Path path;
     path.header.stamp = clock_->now(); // Set to current time using the clock_
-    path.header.frame_id = "odom"; // Set to the appropriate frame
+    path.header.frame_id = "map"; // Set to the appropriate frame
 
-    // Convert each RoutePoint to Cartesian coordinates
+    // Define the origin (Dionysus reference point)
+    geometry::Point origin(53.745620171847804, -2.8941631520855164, 0.0);
+
     for (const auto & point : route.routepoints) {
         geometry_msgs::msg::PoseStamped pose;
         pose.header = path.header;
 
-        // Convert latitude and longitude to Cartesian coordinates
-        latLongToCartesian(point.latitude, point.longitude, pose.pose.position.x, pose.pose.position.y);
-        pose.pose.position.z = point.altitude;
+        // Convert latitude/longitude to Cartesian coordinates
+        geometry::Point geodeticPoint(point.latitude, point.longitude, 0.0);
+        geometry::Cartesian cartesian =
+            geometry::Coordinates::geodeticToCartesian(geometry::Ellipsoid::WGS84, geodeticPoint, origin);
+
+        // Populate the ROS PoseStamped
+        pose.pose.position.x = cartesian.e * -1;
+        pose.pose.position.y = cartesian.n;
+        pose.pose.position.z = 0.0;
 
         // Set orientation if needed (default to no rotation)
         pose.pose.orientation.w = 1.0;
