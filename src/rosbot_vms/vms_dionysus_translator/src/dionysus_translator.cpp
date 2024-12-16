@@ -56,6 +56,8 @@ nav_msgs::msg::Path DionysusTranslator::convertRoute(const vms_msgs::msg::Route 
     path.header.stamp = clock_->now(); // Set to current time using the clock_
     path.header.frame_id = "map"; // Set to the appropriate frame
 
+    double scale = 0.09;
+
     // Define the origin (Dionysus reference point)
     geometry::Point origin(53.745620171847804, -2.8941631520855164, 0.0);
 
@@ -69,8 +71,8 @@ nav_msgs::msg::Path DionysusTranslator::convertRoute(const vms_msgs::msg::Route 
             geometry::Coordinates::geodeticToCartesian(geometry::Ellipsoid::WGS84, geodeticPoint, origin);
 
         // Populate the ROS PoseStamped
-        pose.pose.position.x = cartesian.e * -1;
-        pose.pose.position.y = cartesian.n;
+        pose.pose.position.x = cartesian.e * -1 * scale;
+        pose.pose.position.y = cartesian.n * scale;
         pose.pose.position.z = 0.0;
 
         // Set orientation if needed (default to no rotation)

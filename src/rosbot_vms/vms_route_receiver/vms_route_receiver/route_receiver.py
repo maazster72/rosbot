@@ -22,8 +22,8 @@ class TranslateRouteClient(Node):
         # Parse the route from the received MQTT message
         goal_msg.route.routepoints = [
             RoutePoint(
-                latitude=(point['latitude'] - initial_latitude) * scale_factor * -1,
-                longitude=(point['longitude'] - initial_longitude) * scale_factor,
+                latitude=point['latitude'],
+                longitude=point['longitude'],
                 altitude=point['altitude'],
                 satisfies_requirement_id=''
             ) for point in route_message['routepoint']
