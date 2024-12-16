@@ -85,7 +85,7 @@ def main():
     mqtt_client.on_message = lambda client, userdata, msg: on_message(client, userdata, msg, logger)
 
     # Connect to the MQTT broker
-    mqtt_client.connect("192.168.0.100", 1883, 600)  # Change broker address if necessary
+    mqtt_client.connect("192.168.0.202", 1883, 600)  # Change broker address if necessary
     mqtt_client.loop_forever()
 
 if __name__ == "__main__":
