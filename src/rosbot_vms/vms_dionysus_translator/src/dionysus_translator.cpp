@@ -71,7 +71,7 @@ nav_msgs::msg::Path DionysusTranslator::convertRoute(const vms_msgs::msg::Route 
             geometry::Coordinates::geodeticToCartesian(geometry::Ellipsoid::WGS84, geodeticPoint, origin);
 
         // Populate the ROS PoseStamped
-        pose.pose.position.x = cartesian.e * -1 * scale;
+        pose.pose.position.x = cartesian.e * -1 * 0.0875;
         pose.pose.position.y = cartesian.n * scale;
         pose.pose.position.z = 0.0;
 
