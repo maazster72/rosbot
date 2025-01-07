@@ -1,0 +1,55 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        architecture: [amd64, arm64]  # Multiple architectures
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # Set up Docker Buildx
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Cache Docker layers to speed up builds
+      - name: Cache Docker layers
+        uses: actions/cache@v3
+        with:
+          path: ~/.cache/docker
+          key: ${{ runner.os }}-docker-${{ matrix.architecture }}-${{ github.sha }}
+          restore-keys: |
+            ${{ runner.os }}-docker-${{ matrix.architecture }}-
+
+      # Set up Docker builder for multi-platform
+      - name: Set up Docker builder
+        run: |
+          docker buildx create --use --name mybuilder
+
+      # Build the rosbot-local image
+      - name: Build rosbot-local image
+        run: |
+          docker buildx build --platform linux/${{ matrix.architecture }} -t rosbot-local-image:${{ matrix.architecture }} -f ./docker/Dockerfile . --load
+
+      # Save the Docker image as a tarball
+      - name: Save Docker image as tar file
+        run: |
+          docker save -o rosbot-local-image-${{ matrix.architecture }}.tar rosbot-local-image:${{ matrix.architecture }}
+
+      # Upload the tarball as an artifact
+      - name: Upload Docker image tarball
+        uses: actions/upload-artifact@v3
+        with:
+          name: rosbot-local-image-${{ matrix.architecture }}
+          path: rosbot-local-image-${{ matrix.architecture }}.tar

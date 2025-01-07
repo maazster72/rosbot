@@ -1,36 +1,29 @@
-# Use the Jetson L4T base image compatible with Ubuntu 20.04
-FROM nvcr.io/nvidia/l4t-base:r35.1.0
+# Use official ROS 2 Galactic base image
+FROM ros:galactic-ros-base-focal
 
-# Set the environment variables for non-interactive installations
-ENV DEBIAN_FRONTEND=noninteractive
+# Set environment variable for ROS
 ENV ROS_DISTRO=galactic
-ENV RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
-ENV GIT_REPO=https://github.com/maazster72/rosbot.git 
-
-# Install basic utilities, build tools, ROS 2, rosdep, and other necessary packages
+    
+# Install system packages and dependencies
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
         wget \
         gnupg2 \
         lsb-release \
         curl \
-        git \
         sudo \
         python3-pip \
         build-essential \
-        x11-apps \
-        libgl1-mesa-dri \
-        libgl1-mesa-glx \
-        mesa-utils \
         libpcap-dev \
-        gedit && \
-    wget https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -O - | apt-key add - && \
-    echo "deb [arch=arm64] http://packages.ros.org/ros2/ubuntu focal main" | tee /etc/apt/sources.list.d/ros2.list && \
-    apt-get update && \
-    apt-get install -y --no-install-recommends \
         ros-$ROS_DISTRO-desktop \
+        python3-rosdep \
+        python3-rospkg \
+        ros-$ROS_DISTRO-tf2-tools \
+        ros-$ROS_DISTRO-tf-transformations \
         ros-$ROS_DISTRO-navigation2 \
         ros-$ROS_DISTRO-nav2-bringup \
+        ros-$ROS_DISTRO-nav2-common \
+        ros-$ROS_DISTRO-nav2-simple-commander \
         ros-$ROS_DISTRO-gazebo-ros-pkgs \
         ros-$ROS_DISTRO-xacro \
         ros-$ROS_DISTRO-joint-state-publisher \
@@ -38,46 +31,37 @@ RUN apt-get update && \
         ros-$ROS_DISTRO-ackermann-msgs \
         ros-$ROS_DISTRO-serial-driver \
         ros-$ROS_DISTRO-robot-localization \
-        python3-rosdep && \
+        mosquitto \
+        mosquitto-clients \
+        micro \
+        gedit && \
     rm -rf /var/lib/apt/lists/*
 
-# Initialize rosdep
-RUN rosdep init && \
-    rosdep update
-
-# Create the runtime directory
-RUN mkdir -p /tmp/runtime-root && chmod 0700 /tmp/runtime-root
-
-# Install colcon and its extensions via pip
+# Install Python dependencies
 RUN pip3 install -U \
     colcon-common-extensions \
-    colcon-ros-bundle
+    colcon-ros-bundle \
+    paho-mqtt \
+    scipy \
+    numpy \
+    pyserial \
+    transforms3d
 
-# Source the ROS 2 setup script by default
-SHELL ["/bin/bash", "-c"]
-RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> ~/.bashrc
-
-# Set up a workspace
+# Set working directory
 WORKDIR /workspace
-RUN mkdir -p src
 
-# Clone the repository and copy the contents of the 'src' directory
-RUN git clone $GIT_REPO /tmp/rosbot && \
-    cp -r /tmp/rosbot/src/* /workspace/src/ && \
-    rm -rf /tmp/rosbot
+# Copy the local src folder to the workspace
+COPY src /workspace/src/
 
-# Install package dependencies using rosdep
-RUN source /opt/ros/$ROS_DISTRO/setup.bash && rosdep install --from-paths src --ignore-src -r -y || apt-get install -y libpcap0.8
+# Build and source the workspace
+RUN rosdep update && \
+    /bin/bash -c "source /opt/ros/$ROS_DISTRO/setup.bash && \
+    rosdep install --from-paths src --ignore-src -r -y && \
+    colcon build"
 
-# Build the workspace
-RUN source /opt/ros/$ROS_DISTRO/setup.bash && colcon build
+# Source setup files for interactive shell
+RUN echo "source /opt/ros/$ROS_DISTRO/setup.bash" >> /root/.bashrc && \
+    echo "source /workspace/install/setup.bash" >> /root/.bashrc
 
-# Source the workspace's setup.bash
-RUN echo "source /workspace/install/setup.bash" >> ~/.bashrc
-
-# Add user to dialout group
-# RUN usermod -aG dialout ${USERNAME}
-
-# Set the entrypoint to automatically source ROS 2, the workspace environment, and enter a bash shell
+# Default entrypoint
 ENTRYPOINT ["/bin/bash", "-c", "source /opt/ros/$ROS_DISTRO/setup.bash && source /workspace/install/setup.bash && exec bash"]
-
